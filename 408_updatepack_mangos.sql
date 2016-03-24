@@ -15955,20 +15955,6 @@ INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalo
 (2840603,2,39,0,0,0,0,0,0,0,0,0,0,0,0,0,'fly OFF'),
 (2840603,3,24,0,0,0,0,0x08,0,0,0,0,0,0,0,0,'unmount');
 
--- UDB_247
--- To Legion Hold(q.10596) -H  (q.10563) -A - Update
--- communication device will despawn, to let correct see event with "Image of Warbringer Razuun"
- DELETE FROM dbscripts_on_spell WHERE id = 37097; 
-INSERT INTO dbscripts_on_spell (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES 
-(37097,0,15,48342,0,0,0,0,0,0,0,0,0,0,0,0,'stun'),
-(37097,4,10,21633,61000,0,0,0,0,0,0,0,-3312.04,2948.81,171.12,4.83,'summon - Deathbringer Jovaan'),
-(37097,5,40,0,0,184834,25737,7 | 0x10,0,0,0,0,0,0,0,0,'despawn object'),
-(37097,5,40,0,0,184835,25738,7 | 0x10,0,0,0,0,0,0,0,0,'despawn object'),
-(37097,57,8,21502,0,0,0,0,0,0,0,0,0,0,0,0,'q. completed'),
-(37097,60,14,48342,0,0,0,0,0,0,0,0,0,0,0,0,'stun');
--- sync. gameobjcts with quest. 
-UPDATE gameobject SET spawntimesecs = 60 WHERE id IN (184834,184835);
-
 -- UDB_248
 -- Orithos the Sky Darkener and Scourge Sky Darkener
 -- shouldnt be attacked by Scarlet Defenders
@@ -21407,12 +21393,6 @@ INSERT INTO dbscripts_on_spell (id, delay, command, datalong, datalong2, buddy_e
 (39238,1,15,39240,0,0,0,0,39241,0,0,0,0,0,0,0,'cast random spell');
 -- Sand Gnome - equipment update
 UPDATE creature_template SET equipmentTemplateid = 191 WHERE entry = 22483;
-
--- UDB_290
--- q.10930 'The Big Bone Worm'
-DELETE FROM spell_script_target WHERE entry = 39248;
-INSERT INTO spell_script_target (entry, type, targetEntry) VALUES
-(39248,2,22105);
 
 -- UDB_291
 -- Obsidian Shard & * of Ahn'Qiraj
