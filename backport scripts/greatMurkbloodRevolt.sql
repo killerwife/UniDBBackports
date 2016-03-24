@@ -39,3 +39,11 @@ INSERT INTO dbscripts_on_event (id, delay, command, datalong, datalong2, buddy_e
 DELETE FROM dbscripts_on_event WHERE id = 14860;
 INSERT INTO dbscripts_on_event (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
 (14860,0,20,2,0,23102,140757,7 | 0x10,0,0,0,0,0,0,0,0,'movement chenged to 2:waypoint');
+
+-- The Great Murkblood Revolt (q.11081) -H -A -- according to comments (wowhead is wrong here)
+UPDATE item_loot_template SET ChanceOrQuestChance = 20, condition_id = 967 WHERE entry = 32724 AND item = 32726;
+DELETE FROM conditions WHERE condition_entry IN (71, 966, 967);
+INSERT INTO conditions (condition_entry, type, value1, value2) VALUES
+(967, -1, 966, 71),
+(966, 8, 11075, 0), 
+(71, 22, 11081, 0); -- q. item shouldnt be droped anymore after q. completed

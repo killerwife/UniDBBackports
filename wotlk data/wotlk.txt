@@ -1,0 +1,1502 @@
+-- Ulduar
+-- Missing Razorscale harpoon guns
+INSERT INTO gameobject (guid, id, map, spawnMask, phaseMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecs, animprogress, state) VALUES
+(121796, 194542, 603, 3, 1, 571.9012, -136.5541, 391.5171, -1.361356, 0, 0, 1, 0, -180, 255, 1),
+(121797, 194541, 603, 3, 1, 589.4504, -134.8878, 391.5171, -1.466076, 0, 0, 1, 0, -180, 255, 1),
+(121798, 194543, 603, 2, 1, 559.4506, -140.129, 391.517, -1.221729, 0, 0, 1, 0, -180, 255, 1),
+(121799, 194519, 603, 2, 1, 606.747, -136.945, 391.353, -1.745327, 0, 0, 1, 0, -180, 255, 1);
+-- missing chests (ytdb)
+INSERT INTO gameobject (guid, id, map, spawnMask, phaseMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecs, animprogress, state) VALUES
+(121800, 194821, 603, 1, 1, 1632.53, -295.983, 417.322, 1.56774, 0, 0, 0.706025, 0.708187, -604800, 100, 1),
+(121801, 194822, 603, 2, 1, 1632.53, -295.983, 417.322, 1.56774, 0, 0, 0.706025, 0.708187, -604800, 100, 1);
+-- missing celestial access GO
+INSERT INTO gameobject (guid, id, map, spawnMask, phaseMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecs, animprogress, state) VALUES
+(121802, 194628, 603, 1, 1, 1646.182, -174.6881, 427.2536, 1.553341, 0, 0, 0.693406, 0.720547, 300, 100, 1),
+(121803, 194752, 603, 2, 1, 1646.182, -174.6881, 427.2536, 1.553341, 0, 0, 0.693406, 0.720547, 300, 100, 1);
+-- missing loot (ytdb)
+INSERT INTO gameobject (guid, id, map, spawnMask, phaseMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecs, animprogress, state) VALUES
+(121804, 194789, 603, 1, 1, 2737.86, 2568.98, 364.314, 0.0139475, 0, 0, 0.00697369, 0.999976, -604800, 100, 1),
+(121805, 194956, 603, 2, 1, 2737.86, 2568.98, 364.314, 0.0139475, 0, 0, 0.00697369, 0.999976, -604800, 100, 1),
+(121806, 194957, 603, 1, 1, 2737.86, 2568.98, 364.314, 0.0139475, 0, 0, 0.00697369, 0.999976, -604800, 100, 1),
+(121807, 194958, 603, 2, 1, 2737.86, 2568.98, 364.314, 0.0139475, 0, 0, 0.00697369, 0.999976, -604800, 100, 1);
+-- stratholme past crates
+INSERT INTO gameobject (guid, id, map, spawnMask, phaseMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecs, animprogress, state) VALUES
+(121808, 190095, 595, 3, 1, 1674.414, 872.2995, 120.4001, 5.166176, 0, 0, 1, 0, -3600, 255, 1),
+(121809, 190095, 595, 3, 1, 1628.989, 812.1284, 120.6871, 0.4363316, 0, 0, 1, 0, -3600, 255, 1),
+(121810, 190095, 595, 3, 1, 1629.663, 731.3397, 112.8453, 3.857183, 0, 0, 1, 0, -3600, 255, 1),
+(121811, 190095, 595, 3, 1, 1570.909, 669.9181, 102.3073, 3.071766, 0, 0, 1, 0, -3600, 255, 1),
+(121812, 190095, 595, 3, 1, 1579.423, 621.4219, 99.73167, 6.126106, 0, 0, 1, 0, -3600, 255, 1);
+-- storm peaks missing spell focus (ytdb)
+-- they need to be linked with creature 30169 spawns - some might be missing
+INSERT INTO gameobject (guid, id, map, spawnMask, phaseMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecs, animprogress, state) VALUES
+(121813, 192124, 571, 1, 4, 7206.62, -3482, 833.563, -3.00195, 0, 0, -0.997563, 0.0697646, 300, 100, 1),
+(121814, 192124, 571, 1, 4, 7232.06, -3474.28, 850.768, -2.35619, 0, 0, -0.923879, 0.382686, 300, 100, 1),
+(121815, 192124, 571, 1, 4, 7207.47, -3438.53, 838.874, 2.89724, 0, 0, 0.992546, 0.121873, 300, 100, 1),
+(121816, 192124, 571, 1, 4, 7222.42, -3441.84, 837.193, 2.14675, 0, 0, 0.878816, 0.477161, 300, 100, 1),
+(121817, 192124, 571, 1, 4, 7227.85, -3415.96, 840.174, 1.55334, 0, 0, 0.700908, 0.713252, 300, 100, 1),
+(121818, 192124, 571, 1, 4, 7217.79, -3378.62, 846.734, -0.872664, 0, 0, -0.422618, 0.906308, 300, 100, 1),
+(121819, 192124, 571, 1, 4, 7206.48, -3460.64, 835.851, -2.37364, 0, 0, -0.927182, 0.37461, 300, 100, 1),
+(121820, 192124, 571, 1, 4, 7192, -3386.61, 846.416, 2.11185, 0, 0, 0.870356, 0.492423, 300, 100, 1);
+-- Dalaran sewers and Ring of Valor spawns
+INSERT INTO gameobject (guid, id, map, spawnMask, phaseMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecs, animprogress, state) VALUES
+-- dalaran doors
+(121821, 192642, 617, 1, 1, 1350.95, 817.2, 20.8096, 3.15, 0, 0, 0.99627, 0.0862864, 900, 100, 1),
+(121822, 192643, 617, 1, 1, 1232.65, 764.913, 20.0729, 6.3, 0, 0, 0.0310211, -0.999519, 900, 100, 1),
+-- waterfall (GO & collision)
+(121823, 194395, 617, 1, 1, 1291.56, 790.837, 7.1, 3.14238, 0, 0, 0.694215, -0.719768, 900, 100, 0),
+(121824, 191877, 617, 1, 1, 1291.56, 790.837, 7.1, 3.14238, 0, 0, 0.694215, -0.719768, 900, 100, 0),
+-- dalaran buffs
+(121825, 184663, 617, 1, 1, 1291.7, 813.424, 7.11472, 4.64562, 0, 0, 0.730314, -0.683111, 900, 100, 1),
+(121826, 184664, 617, 1, 1, 1291.7, 768.911, 7.11472, 1.55194, 0, 0, 0.700409, 0.713742, 900, 100, 1),
+-- RV elevators
+(121827, 194582, 618, 1, 1, 763.536, -294.535, 0.505, 3.14159, 0, 0, 0, 0, 900, 100, 1),
+(121828, 194586, 618, 1, 1, 763.506, -273.873, 0.505, 0, 0, 0, 0, 0, 900, 100, 1),
+-- RV buffs
+(121829, 184663, 618, 1, 1, 735.551, -284.794, 28.276, 0.0349, 0, 0, 0, 0, 900, 100, 1),
+(121830, 184664, 618, 1, 1, 791.224, -284.794, 28.276, 2.60053, 0, 0, 0, 0, 900, 100, 1),
+-- Fire and fire doors
+(121831, 192704, 618, 1, 1, 743.543, -283.799, 28.286, 3.14159, 0, 0, 0, 0, 900, 100, 1),
+(121832, 192705, 618, 1, 1, 782.971, -283.799, 28.286, 3.14159, 0, 0, 0, 0, 900, 100, 1),
+(121833, 192387, 618, 1, 1, 743.711, -284.099, 27.542, 3.14159, 0, 0, 0, 0, 900, 100, 1),
+(121834, 192388, 618, 1, 1, 783.221, -284.133, 27.535, 0, 0, 0, 0, 0, 900, 100, 1),
+-- gear
+(121835, 192393, 618, 1, 1, 763.664, -261.872, 26.686, 0, 0, 0, 0, 0, 900, 100, 1),
+(121836, 192394, 618, 1, 1, 763.578, -306.146, 26.665, 3.14159, 0, 0, 0, 0, 900, 100, 1),
+-- pulley
+(121837, 192389, 618, 1, 1, 700.722, -283.990, 39.517, 3.14159, 0, 0, 0, 0, 900, 100, 1),
+(121838, 192390, 618, 1, 1, 826.303, -283.996, 39.517, 0, 0, 0, 0, 0, 900, 100, 1),
+-- pillar
+(121839, 194583, 618, 1, 1, 763.632, -306.162, 25.909, 3.14159, 0, 0, 0, 0, 900, 100, 1),
+(121840, 194584, 618, 1, 1, 723.644, -284.493, 24.648, 3.14159, 0, 0, 0, 0, 900, 100, 1),
+(121841, 194585, 618, 1, 1, 763.611, -261.856, 25.909, 0, 0, 0, 0, 0, 900, 100, 1),
+(121842, 194587, 618, 1, 1, 802.211, -284.493, 24.648, 0, 0, 0, 0, 0, 900, 100, 1),
+-- collisions
+(121843, 194580, 618, 1, 1, 763.632, -306.162, 30.639, 3.14159, 0, 0, 0, 0, 900, 100, 1),
+(121844, 194579, 618, 1, 1, 723.644, -284.493, 32.382, 0, 0, 0, 0, 0, 900, 100, 1),
+(121845, 194581, 618, 1, 1, 763.611, -261.856, 30.639, 0, 0, 0, 0, 0, 900, 100, 1),
+(121846, 194578, 618, 1, 1, 802.211, -284.493, 32.382, 3.14159, 0, 0, 0, 0, 900, 100, 1);
+-- brain chamber portals
+INSERT INTO gameobject (guid, id, map, spawnMask, phaseMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecs, animprogress, state) VALUES
+(121917, 194625, 603, 3, 1, 1999.761, -57.29888, 243.5464, 0, 0, 0, 1, 0, -180, 255, 1),
+(121918, 194625, 603, 3, 1, 1943.855, -25.59109, 243.7952, 0, 0, 0, 1, 0, -180, 255, 1),
+(121919, 194625, 603, 3, 1, 2000.26, 5.519748, 243.1853, 0, 0, 0, 1, 0, -180, 255, 1),
+(121920, 194462, 603, 3, 1, 2104.03, -25.2128, 242.647, 0, 0, 0, 0, 1, 604800, 0, 0);
+-- Ulduar: delete summoned accessories
+DELETE FROM creature WHERE id IN (33067,33167,33218);
+delete from creature where id in (32933,32934);
+-- Ulduar: delete summoned npcs
+DELETE FROM creature WHERE id IN (32938,32885,32908,32941,32950,32946,32948);
+DELETE FROM creature WHERE id IN (34145,34144);
+-- Vehicle accessories (moved to vehicle_accessory)
+DELETE FROM creature WHERE id IN (30175,29498,30169);
+DELETE FROM creature WHERE guid IN (123103, 123108, 138914, 124444);
+-- respawn troop transporters (ytdb)
+DELETE FROM creature WHERE id IN (32225,31881);
+INSERT INTO creature (guid,id,map,spawnMask,phaseMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
+(140614, 32225, 571, 1, 1, 0, 0, 7289.36, 1794.13, 562.962, 1.18188, 300, 0, 0, 63000, 0, 0, 0),
+(140615, 32225, 571, 1, 1, 0, 0, 7303.23, 1520.81, 322.419, 3.36849, 300, 0, 0, 63000, 0, 0, 0),
+(140616, 31881, 571, 1, 1, 0, 0, 6858.03, 1715.73, 617.195, 2.67172, 300, 0, 0, 63000, 0, 0, 0),
+(140617, 31881, 571, 1, 1, 0, 0, 7508.94, 1723.11, 350.655, 1.53589, 300, 0, 0, 63000, 0, 0, 0);
+-- Yogg Brain and Voice of Yogg
+DELETE FROM creature WHERE id IN (33890,33280);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES
+(140618, 33890, 603, 3, 1, 0, 0, 1981.622, -25.89063, 261.6898, 0.1047198, 604800, 0, 0, 1371428, 0, 0, 0),
+(140619, 33280, 603, 3, 1, 0, 0, 1980.137, -25.74376, 326.4671, 0, 604800, 0, 0, 12600, 0, 0, 0);
+-- Dalaran Arena
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES
+(140620, 28567, 617, 1, 1, 0, 0, 1292.587, 790.2205, 7.19796, 3.054326, 300, 0, 0, 42, 0, 0, 0),
+(140621, 28567, 617, 1, 1, 0, 0, 1369.977, 817.2882, 16.08718, 3.106686, 300, 0, 0, 42, 0, 0, 0),
+(140622, 28567, 617, 1, 1, 0, 0, 1212.833, 765.3871, 16.09484, 0.0, 300, 0, 0, 42, 0, 0, 0);
+
+-- -----------------
+-- Ruby Sanctum
+-- -----------------
+-- Baltharus outro
+DELETE FROM creature_movement_template WHERE entry = 40429;
+INSERT INTO creature_movement_template (entry, point, position_x, position_y, position_z, waittime, script_id, orientation) VALUES
+(40429, 1, 3155.54, 342.39, 84.59, 1000, 4042901, 1.88),
+(40429, 2, 3152.32, 359.41, 85.30, 0, 4042902, 1.88),
+(40429, 3, 3152.07, 383.93, 86.33, 1000, 4042903, 1.88);
+DELETE FROM db_script_string WHERE entry BETWEEN 2000005535 AND 2000005542;
+INSERT INTO db_script_string (entry,content_default,sound,type,language,emote,comment) VALUES
+(2000005535,'Thank you! I could not have held out for much longer.... A terrible thing has happened here.',17491,1,0,5,'Xerestrasza say_epilogue_1'),
+(2000005536,'We believed the Sanctum was well-fortified, but we were not prepared for the nature of this assault.',17492,0,0,1,'Xerestrasza say_epilogue_2'),
+(2000005537,'The Black dragonkin materialized from thin air, and set upon us before we could react.',17493,0,0,1,'Xerestrasza say_epilogue_3'),
+(2000005538,'We did not stand a chance. As my brethren perished around me, I managed to retreat here and bar the entrance.',17494,0,0,1,'Xerestrasza say_epilogue_4'),
+(2000005539,'They slaughtered us with cold efficiency, but the true focus of their interest seemed to be the eggs kept here in the Sanctum.',17495,0,0,1,'Xerestrasza say_epilogue_5'),
+(2000005540,'The commander of the forces on the ground here is a cruel brute named Zarithrian, but I fear there are greater powers at work.',17496,0,0,1,'Xerestrasza say_epilogue_6'),
+(2000005541,'In their initial assault, I caught a glimpse of their true leader, a fearsome full-grown twilight dragon.',17497,0,0,1,'Xerestrasza say_epilogue_7'),
+(2000005542,'I know not the extent of their plans, heroes, but I know this:  They cannot be allowed to succeed!',17498,0,0,5,'Xerestrasza say_epilogue_8');
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (4042901, 4042902, 4042903);
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, dataint, comments) VALUES
+(4042901, 0, 0, 0, 0, 2000005535, 'Xerestrasza first yell text'),
+(4042902, 0, 0, 0, 0, 2000005536, 'Xerestrasza second yell text'),
+(4042903, 0, 32, 1, 0, 0, 'Xerestrasza stop movement'),
+(4042903, 0, 0, 0, 0, 2000005537, 'Xerestrasza third yell text'),
+(4042903, 7, 0, 0, 0, 2000005538, 'Xerestrasza forth yell text'),
+(4042903, 18, 0, 0, 0, 2000005539, 'Xerestrasza fifth yell text'),
+(4042903, 28, 0, 0, 0, 2000005540, 'Xerestrasza sixth yell text'),
+(4042903, 38, 0, 0, 0, 2000005541, 'Xerestrasza seventh yell text'),
+(4042903, 47, 0, 0, 0, 2000005542, 'Xerestrasza eigth yell text'),
+(4042903, 54, 29, 2, 1, 0, 'Xerestrasza set quest giver flag');
+
+-- ---------------
+-- Obsidian sanctum
+-- ---------------
+DELETE FROM achievement_criteria_requirement WHERE type IN (11, 18) AND criteria_id IN (7326,7327);
+INSERT INTO achievement_criteria_requirement (criteria_id, type, value1, value2) VALUES
+(7326, 18, 0, 0),
+(7327, 18, 0, 0);
+-- creature link
+DELETE FROM creature_linking_template WHERE entry IN (30858,31219,30688,31218,30882,31204,30890,31214,31138);
+INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES
+(30858, 615, 30449, 4096, 0),
+(30688, 615, 30451, 4096, 0),
+(30882, 615, 30452, 4112, 0),
+(30890, 615, 30452, 4096, 0),
+(31138, 615, 30452, 4096, 0),
+(31219, 615, 28860, 4096, 0),
+(31218, 615, 28860, 4096, 0),
+(31204, 615, 28860, 4096, 0),
+(31214, 615, 28860, 4096, 0);
+DELETE FROM spell_script_target WHERE entry IN (58793);
+INSERT INTO spell_script_target (entry, type, targetEntry, inverseEffectMask) VALUES
+(58793, 1, 30882, 0),
+(58793, 1, 31204, 0);
+
+-- ---------------
+-- Ulduar
+-- ---------------
+-- Ignis
+DELETE FROM spell_script_target WHERE entry IN (62488,64503,62343,65109,62711,64475,62708,64474);
+INSERT INTO spell_script_target (entry, type, targetEntry, inverseEffectMask) VALUES
+(62488, 1, 33121, 0),
+(64503, 1, 33121, 0),
+(64503, 1, 33221, 0),
+(62343, 1, 33121, 0),
+(65109, 1, 33121, 0),
+(62711, 1, 33118, 0),
+(64475, 1, 33118, 0),
+(64474, 1, 33118, 0),
+(62708, 1, 33118, 0);
+UPDATE creature_template SET UnitFlags = UnitFlags|33554688 WHERE entry = 33121;
+DELETE FROM creature_linking_template WHERE entry IN (33121,33221);
+INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES
+(33121, 603, 33118, 1028, 0),
+(33221, 603, 33118, 4112, 0);
+DELETE FROM achievement_criteria_requirement WHERE criteria_id IN (10068,10069) AND type IN (11,18);
+INSERT INTO achievement_criteria_requirement (criteria_id, type, value1, value2) VALUES
+(10068,18,0,0),
+(10069,18,0,0);
+-- Add water auras for the 2 world triggers inside the pools
+DELETE FROM creature_addon WHERE guid IN (137512,137514);
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(137514, 0, 0, 1, 0, 0, 0, 64502),
+(137512, 0, 0, 1, 0, 0, 0, 64502);
+-- Auriaya
+DELETE FROM creature_linking_template WHERE entry IN (34014,34098,34035,34034);
+INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES
+(34014, 603, 33515, 1543, 0),
+(34098, 603, 33515, 4112, 0),
+(34034, 603, 33515, 4112, 0),
+(34035, 603, 33515, 4112, 0);
+DELETE FROM spell_script_target WHERE entry IN (64397);
+INSERT INTO spell_script_target (entry, type, targetEntry, inverseEffectMask) VALUES
+(64397, 1, 33515, 0);
+DELETE FROM achievement_criteria_requirement WHERE criteria_id IN (10400,10184) AND type IN (11,18);
+INSERT INTO achievement_criteria_requirement (criteria_id, type, value1, value2) VALUES
+(10400,18,0,0),
+(10184,18,0,0);
+DELETE FROM achievement_criteria_requirement WHERE criteria_id IN (10399,10243) AND type IN (11,18);
+INSERT INTO achievement_criteria_requirement (criteria_id, type, value1, value2) VALUES
+(10399,18,0,0),
+(10243,18,0,0);
+-- Vezax
+DELETE FROM creature_linking_template WHERE entry IN (33488,33524);
+INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES
+(33488, 603, 33271, 4112, 0),
+(33524, 603, 33271, 4112, 0);
+UPDATE creature_template SET MinLevel = 83, MaxLevel = 83, FactionAlliance = 16, FactionHorde = 16, MinLevelHealth = 1575785, MaxLevelHealth = 1575785 WHERE entry = 33524;
+-- XT002
+DELETE FROM spell_script_target WHERE entry IN (64799,62826);
+INSERT INTO spell_script_target (entry, type, targetEntry, inverseEffectMask) VALUES
+(64799, 1, 33293, 0),
+(62826, 1, 33337, 0);
+DELETE FROM creature_linking_template WHERE entry IN (33329,33343,33346,33344,34001,34004);
+INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES
+(33329, 603, 33293, 1044, 0),
+(33343, 603, 33293, 4096, 0),
+(33346, 603, 33293, 4096, 0),
+(33344, 603, 33293, 4096, 0),
+(34001, 603, 33293, 4112, 0),
+(34004, 603, 33293, 4112, 0);
+-- delete vehicle accesory and add manually
+DELETE FROM vehicle_accessory WHERE vehicle_entry = 33293;
+-- flag handled by vehicle seat
+UPDATE creature_template SET UnitFlags = UnitFlags&~33554432 WHERE entry = 33329;
+-- achievs
+DELETE FROM achievement_criteria_requirement WHERE criteria_id IN (10074,10075) AND type IN (11,18);
+INSERT INTO achievement_criteria_requirement (criteria_id, type, value1, value2) VALUES
+(10074,18,0,0),
+(10075,18,0,0);
+-- Razorscale
+DELETE FROM spell_script_target WHERE entry IN (62646,62669,63658,63657,63659,63524,62505);
+INSERT INTO spell_script_target (entry, type, targetEntry, inverseEffectMask) VALUES
+(62646, 1, 33186, 0),
+(62669, 1, 33282, 0),
+(63658, 1, 33233, 0),
+(63657, 1, 33233, 0),
+(63659, 1, 33233, 0),
+(63524, 1, 33233, 0),
+(62505, 1, 33186, 0);
+UPDATE creature_template SET InhabitType = InhabitType|4 WHERE entry = 33186;
+UPDATE creature SET MovementType = 0, spawndist = 0 WHERE id = 33186;
+-- movement for defenders
+UPDATE creature SET MovementType = 0, spawndist = 0 WHERE id = 33816;
+DELETE FROM creature_movement WHERE id IN (137593,137594,137595,137596,137597,137598);
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, orientation) VALUES
+(137593,1,560.773, -194.443, 391.517, 1000, 1435401, 4.77),
+(137594,1,606.451, -185.194, 391.517, 1000, 1435401, 4.77),
+(137595,1,548.469, -194.069, 391.517, 1000, 1435401, 4.77),
+(137596,1,623.340, -189.485, 391.490, 1000, 1435401, 4.77),
+(137597,1,577.101, -206.426, 391.517, 1000, 1435401, 4.77),
+(137598,1,637.168, -175.515, 391.180, 1000, 1435401, 4.77);
+-- achievs
+DELETE FROM achievement_criteria_requirement WHERE criteria_id IN (10062,10063) AND type IN (11,18);
+INSERT INTO achievement_criteria_requirement (criteria_id, type, value1, value2) VALUES
+(10062,18,0,0),
+(10063,18,0,0);
+-- despawn dwarfes
+DELETE FROM creature_linking_template WHERE entry IN (33453,33388,33846);
+INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES
+(33453, 603, 33186, 4096, 0),
+(33388, 603, 33186, 4096, 0),
+(33846, 603, 33186, 4096, 0);
+-- Flame Leviathan
+-- vehicles spell clicks
+DELETE FROM npc_spellclick_spells WHERE npc_entry IN (33060,33062,33109,33067,33167,34045);
+INSERT INTO npc_spellclick_spells (npc_entry, spell_id, quest_start, quest_start_active, quest_end, cast_flags,condition_id) VALUES
+(33060, 65031, 0, 0, 0, 1, 0),
+(33062, 65030, 0, 0, 0, 1, 0),
+(34045, 65030, 0, 0, 0, 1, 0),
+(33109, 62309, 0, 0, 0, 1, 0),
+(33067, 65031, 0, 0, 0, 1, 0),
+(33167, 46598, 0, 0, 0, 1, 0);
+-- vehicle spells
+DELETE FROM creature_template_spells WHERE entry IN (33167,33109,33062,33060,33067);
+INSERT INTO creature_template_spells (entry, spell1, spell2, spell3,  spell4, spell5, spell6, spell7, spell8) VALUES
+(33167, 62634, 64979, 62479, 62471, 0, 64414, 0, 0),
+(33109, 62306, 62490, 62308, 0, 0, 62324, 0, 0),
+(33062, 62974, 62286, 62299, 64660, 0, 0, 0, 0),
+(33060, 62345, 62522, 62346, 0, 0, 0, 0, 0),
+(33067, 62358, 62359, 64677, 0, 0, 0, 0, 0);
+-- script targets
+DELETE FROM spell_script_target WHERE entry IN (64414,62496);
+INSERT INTO spell_script_target (entry, type, targetEntry, inverseEffectMask) VALUES
+(64414, 1, 33109, 0),
+(62496, 1, 33167, 0);
+-- creature link
+DELETE FROM creature_linking_template WHERE entry IN (33139);
+INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES
+(33139, 603, 33113, 1, 0);
+-- vehicles
+DELETE FROM vehicle_accessory WHERE vehicle_entry IN (33364,33369,33108,33366,34161);
+INSERT INTO vehicle_accessory (vehicle_entry, seat, accessory_entry, comment) VALUES
+(33364, 1, 33365, 'Thorim\'s Hammer Targetting Reticle'),
+(33369, 1, 33370, 'Mimiron\'s Inferno Targetting Reticle'),
+(33108, 1, 33212, 'Hodir\'s Fury Targetting Reticle'),
+(33366, 1, 33367, 'Freya\'s Ward Targetting Reticle'),
+(34161, 1, 33216, 'Mechanostriker 54-A');
+-- Leviathan outro
+UPDATE creature_template SET InhabitType = InhabitType|4 WHERE entry IN (34161,34120);
+-- movement may be more dynamic
+DELETE FROM creature_movement_template WHERE entry IN (34119);
+INSERT INTO creature_movement_template (entry, point, position_x, position_y, position_z, waittime, script_id, orientation) VALUES
+(34119,1,233.9606, -123.4371, 409.6924, 1000, 3411901, 1.02);
+-- texts
+DELETE FROM db_script_string WHERE entry IN (2000000332,2000005560,2000005561,2000005562,2000005563,2000005564,2000005565,2000005566,2000005567,2000005568,2000005569);
+INSERT INTO db_script_string (entry,content_default,sound,type,language,emote,comment) VALUES
+(2000000332,'What a battle! Did you see that, Rhydian?!',0,1,0,0,'Brann Bronzebeard - say epilogue 1'),
+(2000005560,'Our friends fought well, Brann, but we\'re not done yet.',0,1,0,0,'Archmage Rhydian - say epilogue 2'),
+(2000005561,'Perhaps so, but it\'s only a matter of time until we break back into Ulduar. Any luck finding a way to teleport inside?',0,1,0,0,'Brann Bronzebeard - say epilogue 3'),
+(2000005562,'None at all. I suspect it has something to do with that giant mechanical construct that our scouts spotted in front of the gate.',0,1,0,0,'Archmage Rhydian - say epilogue 4'),
+(2000005563,'Oi. So we\'ll have to contend with that thing after all then?',0,1,0,0,'Brann Bronzebeard - say epilogue 5'),
+(2000005564,'What about the plated proto-drake and the fire giant that were spotted nearby? Think your mages can handle those?',0,1,0,0,'Brann Bronzebeard - say epilogue 6'),
+(2000005565,'The Kirin Tor can\'t possibly spare any additional resources to take on anything that size. We may not have to though.',0,1,0,0,'Archmage Rhydian - say epilogue 7'),
+(2000005566,'We can sneak past them. As long as we can take down that construct in front of the gate, we should be able to get inside.',0,1,0,0,'Archmage Rhydian - say epilogue 8'),
+(2000005567,'Sneak?! What do you think we are, marmots?',0,1,0,0,'Brann Bronzebeard - say epilogue 9'),
+(2000005568,'We\'re hunting an old god, Brann.',0,1,0,0,'Archmage Rhydian - say epilogue 10'),
+(2000005569,'Fine. If our allies are going to be the ones getting their hands dirty, we\'ll leave it to them to decide how to proceed.',0,1,0,0,'Brann Bronzebeard - say epilogue 11');
+-- epilogue script
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (3411901);
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, x, y, z, o, comments) VALUES
+(3411901, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Pause movement'),
+(3411901, 2, 0, 0, 0, 0, 0, 0, 2000000332, 0, 0, 0, 0, 'Say epilogue 1'),
+(3411901, 11, 0, 0, 0, 33696, 10, 0, 2000005560, 0, 0, 0, 0, 'Say epilogue 2'),
+(3411901, 19, 0, 0, 0, 0, 0, 0, 2000005561, 0, 0, 0, 0, 'Say epilogue 3'),
+(3411901, 27, 0, 0, 0, 33696, 10, 0, 2000005562, 0, 0, 0, 0, 'Say epilogue 4'),
+(3411901, 36, 0, 0, 0, 0, 0, 0, 2000005563, 0, 0, 0, 0, 'Say epilogue 5'),
+(3411901, 44, 0, 0, 0, 0, 0, 0, 2000005564, 0, 0, 0, 0, 'Say epilogue 6'),
+(3411901, 53, 0, 0, 0, 33696, 10, 0, 2000005565, 0, 0, 0, 0, 'Say epilogue 7'),
+(3411901, 61, 0, 0, 0, 33696, 10, 0, 2000005566, 0, 0, 0, 0, 'Say epilogue 8'),
+(3411901, 70, 0, 0, 0, 0, 0, 0, 2000005567, 0, 0, 0, 0, 'Say epilogue 9'),
+(3411901, 78, 0, 0, 0, 33696, 10, 0, 2000005568, 0, 0, 0, 0, 'Say epilogue 10'),
+(3411901, 86, 0, 0, 0, 0, 0, 0, 2000005569, 0, 0, 0, 0, 'Say epilogue 11');
+-- spawn other creatures (possible wp required)
+DELETE FROM dbscripts_on_creature_death WHERE id = 33113;
+INSERT INTO dbscripts_on_creature_death(id, command, datalong, datalong2, x, y, z, o, comments) VALUES
+(33113, 10, 34145, 0, 162.2077, -43.57856, 409.887, 6.254, 'spawn Expedition Engineer'),
+(33113, 10, 34145, 0, 166.7473, -43.44396, 409.887, 6.213, 'spawn Expedition Engineer'),
+(33113, 10, 34145, 0, 172.0512, -43.68175, 410.1541, 6.196, 'spawn Expedition Engineer'),
+(33113, 10, 34145, 0, 162.8185, -28.78179, 409.887, 0.079, 'spawn Expedition Engineer'),
+(33113, 10, 34145, 0, 167.3567, -28.64811, 409.887, 0.069, 'spawn Expedition Engineer'),
+(33113, 10, 34145, 0, 172.6605, -28.88596, 409.887, 0.147, 'spawn Expedition Engineer'),
+(33113, 10, 34144, 0, 162.7033, -49.80371, 409.887, 6.263, 'spawn Expedition Mercenary'),
+(33113, 10, 34144, 0, 166.494, -49.84945, 409.887, 6.268, 'spawn Expedition Mercenary'),
+(33113, 10, 34144, 0, 171.7734, -50.05095, 409.887, 0.000, 'spawn Expedition Mercenary'),
+(33113, 10, 34144, 0, 163.4216, -36.55366, 409.887, 0.174, 'spawn Expedition Mercenary'),
+(33113, 10, 34144, 0, 167.2133, -36.5988, 409.887, 0.174, 'spawn Expedition Mercenary'),
+(33113, 10, 34144, 0, 172.491, -36.80019, 409.887, 0.225, 'spawn Expedition Mercenary');
+-- Pre Leviathan event
+UPDATE creature SET spawntimesecs = 604800 WHERE id IN (34159,33571,33264,33686);
+UPDATE creature SET spawntimesecs = 7200 WHERE id IN (33236);
+-- storm beacons events (there are 19 of them)
+-- this part isn't reflected in any sniff, but it's probably npc 33571 which handles the tower spawns, so despawning them on tower destroyed should be just fine
+DELETE FROM dbscripts_on_event WHERE id IN (21257,21260,21245,21283,21277,21279,21298,21278,21287,21276,21275,21274
+,21282,21272,21280,21273,21281,21291,21288);
+INSERT INTO dbscripts_on_event (id, command, buddy_entry, search_radius, data_flags, comments) VALUES
+(21257, 18, 33571, 50, 2, 'despawn Ulduar Gauntlet Generator on tower destroyed'),
+(21260, 18, 33571, 50, 2, 'despawn Ulduar Gauntlet Generator on tower destroyed'),
+(21245, 18, 33571, 50, 2, 'despawn Ulduar Gauntlet Generator on tower destroyed'),
+(21283, 18, 33571, 50, 2, 'despawn Ulduar Gauntlet Generator on tower destroyed'),
+(21277, 18, 33571, 50, 2, 'despawn Ulduar Gauntlet Generator on tower destroyed'),
+(21279, 18, 33571, 50, 2, 'despawn Ulduar Gauntlet Generator on tower destroyed'),
+(21298, 18, 33571, 50, 2, 'despawn Ulduar Gauntlet Generator on tower destroyed'),
+(21278, 18, 33571, 50, 2, 'despawn Ulduar Gauntlet Generator on tower destroyed'),
+(21287, 18, 33571, 50, 2, 'despawn Ulduar Gauntlet Generator on tower destroyed'),
+(21276, 18, 33571, 50, 2, 'despawn Ulduar Gauntlet Generator on tower destroyed'),
+(21275, 18, 33571, 50, 2, 'despawn Ulduar Gauntlet Generator on tower destroyed'),
+(21274, 18, 33571, 50, 2, 'despawn Ulduar Gauntlet Generator on tower destroyed'),
+(21282, 18, 33571, 50, 2, 'despawn Ulduar Gauntlet Generator on tower destroyed'),
+(21272, 18, 33571, 50, 2, 'despawn Ulduar Gauntlet Generator on tower destroyed'),
+(21280, 18, 33571, 50, 2, 'despawn Ulduar Gauntlet Generator on tower destroyed'),
+(21273, 18, 33571, 50, 2, 'despawn Ulduar Gauntlet Generator on tower destroyed'),
+(21281, 18, 33571, 50, 2, 'despawn Ulduar Gauntlet Generator on tower destroyed'),
+(21291, 18, 33571, 50, 2, 'despawn Ulduar Gauntlet Generator on tower destroyed'),
+(21288, 18, 33571, 50, 2, 'despawn Ulduar Gauntlet Generator on tower destroyed');
+-- main tower events
+-- gauntlet generator despawn is handled by SD2 because there are many of them for each tower
+DELETE FROM dbscripts_on_event WHERE id IN (21030,21033,21032,21031);
+INSERT INTO dbscripts_on_event (id, command, buddy_entry, search_radius, data_flags, comments) VALUES
+(21030, 13, 194663, 100, 2, 'use Freya\'s Storm Generator'), -- tower of life
+(21033, 13, 194664, 100, 2, 'use Mimiron\'s Storm Generator'), -- tower of flames
+(21032, 13, 194665, 100, 2, 'use Hodir\'s Storm Generator'), -- tower of frost
+(21031, 13, 194666, 100, 2, 'use Thorim\'s Weather Generator'); -- tower of storms
+-- Link Gauntlet generators to self on a specific area
+-- this will trigger all the Gauntlet generators for a big tower in the same time
+DELETE FROM creature_linking_template WHERE entry IN (34159,33571,33264);
+INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES
+(34159, 603, 33236, 1, 60),
+(33264, 603, 33236, 1, 60),
+(33571, 603, 33236, 1, 40);
+-- Event start dialogue
+DELETE FROM creature_movement_template WHERE entry IN (33701,33579);
+INSERT INTO creature_movement_template (entry, point, position_x, position_y, position_z, waittime, script_id, orientation) VALUES
+-- Dellorah
+(33701,1,-771.144, -147.649, 430.055, 4000, 0, 0.069),
+(33701,2,-771.144, -147.649, 430.055, 4000, 3370102, 0.069),
+(33701,3,-758.898, -77.777, 429.955, 1000, 3370103, 0.80),
+-- Brann
+(33579,1,-716.568, -54.8669, 429.924,17000,3357901,4.01),
+(33579,2,-674.1759, -45.76997, 426.134,1000,3357902,0.068);
+-- texts
+DELETE FROM db_script_string WHERE entry IN (2000005570,2000005571,2000005572,2000005573,2000005574,2000005575,2000005576);
+INSERT INTO db_script_string (entry,content_default,sound,type,language,emote,comment) VALUES
+(2000005570,'What... What did you just do, $n?! Brann! Braaaaannn!',0,1,0,0,'High Explorer Dellorah - say towers active 1'),
+(2000005571,'Brann! $n just activated the orbital defense system! If we don\'t get out of here soon, we\'re going to be toast!',0,1,0,0,'High Explorer Dellorah - say towers active 2'),
+(2000005572,'Pentarus, you heard the man. Have your mages release the shield and let these brave souls through!',0,1,0,0,'Brann Bronzebeard - say event start 1'),
+(2000005573,'Of course, Brann: We will have the shield down momentarily.',0,1,0,0,'Archmage Rhydian - say event start 2'),
+(2000005574,'Okay! Let\'s move out. Get into your machines; I\'ll speak to you from here via the radio.',15807,0,0,0,'Bronzebeard Radio - say event start 3'),
+(2000005575,'Mages of the Kirin Tor, on Brann\'s Command, release the shield! Defend this platform and our allies with your lives! For Dalaran!',0,1,0,0,'Archmage Rhydian - say event start 4'),
+(2000005576,'Our allies are ready. Bring down the shield and make way!',0,1,0,0,'Brann Bronzebeard - say event start 5'); 
+-- epilogue script
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (3370102,3370103,3357901,3357902);
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, comments) VALUES
+-- Dellorah
+(3370102, 0, 25, 1, 0, 0, 0, 0, 0, 'Set run on'),
+(3370102, 0, 0, 0, 0, 0, 0, 0, 2000005570, 'Say towers active 1'), -- ToDo: find a proper way to set the player as target
+(3370103, 0, 0, 0, 0, 0, 0, 0, 2000005571, 'Say towers active 2'),
+(3370103, 0, 32, 1, 0, 0, 0, 0, 0, 'Pause movement'),
+-- Brann
+(3357901, 0, 25, 1, 0, 0, 0, 0, 0, 'Set run on'),
+(3357901, 0, 0, 0, 0, 0, 0, 0, 2000005572, 'Say event start 1'),
+(3357901, 0, 29, 1, 2, 0, 0, 0, 0, 'Remove NPC flag'),
+(3357901, 9, 0, 0, 0, 33624, 50, 0, 2000005573, 'Say event start 2'),
+-- ToDo: start movement for the mages, the stone shapers, engineers and demolitionists
+(3357901, 17, 0, 0, 0, 0, 0, 0, 2000005574, 'Say event start 3'),
+(3357901, 39, 0, 0, 0, 33624, 50, 0, 2000005575, 'Say event start 4'),
+(3357901, 50, 0, 0, 0, 0, 0, 0, 2000005576, 'Say event start 5'),
+(3357902, 0, 32, 1, 0, 0, 0, 0, 0, 'Pause movement');
+-- ToDo: Mages (npc 33662) should cast spell 48310 on Ulduar shield bunnies (npc 33779). To be done by individual movement of the first 2 mages
+-- vehicle conditions
+-- will make the spell click available only when gauntlet event is in progress
+DELETE FROM conditions WHERE condition_entry = 920;
+INSERT INTO conditions (condition_entry, type, value1, value2) VALUES
+(920, 18, 33113, 0);
+UPDATE npc_spellclick_spells SET condition_id = 920 WHERE npc_entry IN (33060,33062,33109,33067,33167,34045);
+-- achievs
+DELETE FROM achievement_criteria_requirement WHERE criteria_id IN (10056,10061,10057,10059,10058,10060,10218,10219,10054,10055) AND type IN (11,18);
+INSERT INTO achievement_criteria_requirement (criteria_id, type, value1, value2) VALUES
+(10056,18,0,0),
+(10061,18,0,0),
+(10057,18,0,0),
+(10059,18,0,0),
+(10058,18,0,0),
+(10060,18,0,0),
+(10218,18,0,0),
+(10219,18,0,0),
+(10054,18,0,0),
+(10055,18,0,0);
+-- repair station faction
+UPDATE gameobject_template SET faction = 35 WHERE entry = 194262;
+-- leviathan creature link: despawn reinforcements on evade/death
+DELETE FROM creature_linking_template WHERE entry IN (33060,33062,33109,33626,33627,33189);
+INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES
+(33060, 603, 33113, 4112, 500),
+(33062, 603, 33113, 4112, 500),
+(33109, 603, 33113, 4112, 500),
+(33626, 603, 33113, 4112, 500),
+(33627, 603, 33113, 4112, 500),
+(33189, 603, 33113, 4112, 500);
+-- hard mode linking
+DELETE FROM creature_linking_template WHERE entry IN (33364,33369,33108,33366);
+INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES
+(33364, 603, 33113, 4112, 0),
+(33369, 603, 33113, 4112, 0),
+(33108, 603, 33113, 4112, 0),
+(33366, 603, 33113, 4112, 0);
+-- script targets
+DELETE FROM spell_script_target WHERE entry IN (62911,62909,62906,62533);
+INSERT INTO spell_script_target (entry, type, targetEntry, inverseEffectMask) VALUES
+(62911, 1, 33364, 0),
+(62909, 1, 33369, 0),
+(62906, 1, 33366, 0),
+(62533, 1, 33108, 0);
+-- movement for mimiron's inferno
+UPDATE creature_template SET MovementType = 2 WHERE entry = 33369;
+DELETE FROM creature_movement_template WHERE entry IN (33369);
+INSERT INTO creature_movement_template (entry, point, position_x, position_y, position_z, waittime) VALUES
+(33369, 1, 256.1948, -136.8192, 410.8105, 1000),
+(33369, 2, 158.276, -72.95202, 410.9286, 1000),
+(33369, 3, 209.865, 70.25588, 410.9286, 1000),
+(33369, 4, 382.881, -71.500, 409.8030, 1000);
+-- Kologarn
+-- fix Kolo bridge (handled by SD2)
+UPDATE gameobject SET state = 0 WHERE id = 194232;
+-- arms are summoned by script
+DELETE FROM vehicle_accessory WHERE vehicle_entry = 32930;
+-- arms should aggro on aggro
+DELETE FROM creature_linking_template WHERE entry IN (32933,32934,33768);
+INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES
+(32933, 603, 32930, 3, 0),
+(32934, 603, 32930, 3, 0),
+(33768, 603, 32930, 4096, 0);
+UPDATE creature_template SET UnitFlags = UnitFlags&~33554432 WHERE entry = 32930;
+-- script targets
+DELETE FROM spell_script_target WHERE entry IN (63628,63629,63979);
+INSERT INTO spell_script_target (entry, type, targetEntry, inverseEffectMask) VALUES
+(63628, 1, 32933, 0),
+(63628, 1, 32934, 0),
+(63629, 1, 32930, 0),
+(63979, 1, 32930, 0);
+-- achievs
+DELETE FROM achievement_criteria_requirement WHERE criteria_id IN (10284,10722,10286,10099,10290,10133,10285,10095) AND type IN (11,18);
+INSERT INTO achievement_criteria_requirement (criteria_id, type, value1, value2) VALUES
+(10284,18,0,0),
+(10722,18,0,0),
+(10286,18,0,0),
+(10099,18,0,0),
+(10290,18,0,0),
+(10133,18,0,0),
+(10285,18,0,0),
+(10095,18,0,0);
+-- Archivum
+-- gossips
+UPDATE creature_template SET GossipMenuId = 10393 WHERE entry IN (33957,33956);
+UPDATE creature_template SET GossipMenuId = 10387 WHERE entry = 33235;
+DELETE FROM gossip_menu WHERE entry IN (10368,10393,10387);
+INSERT INTO gossip_menu (entry, text_id, script_id, condition_id) VALUES
+(10368, 14383, 0, 0),
+(10393, 14428, 0, 0),
+(10387, 14420, 0, 0);
+-- door
+UPDATE gameobject SET state = 1 WHERE id = 194556;
+-- movement
+UPDATE creature_template SET MovementType = 2 WHERE entry IN (33957,33956,33235);
+DELETE FROM creature_movement_template WHERE entry IN (33957,33956,33235);
+INSERT INTO creature_movement_template (entry, point, position_x, position_y, position_z, waittime, script_id, orientation) VALUES
+-- Brann
+(33235,1, 1554.274, 142.1644, 427.273, 1000, 3323501, 3.61),
+(33235,2, 1497.846, 119.2926, 427.3508, 5000, 3323502, 3.20),
+(33235,3, 1491.790, 119.8236, 427.3559, 0, 0, 3.20),
+(33235,4, 1481.897, 119.5791, 423.9673, 0, 0, 3.16),
+(33235,5, 1439.046, 118.8712, 423.6409, 1000, 3323505, 3.12),
+-- Doren
+(33956,1, 1556.469, 143.5023, 427.2918, 1000, 3323501, 4.04),
+(33956,2, 1507.894, 122.7615, 427.3373, 5000, 0, 3.20),
+(33956,3, 1491.790, 119.8236, 427.3559, 0, 0, 3.20),
+(33956,4, 1481.897, 119.5791, 423.9673, 0, 0, 3.16),
+(33956,5, 1441.419, 121.1335, 423.6409, 1000, 3323505, 3.18),
+-- Doren (h)
+(33957,1, 1556.469, 143.5023, 427.2918, 1000, 3323501, 4.04),
+(33957,2, 1507.894, 122.7615, 427.3373, 5000, 0, 3.20),
+(33957,3, 1491.790, 119.8236, 427.3559, 0, 0, 3.20),
+(33957,4, 1481.897, 119.5791, 423.9673, 0, 0, 3.16),
+(33957,5, 1441.419, 121.1335, 423.6409, 1000, 3323505, 3.18);
+DELETE FROM db_script_string WHERE entry IN (2000005577);
+INSERT INTO db_script_string (entry,content_default,sound,type,language,emote,comment) VALUES
+(2000005577,'You\'ve defeated the Iron Council and unlocked the Archivum! Well done, lads!',15827,1,0,0,'Brann archivum - say spawned');
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (3323505,3323501,3323502);
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, comments) VALUES
+(3323501, 0, 25, 1, 0, 0, 0, 0, 0, 'Set run on'),
+(3323502, 0, 0, 0, 0, 0, 0, 0, 2000005577, 'yell text'),
+(3323505, 0, 32, 1, 0, 0, 0, 0, 0, 'Pause movement'),
+(3323505, 0, 29, 1, 1, 0, 0, 0, 0, 'Set gossip flag');
+-- Fix quest relationship (ytdb)
+UPDATE quest_template SET PrevQuestId = 13604 WHERE entry = 13607;
+UPDATE quest_template SET PrevQuestId = 13816 WHERE entry = 13817;
+UPDATE quest_template SET NextQuestId = 13629 WHERE entry = 13622;
+UPDATE quest_template SET PrevQuestId = 13622 WHERE entry = 13629;
+UPDATE quest_template SET PrevQuestId = 13607, NextQuestId = 13614, ExclusiveGroup = -13609 WHERE entry = 13606;
+UPDATE quest_template SET PrevQuestId = 13607, NextQuestId = 13614, ExclusiveGroup = -13609 WHERE entry = 13609;
+UPDATE quest_template SET PrevQuestId = 13607, NextQuestId = 13614, ExclusiveGroup = -13609 WHERE entry = 13610;
+UPDATE quest_template SET PrevQuestId = 13607, NextQuestId = 13614, ExclusiveGroup = -13609 WHERE entry = 13611;
+UPDATE quest_template SET PrevQuestId = 13816, NextQuestId = 13818, ExclusiveGroup = -13821 WHERE entry = 13821;
+UPDATE quest_template SET PrevQuestId = 13816, NextQuestId = 13818, ExclusiveGroup = -13821 WHERE entry = 13822;
+UPDATE quest_template SET PrevQuestId = 13816, NextQuestId = 13818, ExclusiveGroup = -13821 WHERE entry = 13823;
+UPDATE quest_template SET PrevQuestId = 13816, NextQuestId = 13818, ExclusiveGroup = -13821 WHERE entry = 13824;
+-- Misc trash
+UPDATE creature_template SET InhabitType = InhabitType|4 WHERE entry IN (33052,34203);
+DELETE FROM spell_script_target WHERE entry IN (63528);
+INSERT INTO spell_script_target (entry, type, targetEntry, inverseEffectMask) VALUES
+(63528, 1, 33699, 0),
+(63528, 1, 33722, 0);
+-- link keepers to their buddies
+DELETE FROM creature_linking_template WHERE entry IN (33699);
+INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES
+(33699, 603, 33722, 15, 50);
+-- Algalon
+DELETE FROM spell_script_target WHERE entry IN (64996,62304,64597);
+INSERT INTO spell_script_target (entry, type, targetEntry, inverseEffectMask) VALUES
+(64996, 1, 34246, 0),
+(62304, 1, 33104, 0),
+(64597, 1, 33104, 0);
+-- Spawn Brann on GO use
+DELETE FROM dbscripts_on_go_template_use WHERE id IN (194628,194752);
+INSERT INTO dbscripts_on_go_template_use(id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, x, y, z, o, comments) VALUES
+(194628, 0, 10, 34064, 0, 0, 0, 0, 1677.272, -162.437, 427.3326, 3.23, 'spawn Brann Bronzebeard at the celestial access'),
+(194628, 1, 20, 2, 0, 34064, 60, 0, 0, 0, 0, 0, 'change Brann Bronzebeard movement to waypoint'),
+(194628, 1, 13, 0, 0, 194767, 60, 1, 0, 0, 0, 0, 'use Celestial door 1'),
+(194628, 1, 13, 0, 0, 194911, 60, 1, 0, 0, 0, 0, 'use Celestial door 2'),
+(194752, 0, 10, 34064, 0, 0, 0, 0, 1677.272, -162.437, 427.3326, 3.23, 'spawn Brann Bronzebeard at the celestial access'),
+(194752, 1, 20, 2, 0, 34064, 60, 0, 0, 0, 0, 0, 'change Brann Bronzebeard movement to waypoint'),
+(194752, 1, 13, 0, 0, 194767, 60, 1, 0, 0, 0, 0, 'use Celestial door 1'),
+(194752, 1, 13, 0, 0, 194911, 60, 1, 0, 0, 0, 0, 'use Celestial door 2');
+-- Brann movement and intro to Algalon
+DELETE FROM db_script_string WHERE entry IN (2000005578,2000005579);
+INSERT INTO db_script_string (entry,content_default,sound,type,language,emote,comment) VALUES
+(2000005578,'We did it, lads! We got here before Algalon\'s arrival. Maybe we can rig the systems to interfere with his analysis--',15824,1,0,0,'Brann algalon - say before Algalon'),
+(2000005579,'I\'ll head back to the Archivum and see if I can jam his signal. I might be able to buy us some time while you take care of him.',15825,1,0,0,'Brann algalon - say after Algalon');
+-- movement for Algalon intro
+DELETE FROM creature_movement_template WHERE entry IN (34064);
+INSERT INTO creature_movement_template (entry, point, position_x, position_y, position_z, waittime, script_id, orientation) VALUES
+(34064,1, 1677.272, -162.437, 427.3326, 1000, 3406401, 3.23),
+(34064,2, 1642.482, -164.0812, 427.2602, 0, 0, 0),
+(34064,3, 1635.0, -169.5145, 427.2523, 1000, 3406403, 4.72),
+(34064,4, 1632.814, -173.9334, 427.2621, 0, 0, 0),
+(34064,5, 1632.539, -194.752, 426.0042, 0, 0, 0),
+(34064,6, 1631.339, -226.7903, 418.3318, 0, 0, 0),
+(34064,7, 1630.494, -267.2921, 417.3211, 1000, 3406407, 4.66),
+(34064,8, 1630.958, -228.224, 418.112, 0, 0, 0),
+(34064,9, 1632.085, -201.5839, 423.375, 0, 0, 0),
+(34064,10,1630.66, -172.1115, 427.248, 10000, 0, 0);
+-- handle movement and spawn Algalon
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (3406401,3406403,3406407);
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, x, y, z, o, comments) VALUES
+(3406401, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Set run on'),
+(3406403, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Set run off'),
+(3406407, 0, 0, 0, 0, 0, 0, 0, 2000005578, 0, 0, 0, 0, 'yell text'),
+(3406407, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Pause movement'),
+(3406407, 8, 10, 32871, 0, 0, 0, 8, 0, 1632.528, -304.9462, 451.2764, 1.53, 'spawn Algalon'),
+(3406407, 36, 0, 0, 0, 0, 0, 0, 2000005579, 0, 0, 0, 0, 'yell text'),
+(3406407, 36, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Resume movement'),
+(3406407, 36, 18, 35000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Despawn self');
+-- fix creature stats
+UPDATE creature_template SET MinLevel = 83, MaxLevel = 83, MinLevelHealth = 13945, MaxLevelHealth = 13945, FactionAlliance = 190, FactionHorde = 190, UnitFlags = UnitFlags|33554432 WHERE entry = 34246;
+UPDATE creature_template SET FactionAlliance = 190, FactionHorde = 190 WHERE entry = 32871;
+UPDATE creature_template SET MinLevel = 80, MaxLevel = 80, MinLevelHealth = 75600, MaxLevelHealth = 75600, UnitFlags = UnitFlags|33536 WHERE entry IN (33235,34064,33956,33957);
+UPDATE creature_template SET MinLevel = 74, MaxLevel = 74, MinLevelHealth = 10282, MaxLevelHealth = 10282, FactionAlliance = 14, FactionHorde = 14, UnitFlags = UnitFlags|33554432 WHERE entry IN (33104,33105);
+UPDATE creature_template SET MinLevel = 81, MaxLevel = 81, MinLevelHealth = 45616, MaxLevelHealth = 45616, FactionAlliance = 14, FactionHorde = 14, UnitFlags = UnitFlags|32768 WHERE entry = 34097;
+UPDATE creature_template SET MinLevel = 81, MaxLevel = 81, MinLevelHealth = 260660, MaxLevelHealth = 260660, FactionAlliance = 14, FactionHorde = 14, UnitFlags = UnitFlags|33587200 WHERE entry = 33052;
+UPDATE creature_template SET MinLevel = 81, MaxLevel = 81, MinLevelHealth = 19550, MaxLevelHealth = 19550, FactionAlliance = 14, FactionHorde = 14 WHERE entry = 33089;
+UPDATE creature_template SET MinLevel = 80, MaxLevel = 80, MinLevelHealth = 88200, MaxLevelHealth = 88200, FactionAlliance = 14, FactionHorde = 14 WHERE entry = 32955;
+UPDATE creature_template SET RegenerateStats = 0 WHERE entry = 32955;
+UPDATE creature_template SET MinLevel = 80, MaxLevel = 80, MinLevelHealth = 12600, MaxLevelHealth = 12600, FactionAlliance = 14, FactionHorde = 14, UnitFlags = UnitFlags|33554432 WHERE entry IN (34099,34100);
+-- guesswork
+UPDATE creature_template SET MinLevel = 81, MaxLevel = 81, FactionAlliance = 14, FactionHorde = 14, UnitFlags = UnitFlags|33554432 WHERE entry = 32953;
+-- fix GO phasemasks
+UPDATE gameobject SET phaseMask = phaseMask|16 WHERE id IN (194148,194715,194910);
+-- Achievs
+DELETE FROM achievement_criteria_requirement WHERE criteria_id IN (10568,10570,10567,10569) AND type IN (12,18);
+INSERT INTO achievement_criteria_requirement (criteria_id, type, value1, value2) VALUES
+(10568,18,0,0),
+(10570,18,0,0),
+(10568,12,0,0),
+(10570,12,1,0),
+(10567,12,0,0),
+(10569,12,1,0);
+-- Hodir
+-- Chests are spawned
+UPDATE gameobject SET spawntimesecs = 604800 WHERE id IN (194307,194308);
+-- script targets
+DELETE FROM spell_script_target WHERE entry IN (64543,62809);
+INSERT INTO spell_script_target (entry, type, targetEntry, inverseEffectMask) VALUES
+(64543, 1, 32938, 0),
+(64543, 1, 32926, 0),
+(62809, 1, 32950, 0),
+(62809, 1, 32948, 0),
+(62809, 1, 32946, 0),
+(62809, 1, 32941, 0),
+(62809, 1, 33333, 0),
+(62809, 1, 33332, 0),
+(62809, 1, 33331, 0),
+(62809, 1, 33330, 0),
+(62809, 1, 32901, 0),
+(62809, 1, 33325, 0),
+(62809, 1, 32900, 0),
+(62809, 1, 33328, 0),
+(62809, 1, 32893, 0),
+(62809, 1, 33327, 0),
+(62809, 1, 32897, 0),
+(62809, 1, 33326, 0);
+UPDATE gameobject_template SET faction = 16 WHERE entry = 194173;
+-- shatter chest visual
+DELETE FROM spell_target_position WHERE id = 62501;
+INSERT INTO spell_target_position (id, target_map, target_position_x, target_position_y, target_position_z,  target_orientation) VALUES
+(62501, 603, 2036.17, -201.843, 432.687, 3.14159);
+-- flash freeze visual
+DELETE FROM dbscripts_on_event WHERE id = 20896;
+INSERT INTO dbscripts_on_event (id, command, datalong, buddy_entry, search_radius, data_flags, comments) VALUES
+(20896, 15, 62148, 30298, 45, 4, 'Invisible Stalker - Cast Flash Freeze visual');
+-- achievs
+DELETE FROM achievement_criteria_requirement WHERE criteria_id IN (10452,10458,10258,10260,10259,10261) AND type IN (12,18);
+INSERT INTO achievement_criteria_requirement (criteria_id, type, value1, value2) VALUES
+(10452,18,0,0),
+(10458,18,0,0),
+(10452,12,0,0),
+(10458,12,1,0),
+(10258,18,0,0),
+(10260,18,0,0),
+(10258,12,0,0),
+(10260,12,1,0),
+(10259,18,0,0),
+(10261,18,0,0),
+(10259,12,0,0),
+(10261,12,1,0);
+-- missing accessories
+DELETE FROM vehicle_accessory WHERE vehicle_entry IN (34146,34150,34151);
+INSERT INTO vehicle_accessory (vehicle_entry, seat, accessory_entry, comment) VALUES
+(34146, 0, 34137, 'Winter Jormungar'),
+(34146, 1, 34137, 'Winter Jormungar'),
+(34146, 2, 34137, 'Winter Jormungar'),
+(34146, 3, 34137, 'Winter Jormungar'),
+(34150, 0, 34137, 'Winter Jormungar'),
+(34150, 1, 34137, 'Winter Jormungar'),
+(34150, 2, 34137, 'Winter Jormungar'),
+(34150, 3, 34137, 'Winter Jormungar'),
+(34150, 4, 34137, 'Winter Jormungar'),
+(34150, 5, 34137, 'Winter Jormungar'),
+(34151, 0, 34137, 'Winter Jormungar'),
+(34151, 1, 34137, 'Winter Jormungar'),
+(34151, 2, 34137, 'Winter Jormungar'),
+(34151, 3, 34137, 'Winter Jormungar'),
+(34151, 4, 34137, 'Winter Jormungar'),
+(34151, 5, 34137, 'Winter Jormungar'),
+(34151, 6, 34137, 'Winter Jormungar'),
+(34151, 7, 34137, 'Winter Jormungar');
+-- Thorim
+DELETE FROM creature_linking_template WHERE entry IN (32886,32885,32883,32872,32873,32882,33196,32874,33110,32875,33125,32957,32876,32877,32878,32904);
+INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES
+(32885, 603, 32908, 3, 0),
+(32883, 603, 32907, 3, 0),
+(32886, 603, 32865, 4, 0),
+(32882, 603, 32865, 4, 0),
+(32872, 603, 32865, 4, 0),
+(32873, 603, 32865, 4, 0),
+(32874, 603, 32865, 4, 0),
+(33110, 603, 32865, 4, 0),
+(32875, 603, 32865, 4, 0),
+(32876, 603, 32865, 4096, 0),
+(32877, 603, 32865, 4096, 0),
+(32878, 603, 32865, 4096, 0),
+(32904, 603, 32865, 4096, 0),
+(33125, 603, 32865, 4096, 0),
+(32957, 603, 32865, 4096, 0),
+(33196, 603, 32865, 4096, 0);
+DELETE FROM spell_script_target WHERE entry IN (64098,62278,62976,62565,64767,63238,62016,62577,62603,62466,62560,62942,61934);
+INSERT INTO spell_script_target (entry, type, targetEntry, inverseEffectMask) VALUES
+(64098, 1, 32865, 0),
+(62278, 1, 32865, 0),
+(62976, 1, 33378, 0),
+(62565, 1, 32865, 0),
+(64767, 1, 33196, 0),
+(63238, 1, 33378, 0),
+(62016, 1, 33378, 0),
+(62577, 1, 32892, 0),
+-- (62466, 1, 32780, 0), -- keep for reference for the moment when Cone targets will support script target
+(62603, 1, 32892, 0),
+(62560, 1, 32872, 0),
+(62560, 1, 32873, 0),
+(62560, 1, 32874, 0),
+(62560, 1, 33110, 0),
+(62560, 1, 32875, 0),
+(62560, 1, 32876, 0),
+(62560, 1, 32877, 0),
+(62560, 1, 32878, 0),
+(62560, 1, 32904, 0),
+(62560, 1, 32886, 0),
+(62560, 1, 33125, 0),
+(62560, 1, 32957, 0),
+(62942, 1, 32875, 0),
+(62942, 1, 33110, 0),
+(62942, 1, 33125, 0),
+(62942, 1, 32957, 0),
+(61934, 1, 32892, 0);
+UPDATE creature SET MovementType = 0,spawndist = 0 WHERE id = 32865;
+-- scripts
+DELETE FROM dbscripts_on_go_template_use WHERE id in (194264);
+INSERT INTO dbscripts_on_go_template_use (id, delay, command, datalong, buddy_entry, search_radius, data_flags, comments) VALUES
+(194264,0,13,0,194560,10,1,'use Dark Iron Portcullis'),
+(194264,6,27,4,0,0,2,'set GO flag no Interact');
+-- lightning orb movement
+UPDATE creature_template SET MovementType = 2 WHERE entry IN (33138);
+DELETE FROM creature_movement_template WHERE entry IN (33138);
+INSERT INTO creature_movement_template (entry, point, position_x, position_y, position_z) VALUES
+(33138,1, 2134.899, -405.802, 438.247),
+(33138,2, 2134.570, -440.317, 438.330),
+(33138,3, 2166.783, -440.383, 438.247),
+(33138,4, 2199.481, -435.117, 419.934),
+(33138,5, 2212.861, -434.079, 412.968),
+(33138,6, 2227.433, -433.584, 412.177),
+(33138,7, 2227.929, -263.069, 412.177),
+(33138,8, 2201.686, -262.987, 412.247),
+(33138,9, 2183.241, -262.801, 414.736);
+-- fix npcs falling through map
+UPDATE creature_template SET InhabitType = InhabitType|4 WHERE entry IN (34055,33378,32892,32879);
+-- fix jormungar position
+UPDATE creature SET position_x = 2133.427, position_y = -261.149, position_z = 419.8447, orientation = 2.980945 WHERE id = 32882;
+-- movement for stairs npcs
+UPDATE creature_template SET MovementType = 2 WHERE entry IN (33125,32957);
+DELETE FROM creature_movement_template WHERE entry IN (33125,32957);
+INSERT INTO creature_movement_template (entry, point, position_x, position_y, position_z, waittime, script_id) VALUES
+(33125,1, 2101.2, -434.135, 438.331, 1000, 3312501),
+(33125,2, 2147.16, -434.02, 438.247, 0, 0),
+(33125,3, 2167.08, -440.17, 438.247, 0, 0),
+(33125,4, 2197.73, -433.98, 420.710, 0, 0),
+(33125,5, 2214.28, -433.53, 412.177, 0, 0),
+(33125,6, 2226.28, -433.16, 412.177, 1000, 3312506),
+(32957,1, 2100.41, -446.712, 438.331, 1000, 3312501),
+(32957,2, 2147.88, -449.53, 438.247, 0, 0),
+(32957,3, 2167.08, -440.17, 438.247, 0, 0),
+(32957,4, 2197.73, -433.98, 420.710, 0, 0),
+(32957,5, 2214.28, -433.53, 412.177, 0, 0),
+(32957,6, 2226.28, -433.16, 412.177, 1000, 3312506);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (3312501,3312506);
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, x, y, z, o, comments) VALUES
+(3312501, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Set run on'),
+(3312506, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Pause movement');
+-- achievs
+DELETE FROM achievement_criteria_requirement WHERE criteria_id IN (10305,10309,10440,10457) AND type IN (12,18);
+INSERT INTO achievement_criteria_requirement (criteria_id, type, value1, value2) VALUES
+(10305,18,0,0),
+(10309,18,0,0),
+(10305,12,0,0),
+(10309,12,1,0),
+(10440,18,0,0),
+(10457,18,0,0),
+(10440,12,0,0),
+(10457,12,1,0);
+-- Freya
+DELETE FROM spell_script_target WHERE entry IN (63292,63295,63294,62485,62385,65587,65585,62484,62387,65588,65586,62483,62386,65589,65590,62584,64185,63059);
+INSERT INTO spell_script_target (entry, type, targetEntry, inverseEffectMask) VALUES
+(63292, 1, 33575, 0),
+(63295, 1, 33575, 0),
+(63294, 1, 33575, 0),
+(62485, 1, 32906, 0),
+(62385, 1, 32906, 0),
+(65587, 1, 32906, 0),
+(65585, 1, 32906, 0),
+(62484, 1, 32906, 0),
+(62387, 1, 32906, 0),
+(65588, 1, 32906, 0),
+(65586, 1, 32906, 0),
+(62483, 1, 32906, 0),
+(62386, 1, 32906, 0),
+(65589, 1, 32906, 0),
+(65590, 1, 32906, 0),
+(62584, 1, 32906, 0),
+(64185, 1, 32906, 0),
+(63059, 1, 33430, 0);
+UPDATE creature SET MovementType = 0, spawndist =  0 WHERE id = 33575;
+UPDATE creature SET position_x = 2342.892, position_y = -46.95139, position_z = 425.5204, orientation = 3.298672, MovementType = 2 WHERE id = 32906;
+DELETE FROM creature_movement_template WHERE entry IN (32906);
+INSERT INTO creature_movement_template (entry, point, position_x, position_y, position_z, waittime, script_id, orientation) VALUES
+(32906,1, 2400.585, -41.88715, 421.6845, 0, 0, 0),
+(32906,2, 2410.53, -77.68121, 420.6022, 0, 0, 0),
+(32906,3, 2399.105, -98.47173, 424.2316, 10000, 3290603, 4.828),
+(32906,4, 2405.682, -92.32346, 422.0239, 0, 0, 0),
+(32906,5, 2398.668, -43.40278, 422.364, 0, 0, 0),
+(32906,6, 2349.045, -40.70486, 425.7578, 0, 0, 0),
+(32906,7, 2377.127, -33.0197, 423.5294, 0, 0, 0),
+(32906,8, 2404.841, -26.67518, 419.3707, 0, 0, 0),
+(32906,9, 2427.638, -13.23665, 418.6132, 0, 0, 0),
+(32906,10, 2436.36, 12.81966, 422.3781, 0, 0, 0),
+(32906,11, 2437.777, 19.35069, 426.0522, 10000, 3290611, 1.475),
+(32906,12, 2430.471, 10.26877, 422.3386, 0, 0, 0),
+(32906,13, 2398.712, -28.97917, 419.9115, 0, 0, 0),
+(32906,14, 2349.045, -40.70486, 425.7578, 0, 0, 0),
+(32906,15, 2341.608, -49.0382, 425.4912, 0, 0, 0),
+(32906,16, 2331.326, -57.76036, 425.2937, 0, 0, 0),
+(32906,17, 2321.944, -83.67773, 426.3419, 0, 0, 0),
+(32906,18, 2301.615, -91.41477, 429.1122, 10000, 3290618, 3.607),
+(32906,19, 2342.892, -46.95139, 425.5204, 0, 0, 0);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (3290603,3290618,3290611);
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, x, y, z, o, comments) VALUES
+(3290603, 3, 15, 63292, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast Freya Dummy Yellow'),
+(3290618, 3, 15, 63295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast Freya Dummy Green'),
+(3290611, 3, 15, 63294, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast Freya Dummy Blue');
+UPDATE creature_template SET MinLevel = 80, MaxLevel = 80, MinLevelHealth = 12600, MaxLevelHealth = 12600, FactionAlliance = 14, FactionHorde = 14 WHERE entry = 33168;
+-- creature link
+DELETE FROM creature_linking_template WHERE entry IN (34129,33228,33215,32918,33203,33202,32919,32916,32918,33168,33088);
+INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES
+(34129, 603, 32906, 4112, 0),
+(33228, 603, 32906, 4112, 0),
+(33215, 603, 32906, 4112, 0),
+(32918, 603, 32906, 4112, 0),
+(33203, 603, 32906, 4112, 0),
+(33202, 603, 32906, 4112, 0),
+(32919, 603, 32906, 4112, 0),
+(32916, 603, 32906, 4112, 0),
+(33168, 603, 32906, 4112, 0),
+(33088, 603, 32913, 4112, 0);
+-- achievs
+DELETE FROM achievement_criteria_requirement WHERE criteria_id IN (10445,10758,10447,10459,10448,10460,10449,10461) AND type IN (12,18);
+INSERT INTO achievement_criteria_requirement (criteria_id, type, value1, value2) VALUES
+(10445,18,0,0),
+(10758,18,0,0),
+(10445,12,0,0),
+(10758,12,1,0),
+(10447,18,0,0),
+(10459,18,0,0),
+(10448,18,0,0),
+(10447,12,0,0),
+(10459,12,1,0),
+(10448,12,0,0),
+(10460,18,0,0),
+(10449,18,0,0),
+(10461,18,0,0),
+(10460,12,1,0),
+(10449,12,0,0),
+(10461,12,1,0);
+-- Mimiron
+DELETE FROM spell_script_target WHERE entry IN (64539,65101,63274,63414,64425,63820,64444,64620,64436,64402,64623,65354,65224,65192,64570,64626,63041);
+INSERT INTO spell_script_target (entry, type, targetEntry, inverseEffectMask) VALUES
+(64539, 1, 34071, 0),
+(65101, 1, 34071, 0),
+(63274, 1, 33576, 0),
+(63414, 1, 33576, 2),
+(63414, 1, 33432, 1),
+(64425, 1, 33856, 0),
+(63820, 1, 33856, 0),
+(64620, 1, 33856, 0),
+(64444, 1, 33670, 0),
+(64436, 1, 33670, 0),
+(64402, 1, 34050, 0),
+(64623, 1, 34121, 0),
+(65354, 1, 34121, 0),
+(65192, 1, 34121, 0),
+(65192, 1, 34363, 0),
+(64570, 1, 34121, 0),
+(64570, 1, 34363, 0),
+(64626, 1, 34121, 0),
+(64626, 1, 34363, 0),
+-- (64619, 1, 34121, 0), -- cone spell; keep for reference until the core will support this
+(65224, 1, 34121, 0),
+(63041, 1, 34057, 0); -- Note: this might have different targets based on spell effect; Requires research
+-- flag handled by script
+UPDATE gameobject_template SET flags = flags&~16 WHERE entry = 194739;
+DELETE FROM creature_linking_template WHERE entry IN (34363,34121,33836,33855,34057,34147);
+INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES
+(34363, 603, 33432, 4112, 0),
+(34121, 603, 33432, 4112, 0),
+(33836, 603, 33432, 4112, 0),
+(33855, 603, 33432, 4112, 0),
+(34057, 603, 33432, 4112, 0),
+(34147, 603, 33432, 4112, 0);
+UPDATE creature SET spawndist = 0, MovementType = 0 WHERE id = 34143;
+UPDATE creature_template SET InhabitType = InhabitType|4 WHERE entry = 33670;
+UPDATE creature_template SET RegenerateStats = 0 WHERE entry = 33651;
+UPDATE creature_template SET MinLevel = 80, MaxLevel = 80, MinLevelHealth = 12600, MaxLevelHealth = 12600, FactionAlliance = 14, FactionHorde = 14 WHERE entry = 34147;
+UPDATE creature_template SET MinLevel = 80, MaxLevel = 80, MinLevelHealth = 12600, MaxLevelHealth = 12600, FactionAlliance = 14, FactionHorde = 14, UnitFlags = UnitFlags|33554432 WHERE entry = 34149;
+-- assault bot loot (ytdb)
+UPDATE creature_template SET LootId = 34057 WHERE entry = 34057;
+DELETE FROM creature_loot_template WHERE entry = 34057;
+INSERT INTO creature_loot_template (entry, item, ChanceOrQuestChance, groupid, mincountOrRef, maxcount, condition_id) VALUES
+(34057, 46029, 100, 0, 1, 1, 0);
+-- rocket visuals
+DELETE FROM vehicle_accessory WHERE vehicle_entry IN (33651);
+INSERT INTO vehicle_accessory (vehicle_entry, seat, accessory_entry, comment) VALUES
+(33651, 5, 34050, 'Rocket (Mimiron Visual)'),
+(33651, 6, 34050, 'Rocket (Mimiron Visual)');
+-- hard mode spells
+DELETE FROM dbscripts_on_spell WHERE id in (64619,64570,64626,65192,65224,65354);
+INSERT INTO dbscripts_on_spell (id, delay, command, datalong, buddy_entry, search_radius, data_flags, comments) VALUES
+(64619,0,14,64561,0,0,6,'remove Flames aura on Water Spray'),
+(64619,0,18,2000,0,0,6,'despawn on on Water Spray'),
+(64570,0,14,64561,0,0,2,'remove Flames aura on Flame Suppressant'),
+(64570,0,18,2000,0,0,2,'despawn on Flame Suppressant'), -- workaround because of bad DBC data
+(64626,0,14,64561,0,0,6,'remove Flames aura on Explosion'),
+(65192,0,14,64561,0,0,6,'remove Flames aura on Flame Suppressant'),
+(65224,0,18,0,0,0,0,'despawn on Clear Fires'),
+(65354,0,18,0,0,0,0,'despawn on Clear Fires');
+-- achievs
+DELETE FROM achievement_criteria_requirement WHERE criteria_id IN (10450,10463) AND type IN (11,18);
+INSERT INTO achievement_criteria_requirement (criteria_id, type, value1, value2) VALUES
+(10450,18,0,0),
+(10463,18,0,0);
+DELETE FROM achievement_criteria_requirement WHERE criteria_id IN (10406,10405) AND type IN (12,18);
+INSERT INTO achievement_criteria_requirement (criteria_id, type, value1, value2) VALUES
+(10405,12,1,0),
+(10405,18,0,0),
+(10406,12,0,0),
+(10406,18,0,0);
+-- mechanics
+DELETE FROM vehicle_accessory WHERE vehicle_entry IN (34183);
+INSERT INTO vehicle_accessory (vehicle_entry, seat, accessory_entry, comment) VALUES
+(34183, 1, 34184, 'Clockwork Mechanic');
+-- Keepers
+UPDATE creature_template SET NpcFlags = NpcFlags|1, GossipMenuId = 10335 WHERE entry = 33213;
+UPDATE creature_template SET NpcFlags = NpcFlags|1, GossipMenuId = 10324 WHERE entry = 33241;
+UPDATE creature_template SET NpcFlags = NpcFlags|1, MinLevel = 83, MaxLevel = 83, MinLevelHealth = 14433075, MaxLevelHealth = 14433075, UnitFlags = UnitFlags|32768, GossipMenuId = 10336 WHERE entry = 33244;
+UPDATE creature_template SET NpcFlags = NpcFlags|1, GossipMenuId = 10337 WHERE entry = 33242;
+-- mimiron menu
+DELETE FROM gossip_menu WHERE entry IN (10337,10336);
+INSERT INTO gossip_menu (entry, text_id, script_id, condition_id) VALUES
+(10336, 14334, 0, 0),
+(10337, 14333, 0, 0);
+-- missing texts
+DELETE FROM npc_text WHERE ID IN (14332,14333);
+INSERT INTO npc_text (ID,text0_0,text0_1,lang0,prob0) VALUES
+(14332,'Mortals, I am indebted to you for freeing me from the terrible corruption that besets this place. Though I have not yet recovered fully, I can help you battle Yogg-Saron.$B$BI can grant you and your friends the Resilience of Nature, increasing your damage and increasing healing taken from spells and effects. In addition, I can conjure Sanity Wells that will allow you to recover your Sanity when your grip on reality falters.','',0,1),
+(14333,'Mortals, I am indebted to you for freeing me from the terrible corruption that besets this place. Though I have not yet recovered fully, I can help you battle Yogg-Saron.$B$BI can grant you and your friends the Fury of the Storm, increasing your damage and maximum health. Should you be faced with evil so malevolent that it cannot be destroyed, I can channel all my power into a final Titanic Storm that will destroy even Immortals.','',0,1);
+-- Fix bad display ids
+UPDATE creature_template SET MinLevel = 80, MaxLevel = 80, MinLevelHealth = 4000, MaxLevelHealth = 4000, ModelId2 = 28470, ModelId1 = 1126 WHERE entry = 36847;
+UPDATE creature_template SET ModelId2 = 28470, ModelId1 = 1126 WHERE entry IN (33173,33169);
+UPDATE creature_template SET ModelId1 = 1126, ModelId2 = 11686 WHERE entry IN (33632,33802);
+-- Yogg Saron 
+UPDATE creature_template SET InhabitType = InhabitType|4 WHERE entry IN (33890,33134,33280);
+DELETE FROM spell_script_target WHERE entry IN (62714,65209,62978,63744,64069,63882,63886,64466,64465,65206,64172,65238,64173,63037,64063,64184);
+INSERT INTO spell_script_target (entry, type, targetEntry, inverseEffectMask) VALUES
+(62714, 1, 33134, 0),
+(65209, 1, 33134, 0),
+(63744, 1, 33136, 0),
+(62978, 1, 33292, 0),
+(64069, 1, 33288, 0),
+(63882, 1, 33882, 0),
+(63886, 1, 33882, 0),
+(64465, 1, 33988, 0),
+(64466, 1, 33288, 0),
+(65206, 1, 33983, 0),
+(65206, 1, 33985, 0),
+(65206, 1, 33966, 0),
+(64172, 1, 33988, 0),
+(65238, 1, 33983, 0),
+(65238, 1, 33985, 0),
+(65238, 1, 33966, 0),
+(65238, 1, 33288, 0),
+(65238, 1, 33134, 0),
+(64173, 1, 33983, 0),
+(64173, 1, 33985, 0),
+(64173, 1, 33966, 0),
+(64173, 1, 33288, 0),
+(64173, 1, 33134, 0),
+(63037, 1, 33442, 0),
+(64063, 1, 33437, 0),
+(64184, 1, 33288, 0);
+-- stat updates
+UPDATE creature_template SET MinLevel = 80, MaxLevel = 80, MinLevelHealth = 12600, MaxLevelHealth = 12600, FactionAlliance = 14, FactionHorde = 14, UnitFlags = UnitFlags|33554432 WHERE entry = 33280;
+UPDATE creature_template SET VehicleTemplateId = 381 WHERE entry = 33288;
+UPDATE creature_template SET VehicleTemplateId = 385 WHERE entry = 33983;
+UPDATE creature_template SET UnitFlags = UnitFlags|33554432 WHERE entry = 33280;
+UPDATE creature_template SET FactionAlliance = 16, FactionHorde = 16 WHERE entry = 33890;
+UPDATE creature_template SET MinLevel = 80, MaxLevel = 80, FactionAlliance = 14, FactionHorde = 14, MinLevelHealth = 12600, MaxLevelHealth = 12600, UnitFlags = UnitFlags|33554432, InhabitType = InhabitType|4 WHERE entry = 33882;
+UPDATE creature_template SET MinLevel = 81, MaxLevel = 81, FactionAlliance = 14, FactionHorde = 14, MinLevelHealth = 5492, MaxLevelHealth = 5492, UnitFlags = UnitFlags|33554432, InhabitType = InhabitType|4 WHERE entry = 33881;
+UPDATE creature_template SET MinLevel = 81, MaxLevel = 81, MinLevelHealth = 5492, MaxLevelHealth = 5492 WHERE entry = 34072;
+UPDATE creature_template SET MinLevel = 81, MaxLevel = 81, FactionAlliance = 35, FactionHorde = 35, MinLevelHealth = 5492, MaxLevelHealth = 5492, UnitFlags = UnitFlags|33554432 WHERE entry IN (33991);
+UPDATE creature_template SET MinLevel = 82, MaxLevel = 82, FactionAlliance = 190, FactionHorde = 190, MinLevelHealth = 8000, MaxLevelHealth = 8000 WHERE entry IN (33943);
+UPDATE creature_template SET MinLevel = 82, MaxLevel = 82, FactionAlliance = 190, FactionHorde = 190, MinLevelHealth = 56470, MaxLevelHealth = 56470 WHERE entry IN (33717,33716,33719,33720);
+UPDATE creature_template SET MinLevel = 82, MaxLevel = 82, FactionAlliance = 190, FactionHorde = 190, MinLevelHealth = 134810, MaxLevelHealth = 134810 WHERE entry IN (33567,33433);
+UPDATE creature_template SET MinLevel = 81, MaxLevel = 81, FactionAlliance = 14, FactionHorde = 14, MinLevelHealth = 5492, MaxLevelHealth = 5492, UnitFlags = UnitFlags|33554432 WHERE entry IN (33990);
+UPDATE creature_template SET MinLevel = 83, MaxLevel = 83, FactionAlliance = 14, FactionHorde = 14, MinLevelHealth = 11156000, MaxLevelHealth = 11156000, UnitFlags = UnitFlags|256 WHERE entry IN (33441);
+-- guesswork
+UPDATE creature_template SET FactionAlliance = 14, FactionHorde = 14, UnitFlags = UnitFlags|33554432 WHERE entry = 33552;
+-- wrong models
+UPDATE creature_template SET ModelId1 = 1126, ModelId2 = 17612 WHERE entry = 33881;
+UPDATE creature_template SET ModelId1 = 1126, ModelId2 = 16946 WHERE entry = 33882;
+-- more spawn time
+UPDATE creature SET spawntimesecs = 60480 WHERE id = 33292;
+-- linking
+DELETE FROM creature_linking_template WHERE entry IN (33988,33983,33966,33985,33991,33136);
+INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES
+(33988, 603, 33288, 4096, 0),
+(33983, 603, 33288, 4096, 0),
+(33966, 603, 33288, 4096, 0),
+(33985, 603, 33288, 4096, 0),
+(33991, 603, 33288, 4096, 0),
+(33136, 603, 33280, 8192, 0);
+-- descent madness teleports
+DELETE FROM npc_spellclick_spells WHERE npc_entry = 34072;
+INSERT INTO npc_spellclick_spells (npc_entry, spell_id, quest_start, quest_start_active, quest_end, cast_flags,condition_id) VALUES
+(34072, 0, 0, 0, 0, 0, 0);
+-- teleport positions
+DELETE FROM spell_target_position WHERE id IN (63989,63997,63998,63992);
+INSERT INTO spell_target_position VALUES
+(63989, 603, 1954.14, 21.522, 239.718, 2.094395), -- stormwind room
+(63997, 603, 2043.12, -25.6981, 239.721, 0), -- chamber room
+(63998, 603, 1949.13, -80.6744, 239.99, 4.18879), -- icecrown room
+(63992, 603, 1970.61, -25.5988, 324.55, 3.103456); -- main room
+-- achiev crits
+DELETE FROM achievement_criteria_requirement WHERE criteria_id IN (10338,10415,10409,10416,10412,10417,10410,10414,10185,10296) AND type IN (12,18,11);
+INSERT INTO achievement_criteria_requirement (criteria_id, type, value1, value2) VALUES
+(10338,12,0,0),
+(10338,18,0,0),
+(10415,12,1,0),
+(10415,18,0,0),
+(10409,12,0,0),
+(10409,18,0,0),
+(10416,12,1,0),
+(10416,18,0,0),
+(10412,12,0,0),
+(10412,18,0,0),
+(10417,12,1,0),
+(10417,18,0,0),
+(10410,12,0,0),
+(10410,18,0,0),
+(10414,12,1,0),
+(10414,18,0,0),
+(10185,12,0,0),
+(10185,18,0,0),
+(10296,12,1,0),
+(10296,18,0,0);
+DELETE FROM dbscripts_on_event WHERE id = 21432;
+INSERT INTO dbscripts_on_event (id, command, datalong, x, y, z, o, comments) VALUES
+(21432, 10, 33991, 1899.941, 0.330621, 332.2957, 0, 'spawn Sanity Well'),
+(21432, 10, 33991, 1900.478, -51.23861, 332.1303, 0, 'spawn Sanity Well'),
+(21432, 10, 33991, 1987.125, -91.27024, 330.1858, 0, 'spawn Sanity Well'),
+(21432, 10, 33991, 1975.885, 40.02165, 331.0996, 0, 'spawn Sanity Well');
+DELETE FROM dbscripts_on_spell WHERE id = 64063;
+INSERT INTO dbscripts_on_spell (id, delay, command, datalong, data_flags, comments) VALUES
+(64063, 0, 28, 7, 2, 'set stand state dead');
+-- Champion / Conquerer achievs
+DELETE FROM achievement_criteria_requirement WHERE criteria_id IN (10042,10340,10341,10342,10347,10348,10349,10350,10351,10403,10439,10582,10598) AND type IN (12,18,11);
+INSERT INTO achievement_criteria_requirement (criteria_id, type, value1, value2) VALUES
+(10042,12,0,0),
+(10042,18,0,0),
+(10340,12,0,0),
+(10340,18,0,0),
+(10341,12,0,0),
+(10341,18,0,0),
+(10342,12,0,0),
+(10342,18,0,0),
+(10347,12,0,0),
+(10347,18,0,0),
+(10348,12,0,0),
+(10348,18,0,0),
+(10349,12,0,0),
+(10349,18,0,0),
+(10350,12,0,0),
+(10350,18,0,0),
+(10351,12,0,0),
+(10351,18,0,0),
+(10403,12,0,0),
+(10403,18,0,0),
+(10439,12,0,0),
+(10439,18,0,0),
+(10582,12,0,0),
+(10582,18,0,0),
+(10598,12,0,0),
+(10598,18,0,0);
+DELETE FROM achievement_criteria_requirement WHERE criteria_id IN (10352,10353,10354,10355,10357,10361,10362,10363,10364,10404,10583,10599,10719) AND type IN (12,18,11);
+INSERT INTO achievement_criteria_requirement (criteria_id, type, value1, value2) VALUES
+(10352,12,1,0),
+(10352,18,0,0),
+(10353,12,1,0),
+(10353,18,0,0),
+(10354,12,1,0),
+(10354,18,0,0),
+(10355,12,1,0),
+(10355,18,0,0),
+(10357,12,1,0),
+(10357,18,0,0),
+(10361,12,1,0),
+(10361,18,0,0),
+(10362,12,1,0),
+(10362,18,0,0),
+(10363,12,1,0),
+(10363,18,0,0),
+(10364,12,1,0),
+(10364,18,0,0),
+(10404,12,1,0),
+(10404,18,0,0),
+(10583,12,1,0),
+(10583,18,0,0),
+(10599,12,1,0),
+(10599,18,0,0),
+(10719,12,1,0),
+(10719,18,0,0);
+
+-- ---------------
+-- Culling of Stratholme
+-- ---------------
+UPDATE creature_template SET ModelId1 = 22712, ModelId2 = 17200 WHERE entry = 27827;
+-- fix bad script target
+DELETE FROM spell_script_target WHERE entry = 49590;
+INSERT INTO spell_script_target (entry, type, targetEntry, inverseEffectMask) VALUES
+(49590,1,27827,0);
+-- npc movement
+UPDATE creature SET MovementType = 0, spawndist = 0 WHERE id IN (27885,30571);
+UPDATE creature SET position_x = 1553.526, position_y = 578.1731, position_z = 99.8456, orientation = 5.707227 WHERE id = 30571;
+UPDATE creature_template SET MovementType = 2 WHERE entry IN (27891,27892,30997);
+-- ### Part 1 ###
+-- movement
+DELETE FROM creature_movement_template WHERE entry IN (30571,30997);
+INSERT INTO creature_movement_template (entry, point, position_x, position_y, position_z, waittime, script_id, orientation) VALUES
+-- inn
+(30571,1,1549.571, 575.5571, 100.0522, 1000, 3057101, 0.82),
+(30571,2,1554.849, 588.465, 99.775, 1000, 3057102, 0.88),
+(30571,3,1549.609, 575.544, 100.052, 1000, 3057103, 4.17),
+-- chromie end
+(30997,1,2319.562, 1506.409, 152.0499, 0, 3099701, 3.78),
+(30997,2,2306.77, 1496.78, 128.362, 1000, 3099702, 3.78);
+-- movement scripts
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (3057101,3057102,3057103,3099701,3099702);
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, y, z, o, comments) VALUES
+-- inn
+(3057101, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Pause movement'),
+(3057101, 0, 0, 0, 0, 0, 0, 0, 2000005580, 2000005581, 0, 0, 0, 'Michael Belfast - yell text'),
+(3057101, 13, 0, 0, 0, 30551, 40, 0, 2000005582, 0, 0, 0, 0, 'Hearthsinger Forresten - yell text'),
+(3057101, 20, 0, 0, 0, 30553, 40, 0, 2000005583, 0, 0, 0, 0, 'Footman James - yell text'),
+(3057101, 24, 0, 0, 0, 30552, 40, 0, 2000005584, 0, 0, 0, 0, 'Fras Siabi - yell text'),
+(3057101, 27, 1, 5, 0, 30552, 40, 0, 0, 0, 0, 0, 0, 'Fras Siabi - emote'),
+(3057101, 28, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Resume movement'),
+(3057102, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Pause movement'),
+(3057102, 0, 0, 0, 0, 0, 0, 0, 2000005585, 0, 0, 0, 0, 'Michael Belfast - yell text'),
+(3057102, 3, 0, 0, 0, 31017, 40, 0, 2000005586, 0, 0, 0, 0, 'Mal Corricks - yell text'),
+(3057102, 8, 0, 0, 0, 30561, 40, 0, 2000005587, 0, 0, 0, 0, 'Gryan Stoutmantle - yell text'),
+(3057102, 18, 0, 0, 0, 31017, 40, 0, 2000005588, 0, 0, 0, 0, 'Mal Corricks - emote text'),
+(3057102, 18, 0, 0, 0, 31017, 40, 0, 2000005589, 0, 0, 0, 0, 'Mal Corricks - yell text'),
+(3057102, 18, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Resume movement'),
+(3057102, 21, 0, 0, 0, 30553, 40, 0, 2000005590, 0, 0, 0, 0, 'Footman James- yell text'),
+(3057102, 26, 0, 0, 0, 30551, 40, 0, 2000005591, 0, 0, 0, 0, 'Hearthsinger Forresten - yell text'),
+(3057102, 26, 0, 0, 0, 30552, 40, 0, 2000005592, 0, 0, 0, 0, 'Fras Siabi - emote text'),
+(3057103, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Pause movement'),
+-- chromie end
+(3099701, 0, 29, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 'remove npc_flag_questgiver'),
+(3099702, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Pause movement'),
+(3099702, 3, 15, 58986, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'cast Chromie Transform'),
+(3099702, 3, 0, 0, 0, 0, 0, 0, 2000005593, 0, 0, 0, 0, 'Chromie - yell text'),
+(3099702, 4, 29, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'add npc_flag_gossip | npc_flag_questgiver');
+-- texts
+DELETE FROM db_script_string WHERE entry BETWEEN 2000005580 AND 2000005593;
+INSERT INTO db_script_string (entry,content_default,sound,type,language,emote,comment) VALUES
+-- inn
+(2000005580,'Hey! Stop rooting around in my cellar! Clear out!',0,0,0,5,'Michael Belfast - say_inn_1'),
+(2000005581,'What were you doing in my cellar? There\'s a food scare going on, and the last thing I need is strangers rummaging around in my goods! Shoo!',0,0,0,5,'Michael Belfast - say_inn_2'),
+(2000005582,'This whole situation seems a bit paranoid, don\'t you think?',0,0,0,6,'Hearthsinger Forresten - say_inn_2'),
+(2000005583,'Orders are orders. If the Prince says jump...',0,0,0,1,'Footman James - say_inn_3'),
+(2000005584,'It\'s a strange order, you can\'t deny. Suspicious food? Under that definition, you should arrest Belfast!',0,0,0,1,'Fras Siabi - say_inn_4'),
+(2000005585,'I HEARD THAT! No more ale for you! Not a drop!',0,0,0,5,'Michael Belfast - say_inn_5'),
+(2000005586,'Enough, Michael. Business is hurting enough with this scare as it is. We can use every copper.',0,0,0,1,'Mal Corricks - say_inn_6'),
+(2000005587,'The soldiers are doing important work. The safety of the people is more important, Mal, if you\'re interested in your customers living to spend another day.',0,0,0,1,'Gryan Stoutmantle - say_inn_7'),
+(2000005588,'%s grudgingly nods.',0,2,0,0,'Mal Corricks - emote_inn_1'),
+(2000005589,'I can\'t argue with that.',0,0,0,1,'Mal Corricks - say_inn_8'),
+(2000005590,'Don\'t worry too much. By the time I went off duty, we hadn\'t found a scrap of befouled grain here.',0,0,0,1,'Footman James - say_inn_9'),
+(2000005591,'Thank the Light for that.',0,0,0,1,'Hearthsinger Forresten - say_inn_10'),
+(2000005592,'%s nods.',0,2,0,0,'Fras Siabi - emote_inn_2'),
+-- chromie
+(2000005593,'Why, hello again!',0,0,0,0,'Chromie say_end_1');
+-- ### Part 2 ###
+-- movement
+DELETE FROM creature_movement_template WHERE entry IN (27903,27877);
+INSERT INTO creature_movement_template (entry, point, position_x, position_y, position_z, waittime, script_id, orientation) VALUES
+-- roger
+(27903,1,1588.942, 597.9799, 99.37262, 6000, 2790301, 2.80),
+(27903,2,1589.883, 608.7765, 99.63657, 0, 0, 0),
+(27903,3,1588.607, 616.2296, 99.88657, 0, 0, 0),
+(27903,4,1586.06, 619.9573, 99.96897, 0, 0, 0),
+(27903,5,1580.011, 623.6895, 100.0418, 7000, 2790305, 4.43),
+(27903,6,1575.576, 619.935, 99.422, 0, 0, 0),
+(27903,7,1577.633, 620.642, 99.584, 6000, 2790307, 0.61),
+(27903,8,1580.215, 624.368, 99.924, 0, 0, 0),
+(27903,9,1587.471, 618.181, 99.850, 0, 0, 0),
+(27903,10,1592.646, 590.888, 99.151, 0, 2790310, 0),
+-- morigam
+(27877,1,1561.57, 670.32, 102.144, 11000, 2787701, 0.57),
+(27877,2,1565.856, 668.4106, 102.1827, 0, 0, 0),
+(27877,3,1569.26, 668.5543, 102.1814, 5000, 0, 0.76), 
+(27877,4,1569.26, 668.5543, 102.1814, 27000, 2787704, 2.61),
+(27877,5,1576.119, 657.675, 102.09, 0, 0, 0),
+(27877,6,1586.040, 646.113, 100.910, 0, 0, 0),
+(27877,7,1609.189, 697.134, 106.902, 0, 2790310, 0);
+-- movement scripts
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (2790301,2790305,2790307,2790310,2787701,2787704);
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, x, y, z, o, comments) VALUES
+-- roger
+(2790301, 1, 0, 0, 0, 0, 0, 0, 2000005594, 0, 0, 0, 0, 0, 'Roger Owens - yell text'),
+(2790305, 0, 0, 0, 0, 0, 0, 0, 2000005595, 0, 0, 0, 0, 0, 'Roger Owens - yell text'),
+(2790305, 5, 0, 0, 0, 0, 0, 0, 2000005596, 0, 0, 0, 0, 0, 'Roger Owens - yell text'),
+(2790307, 0, 0, 0, 0, 0, 0, 0, 2000005597, 0, 0, 0, 0, 0, 'Roger Owens - yell text'),
+(2790307, 4, 0, 0, 0, 0, 0, 0, 2000005598, 0, 0, 0, 0, 0, 'Roger Owens - yell text'),
+(2790310, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'despawn'),
+-- morigam
+(2787701, 3, 0, 0, 0, 0, 0, 0, 2000005599, 0, 0, 0, 0, 0, 'Sergeant Morigan - yell text'),
+(2787701, 9, 0, 0, 0, 27876, 10, 0, 2000005600, 0, 0, 0, 0, 0, 'Silvio Perelli - yell text'),
+(2787704, 0, 0, 0, 0, 0, 0, 0, 2000005601, 0, 0, 0, 0, 0, 'Sergeant Morigan - yell text'),
+(2787704, 3, 3, 0, 0, 27876, 10, 0, 0, 0, 1563.337, 671.6413, 102.1412, 5.91, 'Silvio Perelli - set orientation'),
+(2787704, 5, 0, 0, 0, 27876, 10, 0, 2000005602, 0, 0, 0, 0, 0, 'Silvio Perelli - yell text'),
+(2787704, 8, 0, 0, 0, 0, 0, 0, 2000005603, 0, 0, 0, 0, 0, 'Sergeant Morigan - yell text'),
+(2787704, 18, 0, 0, 0, 27876, 10, 0, 2000005604, 0, 0, 0, 0, 0, 'Silvio Perelli - yell text'),
+(2787704, 23, 0, 0, 0, 0, 0, 0, 2000005605, 0, 0, 0, 0, 0, 'Sergeant Morigan - yell text');
+-- texts
+DELETE FROM db_script_string WHERE entry BETWEEN 2000005594 AND 2000005605;
+INSERT INTO db_script_string (entry,content_default,sound,type,language,emote,comment) VALUES
+-- roger
+(2000005594,'Ok, enough work for now. Time for refreshments and a little conversation in the inn.',0,0,0,1,'Roger Owens - say_roger_1'),
+(2000005595,'Wait, what\'s that smell?',0,0,0,1,'Roger Owens - say_roger_2'),
+(2000005596,'Can\'t be me, I took a bath 3 days ago!',0,0,0,1,'Roger Owens - say_roger_3'),
+(2000005597,'Oh, close call. It\'s just the grain here.',0,0,0,1,'Roger Owens - say_roger_4'),
+(2000005598,'Wait a second. Grain isn\'t supposed to smell like THAT! I better go find a guard.',0,0,0,1,'Roger Owens - say_roger_5'),
+-- morigam
+(2000005599,'You don\'t mind me checking out your merchandise for signs of tampering, do you?',0,0,0,1,'Sergeant Morigan - say_morigan_1'),
+(2000005600,'No, Sergeant.',0,0,0,0,'Silvio Perelli - say_morigan_2'),
+(2000005601,'Wait, what is this? You\'ve been holding out on me, Perelli!',0,0,0,1,'Sergeant Morigan - say_morigan_3'),
+(2000005602,'What are you talking about, Sergeant!',0,0,0,5,'Silvio Perelli - say_morigan_4'),
+(2000005603,'I\'m confiscating this suspicious grain, Perelli. We were looking for signs of tampered food, and it would be in your best interest to stay put while Prince Arthas checks this out.',0,0,0,1,'Sergeant Morigan - say_morigan_5'),
+(2000005604,'You have to believe me, I\'m innocent!',0,0,0,1,'Silvio Perelli - say_morigan_6'),
+(2000005605,'We\'ll see about that, Perelli. We\'ll see about that.',0,0,0,1,'Sergeant Morigan - say_morigan_7');
+-- ### Part 3 ###
+-- movement
+DELETE FROM creature_movement_template WHERE entry IN (27885,27891,27892,27907);
+INSERT INTO creature_movement_template (entry, point, position_x, position_y, position_z, waittime, script_id, orientation) VALUES
+-- jena
+(27885,1,1602.132, 743.804, 114.7333, 0, 0, 0),
+(27885,2,1607.698, 744.5809, 114.7331, 0, 0, 0),
+(27885,3,1614.583, 743.2285, 114.1251, 0, 0, 0),
+(27885,4,1617.615, 737.8293, 113.4772, 0, 0, 0),
+(27885,5,1623.717, 727.2723, 112.285, 0, 0, 0),
+(27885,6,1628.827, 726.0397, 112.5336, 0, 0, 0),
+(27885,7,1633.366, 726.3549, 113.5041, 20000, 2788507, 0.61),
+(27885,8,1629.688, 729.167, 112.6997, 6000, 2788508, 0),
+(27885,9,1613.928, 715.9256, 109.6573, 0, 0, 0),
+(27885,10,1607.678, 700.3972, 107.06, 0, 2790310, 0),
+-- malcolm
+(27891,1,1605.452, 804.9279, 122.961, 0, 2789101, 0),
+(27891,2,1613.629, 795.9061, 121.8324, 1000, 2789102, 0.63),
+(27891,3,1623.677, 799.6086, 120.5017, 0, 0, 0),
+(27891,4,1625.647, 805.1909, 121.0386, 0, 0, 0),
+(27891,5,1623.526, 808.2736, 121.2789, 8000 , 2789105, 0.06),
+(27891,6,1628.014, 806.9391, 120.2136, 0, 0, 0),
+(27891,7,1630.197, 808.7338, 120.2776, 0, 0, 0),
+(27891,8,1630.235, 810.9423, 120.3985, 7000, 2789108, 2.16),
+(27891,9,1641.452, 812.600, 119.948, 0, 0, 0),
+(27891,10,1679.852, 912.245, 120.533, 0, 0, 0),
+(27891,11,1699.915, 967.110, 121.643, 0, 0, 0),
+(27891,12,1678.393, 1026.890, 125.431, 0, 0, 0),
+(27891,13,1678.943, 1093.130, 126.899, 0, 0, 0),
+(27891,14,1700.042, 1103.880, 130.872, 0, 2790310, 0),
+-- scruffy
+(27892,1,1609.497, 797.1868, 122.3031, 0, 0, 0),
+(27892,2,1612.855, 794.5053, 121.9534, 0, 0, 0),
+(27892,3,1617.072, 793.0383, 121.2942, 0, 0, 0),
+(27892,4,1621.126, 794.4536, 120.6827, 0, 0, 0),
+(27892,5,1624.841, 798.4964, 120.3256, 0, 0, 0),
+(27892,6,1626.933, 801.0958, 120.1692, 0, 0, 0),
+(27892,7,1628.722, 805.1, 120.2136, 1000, 2789207, 2.56),
+(27892,8,1623.526, 808.2736, 121.2789, 0, 0, 0),
+(27892,9,1629.004, 810.138, 120.4927, 11000,2789209, 1.69),
+(27892,10,1630.692, 808.011, 120.083, 1000, 2789210, 4.40),
+-- bartelby
+(27907,1,1670.26, 872.873, 120.035, 2000, 2790701, 0.41),
+(27907,2,1672.917, 871.3535, 120.3277, 15000, 2790702, 0.92),
+(27907,3,1667.076, 870.0946, 119.9527, 0, 0, 0),
+(27907,4,1662.828, 866.6351, 119.8706, 0, 0, 0),
+(27907,5,1658.108, 859.9075, 119.1869, 0, 0, 0),
+(27907,6,1641.229, 825.2514, 120.1012, 0, 0, 0),
+(27907,7,1638.217, 815.4248, 119.9439, 0, 2790310, 0);
+-- movement scripts
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (2788507,2788508,2789101,2789102,2789105,2789108,2789207,2789209,2789210);
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, x, y, z, o, comments) VALUES
+-- jena
+(2788507, 0, 0, 0, 0, 0, 0, 0, 2000005606, 0, 0, 0, 0, 0, 'Jena Anderson - yell text'),
+(2788507, 12, 3, 0, 0, 27884, 20, 0, 0, 0, 1635.827, 723.1434, 113.5619, 3.18, 'Martha Goslin - set orientation'),
+(2788507, 12, 0, 0, 0, 27884, 20, 0, 2000005607, 0, 0, 0, 0, 0, 'Martha Goslin - yell text'),
+(2788507, 16, 0, 0, 0, 0, 0, 0, 2000005608, 0, 0, 0, 0, 0, 'Jena Anderson - yell text'),
+(2788508, 0, 0, 0, 0, 0, 0, 0, 2000005610, 0, 0, 0, 0, 0, 'Jena Anderson - yell text'),
+(2788508, 1, 0, 0, 0, 0, 0, 0, 2000005609, 0, 0, 0, 0, 0, 'Jena Anderson - yell text'),
+(2788508, 4, 0, 0, 0, 27884, 20, 0, 2000005611, 0, 0, 0, 0, 0, 'Martha Goslin - yell text'),
+-- malcolm
+(2789101, 0, 10, 27892, 60000, 0, 0, 0, 0, 0, 1601.438, 804.9377, 123.701, 5.43, 'Malcolm Moore - spawn Scruffy'),
+(2789102, 0, 0, 0, 0, 0, 0, 0, 2000005612, 0, 0, 0, 0, 0, 'Malcolm Moore - yell text'),
+(2789105, 4, 0, 0, 0, 0, 0, 0, 2000005614, 0, 0, 0, 0, 0, 'Malcolm Moore - yell text'),
+(2789108, 0, 0, 0, 0, 0, 0, 0, 2000005615, 0, 0, 0, 0, 0, 'Malcolm Moore - yell text'),
+(2789108, 4, 0, 0, 0, 0, 0, 0, 2000005616, 0, 0, 0, 0, 0, 'Malcolm Moore - yell text'),
+-- scruffy
+(2789207, 0, 0, 0, 0, 0, 0, 0, 2000005613, 0, 0, 0, 0, 0, 'Scruffy - emote text'),
+(2789209, 0, 1, 393, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Scruffy - emote'),
+(2789209, 0, 16, 9035, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Scruffy - play sound'),
+(2789210, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Pause movement');
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (2790701,2790702);
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, comments) VALUES
+-- bartelby
+(2790701, 0, 0, 0, 0, 0, 0, 0, 2000005617, 2000005618, 2000005619, 0, 'Bartleby Battson - yell text'),
+(2790702, 0, 0, 0, 0, 0, 0, 0, 2000005620, 0, 0, 0, 'Bartleby Battson - yell text'),
+(2790702, 6, 0, 0, 0, 0, 0, 0, 2000005621, 0, 0, 0, 'Bartleby Battson - yell text'),
+(2790702, 9, 0, 0, 0, 0, 0, 0, 2000005622, 0, 0, 0, 'Bartleby Battson - yell text');
+-- texts
+DELETE FROM db_script_string WHERE entry BETWEEN 2000005606 AND 2000005622;
+INSERT INTO db_script_string (entry,content_default,sound,type,language,emote,comment) VALUES
+-- jena
+(2000005606,'Martha, I\'m out of flour for bread. You wouldn\'t happen to have any grain from that recent shipment, would you?',0,0,0,6,'Jena Anderson - say_jena_1'),
+(2000005607,'Oh hello, Jena. Of course you can borrow some grain. Help yourself.',0,0,0,1,'Martha Goslin - say_jena_2'),
+(2000005608,'Thanks, Martha! I owe you one.',0,0,0,0,'Jena Anderson - say_jena_3'),
+(2000005609,'Martha, something\'s wrong with this grain! Some of the Prince\'s soldiers were looking for this. I\'m going to go look for one.',0,0,0,5,'Jena Anderson - say_jena_4'),
+(2000005610,'Oh, dear.',0,0,0,1,'Jena Anderson - say_jena_5'),
+(2000005611,'Oh, my.',0,0,0,1,'Martha Goslin - say_jena_6'),
+-- malcolm
+(2000005612,'Looks like a storm\'s coming in, Scruffy...',0,0,0,0,'Malcolm Moore - say_malcolm_1'),
+(2000005613,'%s begins to growl...',1108,2,0,0,'Scruffy - say_malcolm_2'),
+(2000005614,'What\'s wrong, pal?',0,0,0,0,'Malcolm Moore - say_malcolm_3'),
+(2000005615,'What did you find, boy?',0,0,0,16,'Malcolm Moore - say_malcolm_4'),
+(2000005616,'This is no good, Scruffy. Stay here and guard the house, I need to go find a soldier.',0,0,0,0,'Malcolm Moore - say_malcolm_6'),
+-- bartleby
+(2000005617,'This grain shipment has been nothing but trouble!',0,0,0,5,'Bartleby Battson - say_bartelby_1'),
+(2000005618,'I\'m going to lose my on time bonus because of this!',0,0,0,5,'Bartleby Battson - say_bartelby_2'),
+(2000005619,'I wasn\'t even supposed to be here today!',0,0,0,5,'Bartleby Battson - say_bartelby_3'),
+(2000005620,'Well, guess I should load everything back into the cart.',0,0,0,0,'Bartleby Battson - say_bartelby_4'),
+(2000005621,'Oh, come on! My cart broke, my horse lost a shoe, and now the cargo goes bad!',0,0,0,5,'Bartleby Battson - say_bartelby_5'),
+(2000005622,'I guess I\'ll go find the athorities. If I\'m lucky they\'ll tell me it\'s the plague and that we\'re all going to die.',0,0,0,1,'Bartleby Battson - say_bartelby_6');
+
+-- -----------
+-- Ulduar
+-- -----------
+
+-- quests 13631 and 13819
+UPDATE quest_template SET CompleteScript = 13631 WHERE entry = 13631;
+UPDATE quest_template SET CompleteScript = 13631 WHERE entry = 13819;
+UPDATE creature_template SET MovementType = 2 WHERE entry = 34044;
+UPDATE creature_template SET SpeedWalk = 1.6 WHERE entry = 16128;
+DELETE FROM dbscripts_on_quest_end WHERE id = 13631;
+INSERT INTO dbscripts_on_quest_end (id,delay,command,datalong,datalong2,buddy_entry,search_radius,data_flags,dataint,x,y,z,o,comments) VALUES
+(13631,0,29,3,2,0,0,0,0,0,0,0,0,'Rhonin - remove npc_flag questgiver'),
+(13631,0,10,34044,0,0,0,0,0,5800.697, 820.809, 667.433, 4.51,'Summon Brann'),
+(13631,0,0,0,0,0,0,0,2000000333,0,0,0,0,'Rhonin - say_event_start'),
+(13631,6,1,397,0,0,0,0,0,0,0,0,0,'Rhonin - emote'),
+(13631,8,20,2,0,0,0,0,0,0,0,0,0,'Rhonin - Start Waypoint Movement');
+DELETE FROM db_script_string WHERE entry IN (2000000333,2000000334,2000000335,2000000336,2000000337,2000000338,2000000339,2000000340,2000000341);
+INSERT INTO db_script_string (entry,content_default,sound,type,language,emote,comment)  VALUES
+(2000000333,'We received Brann\'s message, and we have begun preparations.',15649,0,0,0,'Rhonin - say_event_start'),
+(2000000334,'Just in time. Let\'s see this thing off, then.',15826,0,0,0,'Brann - say_event_start'),
+(2000000335,'Citizens of Dalaran! Raise your eyes to the skies and observe!',15650,1,0,0,'Rhonin - say_event_1'),
+(2000000336,'Today our world\'s destruction has been averted in defiance of our very makers!',15651,1,0,0,'Rhonin - say_event_2'),
+(2000000337,'Algalon the Observer, herald of the titans, has been defeated by our brave comrades in the depths of the titan city of Ulduar.',15652,1,0,0,'Rhonin - say_event_3'),
+(2000000338,'Algalon was sent here to judge the fate of our world.',15653,1,0,0,'Rhonin - say_event_4'),
+(2000000339,'He found a planet whose races had deviated from the titans\' blueprints. A planet where not everything had gone according to plan.',15654,1,0,0,'Rhonin - say_event_5'),
+(2000000340,'Cold logic deemed our world not worth saving. Cold logic, however, does not account for the power of free will. It\'s up to each of us to prove this is a world worth saving.',15655,1,0,0,'Rhonin - say_event_6'),
+(2000000341,'That our lives... our lives are worth living.',15656,1,0,0,'Rhonin - say_event_complete');
+DELETE FROM creature_movement_template WHERE entry = 34044;
+INSERT INTO creature_movement_template (entry, point, position_x, position_y, position_z, script_id, waittime, orientation) VALUES
+(34044,1,5799.828, 813.462, 662.002, 0, 0, 0),
+(34044,2,5801.312, 802.384, 662.139, 3404402, 3000, 4.53),
+(34044,3,5799.99,788.837,661.870,0,0,0),
+(34044,4,5798.32,782.053,662.688,0,0,0),
+(34044,5,5797.37,775.143,661.443,0,0,0),
+(34044,6,5797.69,767.686,661.352,0,0,0),
+(34044,7,5797.87,761.844,657.783,0,0,0),
+(34044,8,5795.08,755.320,653.669,0,0,0),
+(34044,9,5794.29,750.693,649.646,0,0,0),
+(34044,10,5793.27,743.471,644.464,0,0,0),
+(34044,11,5793.18,735.819,640.106,0,0,0),
+(34044,12,5792.33,729.770,640.427,0,0,0),
+(34044,13,5789.32,724.790,640.867,0,0,0),
+(34044,14,5785.68,716.319,640.881,0,0,0),
+(34044,15,5781.25,711.070,641.060,0,0,0),
+(34044,16,5771.18,696.952,641.771,0,0,0),
+(34044,17,5764.34,686.929,642.161,0,0,0),
+(34044,18,5757.24,677.249,642.299,0,0,0),
+(34044,19,5752.94,671.092,642.984,0,0,0),
+(34044,20,5748.39,664.582,643.974,0,0,0),
+(34044,21,5743.78,661.557,644.468,0,0,0),
+(34044,22,5737.45,656.901,645.484,0,0,0),
+(34044,23,5732.63,654.095,645.953,0,0,0),
+(34044,24,5721.18,649.808,646.282,3404424,1000,3.51);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (3404424,3404402);
+INSERT INTO dbscripts_on_creature_movement (id,delay,command,datalong,buddy_entry,search_radius,dataint,comments) VALUES 
+(3404402,0,0,0,0,0,2000000334,'Brann - say_event_start'),
+(3404424,0,32,1,0,0,0,'Brann - pause wp'),
+(3404424,60,18,0,0,0,0,'Brann - despawn');
+DELETE FROM creature_movement_template WHERE entry = 16128;
+INSERT INTO creature_movement_template (entry, point, position_x, position_y, position_z, script_id, waittime, orientation) VALUES
+(16128,1,5796.99,788.837,661.870,0,0,0),
+(16128,2,5796.32,783.053,662.688,0,0,0),
+(16128,3,5795.43,775.837,661.810,0,0,0),
+(16128,4,5795.37,775.143,661.443,0,0,0),
+(16128,5,5794.69,767.686,661.352,0,0,0),
+(16128,6,5793.87,761.844,657.783,0,0,0),
+(16128,7,5793.08,756.320,653.669,0,0,0),
+(16128,8,5792.29,750.693,649.646,0,0,0),
+(16128,9,5791.27,743.471,644.464,0,0,0),
+(16128,10,5790.18,735.819,640.106,0,0,0),
+(16128,11,5789.33,729.770,640.427,0,0,0),
+(16128,12,5787.32,724.790,640.867,0,0,0),
+(16128,13,5783.68,718.319,640.881,0,0,0),
+(16128,14,5779.25,713.070,641.060,0,0,0),
+(16128,15,5768.18,699.952,641.771,0,0,0),
+(16128,16,5761.34,689.929,642.161,0,0,0),
+(16128,17,5755.24,680.249,642.299,0,0,0),
+(16128,18,5750.94,674.092,642.984,0,0,0),
+(16128,19,5746.39,667.582,643.974,0,0,0),
+(16128,20,5741.78,663.557,644.468,0,0,0),
+(16128,21,5736.45,658.901,645.484,0,0,0),
+(16128,22,5731.63,657.095,645.953,0,0,0),
+(16128,23,5720.18,652.808,646.282,1612823,1000,3.85976);
+DELETE FROM dbscripts_on_creature_movement WHERE id = 1612823;
+INSERT INTO dbscripts_on_creature_movement (id,delay,command,datalong,datalong2,buddy_entry,search_radius,data_flags,dataint,comments) VALUES 
+(1612823,0,32,1,0,0,0,0,0,'Rhonin - pause wp'),
+-- cast 64367 from creatures with id 28332 on the bottom to the same creature on top, and then to the sky
+-- same creature id, different Z positions; maybe spell 64581 is also involved
+(1612823,0,0,0,0,0,0,0,2000000335,'Rhonin - say_event_1'),
+(1612823,6,0,0,0,0,0,0,2000000336,'Rhonin - say_event_2'),
+(1612823,12,0,0,0,0,0,0,2000000337,'Rhonin - say_event_3'),
+(1612823,21,0,0,0,0,0,0,2000000338,'Rhonin - say_event_4'),
+(1612823,25,0,0,0,0,0,0,2000000339,'Rhonin - say_event_5'),
+(1612823,34,0,0,0,0,0,0,2000000340,'Rhonin - say_event_6'),
+(1612823,49,0,0,0,0,0,0,2000000341,'Rhonin - say_event_complete'),
+-- cast 64580; maybe trigger spell 64510
+(1612823,60,29,3,1,0,0,0,0,'Rhonin - add npc_flag questgiver'),
+(1612823,60,18,0,0,0,0,0,0,'Rhonin - despawn');
+-- Netherspite portals cleanup
+DELETE FROM creature_linking_template WHERE entry IN (17367,17368,17369);
+INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES
+(17367, 532, 15689, 4112, 0),
+(17368, 532, 15689, 4112, 0),
+(17369, 532, 15689, 4112, 0);
