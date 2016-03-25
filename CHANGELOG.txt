@@ -90,16 +90,12 @@ Main changes:
   q.10457 'Protecting Our Own' -- Alliance ver.
   q.10488 'Protecting Our Own' -- Horde ver.
   q.10538 'Boiling Blood'
-  q.10563 'To Legion Hold' -- Alliance ver. done
-  q.10570 'To Catch A Thistlehead' done
-  q.10596 'To Legion Hold' -- Horde ver. done
   q.10628 'Akama'
   q.10629 'Shizz Work'
   q.10674 'Trapping the Light Fantastic'
   q.10859 'Gather the Orbs' 
   q.10909 'Fel Spirits'
   q.10929 'Fumping'
-  q.10930 'The Big Bone Worm' done
   q.11128 'Propaganda War'
   q.11676 'Merciful Freedom'
   q.11690 'Bring 'Em Back Alive'
@@ -169,7 +165,6 @@ Main changes:
 -- Zuluhed the Whacked(q.10866) -H -A
 -- Ally of the Netherwing(q.10870) -A -H
 -- The Soul Cannon of Reth'hedron (q.11089) -H -A
--- The Great Murkblood Revolt (q.11081) -H -A
 -- Peace at Last (q.11152)
 -- Raptor Horns(q.865)
 -- All Clear!(q.10436)
@@ -199,7 +194,6 @@ Main changes:
 -- The Thane of Voldrune (q.12255, q.12259)
 -- Take Down Tethyr! (q.11198)
 -- Rise, Obsidion! (q.3566)
--- The Exorcism of Colonel Jules (q.10935) done
 -- The Cipher of Damnation - Ar'tor's Charge (q.10540) -H -A
 
 
