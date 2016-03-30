@@ -1796,16 +1796,6 @@ INSERT INTO conditions (condition_entry, type, value1, value2) VALUES
 -- ---------------
 -- Quests
 -- ---------------
--- Demonic Crystal Prisons(q.10528) -H -A
-DELETE FROM dbscripts_on_quest_end WHERE id = 10528;
-INSERT INTO dbscripts_on_quest_end (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
-(10528,0,15,5,0,21292,20,7,0,0,0,0,0,0,0,0,''),
-(10528,4,0,0,0,21318,25,0,2000005645,0,0,0,0,0,0,0,'');
-UPDATE quest_template SET CompleteScript = 10528 WHERE entry = 10528;
-DELETE FROM db_script_string WHERE entry = 2000005645;
-INSERT INTO db_script_string (entry, content_default, content_loc1, content_loc2, content_loc3, content_loc4, content_loc5, content_loc6, content_loc7, content_loc8, sound, type, language, emote, comment) VALUES
-(2000005645,'I... I have died... I was in so much pain... engulfed in darkness... Can you see me, $r?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL);
-
 -- The Attack!(q.434) -A
 DELETE FROM dbscripts_on_quest_start WHERE id = 434;
 INSERT INTO dbscripts_on_quest_start (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
@@ -2452,11 +2442,6 @@ DELETE FROM dbscripts_on_creature_death WHERE id = 21292;
 INSERT INTO dbscripts_on_creature_death (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
 (21292,0,10,21318,1200000,0,0,0,0,0,0,0,-3801.75,2600.401,90.27156,5.759586,'summon'),
 (21292,2,1,1,0,21318,25,0x04,0,0,0,0,0,0,0,0,'');
--- Spirit of Ar'tor - update
-UPDATE creature_template SET GossipMenuId = 8287, MovementType = 0 WHERE entry = 21318;
-DELETE FROM gossip_menu WHERE entry = 8287; 
-INSERT INTO gossip_menu (entry, text_id, script_id, condition_id) VALUES
-(8287, 10327, 0, 0);
  -- Shadowmoon Valley Invisible Trigger (Tiny) - update
 DELETE FROM dbscripts_on_creature_movement WHERE id = 2131001; 
 INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES

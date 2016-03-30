@@ -1,90 +1,92 @@
 -- The Soul Cannon of Reth'hedron (q.11089) (Terrokar forest) -- all creatures req. for q.
 -- Terokkar Trigger
-INSERT INTO creature (guid,id,map,spawnMask,phaseMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
-(140757,23102,530,1,1,0,0,-2466.61,4699.98,155.643,3.141593,25,0,0,4120,0,0,0), -- main one
-(140758,23102,530,1,1,0,0,-2414.98,4458.58,165.725,4.31056,25,0,0,4120,0,0,2);
-INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
-(140758,1,-2416.247,4457.345,166.4947,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140758,2,-2416.747,4455.095,166.4947,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140758,3,-2420.247,4453.845,166.9947,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140758,4,-2420.497,4451.845,166.7447,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140758,5,-2421.997,4450.345,166.4947,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140758,6,-2424.997,4447.095,166.2447,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140758,7,-2426.015,4444.604,167.1808,0,0,0,0,0,0,0,0,0,0,0,0,0);
-INSERT INTO creature (guid,id,map,spawnMask,phaseMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
-(140759,23102,530,1,1,0,0,-2432.75,4458.1,166.076,4.31056,25,0,0,4120,0,0,2);
-INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
-(140759,1,-2428.951,4454.364,164.9629,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140759,2,-2428.701,4452.114,165.7129,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140759,3,-2430.451,4449.864,166.9629,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140759,4,-2430.701,4448.114,166.9629,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140759,5,-2429.951,4445.614,166.9629,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140759,6,-2428.701,4445.864,166.9629,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140759,7,-2426.156,4444.631,167.2664,0,0,0,0,0,0,0,0,0,0,0,0,0);
-INSERT INTO creature (guid,id,map,spawnMask,phaseMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
-(140760,23102,530,1,1,0,0,-2418.7,4446.77,165.623,4.31056,25,0,0,4120,0,0,2);
-INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
-(140760,1,-2422.572,4447.155,167.424,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140760,2,-2422.572,4447.155,167.424,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140760,3,-2425.322,4444.655,166.924,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140760,4,-2425.947,4444.539,167.1426,0,0,0,0,0,0,0,0,0,0,0,0,0);
-INSERT INTO creature (guid,id,map,spawnMask,phaseMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
-(140761,23102,530,1,1,0,0,-2432.38,4444.57,170.177,4.31056,25,0,0,4120,0,0,2);
-INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
-(140761,1,-2431.452,4444.515,169.4779,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140761,2,-2429.202,4448.015,167.9779,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140761,3,-2427.452,4446.765,167.4779,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140761,4,-2426.026,4444.463,167.1956,0,0,0,0,0,0,0,0,0,0,0,0,0);
-INSERT INTO creature (guid,id,map,spawnMask,phaseMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
-(140762,23102,530,1,1,0,0,-2423.71,4453.52,165.612,5.42973,25,0,0,4120,0,0,2);
-INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
-(140762,1,-2420.854,4450.29,164.6829,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140762,2,-2421.854,4448.04,165.9329,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140762,3,-2425.104,4446.79,166.6829,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140762,4,-2425.995,4444.565,167.1709,0,0,0,0,0,0,0,0,0,0,0,0,0);
-INSERT INTO creature (guid,id,map,spawnMask,phaseMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
-(140763,23102,530,1,1,0,0,-2428.66,4460.05,166.238,5.42973,25,0,0,4120,0,0,2);
-INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
-(140763,1,-2426.097,4457.325,165.2578,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140763,2,-2424.347,4454.325,165.5078,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140763,3,-2427.097,4450.825,167.2578,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140763,4,-2425.847,4447.825,167.0078,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140763,5,-2426.037,4444.601,167.1947,0,0,0,0,0,0,0,0,0,0,0,0,0);
-INSERT INTO creature (guid,id,map,spawnMask,phaseMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
-(140764,23102,530,1,1,0,0,-2432.45,4434.58,170.862,5.42973,25,0,0,4120,0,0,2);
-INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
-(140764,1,-2430.905,4434.821,169.7653,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140764,2,-2429.155,4438.321,168.5153,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140764,3,-2427.155,4437.571,168.0153,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140764,4,-2427.655,4441.321,167.7653,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140764,5,-2425.905,4442.821,167.0153,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140764,6,-2425.855,4444.558,167.0851,0,0,0,0,0,0,0,0,0,0,0,0,0);
-INSERT INTO creature (guid,id,map,spawnMask,phaseMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
-(140765,23102,530,1,1,0,0,-2426.57,4437.26,167.977,5.42973,25,0,0,4120,0,0,2);
-INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
-(140765,1,-2428.278,4439.114,168.6164,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140765,2,-2428.278,4440.864,168.3664,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140765,3,-2426.028,4443.114,167.1164,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140765,4,-2425.99,4444.47,167.1725,0,0,0,0,0,0,0,0,0,0,0,0,0);
-INSERT INTO creature (guid,id,map,spawnMask,phaseMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
-(140766,23102,530,1,1,0,0,-2414.89,4436.77,163.105,5.42973,25,0,0,4120,0,0,2);
-INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
-(140766,1,-2416.425,4437.882,163.6704,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140766,2,-2417.925,4442.132,164.1704,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140766,3,-2420.425,4441.882,165.4204,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140766,4,-2422.425,4441.882,166.4204,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140766,5,-2423.675,4444.382,165.9204,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140766,6,-2425.959,4444.494,167.1525,0,0,0,0,0,0,0,0,0,0,0,0,0);
-INSERT INTO creature (guid,id,map,spawnMask,phaseMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
-(140767,23102,530,1,1,0,0,-2435.68,4440.87,171.618,2.64157,25,0,0,4120,0,0,2);
-INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
-(140767,1,-2433.751,4441.496,170.1298,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140767,2,-2432.251,4443.746,169.3798,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140767,3,-2430.001,4443.496,168.3798,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140767,4,-2429.001,4445.246,168.1298,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140767,5,-2427.251,4445.496,167.6298,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140767,6,-2426.751,4444.246,167.3798,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(140767,7,-2425.819,4444.625,167.0592,0,0,0,0,0,0,0,0,0,0,0,0,0);
+DELETE FROM creature WHERE guid IN(140757,140758,140759,140760,140761,140762,140763,140764,140765,140766,140767);
+DELETE FROM creature_movement WHERE id IN(140757,140758,140759,140760,140761,140762,140763,140764,140765,140766,140767);
+INSERT INTO creature (guid,id,map,spawnMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
+(140757,23102,530,1,0,0,-2466.61,4699.98,155.643,3.141593,25,0,0,4120,0,0,0), -- main one
+(140758,23102,530,1,0,0,-2414.98,4458.58,165.725,4.31056,25,0,0,4120,0,0,2);
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
+(140758,1,-2416.247,4457.345,166.4947,0,0,0,0,0,0,0,0,0,0,0,0),
+(140758,2,-2416.747,4455.095,166.4947,0,0,0,0,0,0,0,0,0,0,0,0),
+(140758,3,-2420.247,4453.845,166.9947,0,0,0,0,0,0,0,0,0,0,0,0),
+(140758,4,-2420.497,4451.845,166.7447,0,0,0,0,0,0,0,0,0,0,0,0),
+(140758,5,-2421.997,4450.345,166.4947,0,0,0,0,0,0,0,0,0,0,0,0),
+(140758,6,-2424.997,4447.095,166.2447,0,0,0,0,0,0,0,0,0,0,0,0),
+(140758,7,-2426.015,4444.604,167.1808,0,0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO creature (guid,id,map,spawnMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
+(140759,23102,530,1,0,0,-2432.75,4458.1,166.076,4.31056,25,0,0,4120,0,0,2);
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
+(140759,1,-2428.951,4454.364,164.9629,0,0,0,0,0,0,0,0,0,0,0,0),
+(140759,2,-2428.701,4452.114,165.7129,0,0,0,0,0,0,0,0,0,0,0,0),
+(140759,3,-2430.451,4449.864,166.9629,0,0,0,0,0,0,0,0,0,0,0,0),
+(140759,4,-2430.701,4448.114,166.9629,0,0,0,0,0,0,0,0,0,0,0,0),
+(140759,5,-2429.951,4445.614,166.9629,0,0,0,0,0,0,0,0,0,0,0,0),
+(140759,6,-2428.701,4445.864,166.9629,0,0,0,0,0,0,0,0,0,0,0,0),
+(140759,7,-2426.156,4444.631,167.2664,0,0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO creature (guid,id,map,spawnMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
+(140760,23102,530,1,0,0,-2418.7,4446.77,165.623,4.31056,25,0,0,4120,0,0,2);
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell,  orientation, model1, model2) VALUES
+(140760,1,-2422.572,4447.155,167.424,0,0,0,0,0,0,0,0,0,0,0,0),
+(140760,2,-2422.572,4447.155,167.424,0,0,0,0,0,0,0,0,0,0,0,0),
+(140760,3,-2425.322,4444.655,166.924,0,0,0,0,0,0,0,0,0,0,0,0),
+(140760,4,-2425.947,4444.539,167.1426,0,0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO creature (guid,id,map,spawnMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
+(140761,23102,530,1,0,0,-2432.38,4444.57,170.177,4.31056,25,0,0,4120,0,0,2);
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
+(140761,1,-2431.452,4444.515,169.4779,0,0,0,0,0,0,0,0,0,0,0,0),
+(140761,2,-2429.202,4448.015,167.9779,0,0,0,0,0,0,0,0,0,0,0,0),
+(140761,3,-2427.452,4446.765,167.4779,0,0,0,0,0,0,0,0,0,0,0,0),
+(140761,4,-2426.026,4444.463,167.1956,0,0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO creature (guid,id,map,spawnMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
+(140762,23102,530,1,0,0,-2423.71,4453.52,165.612,5.42973,25,0,0,4120,0,0,2);
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
+(140762,1,-2420.854,4450.29,164.6829,0,0,0,0,0,0,0,0,0,0,0,0),
+(140762,2,-2421.854,4448.04,165.9329,0,0,0,0,0,0,0,0,0,0,0,0),
+(140762,3,-2425.104,4446.79,166.6829,0,0,0,0,0,0,0,0,0,0,0,0),
+(140762,4,-2425.995,4444.565,167.1709,0,0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO creature (guid,id,map,spawnMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
+(140763,23102,530,1,0,0,-2428.66,4460.05,166.238,5.42973,25,0,0,4120,0,0,2);
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
+(140763,1,-2426.097,4457.325,165.2578,0,0,0,0,0,0,0,0,0,0,0,0),
+(140763,2,-2424.347,4454.325,165.5078,0,0,0,0,0,0,0,0,0,0,0,0),
+(140763,3,-2427.097,4450.825,167.2578,0,0,0,0,0,0,0,0,0,0,0,0),
+(140763,4,-2425.847,4447.825,167.0078,0,0,0,0,0,0,0,0,0,0,0,0),
+(140763,5,-2426.037,4444.601,167.1947,0,0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO creature (guid,id,map,spawnMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
+(140764,23102,530,1,0,0,-2432.45,4434.58,170.862,5.42973,25,0,0,4120,0,0,2);
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
+(140764,1,-2430.905,4434.821,169.7653,0,0,0,0,0,0,0,0,0,0,0,0),
+(140764,2,-2429.155,4438.321,168.5153,0,0,0,0,0,0,0,0,0,0,0,0),
+(140764,3,-2427.155,4437.571,168.0153,0,0,0,0,0,0,0,0,0,0,0,0),
+(140764,4,-2427.655,4441.321,167.7653,0,0,0,0,0,0,0,0,0,0,0,0),
+(140764,5,-2425.905,4442.821,167.0153,0,0,0,0,0,0,0,0,0,0,0,0),
+(140764,6,-2425.855,4444.558,167.0851,0,0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO creature (guid,id,map,spawnMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
+(140765,23102,530,1,0,0,-2426.57,4437.26,167.977,5.42973,25,0,0,4120,0,0,2);
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
+(140765,1,-2428.278,4439.114,168.6164,0,0,0,0,0,0,0,0,0,0,0,0),
+(140765,2,-2428.278,4440.864,168.3664,0,0,0,0,0,0,0,0,0,0,0,0),
+(140765,3,-2426.028,4443.114,167.1164,0,0,0,0,0,0,0,0,0,0,0,0),
+(140765,4,-2425.99,4444.47,167.1725,0,0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO creature (guid,id,map,spawnMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
+(140766,23102,530,1,0,0,-2414.89,4436.77,163.105,5.42973,25,0,0,4120,0,0,2);
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
+(140766,1,-2416.425,4437.882,163.6704,0,0,0,0,0,0,0,0,0,0,0,0),
+(140766,2,-2417.925,4442.132,164.1704,0,0,0,0,0,0,0,0,0,0,0,0),
+(140766,3,-2420.425,4441.882,165.4204,0,0,0,0,0,0,0,0,0,0,0,0),
+(140766,4,-2422.425,4441.882,166.4204,0,0,0,0,0,0,0,0,0,0,0,0),
+(140766,5,-2423.675,4444.382,165.9204,0,0,0,0,0,0,0,0,0,0,0,0),
+(140766,6,-2425.959,4444.494,167.1525,0,0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO creature (guid,id,map,spawnMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
+(140767,23102,530,1,0,0,-2435.68,4440.87,171.618,2.64157,25,0,0,4120,0,0,2);
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
+(140767,1,-2433.751,4441.496,170.1298,0,0,0,0,0,0,0,0,0,0,0,0),
+(140767,2,-2432.251,4443.746,169.3798,0,0,0,0,0,0,0,0,0,0,0,0),
+(140767,3,-2430.001,4443.496,168.3798,0,0,0,0,0,0,0,0,0,0,0,0),
+(140767,4,-2429.001,4445.246,168.1298,0,0,0,0,0,0,0,0,0,0,0,0),
+(140767,5,-2427.251,4445.496,167.6298,0,0,0,0,0,0,0,0,0,0,0,0),
+(140767,6,-2426.751,4444.246,167.3798,0,0,0,0,0,0,0,0,0,0,0,0),
+(140767,7,-2425.819,4444.625,167.0592,0,0,0,0,0,0,0,0,0,0,0,0);
 
 -- Event - (q.11081) #1
 DELETE FROM dbscripts_on_event WHERE id = 14856;
@@ -134,54 +136,54 @@ INSERT INTO dbscripts_on_gossip (id, delay, command, datalong, datalong2, buddy_
 (8725,0,29,3,2,0,0,0,0,0,0,0,0,0,0,0,'23093 - npc_flag removed'),
 (8725,1,20,2,0,0,0,0,0,0,0,0,0,0,0,0,'movement chenged to 2:waypoint');
 DELETE FROM creature_movement_template WHERE entry = 23093;
-INSERT INTO creature_movement_template (entry, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
-(23093,1,-2528.145,4661.219,170.5803,3000,2309301,0,0,0,0,0,0,0,0,5.550147,0,0),
-(23093,2,-2520.11,4665.68,170.382,0,0,0,0,0,0,0,0,0,0,0.510926,0,0),
-(23093,3,-2501.86,4675.29,161.372,0,0,0,0,0,0,0,0,0,0,0.474462,0,0),
-(23093,4,-2487.58,4686.76,155.028,0,0,0,0,0,0,0,0,0,0,0.860878,0,0),
-(23093,5,-2474.83,4698.74,155.344,0,0,0,0,0,0,0,0,0,0,0.5,0,0),
-(23093,6,-2474.83,4698.74,155.344,7000,2309302,0,0,0,0,0,0,0,0,0.523156,0,0),
-(23093,7,-2480.65,4685.96,155.49,0,0,0,0,0,0,0,0,0,0,4.98332,0,0),
-(23093,8,-2481.49,4672.65,158.966,0,0,0,0,0,0,0,0,0,0,5.0972,0,0),
-(23093,9,-2480.16,4665.24,160.284,7000,2309303,0,0,0,0,0,0,0,0,4.21441,0,0),
-(23093,10,-2455.65,4662.22,159.951,0,0,0,0,0,0,0,0,0,0,5.74709,0,0),
-(23093,11,-2436.2,4646.31,160.228,0,0,0,0,0,0,0,0,0,0,4.22263,0,0),
-(23093,12,-2439.97,4639.62,158.027,7000,2309304,0,0,0,0,0,0,0,0,4.22263,0,0), 
-(23093,13,-2436.58,4646.84,160.297,0,0,0,0,0,0,0,0,0,0,0.364134,0,0),
-(23093,14,-2425.2,4648.12,160.448,0,0,0,0,0,0,0,0,0,0,5.66298,0,0),
-(23093,15,-2411.43,4634.77,160.39,0,0,0,0,0,0,0,0,0,0,5.14384,0,0),
-(23093,16,-2407.81,4627.84,160.568,0,0,0,0,0,0,0,0,0,0,4.7906,0,0),
-(23093,17,-2415.99,4589.04,160.548,0,0,0,0,0,0,0,0,0,0,5.91249,0,0),
-(23093,18,-2399.42,4581.89,164.871,0,0,0,0,0,0,0,0,0,0,5.81645,0,0),
-(23093,19,-2391.28,4576.64,166.057,0,0,0,0,0,0,0,0,0,0,5.25412,0,0),
-(23093,20,-2388.56,4568.29,164.933,0,0,0,0,0,0,0,0,0,0,4.9219,0,0),
-(23093,21,-2388.364,4560.494,165.4174,7000,2309305,0,0,0,0,0,0,0,0,5.40246,0,0),
-(23093,22,-2393.32,4546.13,165.565,0,0,0,0,0,0,0,0,0,0,3.85805,0,0),
-(23093,23,-2409.52,4532.03,166.061,0,0,0,0,0,0,0,0,0,0,4.28217,0,0),
-(23093,24,-2422.16,4505.4,166.642,0,0,0,0,0,0,0,0,0,0,4.60261,0,0),
-(23093,25,-2424.31,4496.46,165.468,0,0,0,0,0,0,0,0,0,0,4.48009,0,0),
-(23093,26,-2428.53,4482.27,167.103,0,0,0,0,0,0,0,0,0,0,4.76524,0,0),
-(23093,27,-2429.68,4462.26,166.145,7000,2309306,0,0,0,0,0,0,0,0,5.10998,0,0),
-(23093,28,-2429.66,4482.22,167.088,0,0,0,0,0,0,0,0,0,0,1.30757,0,0),
-(23093,29,-2424.99,4494.94,165.455,0,0,0,0,0,0,0,0,0,0,1.26751,0,0),
-(23093,30,-2416.78,4520.28,166.428,0,0,0,0,0,0,0,0,0,0,1.03346,0,0),
-(23093,31,-2408.74,4532.46,166.077,0,0,0,0,0,0,0,0,0,0,0.715377,0,0),
-(23093,32,-2391.15,4550.27,165.63,0,0,0,0,0,0,0,0,0,0,1.39475,0,0),
-(23093,33,-2390.8,4573.16,165.876,0,0,0,0,0,0,0,0,0,0,1.92882,0,0),
-(23093,34,-2397.56,4580.46,165.298,0,0,0,0,0,0,0,0,0,0,2.52572,0,0),
-(23093,35,-2403.85,4584.2,163.669,0,0,0,0,0,0,0,0,0,0,2.89407,0,0),
-(23093,36,-2410.81,4584.86,160.288,0,0,0,0,0,0,0,0,0,0,2.34743,0,0),
-(23093,37,-2415.9,4591.78,160.632,0,0,0,0,0,0,0,0,0,0,1.53769,0,0),
-(23093,38,-2408.04,4624.59,160.607,0,0,0,0,0,0,0,0,0,0,1.7631,0,0),
-(23093,39,-2410.98,4634.52,160.351,0,0,0,0,0,0,0,0,0,0,2.16639,0,0),
-(23093,40,-2428.67,4652.83,160.572,0,0,0,0,0,0,0,0,0,0,2.58972,0,0),
-(23093,41,-2441.28,4659.46,160.626,0,2309307,0,0,0,0,0,0,0,0,2.97614,0,0),
-(23093,42,-2463.44,4662.78,159.543,0,0,0,0,0,0,0,0,0,0,2.64077,0,0),
-(23093,43,-2472.09,4667.23,159.414,0,0,0,0,0,0,0,0,0,0,2.46249,0,0),
-(23093,44,-2479.66,4675.25,158.05,0,0,0,0,0,0,0,0,0,0,1.83888,0,0),
-(23093,45,-2479.86,4694.21,154.879,0,0,0,0,0,0,0,0,0,0,1.28596,0,0),
-(23093,46,-2478.81,4698.33,154.796,0,0,0,0,0,0,0,0,0,0,0.593238,0,0),
-(23093,47,-2475.14,4700.05,155.206,17000,2309308,0,0,0,0,0,0,0,0,6.24303,0,0);
+INSERT INTO creature_movement_template (entry, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
+(23093,1,-2528.145,4661.219,170.5803,3000,2309301,0,0,0,0,0,0,0,5.550147,0,0),
+(23093,2,-2520.11,4665.68,170.382,0,0,0,0,0,0,0,0,0,0.510926,0,0),
+(23093,3,-2501.86,4675.29,161.372,0,0,0,0,0,0,0,0,0,0.474462,0,0),
+(23093,4,-2487.58,4686.76,155.028,0,0,0,0,0,0,0,0,0,0.860878,0,0),
+(23093,5,-2474.83,4698.74,155.344,0,0,0,0,0,0,0,0,0,0.5,0,0),
+(23093,6,-2474.83,4698.74,155.344,7000,2309302,0,0,0,0,0,0,0,0.523156,0,0),
+(23093,7,-2480.65,4685.96,155.49,0,0,0,0,0,0,0,0,0,4.98332,0,0),
+(23093,8,-2481.49,4672.65,158.966,0,0,0,0,0,0,0,0,0,5.0972,0,0),
+(23093,9,-2480.16,4665.24,160.284,7000,2309303,0,0,0,0,0,0,0,4.21441,0,0),
+(23093,10,-2455.65,4662.22,159.951,0,0,0,0,0,0,0,0,0,5.74709,0,0),
+(23093,11,-2436.2,4646.31,160.228,0,0,0,0,0,0,0,0,0,4.22263,0,0),
+(23093,12,-2439.97,4639.62,158.027,7000,2309304,0,0,0,0,0,0,0,4.22263,0,0), 
+(23093,13,-2436.58,4646.84,160.297,0,0,0,0,0,0,0,0,0,0.364134,0,0),
+(23093,14,-2425.2,4648.12,160.448,0,0,0,0,0,0,0,0,0,5.66298,0,0),
+(23093,15,-2411.43,4634.77,160.39,0,0,0,0,0,0,0,0,0,5.14384,0,0),
+(23093,16,-2407.81,4627.84,160.568,0,0,0,0,0,0,0,0,0,4.7906,0,0),
+(23093,17,-2415.99,4589.04,160.548,0,0,0,0,0,0,0,0,0,5.91249,0,0),
+(23093,18,-2399.42,4581.89,164.871,0,0,0,0,0,0,0,0,0,5.81645,0,0),
+(23093,19,-2391.28,4576.64,166.057,0,0,0,0,0,0,0,0,0,5.25412,0,0),
+(23093,20,-2388.56,4568.29,164.933,0,0,0,0,0,0,0,0,0,4.9219,0,0),
+(23093,21,-2388.364,4560.494,165.4174,7000,2309305,0,0,0,0,0,0,0,5.40246,0,0),
+(23093,22,-2393.32,4546.13,165.565,0,0,0,0,0,0,0,0,0,3.85805,0,0),
+(23093,23,-2409.52,4532.03,166.061,0,0,0,0,0,0,0,0,0,4.28217,0,0),
+(23093,24,-2422.16,4505.4,166.642,0,0,0,0,0,0,0,0,0,4.60261,0,0),
+(23093,25,-2424.31,4496.46,165.468,0,0,0,0,0,0,0,0,0,4.48009,0,0),
+(23093,26,-2428.53,4482.27,167.103,0,0,0,0,0,0,0,0,0,4.76524,0,0),
+(23093,27,-2429.68,4462.26,166.145,7000,2309306,0,0,0,0,0,0,0,5.10998,0,0),
+(23093,28,-2429.66,4482.22,167.088,0,0,0,0,0,0,0,0,0,1.30757,0,0),
+(23093,29,-2424.99,4494.94,165.455,0,0,0,0,0,0,0,0,0,1.26751,0,0),
+(23093,30,-2416.78,4520.28,166.428,0,0,0,0,0,0,0,0,0,1.03346,0,0),
+(23093,31,-2408.74,4532.46,166.077,0,0,0,0,0,0,0,0,0,0.715377,0,0),
+(23093,32,-2391.15,4550.27,165.63,0,0,0,0,0,0,0,0,0,1.39475,0,0),
+(23093,33,-2390.8,4573.16,165.876,0,0,0,0,0,0,0,0,0,1.92882,0,0),
+(23093,34,-2397.56,4580.46,165.298,0,0,0,0,0,0,0,0,0,2.52572,0,0),
+(23093,35,-2403.85,4584.2,163.669,0,0,0,0,0,0,0,0,0,2.89407,0,0),
+(23093,36,-2410.81,4584.86,160.288,0,0,0,0,0,0,0,0,0,2.34743,0,0),
+(23093,37,-2415.9,4591.78,160.632,0,0,0,0,0,0,0,0,0,1.53769,0,0),
+(23093,38,-2408.04,4624.59,160.607,0,0,0,0,0,0,0,0,0,1.7631,0,0),
+(23093,39,-2410.98,4634.52,160.351,0,0,0,0,0,0,0,0,0,2.16639,0,0),
+(23093,40,-2428.67,4652.83,160.572,0,0,0,0,0,0,0,0,0,2.58972,0,0),
+(23093,41,-2441.28,4659.46,160.626,0,2309307,0,0,0,0,0,0,0,2.97614,0,0),
+(23093,42,-2463.44,4662.78,159.543,0,0,0,0,0,0,0,0,0,2.64077,0,0),
+(23093,43,-2472.09,4667.23,159.414,0,0,0,0,0,0,0,0,0,2.46249,0,0),
+(23093,44,-2479.66,4675.25,158.05,0,0,0,0,0,0,0,0,0,1.83888,0,0),
+(23093,45,-2479.86,4694.21,154.879,0,0,0,0,0,0,0,0,0,1.28596,0,0),
+(23093,46,-2478.81,4698.33,154.796,0,0,0,0,0,0,0,0,0,0.593238,0,0),
+(23093,47,-2475.14,4700.05,155.206,17000,2309308,0,0,0,0,0,0,0,6.24303,0,0);
 DELETE FROM dbscripts_on_creature_movement WHERE id BETWEEN 2309301 AND 2309308; 
 INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
 (2309301,1,21,1,0,0,0,0,0,0,0,0,0,0,0,0,'Sar\'this active'),
@@ -221,8 +223,8 @@ INSERT INTO db_script_string (entry, content_default, content_loc1, content_loc2
 (2000005721,'It is yours my Lord!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL);
 -- Terokkar Trigger -- update 
 DELETE FROM creature_movement_template WHERE entry = 23102 ;
-INSERT INTO creature_movement_template (entry, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
-(23102,1,-2466.61,4699.98,155.643,16000,2310201,0,0,0,0,0,0,0,0,3.141593,0,0);
+INSERT INTO creature_movement_template (entry, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
+(23102,1,-2466.61,4699.98,155.643,16000,2310201,0,0,0,0,0,0,0,3.141593,0,0);
 DELETE FROM dbscripts_on_creature_movement WHERE id = 2310201; 
 INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
 (2310201,0,15,40193,0,23094,96675,3 | 0x08 | 0x10,0,0,0,0,0,0,0,0,''),
