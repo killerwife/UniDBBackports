@@ -1494,9 +1494,42 @@ INSERT INTO dbscripts_on_creature_movement (id,delay,command,datalong,datalong2,
 -- cast 64580; maybe trigger spell 64510
 (1612823,60,29,3,1,0,0,0,0,'Rhonin - add npc_flag questgiver'),
 (1612823,60,18,0,0,0,0,0,0,'Rhonin - despawn');
--- Netherspite portals cleanup
-DELETE FROM creature_linking_template WHERE entry IN (17367,17368,17369);
-INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES
-(17367, 532, 15689, 4112, 0),
-(17368, 532, 15689, 4112, 0),
-(17369, 532, 15689, 4112, 0);
+-- Ulduar
+INSERT INTO creature (guid,id,map,spawnMask,phaseMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
+(140595, 33329, 603, 3, 1, 0, 0, 886.275, -12.0545, 409.602, 3.12941, 604800, 0, 0, 1800021, 0, 0, 0);
+-- missing Razorscale controllers for harpoons
+INSERT INTO creature (guid,id,map,spawnMask,phaseMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
+(140596, 33233, 603, 3, 1, 0, 0, 572.4106, -138.6564, 393.9044, 4.764749, 7200, 0, 0, 12600, 0, 0, 0),
+(140597, 33233, 603, 3, 1, 0, 0, 589.7287, -137.1148, 393.9011, 4.485496, 7200, 0, 0, 12600, 0, 0, 0),
+(140598, 33233, 603, 2, 1, 0, 0, 558.646, -140.129, 391.517, 4.7328, 7200, 0, 0, 12600, 0, 0, 0),
+(140599, 33233, 603, 2, 1, 0, 0, 606.747, -136.945, 391.353, 4.7328, 7200, 0, 0, 12600, 0, 0, 0);
+-- Missing Thorim spawn
+INSERT INTO creature (guid,id,map,spawnMask,phaseMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
+(140600, 34055, 603, 3, 1, 0, 0, 2134.883, -263.6244, 442.0274, 0, 7200, 0, 0, 17010, 0, 0, 0);
+-- Missing storm peaks spawns (ytdb)
+INSERT INTO creature (guid,id,map,spawnMask,phaseMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
+(140601, 30169, 571, 1, 4, 0, 0, 7181.41, -3533.11, 826.956, 3.21141, 300, 0, 0, 12600, 0, 0, 0),
+(140602, 30169, 571, 1, 4, 0, 0, 7219.12, -3607.77, 822.712, 1.65806, 300, 0, 0, 12600, 0, 0, 0),
+(140603, 30169, 571, 1, 4, 0, 0, 7216.24, -3582.57, 824.501, 0.837758, 300, 0, 0, 12600, 0, 0, 0),
+(140604, 30169, 571, 1, 4, 0, 0, 7207.47, -3438.53, 838.874, 2.89725, 300, 0, 0, 12600, 0, 0, 0),
+(140605, 30169, 571, 1, 4, 0, 0, 7222.42, -3441.84, 837.193, 2.14675, 300, 0, 0, 12600, 0, 0, 0),
+(140606, 30169, 571, 1, 4, 0, 0, 7227.85, -3415.96, 840.174, 1.55334, 300, 0, 0, 12600, 0, 0, 0),
+(140607, 30169, 571, 1, 4, 0, 0, 7217.79, -3378.62, 846.734, 5.41052, 300, 0, 0, 12600, 0, 0, 0),
+(140608, 30169, 571, 1, 4, 0, 0, 7206.48, -3460.64, 835.851, 3.90954, 300, 0, 0, 12600, 0, 0, 0),
+(140609, 30169, 571, 1, 4, 0, 0, 7192, -3386.61, 846.416, 2.11185, 300, 0, 0, 12600, 0, 0, 0),
+(140610, 30169, 571, 1, 4, 0, 0, 7206.62, -3482, 833.563, 3.28122, 300, 0, 0, 12600, 0, 0, 0),
+(140611, 30169, 571, 1, 4, 0, 0, 7232.06, -3474.28, 850.768, 3.92699, 300, 0, 0, 12600, 0, 0, 0),
+(140612, 30169, 571, 1, 4, 0, 0, 7178.47, -3558.92, 827.034, 3.35103, 300, 0, 0, 12600, 0, 0, 0),
+(140613, 30169, 571, 1, 4, 0, 0, 7138.42, -3553.75, 832.279, 4.69494, 300, 0, 0, 12600, 0, 0, 0);
+
+DELETE FROM gameobject WHERE guid IN (94145, 94146, 94147, 94148, 94149, 94150, 94151, 94152, 94153);
+INSERT INTO gameobject (guid, id, map, spawnMask, phaseMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecs, animprogress, state) VALUES
+(94145, 191330, 609, 1, 128, 2282.675, -5284.146, 82.61536, 2.478367, 0, 0, 0, 1, -120, 255, 1),
+(94146, 191302, 609, 1, 128, 2268.648, -5344.329, 86.94088, 2.478367, 0, 0, 0, 1, -120, 255, 1),
+(94147, 191301, 609, 1, 128, 2290.013, -5248.24, 82.4146, 0.06981169, 0, 0, 0, 1, -120, 255, 1),
+(94148, 191302, 609, 1, 128, 2322.023, -5299.277, 81.99951, 0.1919852, 0, 0, 0, 1, -120, 255, 1),
+(94149, 191302, 609, 1, 128, 2248.281, -5308.292, 80.57009, 2.565632, 0, 0, 0, 1, -120, 255, 1),
+(94150, 191301, 609, 1, 128, 2281.657, -5307.493, 86.68705, -1.256636, 0, 0, 0, 1, -120, 255, 1),
+(94151, 191302, 609, 1, 128, 2256.331, -5269.824, 80.03564, 1.012289, 0, 0, 0, 1, -120, 255, 1),
+(94152, 191302, 609, 1, 128, 2299.604, -5267.319, 81.93887, 2.356195, 0, 0, 0, 1, -120, 255, 1),
+(94153, 191302, 609, 1, 128, 2291.603, -5331.028, 131.3173, -0.8726639, 0, 0, 0, 1, -120, 255, 1);

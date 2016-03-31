@@ -1149,3 +1149,6 @@ INSERT INTO creature_linking (guid, master_guid, flag) VALUES
 DELETE FROM creature_linking WHERE guid = 140771;
 INSERT INTO creature_linking (guid, master_guid, flag) VALUES
 (140771, 140756, 656);
+
+-- invis infernal caster different count in udb
+-- 21419 infernal attacker different count in udb
