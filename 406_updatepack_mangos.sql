@@ -1,15 +1,3 @@
--- Totem of Spirits - summoned from 'item =30094' with few quests. Shouldnt ever be spawned on map as NPC.
-DELETE FROM creature WHERE guid = 74051;
--- Ruul's Netherdrake - spawns only when Ruul the Darkener dies. (ACID)
-DELETE FROM creature WHERE guid = 86103;
--- Netherwing Ledge -- Duplicates
--- Dragonmaw Ascendant wp's
-DELETE FROM creature WHERE guid IN (
-52291, 52346, 52302, 52347, 52289, 52288, 52286, 52283, 52275, 52284, 52285, 52282, 52305, 52304, 52306,
-52307, 52301, 52299, 52303, 52298, 52297, 52338, 52337, 52336, 52335, 52339, 52314, 52313, 52312, 52311,
-52315, 52292, 52276, 52341, 52278, 52279, 52280, 52281, 52294, 52293, 52316, 52317, 52318, 52319, 52320,
-52295, 52321, 52326, 52327, 52328, 52329, 52332, 52333, 52334, 52296, 52324, 52323, 52344, 52310, 52309,
-52308);
 -- Shadowsworn Drakonid <Servant of Illidan> - duplicates (spawned twice on wps)
 DELETE FROM creature WHERE guid IN (77356, 77357);
 -- Shadowmoon Retainer <Servant of Illidan> -- they shouldnt ever be there 
