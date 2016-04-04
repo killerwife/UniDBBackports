@@ -19,8 +19,7 @@ select * from gameobject where id in(141979);
 select count(guid) from gameobject where id in(184701);
 
 select * from creature where guid IN (84622, 84626);
-select * from voamangos.creature where id IN(22253);
-select * from udbmangos.creature where id IN(22253);
-select count(guid) from voamangos.creature where id IN(22253);
-select count(guid) from udbmangos.creature where id IN(22253);
-select * from creature_template where name like '%Dragonmaw Ascendant%';
+select * from creature where id IN(21059);
+select count(guid) from creature where id IN(21059);
+select count(guid) from udbmangos.creature where id IN(21059);
+select * from creature_template where name like '%bleeding hollow dark shaman%';
