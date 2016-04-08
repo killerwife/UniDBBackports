@@ -15,11 +15,21 @@ select * from pool_template WHERE entry IN (15010, 15011, 15012, 15013);
 select * from pool_gameobject WHERE guid IN (93956, 93957, 93958, 93959, 93960, 93961, 93962, 93963, 93964, 
 93965, 93966, 93967);
 
+SELECT MIN(t1.guid + 1) AS nextID
+FROM creature t1
+   LEFT JOIN creature t2
+       ON t1.guid + 1 = t2.guid
+WHERE t2.guid IS NULL;
+
+select * from creature where guid=81;
+
 select * from gameobject where id in(141979);
 select count(guid) from gameobject where id in(184701);
 
-select * from creature where guid IN (84622, 84626);
-select * from creature where id IN(21059);
-select count(guid) from creature where id IN(21059);
-select count(guid) from udbmangos.creature where id IN(21059);
+select * from creature_template where entry IN(21044);
+select * from creature where guid IN (871) or guid between 140572 and 140580;
+select * from creature where id IN(21753);
+select * from udbmangos.creature where id IN(27946);
+select count(guid) from creature where id IN(19784);
+select count(guid) from udbmangos.creature where id IN(19784);
 select * from creature_template where name like '%bleeding hollow dark shaman%';
