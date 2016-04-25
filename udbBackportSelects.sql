@@ -26,10 +26,10 @@ select * from creature where guid=81;
 select * from gameobject where id in(141979);
 select count(guid) from gameobject where id in(184701);
 
-select * from creature_template where entry IN(21044);
-select * from creature where guid IN (871) or guid between 140572 and 140580;
-select * from creature where id IN(21753);
+select * from creature_template where entry IN(18120);
+select * from creature where guid IN(64236) or guid between 140572 and 140580;
+select * from creature where id in();
 select * from udbmangos.creature where id IN(27946);
-select count(guid) from creature where id IN(19784);
-select count(guid) from udbmangos.creature where id IN(19784);
+select count(guid) from creature where id IN(19353);
+select count(guid) from udbmangos.creature where id IN(19353);
 select * from creature_template where name like '%bleeding hollow dark shaman%';
