@@ -181,3 +181,157 @@ UPDATE creature SET position_x = -5065.454102, position_y = 360.774658, position
 UPDATE creature SET position_x = -5025.245117, position_y = 350.746124, position_z = 170.646530, orientation = 2.289009 WHERE guid = 52101;
 UPDATE creature SET position_x = -5042.181152, position_y = 389.447937, position_z = 170.659821, orientation = 5.489504 WHERE guid = 52102;
 UPDATE creature SET position_x = -5024.062500, position_y = 397.963715, position_z = 170.646103, orientation = 4.103456 WHERE guid = 52095;
+
+-- Disobedient Dragonmaw Peon
+UPDATE creature SET position_x = -5096.1147, position_y = 483.314, position_z = 82.86, orientation = 4.5475, spawndist = 5, MovementType = 1 WHERE guid = 52265; -- 40714
+DELETE FROM creature_addon WHERE guid = 52265; 
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
+(52265,0,0,1,0,0,0,'40714');
+UPDATE creature SET position_x = -5183.9067, position_y = 392.276, position_z = 72.201469, orientation = 5.414 WHERE guid = 52268; -- 40735
+DELETE FROM creature_addon WHERE guid = 52268;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
+(52268,0,0,1,0,15,0,'40735');
+UPDATE creature SET position_x = -5238.797852, position_y = 275.804413, position_z = 69.431686, orientation = 4.582273 WHERE guid = 52267; -- 40735
+DELETE FROM creature_addon WHERE guid = 52267;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
+(52267,0,0,1,0,15,0,'40735');
+UPDATE creature SET position_x = -5291.341309, position_y = 382.097992, position_z = 53.547478, orientation = 5.962993 WHERE guid = 52270; -- 40732
+DELETE FROM creature_addon WHERE guid = 52270; 
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
+(52270,0,0,1,0,0,0,'40732');
+UPDATE creature SET position_x = -5345.392578, position_y = 164.435852, position_z = 41.236126, orientation = 3.795270, spawndist = 5, MovementType = 1 WHERE guid = 52271; -- 40714
+DELETE FROM creature_addon WHERE guid = 52271; 
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
+(52271,0,0,1,0,0,0,'40714');
+UPDATE creature SET position_x = -5178.445313, position_y = 137.140045, position_z = 73.169189, orientation = 0.603397 WHERE guid = 52272; -- 40732
+DELETE FROM creature_addon WHERE guid = 52272; 
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
+(52272,0,0,1,0,0,0,'40732');
+UPDATE creature SET position_x = -5248.107422, position_y = 24.594639, position_z = 53.959251, orientation = 1.144406, spawndist = 5, MovementType = 1 WHERE guid = 52273; -- 40714
+DELETE FROM creature_addon WHERE guid = 52273; 
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
+(52273,0,0,1,0,0,0,'40714');
+UPDATE creature SET position_x = -5182.115234, position_y = -10.521124, position_z = 76.323410, orientation = 0.669229 WHERE guid = 52274; -- 40735
+DELETE FROM creature_addon WHERE guid = 52274; 
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
+(52274,0,0,1,0,15,0,'40735');
+UPDATE creature SET spawndist = 5, MovementType = 1  WHERE guid = 52268; -- 40714
+DELETE FROM creature_addon WHERE guid = 52268; 
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
+(52268,0,0,1,0,0,0,'40714');
+-- 52266 -- 40732
+DELETE FROM creature_addon WHERE guid = 52266; 
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
+(52266,0,0,1,0,0,0,'40732');
+-- 52269 -- 40735
+DELETE FROM creature_addon WHERE guid = 52269; 
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
+(52269,0,0,1,0,15,0,'40735');
+-- Ashtongue Deathsworn
+UPDATE creature_model_info SET modelid_other_gender = 0 WHERE modelid = 20422;
+-- gossip for Akama -- Warden's Cage
+UPDATE creature_template SET gossipmenuid = 8372 WHERE entry = 21700;
+DELETE FROM gossip_menu WHERE entry = 8372;
+INSERT INTO gossip_menu (entry, text_id, script_id, condition_id) VALUES 
+(8372,10447,0,0);
+
+-- Ruins of Karabor - SHADOWMOON VALLEY
+-- Sunfury Eradicator - updates 
+UPDATE creature SET equipment_id = 2511 WHERE guid IN (32338, 32685, 32686, 32687, 32688, 75988, 75989); -- some of them using diff equip.
+UPDATE creature SET position_x = -3679.856, position_y = 465.32373, position_z = 90.755714, orientation = 2.635447 WHERE guid = 32688;
+UPDATE creature SET position_x = -3784.303955, position_y = 532.671875, position_z = 75.059875, orientation = 3.124139 WHERE guid = 32689;
+UPDATE creature SET position_x = -3753.312, position_y = 517.034119, position_z = 90.41709, orientation = 5.969026 WHERE guid = 32338;
+UPDATE creature SET position_x = -3825.46704, position_y = 533.5733, position_z = 77.87347, orientation = 0.10067 WHERE guid = 32339;
+UPDATE creature SET position_x = -3826.645996, position_y = 548.731384, position_z = 72.209023, orientation = 0.1745329 WHERE guid = 32336;
+UPDATE creature SET position_x = -3825.9121, position_y = 569.2147, position_z = 72.06449, orientation = 0.01745329 WHERE guid = 32337;
+DELETE FROM creature_addon WHERE guid IN (32338, 32685, 32686, 32687, 32688); -- they should work
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
+(32338,0,0,1,16,173,0,NULL),
+(32685,0,0,1,16,173,0,NULL),
+(32686,0,0,1,16,173,0,NULL),
+(32687,0,0,1,16,173,0,NULL),
+(32688,0,0,1,16,173,0,NULL);
+-- Sunfury Blood Lord
+UPDATE creature SET position_x = -3861.197998, position_y = 509.723206, position_z = 91.152908, orientation = 0.0296 WHERE guid = 75996;
+-- Demon Hunter Supplicant
+UPDATE creature_template SET factionAlliance = 1813, factionHorde = 1813 WHERE entry = 21179; -- real faction on spawn (diff is set only for event when they fight between themselfs)
+UPDATE creature SET position_x = -3917.171387, position_y = 465.100372, position_z = 104.599174, orientation = 4.754642 WHERE guid = 74246;
+UPDATE creature SET position_x = -3916.967773, position_y = 461.777313, position_z = 104.680939, orientation = 1.664098 WHERE guid = 74247;
+-- Shadowmoon Darkweaver <Servant of Illidan>
+DELETE FROM creature_addon WHERE guid IN (77394, 77374, 77381, 77382, 77393, 77392, 77391, 77384, 77383, 77387, 77389, 77390, 77380, 77379, 77375); -- they all got same stateemote and aura so we can use _template_addon
+UPDATE creature_template_addon SET emote = 468, auras = '38442' WHERE entry = 22081;
+-- Shadowsworn Drakonid <Servant of Illidan>
+UPDATE creature SET position_x = -3294.920410, position_y = 347.642090, position_z = 120.513504, orientation = 1.089651, MovementType = 2, spawndist = 0 WHERE guid = 77358;
+-- Heart of Fury Visual Trigger 
+UPDATE creature_template SET MovementType = 0, InhabitType = 4 WHERE entry = 22058;
+-- Shadowmoon Chosen <Servant of Illidan>
+UPDATE creature SET position_x = -3270.835938, position_y = 338.949188, position_z = 119.751984, orientation =3.089233 WHERE guid = 77484; -- correct poss for 1st one
+UPDATE creature SET MovementType = 2, spawndist = 0 WHERE guid IN (77483, 77487, 77492, 77495, 77497, 77498);
+UPDATE creature_addon SET auras =NULL WHERE guid IN (77495, 77497, 77498); -- spell is casted on aggro (req. ACID not UDB)
+-- Shadowlord Deathwail
+UPDATE creature_template SET inhabitType = 5 WHERE entry = 22006;
+UPDATE creature SET position_x = -3225.12, position_y = 246.8172, position_z = 195.6793, MovementType = 2, spawndist = 0 WHERE guid = 77084;
+-- Shadowmoon Slayer <Servant of Illidan>
+UPDATE creature_template_addon SET emote = 438 WHERE entry = 22082;
+-- Eclipse point -- SHADOWMOON VALLEY
+-- Illidari Slayer 
+UPDATE creature SET spawndist = 0, MovementType = 0 WHERE guid IN (75468, 75469);
+-- Eclipsion Archmage
+DELETE FROM creature_addon WHERE guid IN (70850, 70851, 70852, 70853, 70854, 70855, 70856, 70858, 70861, 70862); -- they all got same so we can use _template_addon
+UPDATE creature_template_addon SET b2_1_flags = 16 WHERE entry = 19796;
+UPDATE creature SET spawndist = 0, MovementType = 0, orientation = 6.045 WHERE guid = 70866;
+UPDATE creature SET position_x = -4424.159668, position_y = 1570.85266, position_z = 164.735, orientation = 4.603 WHERE guid = 72585;
+UPDATE creature SET spawndist = 0, MovementType = 0 WHERE guid IN (70867, 70869);
+UPDATE creature SET MovementType = 2, spawndist = 0 WHERE guid IN (70850, 70851, 70852, 70853, 70854, 70855, 70856, 70858, 70861, 70862); -- they all must 'do' movement script
+-- Shadowmoon Village -- SHADOWMOON VALLEY
+-- Warcaller Sardon Truslice
+UPDATE creature SET position_x = -3079.75, position_y = 2555.731, position_z = 62.854, orientation = 4.732, MovementType = 2, spawndist = 0 WHERE guid = 31751;
+-- Grutah
+DELETE FROM creature_template_addon WHERE entry = 19341;
+INSERT INTO creature_template_addon (entry, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
+(19341, 0, 0, 1, 16, 69, 0, NULL);
+-- Shadowmoon Peon
+UPDATE creature_template_addon SET emote = 0 WHERE entry = 19355;
+DELETE FROM creature_addon WHERE guid = 69071;
+UPDATE creature SET position_x = -3173.563477, position_y = 2491.294678, position_z = 62.632, orientation = 2.219 WHERE guid = 69066;
+UPDATE creature SET position_x = -3127.639648, position_y = 2479.661377, position_z = 61.9797, orientation = 1.017547 WHERE guid = 69070;
+UPDATE creature SET position_x = -3128.244873, position_y = 2493.162354, position_z = 61.884327, orientation = 0.476898 WHERE guid = 69055;
+UPDATE creature SET position_x = -2964.790527, position_y = 2663.017, position_z = 98.645836, orientation = 0.333633 WHERE guid = 69056;
+UPDATE creature SET position_x = -2960.153, position_y = 2578.2964, position_z = 76.601, orientation = 4.548, spawndist = 0, MovementType = 0 WHERE guid = 69058;
+DELETE FROM creature_addon WHERE guid = 69068;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
+(69068,0,0,1,16,173,0,NULL);
+UPDATE creature SET position_x = -3123.919678, position_y = 2444.355225, position_z = 64.202316, orientation = 5.707159 WHERE guid = 69054;
+DELETE FROM creature_addon WHERE guid = 69054;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
+(69054,0,0,1,16,69,0,NULL);
+DELETE FROM creature_addon WHERE guid = 69053;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
+(69053,0,0,1,16,173,0,NULL);
+DELETE FROM creature_addon WHERE guid = 69067;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
+(69067,0,0,1,16,173,0,NULL);
+UPDATE creature SET position_x = -3123.56738, position_y = 2480.264648, position_z = 62.442, orientation = 1.25 WHERE guid = 69052;
+DELETE FROM creature_addon WHERE guid = 69052;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
+(69052,0,0,1,16,173,0,NULL);
+DELETE FROM creature_addon WHERE guid = 69064;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
+(69064,0,0,1,16,173,0,NULL);
+DELETE FROM creature_addon WHERE guid = 69055;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
+(69055,0,0,1,16,173,0,NULL);
+DELETE FROM creature_addon WHERE guid = 69058;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
+(69058,0,0,1,16,69,0,NULL);
+-- Kor'kron Defender
+UPDATE creature SET position_x = -3104.119, position_y = 2563.8, position_z = 62.03776, orientation =2.949606 WHERE guid =69090;
+UPDATE creature SET position_x =-2933.189941, position_y =2648.259033, position_z =93.679657, orientation = 3.954962 WHERE guid = 69081;
+
+UPDATE creature SET position_x = -3068.23, position_y = 2522.297363, position_z = 61.924, orientation = 5.037, MovementType = 2, spawndist = 0 WHERE guid = 69096;
+UPDATE creature SET position_x = -3071.64, position_y = 2523.181641, position_z = 61.885, orientation = 4.959 WHERE guid = 69097;
+UPDATE creature SET position_x = -3180.173096, position_y = 2623.666992, position_z = 141.622498, orientation = 3.438781, MovementType = 2, spawndist = 0 WHERE guid = 74220;
+DELETE FROM creature_addon WHERE guid IN (69096, 69097);
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
+(69096,14336,0,1,16,0,0,NULL),
+(69097,14334,0,1,16,0,0,NULL);
