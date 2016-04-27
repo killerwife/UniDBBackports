@@ -2248,19 +2248,19 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z, wa
 UPDATE creature SET MovementType = 2, spawndist = 0 WHERE guid = 77282;
 DELETE FROM creature_movement WHERE id = 77282;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES 
-(77282,1,-3256.69,272.998,137.138,600000,0,0,0,0,0,0,38250,0,1.06465,0,0),
+(77282,1,-3256.69,272.998,137.138,600000,0,0,0,0,0,0,0,38250,1.06465,0,0),
 (77282,2,-3256.69,272.998,137.138,0,0,0,0,0,0,0,0,0,1.06465,0,0);
 -- 2nd
 UPDATE creature SET MovementType = 2, spawndist = 0 WHERE guid = 77283;
 DELETE FROM creature_movement WHERE id = 77283;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES 
-(77283,1,-3236.01,291.181,137.178,600000,0,0,0,0,0,0,38250,0,3.36848,0,0),
+(77283,1,-3236.01,291.181,137.178,600000,0,0,0,0,0,0,0,38250,3.36848,0,0),
 (77283,2,-3236.01,291.181,137.178,0,0,0,0,0,0,0,0,0,3.36848,0,0);
 -- 3rd
 UPDATE creature SET MovementType = 2, spawndist = 0 WHERE guid = 77284;
 DELETE FROM creature_movement WHERE id = 77284;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES 
-(77284,1,-3254.48,301.103,137.13,600000,0,0,0,0,0,0,38250,0,5.11381,0,0),
+(77284,1,-3254.48,301.103,137.13,600000,0,0,0,0,0,0,0,38250,5.11381,0,0),
 (77284,2,-3254.48,301.103,137.13,0,0,0,0,0,0,0,0,0,5.11381,0,0);
 -- Shadowmoon Chosen <Servant of Illidan>
 DELETE FROM creature_movement WHERE id IN (77483, 77487, 77492, 77495, 77497, 77498);
@@ -3136,3 +3136,154 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z, wa
 (75806,38,-4148.679688,446.607391,33.682346,0,0,0,0,0,0,0,0,0,5.675743,0,0),
 (75806,39,-4156.754883,452.168213,31.474447,0,0,0,0,0,0,0,0,0,2.573419,0,0),
 (75806,40,-4168.957031,466.059998,30.494608,0,0,0,0,0,0,0,0,0,2.282822,0,0);
+-- Sunfury Warlock
+UPDATE creature SET MovementType = 2, spawndist  =0 WHERE guid = 75414;
+DELETE FROM creature_movement WHERE id = 75414;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES 
+(75414,1,-3824.080566,342.716705,120.657806,0,0,0,0,0,0,0,0,0,1.511785,0,0),
+(75414,2,-3824.897949,309.914795,120.632156,0,0,0,0,0,0,0,0,0,4.684789,0,0),
+(75414,3,-3824.870605,256.013763,120.616676,0,0,0,0,0,0,0,0,0,4.751546,0,0),
+(75414,4,-3824.703613,314.869141,120.657677,0,0,0,0,0,0,0,0,0,1.570683,0,0);
+-- now 5 that channel spell on Azaloth
+-- 1st
+DELETE FROM creature_movement WHERE id = 75409;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES 
+(75409,1,-3821.185059,388.192596,120.564316,30000,0,0,0,0,0,0,0,38722,3.542035,0,0), -- TO DO: Spell stucks on npc - should be removed on aggro
+(75409,2,-3821.185059,388.192596,120.564316,0,0,0,0,0,0,0,0,0,3.542035,0,0);
+-- 2nd
+DELETE FROM creature_movement WHERE id = 75410;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES 
+(75410,1,-3844.86499,388.54379,120.416885,30000,0,0,0,0,0,0,0,38722,5.969026,0,0), -- TO DO: Spell stucks on npc - should be removed on aggro
+(75410,2,-3844.86499,388.54379,120.416885,0,0,0,0,0,0,0,0,0,5.969026,0,0);
+-- 3rd
+DELETE FROM creature_movement WHERE id = 75411;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES 
+(75411,1,-3841.58496,376.102,120.403328,30000,0,0,0,0,0,0,0,38722,0.9948376,0,0), -- TO DO: Spell stucks on npc - should be removed on aggro
+(75411,2,-3841.58496,376.102,120.403328,0,0,0,0,0,0,0,0,0,0.9948376,0,0);
+-- 4th
+DELETE FROM creature_movement WHERE id = 75412;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES 
+(75412,1,-3824.62988,374.3699,120.57457,30000,0,0,0,0,0,0,0,38722,2.234,0,0), -- TO DO: Spell stucks on npc - should be removed on aggro
+(75412,2,-3824.62988,374.3699,120.57457,0,0,0,0,0,0,0,0,0,2.234,0,0);
+-- 5th
+UPDATE creature SET MovementType = 2, spawndist = 0 WHERE guid = 75408;
+DELETE FROM creature_movement WHERE id = 75408;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES 
+(75408,1,-3839.98,403.547,120.641,30000,0,0,0,0,0,0,0,38722,5.25344,0,0), -- TO DO: Spell stucks on npc - should be removed on aggro
+(75408,2,-3839.98,403.547,120.641,0,0,0,0,0,0,0,0,0,5.25344,0,0);
+-- Dragonmaw Subjugator
+UPDATE creature SET MovementType = 2, spawndist = 0 WHERE guid = 75774;
+DELETE FROM creature_movement WHERE id = 75774;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES 
+(75774,1,-4093.977783,381.199615,30.644897,0,0,0,0,0,0,0,0,0,3.892662,0,0),
+(75774,2,-4098.746582,376.555664,30.797308,0,0,0,0,0,0,0,0,0,3.542376,0,0),
+(75774,3,-4105.760254,375.540924,30.608936,0,0,0,0,0,0,0,0,0,2.820595,0,0),
+(75774,4,-4113.001953,380.848358,30.458948,0,0,0,0,0,0,0,0,0,2.017918,0,0),
+(75774,5,-4115.609375,389.396088,30.423685,0,0,0,0,0,0,0,0,0,1.377818,0,0),
+(75774,6,-4114.786621,392.274078,30.417028,11000,2171801,0,0,0,0,0,0,0,0.949776,0,0),
+(75774,7,-4113.623535,392.392578,30.395899,0,0,0,0,0,0,0,0,0,6.171103,0,0),
+(75774,8,-4109.685059,390.704681,30.401756,0,0,0,0,0,0,0,0,0,0.155740,0,0),
+(75774,9,-4105.583984,390.955475,30.452295,0,0,0,0,0,0,0,0,0,0.459689,0,0),
+(75774,10,-4103.539063,393.594086,30.495529,0,0,0,0,0,0,0,0,0,1.419446,0,0),
+(75774,11,-4102.723633,398.989929,30.628727,0,0,0,0,0,0,0,0,0,1.126493,0,0),
+(75774,12,-4096.089355,403.437164,30.524677,0,0,0,0,0,0,0,0,0,0.149457,0,0),
+(75774,13,-4090.207764,403.836487,30.441118,0,0,0,0,0,0,0,0,0,5.730498,0,0),
+(75774,14,-4087.153076,402.147980,30.486839,11000,2171801,0,0,0,0,0,0,0,5.670027,0,0),
+(75774,15,-4086.802246,400.638947,30.511129,0,0,0,0,0,0,0,0,0,4.698492,0,0),
+(75774,16,-4086.153809,397.519714,30.562328,0,0,0,0,0,0,0,0,0,5.128107,0,0),
+(75774,17,-4085.152344,394.526855,30.647171,0,0,0,0,0,0,0,0,0,4.711061,0,0),
+(75774,18,-4089.763428,387.494690,30.568907,0,0,0,0,0,0,0,0,0,4.024629,0,0);
+DELETE FROM dbscripts_on_creature_movement WHERE id = 2171801; 
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(2171801,3,15,30945,0,0,0,0,0,0,0,0,0,0,0,0,''),
+(2171801,8,15,6273,0,0,0,0,0,0,0,0,0,0,0,0,'');
+-- Illidari Ravager <Servant of Illidan>
+DELETE FROM dbscripts_on_creature_movement WHERE id = 2285701; 
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(2285701,0,20,0,0,0,0,0,0,0,0,0,0,0,0,0,'movement changed to :idle');
+-- Let Gahz'rilla walk out of his basin)
+UPDATE creature_template SET MovementType = 2 WHERE entry = 7273;
+DELETE FROM creature_movement_template WHERE entry= 7273;
+INSERT INTO creature_movement_template (entry, point, position_x, position_y, position_z, waittime, script_id) VALUES
+(7273, 1, 1703.787354, 1225.994019, 8.876802, 1000, 7273);
+DELETE FROM dbscripts_on_creature_movement WHERE id = 7273;
+INSERT INTO dbscripts_on_creature_movement (id, command, datalong, datalong2, data_flags, comments) VALUES
+(7273, 20, 1, 15, 8, 'Let Gahzrilla move random');
+-- Better movement for UBRS Rookery Event
+UPDATE creature_template SET MovementType = 2 WHERE entry IN (10264, 10258, 10683);
+-- Waypoints for some NPCs
+DELETE FROM creature_movement_template WHERE entry IN (10264, 10258, 10683);
+INSERT INTO creature_movement_template (entry, point, position_x, position_y, position_z, waittime, script_id) VALUES
+-- Solakar Flamewreath
+(10264, 1, 62.9621, -270.921, 93.4347, 0, 0),
+(10264, 2, 74.4821, -275.932, 92.602, 0, 0),
+(10264, 3, 80.6596, -289.724, 91.4508, 0, 0),
+(10264, 4, 78.1464, -317.642, 91.4405, 1, 1026404),
+-- Rookery Guardian
+(10258, 1, 62.9621, -270.921, 93.4347, 0, 0),
+(10258, 2, 74.4821, -275.932, 92.602, 0, 0),
+(10258, 3, 80.6596, -289.724, 91.4508, 0, 0),
+(10258, 4, 78.1464, -317.642, 91.4405, 1, 1026404),
+-- Rookery Hatcher
+(10683, 1, 62.9621, -270.921, 93.4347, 0, 0),
+(10683, 2, 74.4821, -275.932, 92.602, 0, 0),
+(10683, 3, 80.6596, -289.724, 91.4508, 0, 0),
+(10683, 4, 78.1464, -317.642, 91.4405, 1, 1026404);
+DELETE FROM dbscripts_on_creature_movement WHERE id = 1026404;
+INSERT INTO dbscripts_on_creature_movement (id, command, datalong, datalong2, data_flags, comments) VALUES
+(1026404, 20, 1, 20, 0x08, 'UBRS-Rookery event: Random movement around current position');
+-- Leotheras
+DELETE FROM creature_linking_template WHERE entry IN (21875, 21857, 21806);
+INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES
+(21875, 548, 21215, 4112, 0),
+(21857, 548, 21215, 4112, 0),
+(21806, 548, 21806, 3, 0);
+DELETE FROM spell_script_target WHERE entry = 37626;
+INSERT INTO spell_script_target (entry, type, targetEntry) VALUES
+(37626, 1, 21215);
+-- Karathress
+DELETE FROM creature_linking_template WHERE entry IN (21964, 21966, 21965);
+INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES
+(21964, 548, 21214, 7, 0),
+(21966, 548, 21214, 7, 0),
+(21965, 548, 21214, 7, 0);
+-- Lurker
+UPDATE creature_template SET unit_flags = unit_flags | 32832, InhabitType = InhabitType | 1 WHERE entry = 21217;
+DELETE FROM creature_linking_template WHERE entry IN (21865, 21873);
+INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES
+(21865, 548, 21217, 4096, 0),
+(21873, 548, 21217, 4096, 0);
+-- Morogrim
+UPDATE creature_template SET unitflags = unitflags | 33554432 WHERE entry = 21913;
+DELETE FROM creature_linking_template WHERE entry IN (21913, 21920);
+INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES
+(21913, 548, 21213, 4112, 0),
+(21920, 548, 21213, 4112, 0);
+DELETE FROM spell_script_target WHERE entry = 38015;
+INSERT INTO spell_script_target (entry, type, targetEntry) VALUES
+(38015, 1, 21216);
+DELETE FROM creature_linking_template WHERE entry IN (22035, 22036);
+INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES
+(22035, 548, 21216, 4112, 0),
+(22036, 548, 21216, 4112, 0);
+DELETE FROM spell_target_position WHERE id = 36459;
+INSERT INTO spell_target_position (id, target_map, target_position_x, target_position_y, target_position_z, target_orientation) VALUES
+(36459, 548, -347.518, -350.367, 1.07459, 4.48);
+-- Lady Vashj
+DELETE FROM creature_linking_template WHERE entry IN (21958, 22009, 22056, 22055, 22140);
+INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES
+(21958, 548, 21212, 4096, 0),
+(22009, 548, 21212, 4096, 0),
+(22056, 548, 21212, 4096, 0),
+(22055, 548, 21212, 4096, 0),
+(22140, 548, 21212, 4096, 0);
+-- #### Magtheridon ####
+UPDATE creature SET MovementType = 0 WHERE id = 17376;
+DELETE FROM creature_linking_template WHERE entry IN (17256, 17454);
+INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES
+(17256, 544, 17256, 15, 0),
+(17454, 544, 17256, 4112, 0);
+-- ### Ruins of AQ ###
+DELETE FROM creature_linking_template WHERE entry = 15428;
+INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES
+(15428, 509, 15339, 4112, 0);

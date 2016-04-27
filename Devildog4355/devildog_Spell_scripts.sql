@@ -10,3 +10,7 @@ INSERT INTO spell_script_target (entry, type, targetEntry) VALUES
 DELETE FROM spell_script_target WHERE entry = 38250;
 INSERT INTO spell_script_target (entry, type, targetEntry) VALUES 
 (38250, 1, 22058);
+-- spell must have a target -- Sunfury Warlock uses it to channel on Azaloth
+DELETE FROM spell_script_target WHERE entry = 38722;
+INSERT INTO spell_script_target (entry, type, targetEntry) VALUES 
+(38722, 1, 21506);
