@@ -335,3 +335,63 @@ DELETE FROM creature_addon WHERE guid IN (69096, 69097);
 INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
 (69096,14336,0,1,16,0,0,NULL),
 (69097,14334,0,1,16,0,0,NULL);
+-- Sunfury Warlock
+UPDATE creature_template SET factionAlliance = 1813, factionHorde = 1813 WHERE entry = 21503;
+UPDATE creature SET position_x = -3821.185059, position_y = 388.192596, position_z = 120.564316, orientation = 3.542035, MovementType = 2, spawndist = 0 WHERE guid = 75409;
+UPDATE creature SET position_x =- 3844.86499, position_y = 388.54379, position_z = 120.416885, orientation = 5.969026, MovementType = 2, spawndist = 0 WHERE guid = 75410;
+UPDATE creature SET position_x = -3824.62988, position_y = 374.3699, position_z = 120.57457, orientation = 2.234, MovementType = 2, spawndist = 0 WHERE guid = 75412;
+UPDATE creature SET position_x = -3841.58496, position_y = 376.102, position_z = 120.403328, orientation = 0.9948376, MovementType = 2, spawndist = 0 WHERE guid = 75411;
+-- Enslaved Netherwing Drake
+DELETE FROM creature_addon WHERE guid IN (75818, 75820, 75824); 
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
+(75818,0,3,1,16,0,0,NULL),
+(75820,0,3,1,16,0,0,NULL),
+(75824,0,3,1,16,0,0,NULL);
+UPDATE creature_addon SET auras = '' WHERE guid IN (75816, 75817, 75825);
+UPDATE creature SET orientation = 3.50373 WHERE guid = 75818;
+-- Dragonmaw Drake Rider
+UPDATE creature SET spawndist = 0, MovementType = 0 WHERE guid IN (75785, 75787, 75788, 75789, 75790, 75791, 75792, 75793);
+UPDATE creature SET position_x = -4155.348633, position_y = 385.599915, position_z = 141.476776, orientation = 1.390226, spawndist= 0, MovementType= 0 WHERE guid = 75786;
+-- Entrance into Black Temple (area outside) - SHADOWMOON VALLEY
+-- Shadowhoof Summoner <Servant of Illidan> -- correct spawn points
+UPDATE creature SET position_x = -3500.331055, position_y = 404.142700, position_z = 30.958199, orientation = 4.697011 WHERE guid = 29053;
+UPDATE creature SET position_x = -3618.229004, position_y = 405.728485, position_z = 32.089481, orientation = 4.782202 WHERE guid = 29058;
+UPDATE creature SET position_x = -3617.355957, position_y = 389.151886, position_z = 34.402809, orientation = 1.58825 WHERE guid = 29057;
+UPDATE creature SET position_x = -3500.304932, position_y = 386.973999, position_z = 33.702042, orientation = 1.553343 WHERE guid = 29054;
+UPDATE creature SET position_x = -3549.875977, position_y = 374.401703, position_z = 33.230572, orientation = 3.176499 WHERE guid = 29055;
+UPDATE creature SET position_x = -3570.402100, position_y = 373.559998, position_z = 32.888485, orientation = 6.213372 WHERE guid = 29056;
+UPDATE creature_template SET UnitFlags = unitflags&~0x300 WHERE entry = 22859; -- 0x8000 is the correct flag.
+-- Lightsworn Vindicator
+UPDATE creature SET position_x = -3524.23, position_y = 578.947, position_z = 13.7938, orientation = 4.67391 WHERE guid = 17577;
+UPDATE creature SET position_x = -3552.085938, position_y = 573.708618, position_z = 12.673436, orientation = 4.684122 WHERE guid = 18051;
+UPDATE creature SET position_x = -3533.843018, position_y = 568.843384, position_z = 14.821877, orientation = 4.684122 WHERE guid = 17566;
+UPDATE creature SET position_x = -3543.006104, position_y = 566.101929, position_z = 14.503198, orientation = 4.753238 WHERE guid = 18044;
+UPDATE creature SET position_x = -3524.770996, position_y = 571.806885, position_z = 14.555212, orientation = 4.765799 WHERE guid = 18054;
+UPDATE creature SET position_x = -3533.820068, position_y = 576.426025, position_z = 14.843843, orientation = 4.640910 WHERE guid = 17336;
+UPDATE creature SET position_x = -3543.095947, position_y = 575.441650, position_z = 13.908803, orientation = 4.781152 WHERE guid = 18053;
+-- Seasoned Magister
+UPDATE creature SET position_x = -3592.949951, position_y = 579.104675, position_z = 13.829624, orientation = 4.834562 WHERE guid = 22307;
+UPDATE creature SET position_x = -3575.698975, position_y = 574.099915, position_z = 12.140335, orientation = 4.834562 WHERE guid = 29050;
+UPDATE creature SET position_x = -3582.562012, position_y = 575.345520, position_z = 13.494620, orientation = 4.834562 WHERE guid = 23710;
+UPDATE creature SET position_x = -3566.906006, position_y = 573.777771, position_z = 11.688795, orientation = 4.834562 WHERE guid = 29051;
+UPDATE creature SET position_x = -3566.230957, position_y = 565.218323, position_z = 12.658995, orientation = 4.834562 WHERE guid = 29052;
+UPDATE creature SET position_x = -3575.227051, position_y = 564.363220, position_z = 13.038273, orientation = 4.834562 WHERE guid = 29049;
+UPDATE creature SET position_x = -3583.866943, position_y = 568.276001, position_z = 13.424305, orientation = 4.834562 WHERE guid = 18490;
+UPDATE creature SET position_x = -3593.875000, position_y = 572.174988, position_z = 14.035522, orientation = 4.834562 WHERE guid = 18492;
+-- Illidari Ravager <Servant of Illidan>
+UPDATE creature_template SET unitflags = unitflags&~0x300, DamageMultiplier = 2.8 WHERE entry = 22857;
+-- Shadowhoof Assassin <Servant of Illidan>
+UPDATE creature_template SET factionalliance = 1843, factionHorde = 1843 WHERE entry = 22858;
+-- Illidari Succubus <Servant of Illidan>
+UPDATE creature_template SET factionAlliance = 1843, factionHorde = 1843 WHERE entry = 22860;
+DELETE FROM creature_template_addon WHERE entry = 22967;
+INSERT INTO creature_template_addon (entry, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
+(22967,20359,0,1,16,0,0,NULL);
+-- Lightsworn Elekk Rider
+DELETE FROM creature_template_addon WHERE entry = 22966;
+INSERT INTO creature_template_addon (entry, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
+(22966,19872,0,1,16,0,0,NULL);
+-- Pure guesswork, but big mobs clearly need a way bigger spawndist than 5
+UPDATE creature SET spawndist = 20 WHERE id = 29753 AND MovementType = 1;
+-- Spawntime TBC-Worldbosses: Doomlord Kazzak and Doomwalker
+UPDATE creature SET spawntimesecs = 108000 WHERE id IN (18728, 17711);
