@@ -882,3 +882,38 @@ INSERT INTO achievement_criteria_requirement (criteria_id, type, value1, value2)
 DELETE FROM achievement_criteria_requirement WHERE criteria_id = 7590;
 INSERT INTO achievement_criteria_requirement (criteria_id, type, value1, value2) VALUES
 (7590, 12, 1, 0);
+
+-- Sartharion special loot, 10m
+DELETE FROM creature_loot_template WHERE entry = 28860 AND groupid IN (5, 6, 7);
+INSERT INTO creature_loot_template (entry, item, ChanceOrQuestChance, groupid, mincountOrRef, maxcount, condition_id) VALUES
+-- at least 1 drake
+(28860, 43990, 0, 5, 1, 1, 739),
+(28860, 43988, 0, 5, 1, 1, 739),
+(28860, 43991, 0, 5, 1, 1, 739),
+(28860, 43989, 0, 5, 1, 1, 739),
+(28860, 43992, 0, 5, 1, 1, 739),
+-- at least 2 drakes
+(28860, 43995, 0, 6, 1, 1, 738),
+(28860, 43998, 0, 6, 1, 1, 738),
+(28860, 43994, 0, 6, 1, 1, 738),
+(28860, 43996, 0, 6, 1, 1, 738),
+(28860, 43993, 0, 6, 1, 1, 738),
+-- 3 drakes
+(28860, 43986, 0, 7, 1, 1, 736);
+
+-- Sartharion special loot, 25m
+DELETE FROM creature_loot_template WHERE entry = 31311 AND groupid IN (5, 6, 7);
+INSERT INTO creature_loot_template (entry, item, ChanceOrQuestChance, groupid, mincountOrRef, maxcount, condition_id) VALUES
+-- at least 1 drake
+(31311, 44004, 0, 5, 1, 1, 739),
+(31311, 44000, 0, 5, 1, 1, 739),
+(31311, 44002, 0, 5, 1, 1, 739),
+(31311, 44003, 0, 5, 1, 1, 739),
+-- at least 2 drakes
+(31311, 44007, 0, 6, 1, 1, 738),
+(31311, 44006, 0, 6, 1, 1, 738),
+(31311, 44005, 0, 6, 1, 1, 738),
+(31311, 44011, 0, 6, 1, 1, 738),
+(31311, 44008, 0, 6, 1, 1, 738),
+-- 3 drakes
+(31311, 43954, 0, 7, 1, 1, 736);
