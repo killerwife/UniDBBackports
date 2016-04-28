@@ -2998,10 +2998,8 @@ INSERT INTO db_script_string (entry, content_default, content_loc1, content_loc2
 
 
 
-
-
-
 -- Devildog4355
+<<<<<<< HEAD
 -- Dragonmaw Subjugator
 UPDATE creature SET MovementType = 2, spawndist = 0 WHERE guid = 75774;
 DELETE FROM creature_movement WHERE id = 75774;
