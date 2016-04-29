@@ -1602,3 +1602,1426 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z, wa
 (52323,1,-2681.248779,2038.770020,117.806694,0,0,0,0,0,0,0,0,0,0,1.572483,0,0),
 (52323,2,-2680.605469,2121.098633,117.148422,0,0,0,0,0,0,0,0,0,0,4.804393,0,0),
 (52323,3,-2680.113770,2094.086182,116.688004,0,0,0,0,0,0,0,0,0,0,4.702293,0,0);
+
+-- Shadow Council Zealot- missing spawns + wps
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (52324,21754,530,1,1,0,0,-2677.91,2604.97,74.9245,1.59403,120,0,0,6326,0,0,2);
+DELETE FROM creature_movement WHERE id = 52324;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(52324,1,-2678.325684,2652.902344,74.924843,0,0,0,0,0,0,0,0,0,0,4.678900,0,0),
+(52324,2,-2676.548096,2540.522461,74.924828,0,0,0,0,0,0,0,0,0,0,1.582253,0,0),
+(52324,3,-2677.909912,2604.969971,74.924500,0,0,0,0,0,0,0,0,0,0,1.472298,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (52326,21754,530,1,1,0,0,-2663.37,2549.13,74.9243,4.57697,120,0,0,6326,0,0,2);
+DELETE FROM creature_movement WHERE id = 52326;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(52326,1,-2663.570068,2529.327637,74.646019,0,0,0,0,0,0,0,0,0,0,1.583757,0,0),
+(52326,2,-2663.742676,2654.023926,74.924805,0,0,0,0,0,0,0,0,0,0,4.717499,0,0),
+(52326,3,-2663.370117,2549.129883,74.924301,0,0,0,0,0,0,0,0,0,0,4.615398,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (52327,21754,530,1,1,0,0,-2645,2590.59,74.9251,1.45658,120,0,0,6326,0,0,2);
+DELETE FROM creature_movement WHERE id = 52327;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(52327,1,-2646.468506,2654.039063,74.924507,0,0,0,0,0,0,0,0,0,0,4.697862,0,0),
+(52327,2,-2644.309570,2586.749512,74.925903,0,0,0,0,0,0,0,0,0,0,4.760692,0,0),
+(52327,3,-2643.917480,2515.218750,74.214821,0,0,0,0,0,0,0,0,0,0,1.595539,0,0),
+(52327,4,-2644.495117,2585.188721,74.925888,0,0,0,0,0,0,0,0,0,0,1.607322,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (52328,21754,530,1,1,0,0,-2631.19,2653.51,74.1862,1.48405,120,0,0,6326,0,0,2);
+DELETE FROM creature_movement WHERE id = 52328;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(52328,1,-2629.376709,2583.553711,74.198387,0,0,0,0,0,0,0,0,0,0,4.709631,0,0),
+(52328,2,-2628.939941,2518.081787,74.202423,0,0,0,0,0,0,0,0,0,0,1.469866,0,0),
+(52328,3,-2630.052490,2583.500000,74.197365,0,0,0,0,0,0,0,0,0,0,1.571973,0,0),
+(52328,4,-2631.485596,2651.505859,74.191307,0,0,0,0,0,0,0,0,0,0,4.690005,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (52329,21754,530,1,1,0,0,-2736.29,2488.78,93.2806,1.52038,120,0,0,6326,0,0,2);
+DELETE FROM creature_movement WHERE id = 52329;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(52329,1,-2736.120361,2505.816406,93.460983,0,0,0,0,0,0,0,0,0,0,4.741055,0,0),
+(52329,2,-2736.896484,2429.869629,92.257599,0,0,0,0,0,0,0,0,0,0,1.524847,0,0),
+(52329,3,-2736.437256,2490.431641,93.280800,0,0,0,0,0,0,0,0,0,0,1.552336,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (52332,21754,530,1,1,0,0,-2720.64,2449.53,92.162,1.56763,120,0,0,6326,0,0,2);
+DELETE FROM creature_movement WHERE id = 52332;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(52332,1,-2719.494385,2505.611816,93.280861,0,0,0,0,0,0,0,0,0,0,4.741053,0,0),
+(52332,2,-2719.745605,2446.810791,92.161270,0,0,0,0,0,0,0,0,0,0,1.587676,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (52333,21754,530,1,1,0,0,-2755.07,2382.19,92.4042,1.51657,120,0,0,6326,0,0,2);
+DELETE FROM creature_movement WHERE id = 52333;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(52333,1,-2753.125000,2480.805664,92.162201,0,0,0,0,0,0,0,0,0,0,4.721427,0,0),
+(52333,2,-2755.167969,2394.444824,93.210419,0,0,0,0,0,0,0,0,0,0,1.544489,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (52334,21754,530,1,1,0,0,-2769.76,2426.95,92.4207,4.73277,120,0,0,6326,0,0,2);
+DELETE FROM creature_movement WHERE id = 52334;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(52334,1,-2770.375000,2388.059814,93.280861,0,0,0,0,0,0,0,0,0,0,1.528769,0,0),
+(52334,2,-2769.787598,2481.347168,93.279793,0,0,0,0,0,0,0,0,0,0,4.721417,0,0),
+(52334,3,-2770.096436,2422.925049,92.408501,0,0,0,0,0,0,0,0,0,0,4.658583,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (52335,21754,530,1,1,0,0,-2756.64,2339.46,92.1703,4.74453,120,0,0,6326,0,0,2);
+DELETE FROM creature_movement WHERE id = 52335;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(52335,1,-2756.407227,2294.054199,92.543571,0,0,0,0,0,0,0,0,0,0,1.556270,0,0),
+(52335,2,-2755.023682,2380.409912,92.854248,0,0,0,0,0,0,0,0,0,0,4.646814,0,0),
+(52335,3,-2757.791260,2338.131348,92.148415,0,0,0,0,0,0,0,0,0,0,4.686081,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (52336,21754,530,1,1,0,0,-2769.54,2320.77,93.2806,4.64635,120,0,0,6326,0,0,2);
+DELETE FROM creature_movement WHERE id = 52336;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(52336,1,-2770.310791,2300.139648,93.280739,0,0,0,0,0,0,0,0,0,0,1.513076,0,0),
+(52336,2,-2770.259277,2384.548584,93.279747,0,0,0,0,0,0,0,0,0,0,4.744989,0,0),
+(52336,3,-2769.983887,2315.232422,93.280769,0,0,0,0,0,0,0,0,0,0,4.741062,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (52337,21754,530,1,1,0,0,-2755.03,2225.6,92.1626,1.52046,120,0,0,6326,0,0,2);
+DELETE FROM creature_movement WHERE id = 52337;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(52337,1,-2757.571533,2295.147461,92.995193,0,0,0,0,0,0,0,0,0,0,1.518486,0,0),
+(52337,2,-2755.666748,2249.974121,93.280624,0,0,0,0,0,0,0,0,0,0,4.730762,0,0),
+(52337,3,-2755.509277,2213.357178,93.280624,0,0,0,0,0,0,0,0,0,0,1.545973,0,0),
+(52337,4,-2756.066895,2235.852295,93.281265,0,0,0,0,0,0,0,0,0,0,1.573459,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (52338,21754,530,1,1,0,0,-2770.36,2283.05,93.2808,4.72489,120,0,0,6326,0,0,2);
+DELETE FROM creature_movement WHERE id = 52338;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(52338,1,-2770.278809,2215.411377,93.281021,0,0,0,0,0,0,0,0,0,0,1.573457,0,0),
+(52338,2,-2770.342529,2295.676270,93.280746,0,0,0,0,0,0,0,0,0,0,4.699348,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (52339,21754,530,1,1,0,0,-2785.46,2226.31,92.4747,4.64085,120,0,0,6326,0,0,2);
+DELETE FROM creature_movement WHERE id = 52339;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(52339,1,-2786.389648,2214.951904,93.280746,0,0,0,0,0,0,0,0,0,0,1.485590,0,0),
+(52339,2,-2785.451904,2295.565674,92.145096,0,0,0,0,0,0,0,0,0,0,4.768560,0,0),
+(52339,3,-2785.800537,2226.149414,92.395447,0,0,0,0,0,0,0,0,0,0,4.792122,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (52341,21754,530,1,1,0,0,-2753.17,2129.18,117.225,4.68956,120,0,0,6326,0,0,2);
+DELETE FROM creature_movement WHERE id = 52341;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(52341,1,-2753.484619,2084.385498,116.691711,0,0,0,0,0,0,0,0,0,0,4.704056,0,0),
+(52341,2,-2753.230469,2039.012939,117.226364,0,0,0,0,0,0,0,0,0,0,1.522410,0,0),
+(52341,3,-2753.542725,2076.203369,117.024773,0,0,0,0,0,0,0,0,0,0,1.574242,0,0),
+(52341,4,-2753.503662,2140.282471,116.233116,0,0,0,0,0,0,0,0,0,0,4.731537,0,0),
+(52341,5,-2753.588379,2128.951416,117.225220,0,0,0,0,0,0,0,0,0,0,4.739391,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (52344,21754,530,1,1,0,0,-2736.79,2038.79,117.226,1.54404,120,0,0,6326,0,0,2);
+DELETE FROM creature_movement WHERE id = 52344;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(52344,1,-2736.809326,2083.445313,116.135193,0,0,0,0,0,0,0,0,0,0,1.570310,0,0),
+(52344,2,-2736.477051,2138.879395,117.221542,0,0,0,0,0,0,0,0,0,0,4.715835,0,0),
+(52344,3,-2737.201416,2084.139404,116.153732,0,0,0,0,0,0,0,0,0,0,4.735470,0,0),
+(52344,4,-2737.272705,2038.640625,117.225914,0,0,0,0,0,0,0,0,0,0,1.574242,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (52346,21754,530,1,1,0,0,-2721.05,2095,117.225,1.45294,120,0,0,6326,0,0,2);
+DELETE FROM creature_movement WHERE id = 52346;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(52346,1,-2720.251221,2139.843506,117.167641,0,0,0,0,0,0,0,0,0,0,4.688347,0,0),
+(52346,2,-2721.503418,2089.026367,117.225388,0,0,0,0,0,0,0,0,0,0,4.656936,0,0),
+(52346,3,-2721.338867,2039.541016,117.225044,0,0,0,0,0,0,0,0,0,0,1.554608,0,0),
+(52346,4,-2721.850586,2072.629883,117.225334,0,0,0,0,0,0,0,0,0,0,1.546754,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (52347,21754,530,1,1,0,0,-2703.57,2072.28,117.225,4.69074,120,0,0,6326,0,0,2);
+DELETE FROM creature_movement WHERE id = 52347;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(52347,1,-2703.576904,2038.855469,117.225395,0,0,0,0,0,0,0,0,0,0,1.676350,0,0),
+(52347,2,-2703.498047,2071.436768,117.225189,0,0,0,0,0,0,0,0,0,0,1.562467,0,0),
+(52347,3,-2703.385254,2131.246094,117.225235,0,0,0,0,0,0,0,0,0,0,4.700133,0,0),
+(52347,4,-2703.205811,2071.445557,117.226418,0,0,0,0,0,0,0,0,0,0,4.759037,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (54812,21754,530,1,1,0,0,-2687.71,2119.2,116.425,4.68681,120,0,0,6326,0,0,2);
+DELETE FROM creature_movement WHERE id = 54812;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(54812,1,-2688.129639,2040.343262,117.285820,0,0,0,0,0,0,0,0,0,0,1.557126,0,0),
+(54812,2,-2687.308838,2117.292969,116.949333,0,0,0,0,0,0,0,0,0,0,4.737992,0,0);
+
+-- Cataclysm Overseer - missing spawns + wps
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150110,21961,530,1,1,0,293,-2658.77,2596.16,74.9248,1.60186,120,0,0,69860,0,0,2);
+DELETE FROM creature_movement WHERE id = 150110;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(150110,1,-2659.691895,2651.554199,74.924919,0,0,0,0,0,0,0,0,0,0,4.743383,0,0),
+(150110,2,-2657.643311,2583.581055,74.924812,0,0,0,0,0,0,0,0,0,0,4.755164,0,0),
+(150110,3,-2656.439941,2522.419678,74.924706,0,0,0,0,0,0,0,0,0,0,1.641059,0,0),
+(150110,4,-2657.940430,2595.534668,74.924866,0,0,0,0,0,0,0,0,0,0,1.625351,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150111,21961,530,1,1,0,293,-2625.86,2635.63,74.9245,4.6924,120,0,0,69860,0,0,2);
+DELETE FROM creature_movement WHERE id = 150111;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(150111,1,-2625.381348,2579.043701,74.925316,0,0,0,0,0,0,0,0,0,0,4.696265,0,0),
+(150111,2,-2626.042969,2510.666992,74.372765,0,0,0,0,0,0,0,0,0,0,1.582160,0,0),
+(150111,3,-2625.813477,2583.719482,74.314331,0,0,0,0,0,0,0,0,0,0,1.578233,0,0),
+(150111,4,-2625.902832,2656.292969,74.102448,0,0,0,0,0,0,0,0,0,0,4.680553,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150112,21961,530,1,1,0,293,-2772.78,2453.67,93.2794,4.68452,120,0,0,69860,0,0,2);
+DELETE FROM creature_movement WHERE id = 150112;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(150112,1,-2773.824951,2358.288574,93.280632,0,0,0,0,0,0,0,0,0,0,1.532672,0,0),
+(150112,2,-2772.538574,2422.185059,93.189110,0,0,0,0,0,0,0,0,0,0,1.601787,0,0),
+(150112,3,-2772.764160,2475.486816,93.281075,0,0,0,0,0,0,0,0,0,0,4.590234,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150113,21961,530,1,1,0,293,-2760.04,2350.47,93.2792,1.51701,120,0,0,69860,0,0,2);
+DELETE FROM creature_movement WHERE id = 150113;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(150113,1,-2758.801514,2427.523193,93.280579,0,0,0,0,0,0,0,0,0,0,1.593936,0,0),
+(150113,2,-2758.140625,2481.771240,92.162209,0,0,0,0,0,0,0,0,0,0,1.535031,0,0),
+(150113,3,-2758.877930,2415.946045,93.280228,0,0,0,0,0,0,0,0,0,0,4.755166,0,0),
+(150113,4,-2760.518311,2350.331299,93.280655,0,0,0,0,0,0,0,0,0,0,1.597853,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150114,21961,530,1,1,0,293,-2773.28,2300.33,93.2811,1.59004,120,0,0,69860,0,0,2);
+DELETE FROM creature_movement WHERE id = 150114;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(150114,1,-2773.847656,2347.280762,93.280708,0,0,0,0,0,0,0,0,0,0,4.696235,0,0),
+(150114,2,-2773.642090,2275.396240,93.280815,0,0,0,0,0,0,0,0,0,0,4.711943,0,0),
+(150114,3,-2773.478271,2210.351318,93.280701,0,0,0,0,0,0,0,0,0,0,1.752562,0,0),
+(150114,4,-2773.338379,2297.050537,93.281807,0,0,0,0,0,0,0,0,0,0,1.583701,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150115,21961,530,1,1,0,293,-2759.17,2207.39,93.2797,1.55469,120,0,0,69860,0,0,2);
+DELETE FROM creature_movement WHERE id = 150115;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(150115,1,-2759.654053,2255.739014,93.279335,0,0,0,0,0,0,0,0,0,0,1.417198,0,0),
+(150115,2,-2760.073975,2296.392334,93.279877,0,0,0,0,0,0,0,0,0,0,4.723721,0,0),
+(150115,3,-2758.844971,2210.066162,93.280518,0,0,0,0,0,0,0,0,0,0,1.589985,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150116,21961,530,1,1,0,293,-2708.3,2129.17,117.225,4.66172,120,0,0,69860,0,0,2);
+DELETE FROM creature_movement WHERE id = 150116;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(150116,1,-2708.383789,2038.328613,117.216866,0,0,0,0,0,0,0,0,0,0,1.611182,0,0),
+(150116,2,-2707.458008,2141.525146,117.224556,0,0,0,0,0,0,0,0,0,0,4.686022,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150117,21961,530,1,1,0,293,-2741.95,2067.71,117.225,1.58216,120,0,0,69860,0,0,2);
+DELETE FROM creature_movement WHERE id = 150117;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(150117,1,-2741.151367,2136.827637,116.914581,0,0,0,0,0,0,0,0,0,0,4.764569,0,0),
+(150117,2,-2743.129150,2030.678833,116.605324,0,0,0,0,0,0,0,0,0,0,1.585276,0,0),
+(150117,3,-2740.384766,2064.328857,117.225288,0,0,0,0,0,0,0,0,0,0,1.518517,0,0);
+
+-- Wildhammer Guard - one with wp
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150118,19353,530,1,1,0,256,-2711.52,1951.89,144.347,3.02624,300,0,0,34930,0,0,2);
+DELETE FROM creature_movement WHERE id = 150118;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(150118,1,-2719.785889,1955.259644,145.524384,0,0,0,0,0,0,0,0,0,0,3.065578,0,0),
+(150118,2,-2727.628662,1952.952393,148.327011,0,0,0,0,0,0,0,0,0,0,3.285489,0,0),
+(150118,3,-2743.070801,1952.622437,155.439240,0,0,0,0,0,0,0,0,0,0,3.144116,0,0),
+(150118,4,-2765.708008,1949.153442,167.560837,0,0,0,0,0,0,0,0,0,0,3.557235,0,0),
+(150118,5,-2786.944824,1937.139526,183.517853,0,0,0,0,0,0,0,0,0,0,4.033187,0,0),
+(150118,6,-2791.421875,1930.427612,187.588806,5000,0,0,0,0,0,0,0,0,0,4.047323,0,0),
+(150118,7,-2787.303711,1939.426270,183.025879,0,0,0,0,0,0,0,0,0,0,0.537377,0,0),
+(150118,8,-2779.194824,1943.818481,176.963562,0,0,0,0,0,0,0,0,0,0,0.273484,0,0),
+(150118,9,-2764.031250,1951.010864,166.397430,0,0,0,0,0,0,0,0,0,0,0.141537,0,0),
+(150118,10,-2746.778809,1953.871704,157.252838,0,0,0,0,0,0,0,0,0,0,0.116404,0,0),
+(150118,11,-2739.548096,1954.503906,153.539703,0,0,0,0,0,0,0,0,0,0,6.273926,0,0),
+(150118,12,-2728.077393,1955.589478,148.532196,0,0,0,0,0,0,0,0,0,0,6.191462,0,0),
+(150118,13,-2720.492920,1953.494629,145.820526,0,0,0,0,0,0,0,0,0,0,5.810546,0,0),
+(150118,14,-2709.330566,1952.441406,144.022812,0,0,0,0,0,0,0,0,0,0,0.073210,0,0),
+(150118,15,-2696.230713,1953.808105,143.374084,0,0,0,0,0,0,0,0,0,0,0.419569,0,0),
+(150118,16,-2688.266602,1958.376709,142.400284,5000,0,0,0,0,0,0,0,0,0,0.815412,0,0),
+(150118,17,-2700.422852,1953.164185,143.829758,0,0,0,0,0,0,0,0,0,0,3.388376,0,0);
+
+-- The Path of Conquest -- SHADOWMOON VALLEY - 100% complited
+-- Son of Coroc 
+-- #1 
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150119,19824,530,1,1,0,0,-4273.55,1319.67,55.8555,5.38548,300,0,0,26168,0,0,2);
+DELETE FROM creature_movement WHERE id = 150119;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(150119,1,-4291.579102,1321.886475,62.877987,0,0,0,0,0,0,0,0,0,0,3.261762,0,0),
+(150119,2,-4330.684082,1321.013428,77.004379,0,0,0,0,0,0,0,0,0,0,3.188002,0,0),
+(150119,3,-4338.389160,1318.702026,77.673195,0,0,0,0,0,0,0,0,0,0,3.450282,0,0),
+(150119,4,-4362.762207,1316.882202,84.121857,0,0,0,0,0,0,0,0,0,0,3.215448,0,0),
+(150119,5,-4339.900391,1320.421143,77.799423,0,0,0,0,0,0,0,0,0,0,0.120978,0,0),
+(150119,6,-4328.303223,1320.339722,76.576897,0,0,0,0,0,0,0,0,0,0,6.247086,0,0),
+(150119,7,-4309.855957,1322.065063,70.033821,0,0,0,0,0,0,0,0,0,0,0.085636,0,0),
+(150119,8,-4299.592285,1324.980591,64.742287,0,0,0,0,0,0,0,0,0,0,6.156764,0,0),
+(150119,9,-4291.502930,1323.707153,63.024647,0,0,0,0,0,0,0,0,0,0,6.117482,0,0),
+(150119,10,-4275.433105,1321.727539,56.752659,0,0,0,0,0,0,0,0,0,0,5.516655,0,0);
+
+-- #2
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150120,19824,530,1,1,0,0,-4279.65,1299.84,47.9057,0.310198,300,0,0,26168,0,0,2);
+DELETE FROM creature_movement WHERE id = 150120;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(150120,1,-4258.845703,1306.512695,51.897869,0,0,0,0,0,0,0,0,0,0,0.153119,0,0),
+(150120,2,-4234.569336,1307.515381,55.638130,0,0,0,0,0,0,0,0,0,0,0.007844,0,0),
+(150120,3,-4210.310059,1306.459717,56.275749,0,0,0,0,0,0,0,0,0,0,6.196784,0,0),
+(150120,4,-4175.497559,1306.332520,56.028595,0,0,0,0,0,0,0,0,0,0,6.168508,0,0),
+(150120,5,-4130.836426,1301.105713,54.074314,0,0,0,0,0,0,0,0,0,0,0.022766,0,0),
+(150120,6,-4156.718262,1301.714478,55.806763,0,0,0,0,0,0,0,0,0,0,3.066184,0,0),
+(150120,7,-4218.573730,1307.112183,56.220051,0,0,0,0,0,0,0,0,0,0,3.077964,0,0),
+(150120,8,-4255.954590,1309.234497,52.038406,0,0,0,0,0,0,0,0,0,0,3.207779,0,0),
+(150120,9,-4276.255371,1298.944824,48.529320,0,0,0,0,0,0,0,0,0,0,3.572990,0,0);
+
+-- Eclipsion Cavalier
+-- #1
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150121,22018,530,1,1,0,2386,-4102.84,1353.31,72.3164,6.10637,180,0,0,6761,0,0,2);
+DELETE FROM creature_movement WHERE id = 150121;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(150121,1,-4103.971191,1377.960083,79.685242,6000,2131401,0,0,0,0,0,0,0,0,6.009293,0,0),
+(150121,2,-4102.046387,1394.597168,83.893349,0,0,0,0,0,0,0,0,0,0,1.054193,0,0),
+(150121,3,-4094.722656,1403.567383,86.180771,6000,2131401,0,0,0,0,0,0,0,0,5.330686,0,0),
+(150121,4,-4102.490234,1392.138794,83.495384,0,0,0,0,0,0,0,0,0,0,4.368432,0,0),
+(150121,5,-4104.049805,1377.345459,79.517700,0,0,0,0,0,0,0,0,0,0,4.645672,0,0),
+(150121,6,-4103.722656,1351.722900,71.512207,6000,2131401,0,0,0,0,0,0,0,0,5.996553,0,0),
+(150121,7,-4099.052734,1319.777710,61.926575,6000,2131401,0,0,0,0,0,0,0,0,5.929792,0,0),
+(150121,8,-4102.394531,1336.848633,66.750793,0,0,0,0,0,0,0,0,0,0,1.594399,0,0),
+(150121,9,-4102.727539,1354.607300,72.944283,0,0,0,0,0,0,0,0,0,0,1.460873,0,0);
+-- #2
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150122,22018,530,1,1,0,2386,-4166.61,1308.71,56.1101,5.786358,180,0,0,6761,0,0,2);
+DELETE FROM creature_movement WHERE id = 150122;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(150122,1,-4149.717773,1306.968872,55.667828,6000,2131401,0,0,0,0,0,0,0,0,1.507998,0,0),
+(150122,2,-4140.446777,1306.138550,55.122066,0,0,0,0,0,0,0,0,0,0,0.280418,0,0),
+(150122,3,-4124.307617,1313.405029,56.092731,0,0,0,0,0,0,0,0,0,0,0.893814,0,0),
+(150122,4,-4117.140137,1325.097412,61.254425,0,0,0,0,0,0,0,0,0,0,1.260596,0,0),
+(150122,5,-4116.557617,1336.507202,65.803864,6000,2131401,0,0,0,0,0,0,0,0,3.149479,0,0),
+(150122,6,-4114.512207,1369.540283,77.156120,0,0,0,0,0,0,0,0,0,0,1.620308,0,0),
+(150122,7,-4119.951660,1400.709595,84.820045,6000,2131401,0,0,0,0,0,0,0,0,3.140053,0,0),
+(150122,8,-4122.000977,1387.390991,81.990898,6000,2131401,0,0,0,0,0,0,0,0,3.830418,0,0),
+(150122,9,-4114.799805,1377.720093,79.414825,0,0,0,0,0,0,0,0,0,0,4.782318,0,0),
+(150122,10,-4116.968750,1335.489746,65.560646,6000,2131401,0,0,0,0,0,0,0,0,3.597161,0,0),
+(150122,11,-4119.376465,1322.741943,60.336918,0,0,0,0,0,0,0,0,0,0,4.198778,0,0),
+(150122,12,-4124.025879,1314.930054,56.881123,0,0,0,0,0,0,0,0,0,0,3.738538,0,0),
+(150122,13,-4133.018066,1308.657593,55.078472,0,0,0,0,0,0,0,0,0,0,3.431448,0,0),
+(150122,14,-4144.190430,1305.480835,55.245853,0,0,0,0,0,0,0,0,0,0,2.943716,0,0),
+(150122,15,-4162.311523,1308.176270,55.982552,0,0,0,0,0,0,0,0,0,0,2.833756,0,0),
+(150122,16,-4178.270020,1313.508545,56.028622,6000,2131401,0,0,0,0,0,0,0,0,1.180493,0,0),
+(150122,17,-4165.877930,1309.787842,56.131485,0,0,0,0,0,0,0,0,0,0,6.046034,0,0);
+-- #3
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150123,22018,530,1,1,0,2386,-4258.1,1299.36,52.9594,0.146762,180,0,0,6761,0,0,2);
+DELETE FROM creature_movement WHERE id = 150123;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(150123,1,-4230.039551,1299.383057,57.734222,0,0,0,0,0,0,0,0,0,0,0.123562,0,0),
+(150123,2,-4212.985840,1300.061279,56.618050,6000,2131401,0,0,0,0,0,0,0,0,4.773127,0,0),
+(150123,3,-4189.777832,1298.659790,56.797100,0,0,0,0,0,0,0,0,0,0,5.877397,0,0),
+(150123,4,-4172.935059,1291.231323,57.326065,6000,2131401,0,0,0,0,0,0,0,0,4.883092,0,0),
+(150123,5,-4188.985840,1298.180176,56.977264,0,0,0,0,0,0,0,0,0,0,2.981645,0,0),
+(150123,6,-4194.865234,1299.103149,56.464111,6000,2131402,0,0,0,0,0,0,0,0,4.614488,0,0),
+(150123,7,-4215.393555,1300.037354,56.342075,0,0,0,0,0,0,0,0,0,0,3.143429,0,0),
+(150123,8,-4237.444824,1299.077515,56.229706,6000,2131401,0,0,0,0,0,0,0,0,4.641969,0,0),
+(150123,9,-4258.752441,1298.938354,52.977413,6000,2131401,0,0,0,0,0,0,0,0,4.628614,0,0);
+-- #4
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150124,22018,530,1,1,0,2386,-4258.5,1315.87,52.4526,0.146762,180,0,0,6761,0,0,2);
+DELETE FROM creature_movement WHERE id = 150124;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(150124,1,-4249.421387,1314.141724,53.420525,6000,2131401,0,0,0,0,0,0,0,0,1.332926,0,0),
+(150124,2,-4241.710449,1310.938110,55.105900,0,0,0,0,0,0,0,0,0,0,6.172549,0,0),
+(150124,3,-4204.778320,1308.694946,56.263645,6000,2131401,0,0,0,0,0,0,0,0,1.568542,0,0),
+(150124,4,-4193.451660,1312.268433,56.107620,0,0,0,0,0,0,0,0,0,0,0.272635,0,0),
+(150124,5,-4208.331055,1310.006958,56.535122,0,0,0,0,0,0,0,0,0,0,3.308199,0,0),
+(150124,6,-4219.932129,1308.875244,56.215294,0,0,0,0,0,0,0,0,0,0,2.907646,0,0),
+(150124,7,-4228.837402,1311.454346,55.869354,6000,2131401,0,0,0,0,0,0,0,0,1.832287,0,0),
+(150124,8,-4241.833496,1311.772461,55.133625,0,0,0,0,0,0,0,0,0,0,2.994677,0,0),
+(150124,9,-4257.262695,1313.393311,51.838036,0,0,0,0,0,0,0,0,0,0,2.306452,0,0),
+(150124,10,-4265.494141,1317.593994,53.912189,0,0,0,0,0,0,0,0,0,0,2.545213,0,0),
+(150124,11,-4281.928711,1328.797485,60.012413,0,0,0,0,0,0,0,0,0,0,3.112048,0,0),
+(150124,12,-4296.246582,1325.972900,64.101456,6000,2131401,0,0,0,0,0,0,0,0,2.031339,0,0),
+(150124,13,-4303.610840,1325.507813,66.929008,0,0,0,0,0,0,0,0,0,0,2.738199,0,0),
+(150124,14,-4323.066406,1328.537598,76.250832,0,0,0,0,0,0,0,0,0,0,2.885854,0,0),
+(150124,15,-4312.891602,1329.222656,72.778610,6000,2131401,0,0,0,0,0,0,0,0,2.109097,0,0),
+(150124,16,-4299.362305,1325.276001,64.722870,0,0,0,0,0,0,0,0,0,0,0.113404,0,0),
+(150124,17,-4290.229004,1327.543213,63.226055,0,0,0,0,0,0,0,0,0,0,6.150759,0,0),
+(150124,18,-4277.194336,1324.038696,57.671871,0,0,0,0,0,0,0,0,0,0,5.591559,0,0),
+(150124,19,-4260.668457,1315.188354,52.431873,0,0,0,0,0,0,0,0,0,0,6.124844,0,0);
+-- #5
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150125,22018,530,1,1,0,2386,-4360.59,1306.49,87.3064,3.3381,180,0,0,6761,0,0,2);
+DELETE FROM creature_movement WHERE id = 150125;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(150125,1,-4375.126465,1303.278320,85.577621,6000,2131401,0,0,0,0,0,0,0,0,4.856774,0,0),
+(150125,2,-4361.780762,1312.637695,84.264503,0,0,0,0,0,0,0,0,0,0,0.295969,0,0),
+(150125,3,-4341.683105,1311.547607,80.411469,6000,2131401,0,0,0,0,0,0,0,0,4.735051,0,0),
+(150125,4,-4321.630859,1309.769775,77.060608,6000,2131401,0,0,0,0,0,0,0,0,5.055494,0,0),
+(150125,5,-4343.967285,1311.530762,80.840149,0,0,0,0,0,0,0,0,0,0,3.331132,0,0),
+(150125,6,-4363.502930,1304.341797,88.281136,0,0,0,0,0,0,0,0,0,0,3.512560,0,0);
+-- #6
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150126,22018,530,1,1,0,2386,-4436.05,1321.42,107.184,1.435196,180,0,0,6761,0,0,2);
+DELETE FROM creature_movement WHERE id = 150126;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(150126,1,-4461.393066,1320.194214,116.670906,6000,2131401,0,0,0,0,0,0,0,0,2.070291,0,0),
+(150126,2,-4437.868164,1320.727905,107.994194,0,0,0,0,0,0,0,0,0,0,0.026686,0,0),
+(150126,3,-4429.750000,1320.014526,102.811249,0,0,0,0,0,0,0,0,0,0,0.199472,0,0),
+(150126,4,-4391.800781,1322.443115,87.486069,6000,2131401,0,0,0,0,0,0,0,0,1.840955,0,0),
+(150126,5,-4388.374512,1323.540527,86.079224,0,0,0,0,0,0,0,0,0,0,0.160202,0,0),
+(150126,6,-4376.183594,1324.692383,86.267548,0,0,0,0,0,0,0,0,0,0,0.113078,0,0),
+(150126,7,-4353.493164,1326.675903,83.797935,0,0,0,0,0,0,0,0,0,0,0.081662,0,0),
+(150126,8,-4333.206055,1328.341064,79.459991,0,0,0,0,0,0,0,0,0,0,1.923422,0,0),
+(150126,9,-4343.587891,1327.150024,79.880264,0,0,0,0,0,0,0,0,0,0,3.274307,0,0),
+(150126,10,-4353.993652,1325.673584,83.529861,0,0,0,0,0,0,0,0,0,0,3.207548,0,0),
+(150126,11,-4376.354980,1325.079712,86.400055,0,0,0,0,0,0,0,0,0,0,3.219330,0,0),
+(150126,12,-4385.875000,1324.126099,85.678467,0,0,0,0,0,0,0,0,0,0,3.229663,0,0),
+(150126,13,-4395.421387,1322.084351,88.969414,6000,2131401,0,0,0,0,0,0,0,0,1.364341,0,0),
+(150126,14,-4420.516113,1322.588135,99.892944,0,0,0,0,0,0,0,0,0,0,3.119706,0,0),
+(150126,15,-4438.766113,1321.666626,108.814476,0,0,0,0,0,0,0,0,0,0,3.033313,0,0);
+
+-- Eclipsion Spellbinder
+-- #1
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (70625,22017,530,1,1,0,974,-4157.98,1285.35,57.3851,0,180,0,0,5409,3080,0,2);
+DELETE FROM creature_movement WHERE id = 70625;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES 
+(70625,1,-4157.98,1285.35,57.3851,22000,2201701,0,0,0,0,0,0,0,0,0,0,0),
+(70625,2,-4157.98,1285.35,57.3851,1000,0,0,0,0,0,0,0,0,0,0,0,0);
+-- #2
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (70659,22017,530,1,1,0,974,-4146.76,1283.89,59.3465,2.635447,180,0,0,5409,3080,0,2);
+DELETE FROM creature_movement WHERE id = 70659;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(70659,1,-4146.76,1283.89,59.3465,22000,2201701,0,0,0,0,0,0,0,0,2.635447,0,0),
+(70659,2,-4146.76,1283.89,59.3465,1000,0,0,0,0,0,0,0,0,0,2.635447,0,0);
+-- #3
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (70665,22017,530,1,1,0,974,-4287.81,1313.23,62.7335,6.213372,180,0,0,5409,3080,0,2);
+DELETE FROM creature_movement WHERE id = 70665;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES 
+(70665,1,-4287.81,1313.23,62.7335,22000,2201701,0,0,0,0,0,0,0,0,6.213372,0,0),
+(70665,2,-4287.81,1313.23,62.7335,1000,0,0,0,0,0,0,0,0,0,6.213372,0,0);
+-- #4
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (70684,22017,530,1,1,0,974,-4278.1,1312.28,56.5005,2.740167,180,0,0,5409,3080,0,2);
+DELETE FROM creature_movement WHERE id = 70684;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES 
+(70684,1,-4278.1,1312.28,56.5005,22000,2201701,0,0,0,0,0,0,0,0,2.740167,0,0),
+(70684,2,-4278.1,1312.28,56.5005,1000,0,0,0,0,0,0,0,0,0,2.740167,0,0);
+
+-- Ruins of Ba'ri -- SHADOWMOON VALLEY
+-- Illidari Overseer <Servant of Illidan> - missing spawn
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (71923,21808,530,1,1,0,2012,-3291.01,1048.43,55.8776,3.2104,180,0,0,6761,0,0,2);
+DELETE FROM creature_movement WHERE id = 71923;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(71923,1,-3327.201904,1046.561523,48.834190,3000,0,0,0,0,0,0,0,0,0,3.027388,0,0),
+(71923,2,-3307.730225,1023.861877,49.520447,0,0,0,0,0,0,0,0,0,0,6.120279,0,0),
+(71923,3,-3293.912842,1023.933105,49.552010,0,0,0,0,0,0,0,0,0,0,0.350740,0,0),
+(71923,4,-3269.413818,1029.548706,51.804050,0,0,0,0,0,0,0,0,0,0,6.243579,0,0),
+(71923,5,-3297.201904,1021.906616,49.644005,0,0,0,0,0,0,0,0,0,0,3.176601,0,0),
+(71923,6,-3308.805908,1024.537842,49.520615,0,0,0,0,0,0,0,0,0,0,2.619753,0,0),
+(71923,7,-3328.971924,1049.078369,48.110744,3000,0,0,0,0,0,0,0,0,0,2.999886,0,0),
+(71923,8,-3299.546143,1050.090942,52.830944,0,0,0,0,0,0,0,0,0,0,6.176813,0,0),
+(71923,9,-3289.020264,1049.234497,55.865726,0,0,0,0,0,0,0,0,0,0,6.212149,0,0),
+(71923,10,-3280.781982,1050.201904,54.551582,0,0,0,0,0,0,0,0,0,0,0.141020,0,0),
+(71923,11,-3265.385010,1052.301025,55.665657,0,0,0,0,0,0,0,0,0,0,5.993019,0,0),
+(71923,12,-3258.624756,1049.141602,57.405373,0,0,0,0,0,0,0,0,0,0,5.824162,0,0),
+(71923,13,-3247.432129,1047.624756,55.541584,0,0,0,0,0,0,0,0,0,0,6.205075,0,0),
+(71923,14,-3244.515381,1047.071533,56.190681,0,0,0,0,0,0,0,0,0,0,5.752687,0,0),
+(71923,15,-3225.510498,1038.854736,62.526211,0,0,0,0,0,0,0,0,0,0,5.923119,0,0),
+(71923,16,-3219.525879,1033.843140,64.957176,3000,0,0,0,0,0,0,0,0,0,5.502150,0,0),
+(71923,17,-3227.573975,1040.044189,61.905518,0,0,0,0,0,0,0,0,0,0,2.951961,0,0),
+(71923,18,-3238.367676,1042.438232,59.035088,0,0,0,0,0,0,0,0,0,0,2.965313,0,0),
+(71923,19,-3247.675781,1044.646729,55.032238,0,0,0,0,0,0,0,0,0,0,2.749329,0,0),
+(71923,20,-3260.325928,1048.957886,57.412331,0,0,0,0,0,0,0,0,0,0,3.094119,0,0),
+(71923,21,-3270.426270,1050.267822,55.007122,0,0,0,0,0,0,0,0,0,0,2.960601,0,0),
+(71923,22,-3291.377686,1048.114502,55.874512,0,0,0,0,0,0,0,0,0,0,3.015579,0,0);
+
+-- Ashtongue Warrior <Servant of Illidan>
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (72473,21454,530,1,1,0,244,-3187.61,1246.24,38.4334,1.7135,180,0,0,6761,0,0,2);
+DELETE FROM creature_movement WHERE id = 72473;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES 
+(72473,1,-3177.704834,1271.968872,33.663372,3000,0,0,0,0,0,0,0,0,0,1.446462,0,0),
+(72473,2,-3185.027832,1246.007813,37.844566,0,0,0,0,0,0,0,0,0,0,4.713709,0,0),
+(72473,3,-3181.247314,1234.450317,36.342545,0,0,0,0,0,0,0,0,0,0,5.424493,0,0),
+(72473,4,-3174.482178,1225.072510,37.304325,0,0,0,0,0,0,0,0,0,0,5.247052,0,0),
+(72473,5,-3146.382080,1184.551636,32.369904,0,0,0,0,0,0,0,0,0,0,5.594981,0,0),
+(72473,6,-3138.320801,1170.026367,31.112291,0,0,0,0,0,0,0,0,0,0,4.885770,0,0),
+(72473,7,-3137.818115,1160.484131,32.264473,0,0,0,0,0,0,0,0,0,0,4.505642,0,0),
+(72473,8,-3141.106201,1151.936768,36.031048,0,0,0,0,0,0,0,0,0,0,4.304584,0,0),
+(72473,9,-3136.412354,1167.664307,30.476662,0,0,0,0,0,0,0,0,0,0,1.616165,0,0),
+(72473,10,-3139.331787,1179.911377,30.489946,0,0,0,0,0,0,0,0,0,0,2.312028,0,0),
+(72473,11,-3154.004639,1196.746582,33.757008,0,0,0,0,0,0,0,0,0,0,2.180081,0,0),
+(72473,12,-3177.854248,1227.889038,37.142941,0,0,0,0,0,0,0,0,0,0,1.978233,0,0),
+(72473,13,-3181.580811,1231.209839,36.389221,0,0,0,0,0,0,0,0,0,0,1.668001,0,0),
+(72473,14,-3185.832031,1244.936890,37.953850,0,0,0,0,0,0,0,0,0,0,1.844716,0,0);
+
+-- Ashtongue Shaman <Servant of Illidan>
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (74051,21453,530,1,1,0,2098,-3401.23,1142.14,49.2734,4.50309,180,0,0,5589,3150,0,2);
+DELETE FROM creature_movement WHERE id = 74051;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(74051,1,-3406.496094,1124.925293,47.539658,0,0,0,0,0,0,0,0,0,0,4.695511,0,0),
+(74051,2,-3403.798096,1106.295166,46.681274,0,0,0,0,0,0,0,0,0,0,4.909924,0,0),
+(74051,3,-3403.354980,1078.393066,44.293739,0,0,0,0,0,0,0,0,0,0,4.964903,0,0),
+(74051,4,-3392.705811,1066.861328,44.976879,0,0,0,0,0,0,0,0,0,0,6.060528,0,0),
+(74051,5,-3375.481689,1063.851685,48.548943,0,0,0,0,0,0,0,0,0,0,6.056602,0,0),
+(74051,6,-3356.137451,1058.319702,47.394047,0,0,0,0,0,0,0,0,0,0,0.236800,0,0),
+(74051,7,-3350.596924,1061.642578,45.577869,0,0,0,0,0,0,0,0,0,0,0.968005,0,0),
+(74051,8,-3349.221924,1065.509277,46.215595,0,0,0,0,0,0,0,0,0,0,1.599465,0,0),
+(74051,9,-3349.639893,1074.216553,49.127575,0,0,0,0,0,0,0,0,0,0,1.650516,0,0),
+(74051,10,-3349.245361,1083.226074,50.025215,0,0,0,0,0,0,0,0,0,0,1.273525,0,0),
+(74051,11,-3346.361572,1091.675903,51.034824,3000,2145301,0,0,0,0,0,0,0,0,0.140195,0,0),
+(74051,12,-3349.167236,1106.882324,53.485989,0,0,0,0,0,0,0,0,0,0,1.518569,0,0),
+(74051,13,-3344.680176,1136.480103,56.221024,0,0,0,0,0,0,0,0,0,0,1.168281,0,0),
+(74051,14,-3343.715576,1149.306763,54.765125,0,0,0,0,0,0,0,0,0,0,1.505083,0,0),
+(74051,15,-3344.919922,1160.055298,57.921150,0,0,0,0,0,0,0,0,0,0,1.693578,0,0),
+(74051,16,-3350.272705,1181.701538,60.705688,3000,2145302,0,0,0,0,0,0,0,0,1.443822,0,0),
+(74051,17,-3368.478760,1190.426025,60.603832,0,0,0,0,0,0,0,0,0,0,3.289508,0,0),
+(74051,18,-3386.057617,1185.623291,57.632263,0,0,0,0,0,0,0,0,0,0,3.950813,0,0),
+(74051,19,-3389.946777,1179.474609,54.834347,0,0,0,0,0,0,0,0,0,0,4.446397,0,0),
+(74051,20,-3391.591309,1172.515137,51.848206,0,0,0,0,0,0,0,0,0,0,4.496906,0,0),
+(74051,21,-3394.427979,1163.258057,50.401817,0,0,0,0,0,0,0,0,0,0,4.418365,0,0),
+(74051,22,-3397.977051,1151.131958,51.423820,0,0,0,0,0,0,0,0,0,0,4.434073,0,0),
+(74051,23,-3400.357910,1142.799438,49.491806,0,0,0,0,0,0,0,0,0,0,4.434073,0,0);
+
+-- Elekk Demolisher
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (74167,21802,530,1,1,0,0,-3219.22,955.973,54.6927,0.243708,180,0,0,5409,0,0,2);
+DELETE FROM creature_movement WHERE id = 74167;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(74167,1,-3219.22,955.973,54.6927,1000,0,0,0,0,0,0,0,0,0,0.243708,0,0),
+(74167,2,-3219.22,955.973,54.6927,4000,2180801,0,0,0,0,0,0,0,0,0.243708,0,0);
+
+-- Netherwing Lodge -- SHADOWMOON VALLEY
+-- Dragonmaw Transporter
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (74623,23188,530,1,1,0,1797,-4231.41,322.153,166.022,3.72358,180,0,0,7266,3155,0,2);
+DELETE FROM creature_movement WHERE id = 74623;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(74623,1,-4303.508301,276.404297,179.781311,0,0,0,0,0,0,0,0,0,0,3.578286,0,0),
+(74623,2,-4410.792969,259.223785,186.587173,0,0,0,0,0,0,0,0,0,0,3.381937,0,0),
+(74623,3,-4513.043457,214.825012,124.948677,0,0,0,0,0,0,0,0,0,0,3.554724,0,0),
+(74623,4,-4635.972168,170.264755,121.274872,0,0,0,0,0,0,0,0,0,0,3.539017,0,0),
+(74623,5,-4771.334961,111.272659,109.930992,0,0,0,0,0,0,0,0,0,0,3.597922,0,0),
+(74623,6,-4882.295410,56.609192,78.510674,0,0,0,0,0,0,0,0,0,0,3.601845,0,0),
+(74623,7,-4937.028809,30.778053,62.206383,0,0,0,0,0,0,0,0,0,0,3.641114,0,0); -- desp. self
+
+-- Ruins of Karabor - SHADOWMOON VALLEY
+-- Sunfury Blood Lord
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (74954,21743,530,1,1,0,2095,-3755.41,505.562,91.0246,0.108516,180,0,0,6542,0,0,2);
+DELETE FROM creature_movement WHERE id = 74954;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(74954,1,-3701.163574,500.352417,91.014000,0,0,0,0,0,0,0,0,0,0,5.856841,0,0),
+(74954,2,-3694.949463,495.480988,90.984200,0,0,0,0,0,0,0,0,0,0,4.688951,0,0),
+(74954,3,-3690.999268,452.336456,90.973221,0,0,0,0,0,0,0,0,0,0,4.643399,0,0),
+(74954,4,-3689.414551,410.632507,90.973221,3000,0,0,0,0,0,0,0,0,0,4.745499,0,0),
+(74954,5,-3690.766113,450.234589,90.973221,0,0,0,0,0,0,0,0,0,0,1.691867,0,0),
+(74954,6,-3692.835449,493.712158,90.976845,0,0,0,0,0,0,0,0,0,0,2.086139,0,0),
+(74954,7,-3698.416748,499.175049,91.002495,0,0,0,0,0,0,0,0,0,0,2.907666,0,0),
+(74954,8,-3755.936279,506.120544,91.026031,3000,0,0,0,0,0,0,0,0,0,2.978353,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (74958,21743,530,1,1,0,2095,-3689.41,253.591,90.9892,4.64832,180,0,0,6542,0,0,2);
+DELETE FROM creature_movement WHERE id = 74958;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(74958,1,-3688.423584,304.568146,90.984894,0,0,0,0,0,0,0,0,0,0,1.561687,0,0),
+(74958,2,-3687.416748,348.614166,90.980652,0,0,0,0,0,0,0,0,0,0,1.553836,0,0),
+(74958,3,-3686.238037,379.738159,90.976433,6000,0,0,0,0,0,0,0,0,0,1.514566,0,0),
+(74958,4,-3687.685547,328.310577,90.979210,0,0,0,0,0,0,0,0,0,0,4.691502,0,0),
+(74958,5,-3688.424072,289.096588,90.983528,0,0,0,0,0,0,0,0,0,0,4.695429,0,0),
+(74958,6,-3688.630371,252.832306,90.987610,6000,0,0,0,0,0,0,0,0,0,4.609037,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (75013,21743,530,1,1,0,2095,-3781.2,562.239,68.2286,6.25409,180,0,0,6542,0,0,2);
+DELETE FROM creature_movement WHERE id = 75013;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(75013,1,-3746.028564,562.553406,56.264458,0,2174301,0,0,0,0,0,0,0,0,0.002311,0,0),
+(75013,2,-3727.198730,563.095032,49.071171,0,2174301,0,0,0,0,0,0,0,0,6.277642,0,0),
+(75013,3,-3725.336426,563.070068,48.335953,6000,0,0,0,0,0,0,0,0,0,6.269789,0,0),
+(75013,4,-3768.528320,562.303284,64.053162,0,2174301,0,0,0,0,0,0,0,0,3.226382,0,0),
+(75013,5,-3783.473145,562.369690,68.896927,6000,0,0,0,0,0,0,0,0,0,6.265868,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (75018,21743,530,1,1,0,2095,-3804.27,502.475,87.7726,1.5849,180,0,0,6542,0,0,2);
+DELETE FROM creature_movement WHERE id = 75018;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(75018,1,-3804.341797,532.797485,77.963921,0,2174301,0,0,0,0,0,0,0,0,1.573115,0,0),
+(75018,2,-3803.898438,549.057312,73.327835,0,2174301,0,0,0,0,0,0,0,0,1.549553,0,0),
+(75018,3,-3803.377686,560.651428,71.569107,6000,0,0,0,0,0,0,0,0,0,0.017242,0,0),
+(75018,4,-3803.315918,529.546814,79.003075,0,2174301,0,0,0,0,0,0,0,0,4.667595,0,0),
+(75018,5,-3803.725830,516.212341,83.493172,0,2174301,0,0,0,0,0,0,0,0,4.679373,0,0),
+(75018,6,-3804.105469,502.638458,87.726791,6000,0,0,0,0,0,0,0,0,0,1.508719,0,0);
+-- Demon Hunter Initiate
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (75021,21180,530,1,1,0,2090,-3720.67,402.674,104.078,4.66169,180,0,0,5589,3155,0,2);
+DELETE FROM creature_movement WHERE id = 75021;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES 
+(75021,1,-3721.125000,355.458099,104.189758,0,0,0,0,0,0,0,0,0,0,1.667754,0,0),
+(75021,2,-3718.945313,416.847931,104.058846,0,0,0,0,0,0,0,0,0,0,4.519538,0,0),
+(75021,3,-3720.310791,402.403137,104.076996,0,0,0,0,0,0,0,0,0,0,4.614566,0,0);
+
+-- Spellbound Terrorguard
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (75023,21908,530,1,1,0,1536,-3743.14,388.859,103.993,3.14855,60,0,0,5233,2991,0,2);
+DELETE FROM creature_movement WHERE id = 75023;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES 
+(75023,1,-3743.14,388.859,103.993,10000,0,0,0,0,0,0,0,0,0,3.14855,0,0),
+(75023,2,-3743.14,388.859,103.993,10000,2190801,0,0,0,0,0,0,0,0,3.14855,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (75024,21908,530,1,1,0,1536,-3741.14,356.002,104.11,3.18389,60,0,0,5060,2933,0,2);
+DELETE FROM creature_movement WHERE id = 75024;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES 
+(75024,1,-3741.14,356.002,104.11,45000,0,0,0,0,0,0,0,0,0,3.18389,0,0),
+(75024,2,-3741.14,356.002,104.11,10000,2190801,0,0,0,0,0,0,0,0,3.18389,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (75025,21908,530,1,1,0,1536,-3743.54,416.255,104.111,3.08067,60,0,0,5060,2933,0,2);
+DELETE FROM creature_movement WHERE id = 75025;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES 
+(75025,1,-3743.54,416.255,104.111,20000,0,0,0,0,0,0,0,0,0,3.08067,0,0),
+(75025,2,-3743.54,416.255,104.111,10000,2190801,0,0,0,0,0,0,0,0,3.08067,0,0);
+-- Entrance into Black Temple (area outside) -- SHADOWMOON VALLEY
+-- Illidari Ravager <Servant of Illidan>
+-- #1
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (75031,22857,530,1,1,0,20,-3618.52,400.563,32.6102,0.349821,25,0,0,20958,0,0,2);
+DELETE FROM creature_movement WHERE id = 75031;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
+(75031,1,-3603.101807,405.869659,32.182827,0,0,0,0,0,0,0,0,0,0,0.762029,0,0),
+(75031,2,-3587.572754,426.027161,29.938400,1000,2285701,0,0,0,0,0,0,0,0,1.029064,0,0);
+-- #2
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (75032,22857,530,1,1,0,20,-3619.03,394.032,33.7729,0.153472,25,0,0,20958,0,0,2);
+DELETE FROM creature_movement WHERE id = 75032;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES 
+(75032,1,-3598.191162,400.954620,32.504242,0,0,0,0,0,0,0,0,0,0,0.734535,0,0),
+(75032,2,-3579.638428,420.870331,29.836908,1000,2285701,0,0,0,0,0,0,0,0,1.115473,0,0);
+-- #3
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (75036,22857,530,1,1,0,20,-3499.19,398.61,32.1255,2.94776,25,0,0,20958,0,0,2);
+DELETE FROM creature_movement WHERE id = 75036;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES 
+(75036,1,-3521.429688,398.615265,31.500566,0,0,0,0,0,0,0,0,0,0,2.048473,0,0),
+(75036,2,-3521.429688,398.615265,31.500566,1000,2285701,0,0,0,0,0,0,0,0,2.048473,0,0);
+-- #4
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (75037,22857,530,1,1,0,20,-3499.11,392.555,33.2845,2.97917,25,0,0,20958,0,0,2);
+DELETE FROM creature_movement WHERE id = 75037;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES 
+(75037,1,-3528.044678,392.061646,33.122597,0,0,0,0,0,0,0,0,0,0,2.104283,0,0),
+(75037,2,-3528.044678,392.061646,33.122597,1000,2285701,0,0,0,0,0,0,0,0,2.104283,0,0);
+-- these 4 are part of event ..so resptime must be bigger ~60s
+-- #5
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (75039,22857,530,1,1,0,20,-3555.98,372.556,33.0066,1.24308,120,0,0,20958,0,0,2);
+DELETE FROM creature_movement WHERE id = 75039;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES 
+(75039,1,-3539.056885,410.479614,31.120348,20000,0,0,0,0,0,0,0,0,0,1.188098,0,0),
+(75039,2,-3536.935059,436.584290,28.396151,0,0,0,0,0,0,0,0,0,0,1.724580,0,0),
+(75039,3,-3557.258301,478.573120,23.074396,1000,2285701,0,0,0,0,0,0,0,0,1.516445,0,0);
+-- #6
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (75040,22857,530,1,1,0,20,-3560.18,375.579,32.5697,1.1449,120,0,0,20958,0,0,2);
+DELETE FROM creature_movement WHERE id = 75040;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES 
+(75040,1,-3544.417725,413.529572,30.139088,20000,0,0,0,0,0,0,0,0,0,1.156098,0,0),
+(75040,2,-3544.841064,437.631042,27.636351,0,0,0,0,0,0,0,0,0,0,1.704580,0,0),
+(75040,3,-3566.467529,478.430908,22.631899,1000,2285701,0,0,0,0,0,0,0,0,1.556445,0,0);
+-- #7
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (75041,22857,530,1,1,0,20,-3566.28,373.577,32.7165,1.91306,120,0,0,20958,0,0,2);
+DELETE FROM creature_movement WHERE id = 75041;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES 
+(75041,1,-3572.024414,409.806213,29.729950,20000,0,0,0,0,0,0,0,0,0,1.676930,0,0),
+(75041,2,-3571.210449,472.279205,23.514156,1000,2285701,0,0,0,0,0,0,0,0,1.325847,0,0);
+-- #8
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (75043,22857,530,1,1,0,20,-3561.52,373.531,32.7196,1.90313,120,0,0,20958,0,0,2);
+DELETE FROM creature_movement WHERE id = 75043;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES 
+(75043,1,-3566.097412,409.175171,29.456755,20000,0,0,0,0,0,0,0,0,0,1.573258,0,0),
+(75043,2,-3561.111572,470.597198,23.414927,1000,2285701,0,0,0,0,0,0,0,0,1.503352,0,0);
+-- Shadowhoof Assassin <Servant of Illidan>
+-- #1
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (75046,22858,530,1,1,0,558,-3497.72,392.406,33.3901,3.44716,25,0,0,6761,0,0,2);
+DELETE FROM creature_movement WHERE id = 75046;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES 
+(75046,1,-3497.72,392.406,33.3901,15000,0,0,0,0,0,0,0,0,0,3.44716,0,0),
+(75046,2,-3539.126221,404.159515,31.722940,0,0,0,0,0,0,0,0,0,0,1.764072,0,0),
+(75046,3,-3539.932861,416.170685,30.654182,0,0,0,0,0,0,0,0,0,0,1.105012,0,0),
+(75046,4,-3534.231689,429.032745,29.525265,1000,2285701,0,0,0,0,0,0,0,0,1.957538,0,0);
+-- #2
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (75048,22858,530,1,1,0,558,-3498.71,399.058,32.0341,3.133,25,0,0,6761,0,0,2);
+DELETE FROM creature_movement WHERE id = 75048;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES 
+(75048,1,-3498.71,399.058,32.0341,15000,0,0,0,0,0,0,0,0,0,3.133,0,0),
+(75048,2,-3535.841797,404.825287,31.794277,0,0,0,0,0,0,0,0,0,0,2.041723,0,0),
+(75048,3,-3538.666748,413.919342,30.906582,0,0,0,0,0,0,0,0,0,0,1.695747,0,0),
+(75048,4,-3530.693115,431.653412,28.902966,1000,2285701,0,0,0,0,0,0,0,0,2.092373,0,0);
+-- #3
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (75049,22858,530,1,1,0,558,-3561.08,372.938,32.7815,1.73494,25,0,0,6761,0,0,2);
+DELETE FROM creature_movement WHERE id = 75049;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES 
+(75049,1,-3563.97,372.969,32.7509,15000,0,0,0,0,0,0,0,0,0,1.64462,0,0),
+(75049,2,-3562.529785,398.247803,30.308769,1000,2285701,0,0,0,0,0,0,0,0,1.555077,0,0);
+-- #4
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (75055,22858,530,1,1,0,558,-3556.42,373.266,32.9199,1.66033,25,0,0,6761,0,0,2);
+DELETE FROM creature_movement WHERE id = 75055;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES 
+(75055,1,-3556.42,373.266,32.9199,15000,0,0,0,0,0,0,0,0,0,1.66033,0,0),
+(75055,2,-3557.407471,398.044769,30.406649,1000,2285701,0,0,0,0,0,0,0,0,1.464397,0,0);
+-- Illidari Succubus <Servant of Illidan>
+-- #1
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (75056,22860,530,1,1,0,0,-3498.94,395.572,32.8215,3.09606,25,0,0,4890,7196,0,2);
+DELETE FROM creature_movement WHERE id = 75056;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES 
+(75056,1,-3498.94,395.572,32.8215,15000,0,0,0,0,0,0,0,0,0,3.09606,0,0),
+(75056,2,-3538.631592,406.667480,31.527609,0,0,0,0,0,0,0,0,0,0,1.715705,0,0),
+(75056,3,-3537.178711,426.733551,29.620302,1000,2285701,0,0,0,0,0,0,0,0,2.106048,0,0);
+-- #2
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (75067,22860,530,1,1,0,0,-3563.97,372.969,32.7509,1.64462,25,0,0,4890,7196,0,2);
+DELETE FROM creature_movement WHERE id = 75067;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES 
+(75067,1,-3563.97,372.969,32.7509,15000,0,0,0,0,0,0,0,0,0,1.64462,0,0),
+(75067,2,-3566.628418,398.212067,30.385164,1000,2285701,0,0,0,0,0,0,0,0,1.518951,0,0);
+
+DELETE FROM creature WHERE id = 10264; -- delete Solakar Flamewreath spawned by event
+DELETE FROM creature WHERE id = 21933; -- sync data with UDB
+UPDATE creature SET guid=79368 WHERE guid=82967;
+
+-- Bleeding Hollow Grunt #1 #2 #3 #4 #5 #6 -- missing on map  
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (12776,16871,530,1,1,0,246,-927.68,2035.95,60.16,0.62,300,0,0,5158,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (39927,16871,530,1,1,0,246,-821.49,2043.88,37.83,1.42,300,0,0,5158,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (40454,16871,530,1,1,0,246,-808.60,2028.13,38.84,6.15,300,0,0,4979,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (41812,16871,530,1,1,0,246,-865.36,1898.05,65.42,0.06,300,0,0,4979,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (41877,16871,530,1,1,0,246,-907.72,1916.98,67.13,4.03,300,0,0,5158,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (45146,16871,530,1,1,0,246,-886.86,1923.62,67.36,0.49,300,0,0,5158,0,0,0);
+
+-- Warmaul Hill (Cave) - wasnt spawned at all -- all corect spawns
+-- Warmaul Warlock #1 #2 #3 #4 #5 #6 #7 #8 #9 -- missing on map 
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (45214,18037,530,1,1,0,1503,-533.941,8870.37,208.906,3.42234,300,5,0,5060,2933,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (45215,18037,530,1,1,0,1503,-454.681,8803.77,198.269,2.41232,300,5,0,5060,2933,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (75071,18037,530,1,1,0,1503,-447.605,8763.69,185.048,1.68975,300,5,0,4892,2846,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (75074,18037,530,1,1,0,1503,-374.149,8771.58,210.73,5.07874,300,5,0,5060,2933,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (75078,18037,530,1,1,0,1503,-437.458,8821.92,221.269,0.511648,300,5,0,5060,2933,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (75084,18037,530,1,1,0,1503,-445.078,8864.54,224.601,4.72138,300,5,0,4892,2846,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (75085,18037,530,1,1,0,1503,-502.455,8893.33,227.559,6.17437,300,5,0,5060,2933,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (75087,18037,530,1,1,0,1503,-538.159,8885.65,230.808,0.664801,300,5,0,4892,2846,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (75091,18037,530,1,1,0,1503,-523.295,8844.17,234.505,1.51695,300,5,0,4892,2846,0,1);
+-- Warmaul Brute #2 #3 #4 #5 #6 #7 -- missing on map
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (75092,18065,530,1,1,0,0,-478.179,8842.4,199.721,2.17277,300,5,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (75094,18065,530,1,1,0,0,-458.151,8732.37,182.157,4.32633,300,5,0,6116,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (75098,18065,530,1,1,0,0,-406.833,8714.88,193.001,5.81309,300,5,0,6116,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (75100,18065,530,1,1,0,0,-401.754,8807.28,218.135,5.49107,300,5,0,6116,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (75101,18065,530,1,1,0,0,-487.607,8852.84,228.021,2.50656,300,5,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (75102,18065,530,1,1,0,0,-473.313,8844.19,239.775,2.88355,300,0,0,6116,0,0,0);
+-- Raven's Wood - part wasn't spawned -- all corect spawns
+-- Dire Raven - Raven's Wood
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (75103,21042,530,1,1,0,0,3658.38,7026.98,149.063,6.11225,300,5,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (77356,21042,530,1,1,0,0,3696.72,6931.66,142.894,3.70501,300,5,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (77357,21042,530,1,1,0,0,3739.51,6904.67,143.852,0.0214868,300,5,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (78738,21042,530,1,1,0,0,3769.39,6918.96,143.149,4.4472,300,5,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (78739,21042,530,1,1,0,0,3718.82,6846.32,149.102,5.28757,300,5,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (78740,21042,530,1,1,0,0,3606.38,6881.07,144.005,1.87501,300,5,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (78741,21042,530,1,1,0,0,3566.33,6953.87,146.652,0.963947,300,5,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (79427,21042,530,1,1,0,0,3531.29,7002,151.708,6.26538,300,5,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (79432,21042,530,1,1,0,0,3620.97,6955.68,144.442,0.720471,300,5,0,6326,0,0,1);
+-- Raven's Wood Leafbeard - Raven's Wood
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (79434,21326,530,1,1,0,0,3579.51,7013.7,148.632,0.0489557,300,5,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (79444,21326,530,1,1,0,0,3632.1,7027.39,145.833,4.28225,300,5,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (79445,21326,530,1,1,0,0,3769.65,6985.01,142.129,3.45368,300,5,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (81027,21326,530,1,1,0,0,3692.81,7016.41,149.799,1.2742,300,5,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (82865,21326,530,1,1,0,0,3772.62,6817.78,141.336,4.13304,300,5,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (82967,21326,530,1,1,0,0,3637.14,6939.39,143.092,1.88051,300,5,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150127,21326,530,1,1,0,0,3567.35,6903.95,142.515,2.42872,300,5,0,6542,0,0,1);
+-- Coilskar point - part wasn't spawned -- all corect spawns - SHADOWMOON VALLEY
+-- Coilskar Defender 
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (84007,19762,530,1,1,0,1501,-3147.14,1601.01,53.64,3.85,300,0,0,6542,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (84008,19762,530,1,1,0,1501,-3158.17,1617.75,55.43,4.01,300,0,0,6542,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (84009,19762,530,1,1,0,1501,-3027.45,1579.61,64.27,1.65,300,0,0,6542,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150128,19762,530,1,1,0,1501,-2966.84,1629.48,56.5661,5.37121,300,0,0,6542,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (84012,19762,530,1,1,0,1501,-2928.87,1576.1,36.1739,0.4886922,300,0,0,6542,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (84622,19762,530,1,1,0,1501,-2885.72,1589.38,19.9814,5.585053,300,0,0,6542,0,0,0);
+-- Coilskar Siren #1
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (84626,19768,530,1,1,0,415,-3101.57,1612.96,55.94,0.95,300,5,0,5409,3080,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (84668,19768,530,1,1,0,415,-3052.83,1588.57,58.81,0.65,300,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150129,19768,530,1,1,0,415,-2996.05,1587.6,61.1695,2.55,300,5,0,5233,2991,0,1);
+-- Coilskar Cobra #1
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85483,19784,530,1,1,0,0,-3079.14,1609.92,55.97,4.15,300,5,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85612,19784,530,1,1,0,0,-3083.91,1598.23,55.68,2.86,300,5,0,6542,0,0,1);
+-- Enraged Water Spirit #2 #3
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85613,21059,530,1,1,0,0,-2782.08,1661.1,10.7861,1.3385,300,20,0,5950,3080,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85616,21059,530,1,1,0,0,-2787.67,1636.83,11.101,1.60553,300,20,0,5950,3080,0,1);
+-- Infernal attackers - Event - SHADOWMOON VALLEY
+-- Shadowmoon Scout (missing spawns)
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85620,21749,530,1,1,0,500,-3178.89,2318.97,62.8584,3.51816,300,0,0,9489,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85621,21749,530,1,1,0,500,-3178.32,2314.69,62.8601,2.96289,300,0,0,9489,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85622,21749,530,1,1,0,500,-3211.55,2353.22,62.4676,3.50089,300,0,0,9489,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85623,21749,530,1,1,0,500,-3210.85,2349.49,62.4713,3.00216,300,0,0,9489,0,0,0);
+-- Wildhammer Defender (missing spawns) - theres still part of that area not spawned (when ill get sniffs ..then will finish it)
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85625,21736,530,1,1,0,47,-3820.67,2048.15,94.5956,5.25239,300,0,0,9489,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85632,21736,530,1,1,0,47,-3814.08,2017.71,92.798,2.02048,300,0,0,9489,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85633,21736,530,1,1,0,47,-3821.78,2020.59,93.7031,0.398628,300,0,0,9489,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85634,21736,530,1,1,0,47,-3856.47,1982.79,95.6115,6.0849,300,0,0,9489,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85637,21736,530,1,1,0,47,-3852.33,1988.7,95.3579,5.05211,300,0,0,9489,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85640,21736,530,1,1,0,47,-3882.44,1951.4,98.6319,4.47484,300,0,0,9489,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85644,21736,530,1,1,0,47,-3922.99,1949.45,93.1716,0.0019,300,0,0,9489,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85645,21736,530,1,1,0,47,-3919.64,1943.73,93.0026,0.885561,300,0,0,9489,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85648,21736,530,1,1,0,47,-3923.06,1914.09,92.2666,0.524279,300,0,0,9489,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85651,21736,530,1,1,0,47,-3917.5,1910.61,91.6558,1.36073,300,0,0,9489,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85756,21736,530,1,1,0,47,-3946.43,1913.33,94.0522,2.38567,300,0,0,9489,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85757,21736,530,1,1,0,47,-3944.94,1920.79,94.2934,3.63446,300,0,0,9489,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85758,21736,530,1,1,0,47,-3988.49,1986.08,96.0565,5.19739,300,0,0,9489,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85759,21736,530,1,1,0,47,-3981.22,1987.07,96.0521,4.10176,300,0,0,9489,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85760,21736,530,1,1,0,47,-4014.39,1978.42,90.5917,1.29789,300,0,0,9489,0,0,0);
+-- The Deathforge - SHADOWMOON VALLEY
+-- Deathforge Summoner #1 #2 #3 -- missing on map
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85764,20872,530,1,1,0,572,-3341.02,2169.33,2.52806,4.13577,300,0,0,4868,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85766,20872,530,1,1,0,572,-3333.81,2152.78,-0.593187,3.3975,300,0,0,4868,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85767,20872,530,1,1,0,572,-3334.12,2133.59,-1.94133,2.76526,300,0,0,4868,3080,0,0);
+-- missing imp added 
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85768,20887,530,1,1,0,0,-3415.74,2132.43,34.402,4.98488,25,5,0,1518,2933,0,1);
+-- Deathforge Guardians - missing on map
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85772,20878,530,1,1,0,1565,-3649.61,2083.06,10.5284,4.11298,300,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85773,20878,530,1,1,0,1565,-3666.73,2065.66,10.4422,6.09926,300,0,0,6542,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85775,20878,530,1,1,0,1565,-3619.76,2045.99,10.5055,2.821,300,0,0,6542,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85776,20878,530,1,1,0,1565,-3638.73,2037.86,10.4021,1.49447,300,0,0,6542,0,0,0);
+-- Rocknail Ripper in Shadowmoon Valley -- all missing on map
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85777,21478,530,1,1,0,0,-3982.49,763.197,1.65559,0.854701,120,5,0,6761,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85778,21478,530,1,1,0,0,-4002.94,770.715,1.7264,5.8027,120,5,0,6761,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85779,21478,530,1,1,0,0,-3963.01,841.717,6.06465,3.42137,120,5,0,6761,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85786,21478,530,1,1,0,0,-3964.58,861.366,6.46268,0.859368,120,5,0,6761,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85787,21478,530,1,1,0,0,-3947.79,858.206,9.69418,4.7039,120,5,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85788,21478,530,1,1,0,0,-4071.08,905.403,5.82404,1.8529,120,5,0,6761,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85793,21478,530,1,1,0,0,-3945.06,845.7120,9.81448,2.85124,120,5,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85794,21478,530,1,1,0,0,-3927.74,896.128,15.1756,0.428068,120,5,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85795,21478,530,1,1,0,0,-3931,885.347,13.1129,5.39964,120,5,0,6761,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85796,21478,530,1,1,0,0,-3939.91,893.517,14.7294,1.04461,120,5,0,6542,0,0,1);
+-- Nakansi - missing on map
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85797,21789,530,1,1,0,0,-2725.79,2712.99,122.351,5.12899,300,0,0,12000,0,0,0);
+-- Kor'kron Defender  - missing on map 
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85798,19362,530,1,1,0,2196,-2728.6,2713.86,122.349,5.07811,300,0,0,34930,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85799,1936219362,530,1,1,0,2196,-2723.38,2714.41,122.352,4.9603,300,0,0,34930,0,0,0);
+-- Illidari Point - SHADOWMOON VALLEY
+-- Illadari Point - Succubi Spell Orgin 001
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85800,20286,530,1,1,0,0,-3795.76,2595.89,91.2109,4.62994,25,0,0,42,0,0,0);
+-- Illidari Satyr - missing on map
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85801,21656,530,1,1,0,558,-3831.66,2708.96,101.473,5.57343,300,5,0,6761,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85802,21656,530,1,1,0,558,-3771.53,2581.38,90.3219,6.09719,300,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85804,21656,530,1,1,0,558,-3820.77,2492.39,81.3946,1.38446,300,0,0,6761,0,0,0);
+-- Illidari Shocktrooper
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85805,19802,530,1,1,0,20,-3797.63,2359.87,101.038,4.62501,300,5,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85806,19802,530,1,1,0,20,-3773.97,2463.87,80.0338,4.95835,300,0,0,6542,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85808,19802,530,1,1,0,20,-3804.85,2460.58,85.3201,5.08793,300,0,0,6542,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85813,19802,530,1,1,0,20,-3711.62,2485.1,82.338,5.39031,300,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85821,19802,530,1,1,0,20,-3739.52,2350.09,78.1292,4.89945,300,5,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85822,19802,530,1,1,0,20,-3706.16,2382.42,78.0713,4.98584,300,5,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85823,19802,530,1,1,0,20,-3780.58,2412.86,85.5047,3.37028,300,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85824,19802,530,1,1,0,20,-3660.12,2461.39,76.3714,1.48924,300,10,0,6761,0,0,1);
+-- Invasion point: Cataclysm -- Shadowmoon Valley
+-- Wildhammer Guards  
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85825,19353,530,1,1,0,256,-2762.69,1979.74,167.443,1.867502,300,0,0,34930,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85827,19353,530,1,1,0,256,-2765.28,1979.2,167.442,1.972222,300,0,0,34930,0,0,0);
+-- Gan'arg Technician - 100% was missing 
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85828,21960,530,1,1,0,29,-2769.85,2385.74,93.281,1.26223,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85829,21960,530,1,1,0,29,-2783.76,2317.76,92.1618,4.84365,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85830,21960,530,1,1,0,29,-2763.76,2353.64,93.2809,4.84365,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85832,21960,530,1,1,0,29,-2780.82,2301.99,92.385,0.910377,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85834,21960,530,1,1,0,29,-2709.83,2648.45,76.9166,0.578931,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85836,21960,530,1,1,0,29,-2645.68,2648.08,74.925,2.21256,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85837,21960,530,1,1,0,29,-2630.7,2654.88,74.1812,4.03077,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85838,21960,530,1,1,0,29,-2630.64,2641.31,74.9249,4.22712,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85839,21960,530,1,1,0,29,-2614.14,2624.52,74.3684,2.27148,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85840,21960,530,1,1,0,29,-2679.07,2641.25,74.9259,4.33315,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85841,21960,530,1,1,0,29,-2654.3,2626.97,74.9234,0.610359,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85843,21960,530,1,1,0,29,-2645.29,2616.44,74.9236,2.40106,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85844,21960,530,1,1,0,29,-2623.76,2601.19,74.925,5.65261,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85845,21960,530,1,1,0,29,-2622.52,2585.63,74.6538,5.55207,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85847,21960,530,1,1,0,29,-2627.97,2575.94,74.9249,4.00092,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85848,21960,530,1,1,0,29,-2662.85,2595.69,74.9247,1.42481,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85849,21960,530,1,1,0,29,-2665.17,2601.66,74.9247,2.383,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85850,21960,530,1,1,0,29,-2685.55,2614.29,74.2256,1.01247,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85851,21960,530,1,1,0,29,-2648.68,2578.44,74.9247,3.01132,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85853,21960,530,1,1,0,29,-2685.76,2553.51,74.9245,0.918224,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85854,21960,530,1,1,0,29,-2685.41,2563.42,74.9245,1.00069,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85855,21960,530,1,1,0,29,-2668.65,2537.99,74.9236,0.215287,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85856,21960,530,1,1,0,29,-2639.6,2525.57,74.8003,0.761136,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85857,21960,530,1,1,0,29,-2639.33,2537.72,74.9248,1.86069,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85858,21960,530,1,1,0,29,-2639.57,2579.74,74.9256,4.95045,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85859,21960,530,1,1,0,29,-2662.91,2556.41,74.9249,3.81161,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85861,21960,530,1,1,0,29,-2704.49,2489.59,93.2794,0.493299,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85862,21960,530,1,1,0,29,-2700.82,2476.44,93.2794,5.41382,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85863,21960,530,1,1,0,29,-2720.04,2506.07,93.2815,5.22925,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85864,21960,530,1,1,0,29,-2728.88,2506.16,93.2815,3.68987,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85865,21960,530,1,1,0,29,-2747.03,2486.92,92.9716,3.99225,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85875,21960,530,1,1,0,29,-2738.98,2453.15,93.2805,5.12322,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (85884,21960,530,1,1,0,29,-2772.66,2472.53,93.2809,4.84048,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (86083,21960,530,1,1,0,29,-2770.42,2462.32,93.2809,5.29993,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (86084,21960,530,1,1,0,29,-2762.35,2467.72,93.2809,6.25419,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (86090,21960,530,1,1,0,29,-2750.41,2435.97,93.2457,0.0652449,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (86091,21960,530,1,1,0,29,-2745.76,2465.8,93.2807,4.22393,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (86092,21960,530,1,1,0,29,-2727.37,2437.29,93.2577,4.29041,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (86101,21960,530,1,1,0,29,-2761.14,2408.82,93.2806,3.65031,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (86102,21960,530,1,1,0,29,-2762.22,2421.11,93.2806,3.78618,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (86103,21960,530,1,1,0,29,-2785.24,2401.6,92.3221,5.94994,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (86359,21960,530,1,1,0,29,-2774.67,2435.58,92.7685,3.30707,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (86361,21960,530,1,1,0,29,-2744.93,2420.84,92.3968,3.75475,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (86362,21960,530,1,1,0,29,-2751.24,2374.93,93.2803,4.46946,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (86514,21960,530,1,1,0,29,-2766.57,2367.29,93.2803,4.20085,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150129,21960,530,1,1,0,29,-2787.73,2357.25,93.28,0.47021,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150130,21960,530,1,1,0,29,-2789.01,2351.89,93.2023,5.78814,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150131,21960,530,1,1,0,29,-2748.12,2338.67,92.4345,2.10462,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150132,21960,530,1,1,0,29,-2758.44,2295.85,93.2808,5.62791,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150133,21960,530,1,1,0,29,-2772.49,2283.24,93.2811,5.20679,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150134,21960,530,1,1,0,29,-2762.13,2320.37,93.2807,3.69882,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150135,21960,530,1,1,0,29,-2797.64,2257.09,93.2808,3.29334,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150136,21960,530,1,1,0,29,-2780.73,2233.34,92.3539,5.76361,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150137,21960,530,1,1,0,29,-2798.54,2212.54,93.2808,3.96898,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150138,21960,530,1,1,0,29,-2758.31,2220.11,93.2212,6.20736,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150139,21960,530,1,1,0,29,-2751.21,2229.99,92.1626,1.33868,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (86582,21960,530,1,1,0,29,-2758.89,2257.26,93.2794,0.945974,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (86583,21960,530,1,1,0,29,-2748.79,2306.88,92.5601,3.53779,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (86584,21960,530,1,1,0,29,-2773.86,2254.7,93.2806,1.63162,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (86585,21960,530,1,1,0,29,-2789.32,2275.13,92.1666,3.76004,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (86586,21960,530,1,1,0,29,-2763.43,2134.81,117.226,3.98387,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (86587,21960,530,1,1,0,29,-2734.24,2134.32,117.225,0.49277,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (86588,21960,530,1,1,0,29,-2725.75,2133.29,117.225,5.90966,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (86589,21960,530,1,1,0,29,-2688.11,2112.94,117.038,5.96464,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (86590,21960,530,1,1,0,29,-2699.31,2102.61,117.225,3.73803,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (86591,21960,530,1,1,0,29,-2726.14,2110.68,117.225,5.7408,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (86592,21960,530,1,1,0,29,-2745.78,2096.23,117.225,4.30287,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150140,21960,530,1,1,0,29,-2765.55,2088.55,116.126,3.70597,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150141,21960,530,1,1,0,29,-2739.99,2067.33,117.225,0.902101,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150142,21960,530,1,1,0,29,-2705.6,2078.71,117.225,0.874612,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150143,21960,530,1,1,0,29,-2721.97,2082.51,117.225,2.0814,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (86831,21960,530,1,1,0,29,-2681.83,2044.9,117.226,2.76783,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (86868,21960,530,1,1,0,29,-2703.58,2040.16,117.225,5.49394,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (86881,21960,530,1,1,0,29,-2722.36,2056.91,117.225,2.91234,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (86900,21960,530,1,1,0,29,-2753.16,2054.8,117.111,0.917425,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (87908,21960,530,1,1,0,29,-2688.29,2063.78,117.225,1.31562,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (87909,21960,530,1,1,0,29,-2681.16,2076.76,117.225,2.49765,120,10,0,6542,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (87910,21960,530,1,1,0,29,-2754.75,2103.46,117.225,5.94632,120,10,0,6326,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (89212,21960,530,1,1,0,29,-2700.2,2123.85,117.225,4.68575,120,10,0,6542,0,0,1);
+
+-- The Path of Conquest -- SHADOWMOON VALLEY
+-- Son of Coroc
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (93788,19824,530,1,1,0,0,-4153.19,1279.68,57.6734,1.27409,300,0,0,26168,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (96593,19824,530,1,1,0,0,-4279.53,1317.74,57.6672,4.485496,300,0,0,26168,0,0,0);
+-- Eclipsion Spellbinder
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (96657,22017,530,1,1,0,974,-4100.07,1351.96,72.8829,2.9147,180,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (96658,22017,530,1,1,0,974,-4100.01,1375.74,79.7783,2.321288,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150144,22017,530,1,1,0,974,-4123.97,1400.04,85.6092,0.6981317,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150145,22017,530,1,1,0,974,-4123.58,1382.96,81.4806,0.6632251,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150146,22017,530,1,1,0,974,-4151.66,1310.76,56.3273,4.904375,180,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150147,22017,530,1,1,0,974,-4120.25,1335.39,67.2617,0,180,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150148,22017,530,1,1,0,974,-4214.66,1297.19,57.2148,1.570796,180,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150149,22017,530,1,1,0,974,-4227.29,1313.99,56.0313,4.660029,180,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150150,22017,530,1,1,0,974,-4204.95,1314.8,57.7019,4.677482,180,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150151,22017,530,1,1,0,974,-4236.12,1296.55,56.9548,1.658063,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150152,22017,530,1,1,0,974,-4257.24,1296.91,53.6587,1.727876,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150153,22017,530,1,1,0,974,-4323.75,1306.16,78.6509,1.605703,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150154,22017,530,1,1,0,974,-4297.72,1328.61,65.5859,4.757293,180,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150155,22017,530,1,1,0,974,-4372.3,1299.02,86.7443,1.710423,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150156,22017,530,1,1,0,974,-4393.92,1293.49,85.1592,2.391101,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150157,22017,530,1,1,0,974,-4392.06,1326.51,89.2531,4.956735,180,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150158,22017,530,1,1,0,974,-4411.29,1278.53,79.0306,2.495821,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150159,22017,530,1,1,0,974,-4403.89,1355.37,138.604,1.919862,180,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150160,22017,530,1,1,0,974,-4436.86,1341.97,133.63,2.181662,180,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150161,22017,530,1,1,0,974,-4459.64,1335.91,128.005,1.832596,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150162,22017,530,1,1,0,974,-4495.86,1360.22,132.818,5.72468,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150163,22017,530,1,1,0,974,-4422.06,1399.37,144.501,4.677482,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150164,22017,530,1,1,0,974,-4306.21,1368.64,142.438,1.448623,180,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150165,22017,530,1,1,0,974,-4316.88,1394.04,145.555,4.642576,180,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150166,22017,530,1,1,0,974,-4284.6,1372.36,143.721,1.850049,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150167,22017,530,1,1,0,974,-4227.07,1384.31,131.743,0.6632251,180,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150168,22017,530,1,1,0,974,-4129.43,1285.63,55.3489,1.884956,180,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150169,22017,530,1,1,0,974,-4286.69,1401.65,142.341,6.01647,180,0,0,5409,3080,0,0);
+-- Eclipse Point - Bloodcrystal Spell Orgin
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150170,20431,530,1,1,0,0,-4151.47,1285.95,66.784,5.899213,300,0,0,42,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150171,20431,530,1,1,0,0,-4280.86,1311.67,66.6485,0.7330383,300,0,0,42,0,0,0);
+-- Eclipsion Soldier
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150172,22016,530,1,1,0,2432,-4100.11,1350.39,72.2288,3.054326,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150173,22016,530,1,1,0,2432,-4099.99,1353.74,73.6377,3.293946,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150174,22016,530,1,1,0,2432,-4100.06,1377.72,80.4588,2.111848,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150175,22016,530,1,1,0,2432,-4100.05,1373.94,79.202,2.076942,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150176,22016,530,1,1,0,2432,-4122,1381.51,81.1877,0.715585,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150177,22016,530,1,1,0,2432,-4125.01,1385.03,81.9867,0.6806784,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150178,22016,530,1,1,0,2432,-4173.19,1316.73,57.2053,4.625123,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150179,22016,530,1,1,0,2432,-4149.73,1310.27,56.5718,4.729842,180,0,0,5409,3080,0,0);
+
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (102110,22016,530,1,1,0,2432,-4153.59,1311.41,56.0868,4.625123,180,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (102293,22016,530,1,1,0,2432,-4127.5,1315.51,57.6382,5.707227,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (102366,22016,530,1,1,0,2432,-4124.98,1317.97,58.9083,5.51524,180,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104815,22016,530,1,1,0,2432,-4111.45,1286.98,54.3198,2.268928,180,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104817,22016,530,1,1,0,2432,-4108.46,1288.62,54.1314,1.942696,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104819,22016,530,1,1,0,2432,-4096.19,1317.84,63.5124,3.054326,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104820,22016,530,1,1,0,2432,-4096.36,1322.75,65.5639,2.932153,180,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104824,22016,530,1,1,0,2432,-4131.38,1285.95,55.4474,1.972222,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104827,22016,530,1,1,0,2432,-4127.14,1286,55.1857,1.815142,180,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104829,22016,530,1,1,0,2432,-4120.37,1333.76,66.4649,0.01745329,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104830,22016,530,1,1,0,2432,-4120.15,1336.9,68.0352,0,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104832,22016,530,1,1,0,2432,-4173.1,1288.45,57.5707,1.500983,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104837,22016,530,1,1,0,2432,-4177.25,1289.75,58.7245,1.466077,180,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104854,22016,530,1,1,0,2432,-4176.76,1317.9,56.0477,4.660029,180,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104855,22016,530,1,1,0,2432,-4246.7,1319.21,55.0447,4.729842,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104856,22016,530,1,1,0,2432,-4216.64,1297.06,56.1343,1.570796,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104857,22016,530,1,1,0,2432,-4212.83,1296.57,57.0505,1.570796,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104858,22016,530,1,1,0,2432,-4225.27,1314.48,56.684,4.642576,180,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104859,22016,530,1,1,0,2432,-4229.29,1314.14,56.1216,4.764535,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104860,22016,530,1,1,0,2432,-4191.07,1296.06,57.5883,1.605703,180,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104861,22016,530,1,1,0,2432,-4194.59,1296.48,57.1559,1.553343,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104865,22016,530,1,1,0,2432,-4206.37,1313.21,56.889,4.677482,180,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104866,22016,530,1,1,0,2432,-4203.81,1313.09,56.2993,4.729842,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104880,22016,530,1,1,0,2432,-4234.12,1296.49,57.1697,1.623156,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104882,22016,530,1,1,0,2432,-4237.95,1296.56,56.5906,1.518436,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104884,22016,530,1,1,0,2432,-4254.9,1297.11,54.0736,1.623156,180,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104924,22016,530,1,1,0,2432,-4259.22,1297.02,53.3783,1.570796,180,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104926,22016,530,1,1,0,2432,-4325.97,1306.92,79.2283,1.553343,180,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104930,22016,530,1,1,0,2432,-4321.85,1306.32,77.7874,1.43117,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104931,22016,530,1,1,0,2432,-4316.29,1330.93,75.3594,4.799655,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104934,22016,530,1,1,0,2432,-4313.26,1332.71,75.1013,4.869469,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104935,22016,530,1,1,0,2432,-4337.56,1331.47,82.1979,4.747295,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104939,22016,530,1,1,0,2432,-4333.6,1331.26,81.4146,4.747295,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104940,22016,530,1,1,0,2432,-4299.64,1328.81,66.1432,4.747295,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104942,22016,530,1,1,0,2432,-4296.03,1328.68,65.3377,4.904375,180,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104943,22016,530,1,1,0,2432,-4341.43,1307.24,81.4455,1.605703,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104951,22016,530,1,1,0,2432,-4345.6,1307.46,81.6897,1.466077,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104954,22016,530,1,1,0,2432,-4250.58,1318.97,54.2587,4.694936,180,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104973,22016,530,1,1,0,2432,-4370.16,1299.02,87.1071,1.553343,180,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104974,22016,530,1,1,0,2432,-4374.5,1298.99,86.2582,1.570796,180,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104975,22016,530,1,1,0,2432,-4392.29,1294.81,85.677,1.919862,180,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104976,22016,530,1,1,0,2432,-4390.21,1325.9,87.8148,4.729842,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104978,22016,530,1,1,0,2432,-4394.57,1325.53,89.9618,4.677482,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104979,22016,530,1,1,0,2432,-4438.94,1341.44,133.101,1.58825,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104980,22016,530,1,1,0,2432,-4457.66,1336.21,128.384,2.094395,180,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104981,22016,530,1,1,0,2432,-4461.85,1335.4,127.445,2.164208,180,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104982,22016,530,1,1,0,2432,-4478.78,1380.63,140.871,5.585053,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104983,22016,530,1,1,0,2432,-4472.86,1384.76,142.812,5.532694,180,0,0,5409,3080,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104984,22016,530,1,1,0,2432,-4493.48,1361.58,132.76,5.218534,180,0,0,5233,2991,0,0);
+-- Eclipsion Cavalier
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104985,22018,530,1,1,0,2386,-4444.8,1342.72,132.049,1.81818,180,0,0,6761,0,0,0);
+-- Crazed Colossus
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104986,19823,530,1,1,0,0,-4486.58,1998.88,112.765,0.113942,300,20,0,54088,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104987,19823,530,1,1,0,0,-4527.13,2106.33,38.1019,0.221064,300,20,0,55888,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104988,19823,530,1,1,0,0,-4561.13,2024.76,92.2968,5.31829,300,20,0,54088,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (104989,19823,530,1,1,0,0,-4399.99,2334.17,28.1067,0.071826,300,20,0,54088,0,0,1);
+
+-- Ruins of Ba'ri -- SHADOWMOON VALLEY
+-- Ashtongue Handler
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (106139,21803,530,1,1,0,38,-3224.17,954.594,53.2922,0.282183,180,0,0,4057,0,0,0);
+-- Ashtongue Shaman <Servant of Illidan>
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (106140,21453,530,1,1,0,2098,-3211.19,1069.99,65.4826,2.9824,180,0,0,5409,3150,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (106141,21453,530,1,1,0,2098,-3212.87,935.073,53.7186,3.74718,180,0,0,5409,3150,0,0);
+-- Ashtongue Warrior <Servant of Illidan>
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (106142,21454,530,1,1,0,244,-3355.57,836.093,-22.4942,4.625123,180,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (106168,21454,530,1,1,0,244,-3330.01,838.522,-19.4002,4.677482,180,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (106169,21454,530,1,1,0,244,-3411.82,1065.97,43.5778,3.001966,0,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (106170,21454,530,1,1,0,244,-3412.32,1085.12,44.0007,3.403392,180,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (106171,21454,530,1,1,0,244,-3274.38,987.516,43.8539,4.363323,180,0,0,6761,0,0,0);
+-- Ashtongue Worker <Servant of Illidan>
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (106172,21455,530,1,1,0,53,-3194.41,889.876,51.7198,5.5676,180,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (106173,21455,530,1,1,0,53,-3202.95,902.151,49.9862,0.8377581,180,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (106174,21455,530,1,1,0,53,-3329.55,1187.46,65.5767,2.164208,180,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (106175,21455,530,1,1,0,53,-3251.08,976.31,48.1459,6.230825,180,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (106176,21455,530,1,1,0,53,-3231.52,997.717,59.2313,1.45149,180,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (106209,21455,530,1,1,0,53,-3231.95,1018.78,62.6671,5.88176,180,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (106275,21455,530,1,1,0,53,-3254.02,992.717,51.3794,1.44353,180,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (106796,21455,530,1,1,0,53,-3245.43,1009.24,59.9086,0.6632251,180,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (107584,21455,530,1,1,0,53,-3240.76,1027.02,61.4212,0.1570796,180,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (107588,21455,530,1,1,0,53,-3250.08,1020.43,58.8627,0.418879,180,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (107589,21455,530,1,1,0,53,-3394.58,1127.67,51.0358,5.864306,180,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (107620,21455,530,1,1,0,53,-3383.46,1127.75,52.9988,3.874631,180,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150180,21455,530,1,1,0,53,-3264.48,1002.89,56.8814,3.979351,180,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150181,21455,530,1,1,0,53,-3380.83,1113.42,48.791,2.548181,180,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150182,21455,530,1,1,0,53,-3394.78,1111.06,50.7728,1.27409,180,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (150183,21455,530,1,1,0,53,-3289.59,1032.92,51.8233,2.96706,180,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (108872,21455,530,1,1,0,53,-3337.02,1092.48,52.5119,0.1919862,180,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (108874,21455,530,1,1,0,53,-3297.32,1038.93,53.6622,5.288348,180,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (108878,21455,530,1,1,0,53,-3295.74,1026.52,49.9782,1.937315,180,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (108879,21455,530,1,1,0,53,-3303.5,1031.59,50.6656,0.01745329,180,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (108880,21455,530,1,1,0,53,-3320.54,1058.17,51.5506,1.919862,180,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (108972,21455,530,1,1,0,53,-3406.06,1042.06,43.6969,3.804818,180,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (108973,21455,530,1,1,0,53,-3230.248,969.699,56.468,1.94,180,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (108974,21455,530,1,1,0,53,-3202.2,924.88,54.5841,5.24821,180,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (108975,21455,530,1,1,0,53,-3194.94,912.901,53.9515,3.68136,180,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (108999,21455,530,1,1,0,53,-3422.27,1122.06,46.7247,0.86922,180,0,0,6761,0,0,0);
+
+-- Netherwing Lodge -- SHADOWMOON VALLEY 
+-- Forgus <Pit Fight Organizer> (added in 2.2.0)
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (109000,23148,530,1,1,0,0,-5137.817,561.52,84.36,4.747,180,0,0,7181,0,0,0);
+-- Gug <Armorsmith> (added in 2.2.0)
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (109001,23144,530,1,1,0,0,-5119.803,624.7665,86.82748,1.256637,180,0,0,6542,0,0,0);
+DELETE FROM creature_addon WHERE guid = 109001;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(109001,0,0,1,0,133,0,'');
+-- Wing Commander Ichman (added in 2.2.0)
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (109019,23345,530,1,1,0,0,-5066.307,640.2136,86.49668,1.553343,180,0,0,6986,0,0,0);
+DELETE FROM creature_template_addon WHERE entry = 23345;
+INSERT INTO creature_template_addon (entry, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(23345,17718,0,0,0,0,0,'');
+-- Wing Commander Mulverick (added in 2.2.0)
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (109045,23346,530,1,1,0,0,-5060.33,640.436,86.5787,1.78265,25,0,0,6986,0,0,0);
+DELETE FROM creature_template_addon WHERE entry = 23346;
+INSERT INTO creature_template_addon (entry, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(23346,17719,0,0,0,0,0,'');
+-- Captain Skyshatter (added in 2.2.0)
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (109145,23348,530,1,1,0,0,-5074.88,625.448,85.8285,2.03791,25,0,0,6986,0,0,0);
+DELETE FROM creature_template_addon WHERE entry = 23348;
+INSERT INTO creature_template_addon (entry, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(23348,21425,0,0,0,0,0,'');
+-- Horus <Innkeeper> (added in 2.2.0)
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (110323,23143,530,1,1,0,0,-5142.569,581.3281,84.13567,0.5061455,25,0,0,6542,0,0,0);
+-- Goblin Merc (added in 2.2.0)
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (117310,23142,530,1,1,0,0,-5116.791,602.1363,85.08778,4.869469,180,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (117371,23142,530,1,1,0,0,-5113.694,599.2055,85.202,3.525565,180,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (117372,23142,530,1,1,0,0,-5120.312,601.4315,84.81312,5.480334,180,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (117421,23142,530,1,1,0,0,-5121.043,598.1973,84.88036,0.3665192,180,0,0,6761,0,0,0);
+-- Dragonmaw Enforcer
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (117422,23146,530,1,1,0,2509,-5166.38,563.994,80.506,3.211406,180,0,0,143620,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (117423,23146,530,1,1,0,2510,-5143.491,515.507,84.5,4.834562,180,0,0,147600,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (117614,23146,530,1,1,0,2509,-5162.25,534.28,82.7053,5.183628,180,0,0,147600,0,0,0);
+-- Dragonmaw Peon
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (117633,22252,530,1,1,0,2334,-5121.29,524.294,85.979,5.02271,180,0,0,3271,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (117634,22252,530,1,1,0,2334,-5116,526.488,86.1381,5.08868,180,0,0,3271,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (117646,22252,530,1,1,0,2334,-5119.86,518.446,85.544,2.56205,180,0,0,3271,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (117648,22252,530,1,1,0,2334,-5124.664,631.3945,86.79402,0.3316126,180,0,0,3271,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (117649,22252,530,1,1,0,2334,-5121.202,632.5522,86.88631,3.298672,180,0,0,3380,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127272,22252,530,1,1,0,2334,-5116.154,634.5474,86.88316,4.921828,180,0,0,3271,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127273,22252,530,1,1,0,2334,-5129.72,907.115,32.2765,3.15806,180,0,0,3380,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127274,22252,530,1,1,0,2334,-5134.47,914.477,33.995,4.71708,180,0,0,3271,0,0,0);
+-- Nethermine Flayer
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127275,23169,530,1,1,0,0,-4965.2,654.754,19.8983,3.25419,180,5,0,6986,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127276,23169,530,1,1,0,0,-4958.08,598.221,13.2424,3.68537,180,5,0,6986,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127277,23169,530,1,1,0,0,-4944.27,565.486,7.91337,3.68537,180,5,0,6986,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127278,23169,530,1,1,0,0,-4913.53,590.013,5.45709,0.579112,180,5,0,7181,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127279,23169,530,1,1,0,0,-4920.76,534.23,6.5867,4.71424,180,5,0,7181,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127280,23169,530,1,1,0,0,-4877.08,529.025,-1.4862,2.97458,180,5,0,7181,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127281,23169,530,1,1,0,0,-4884,472.533,-2.74094,2.9196,180,5,0,6986,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127282,23169,530,1,1,0,0,-4920.7,491.69,0.75739,3.74032,180,5,0,6986,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127283,23169,530,1,1,0,0,-4905.12,422.929,-4.76311,5.55064,180,5,0,6986,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127284,23169,530,1,1,0,0,-5118.94,97.7861,-12.4182,4.2076,180,5,0,7181,0,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127285,23169,530,1,1,0,0,-5070.46,183.286,-8.79853,2.11843,180,5,0,7181,0,0,1);
+-- Overmine Flayer
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127286,23264,530,1,1,0,0,-5048.03,199.958,113.572,5.80298,180,0,0,7181,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127287,23264,530,1,1,0,0,-5114.06,232.723,143.029,2.27106,180,0,0,7181,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127288,23264,530,1,1,0,0,-5108.3,267.119,152.325,2.23964,180,0,0,6986,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127289,23264,530,1,1,0,0,-5096.48,326.104,170.369,5.69104,180,0,0,6986,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127290,23264,530,1,1,0,0,-5084.92,279.693,158.211,1.95961,180,0,0,7181,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127291,23264,530,1,1,0,0,-5111.53,300.298,160.92,1.1587,180,0,0,6986,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127292,23264,530,1,1,0,0,-5074.32,305.428,165.574,5.82554,180,0,0,7181,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127293,23264,530,1,1,0,0,-5088.8,179.864,131.708,5.11475,180,0,0,7181,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127294,23264,530,1,1,0,0,-5032.97,231.245,101.577,5.27516,180,0,0,6986,0,0,0);
+-- Netherwing Ray -- all missing 
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127295,23501,530,1,1,0,0,-4827.49,414.771,47.3922,3.16906,180,10,0,5589,1578,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127296,23501,530,1,1,0,0,-4843.97,498.238,51.7803,3.07874,180,10,0,5589,1578,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127297,23501,530,1,1,0,0,-4812.46,473.837,44.6002,4.25291,180,10,0,5409,1540,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127298,23501,530,1,1,0,0,-4844.75,323.996,55.9539,4.10997,180,10,0,5409,1540,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127299,23501,530,1,1,0,0,-4874.29,238.101,50.087,5.07758,180,10,0,5589,1578,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127300,23501,530,1,1,0,0,-4873.55,133.787,36.4991,3.79739,180,10,0,5589,1578,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127301,23501,530,1,1,0,0,-4859.36,614.36,67.2186,3.51717,180,10,0,5409,1540,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127302,23501,530,1,1,0,0,-4856.61,673.425,57.6788,3.51717,180,10,0,5589,1578,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127303,23501,530,1,1,0,0,-4922.75,778.553,56.5002,4.24698,180,10,0,5589,1578,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127304,23501,530,1,1,0,0,-5259.8,556.541,46.7084,5.73217,180,10,0,5409,1540,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127305,23501,530,1,1,0,0,-5271.19,738.246,36.4805,5.73217,180,10,0,5409,1540,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127306,23501,530,1,1,0,0,-4923.05,86.6896,49.9752,5.87825,180,10,0,5589,1578,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127307,23501,530,1,1,0,0,-4894.09,39.4801,44.6907,4.0679,180,10,0,5589,1578,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127308,23501,530,1,1,0,0,-5133.79,-161.02,47.5341,1.32293,180,10,0,5409,1540,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127309,23501,530,1,1,0,0,-5206.6,-127.65,65.117,2.47475,180,10,0,5589,1578,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127310,23501,530,1,1,0,0,-5234.86,-61.5226,55.3853,0.126405,180,10,0,5589,1578,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127311,23501,530,1,1,0,0,-5248.36,-24.4979,49.3864,1.67364,180,10,0,5589,1578,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127312,23501,530,1,1,0,0,-5164.44,-125.322,64.6157,0.409143,180,10,0,5409,1540,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127313,23501,530,1,1,0,0,-5272.26,103.414,37.0954,1.63436,180,10,0,5589,1578,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127314,23501,530,1,1,0,0,-5303.71,125.254,34.5261,1.29665,180,10,0,5409,1540,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127315,23501,530,1,1,0,0,-5359.14,223.231,51.1004,5.94071,180,10,0,5589,1578,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127316,23501,530,1,1,0,0,-5318.07,257.106,58.1337,0.728789,180,10,0,5409,1540,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127317,23501,530,1,1,0,0,-5324.01,305.984,57.2987,0.738214,180,10,0,5409,1540,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127318,23501,530,1,1,0,0,-5243.76,425.19,63.9083,5.35244,180,10,0,5589,1578,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127319,23501,530,1,1,0,0,-5291.45,457.516,46.3174,5.2739,180,10,0,5589,1578,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127320,23501,530,1,1,0,0,-5241.74,598.91,54.4103,0.33374,180,10,0,5589,1578,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127321,23501,530,1,1,0,0,-5116.07,782.035,56.6409,5.75563,180,10,0,5409,1540,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127322,23501,530,1,1,0,0,-5028.97,817.793,50.8939,5.15716,180,10,0,5589,1578,0,1);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127323,23501,530,1,1,0,0,-4991.6,808.653,60.592,4.74484,180,10,0,5589,1578,0,1);
+-- Murkblood Miner -- not all should have aura =31261 
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127324,23287,530,1,1,0,0,-5068.56,141.5665,-13.4759,1.082104,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127324;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127324,0,0,1,0,0,0,'31261');
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127325,23287,530,1,1,0,0,-5109.351,129.4899,-13.61424,0.6283185,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127325;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127325,0,0,1,0,0,0,'31261');
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127326,23287,530,1,1,0,0,-5118.663,105.1847,-12.59805,1.256637,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127326;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127326,0,0,1,0,0,0,'31261');
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127327,23287,530,1,1,0,0,-4973.297,220.8183,-10.63328,2.216568,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127327;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127327,0,0,1,0,0,0,'31261');
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127328,23287,530,1,1,0,0,-4882.042,472.4888,-3.117535,3.228859,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127328;
+ INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127328,0,0,1,0,0,0,'31261');
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127329,23287,530,1,1,0,0,-4918.072,502.0591,2.48006,1.570796,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127329;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127329,0,0,1,0,0,0,'31261');
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127330,23287,530,1,1,0,0,-4940.023,535.2883,7.127902,1.675516,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127330;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127330,0,0,1,0,0,0,'31261');
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127331,23287,530,1,1,0,0,-4887.938,531.7214,0.6247723,3.054326,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127331;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127331,0,0,1,0,0,0,'31261');
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127332,23287,530,1,1,0,0,-4921.915,547.6068,6.501626,2.042035,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127332;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127332,0,0,1,0,0,0,'31261');
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127333,23287,530,1,1,0,0,-4968.715,620.0629,16.17488,2.670354,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127333;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127333,0,0,1,0,0,0,'31261');
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127334,23287,530,1,1,0,0,-4969.858,654.9359,20.92751,3.420845,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127334;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127334,0,0,1,0,0,0,'31261');
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127335,23287,530,1,1,0,0,-5018.824,584.2097,22.70727,2.059489,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127335;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127335,0,0,1,0,0,0,'31261');
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127336,23287,530,1,1,0,0,-5043.952,595.3922,18.24016,2.094395,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127336;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127336,0,0,1,0,0,0,'31261');
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127337,23287,530,1,1,0,0,-5019.396,638.6277,23.41907,3.281219,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127337;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127337,0,0,1,0,0,0,'31261');
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127340,23287,530,1,1,0,0,-5040.079,627.7264,19.75634,2.373648,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127340;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127340,0,0,1,0,0,0,'31261');
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127341,23287,530,1,1,0,0,-5058.01,647.281,28.7401,1.83175,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127341;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127341,0,0,1,0,0,0,'31261');
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127342,23287,530,1,1,0,0,-5063.48,624.726,27.4795,3.04989,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127342;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127342,0,0,1,0,0,0,'31261');
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127343,23287,530,1,1,0,0,-5080.878,644.967,32.68097,2.426008,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127343;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127343,0,0,1,0,0,0,'31261');
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127344,23287,530,1,1,0,0,-5079.597,669.6569,33.3003,3.124139,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127344;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127344,0,0,1,0,0,0,'31261');
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127345,23287,530,1,1,0,0,-5100.418,654.4422,33.49445,2.303835,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127345;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127345,0,0,1,0,0,0,'31261');
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127346,23287,530,1,1,0,0,-5097.448,680.2379,32.88943,3.001966,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127346;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127346,0,0,1,0,0,0,'31261');
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127347,23287,530,1,1,0,53,-5229.827,626.3266,48.95264,4.223697,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127347;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127347,0,0,1,0,233,0,''); -- this one does emote
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127348,23287,530,1,1,0,53,-5160.78,616.745,36.1586,5.40295,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127348;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127348,0,0,1,0,233,0,''); -- this one does emote
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127349,23287,530,1,1,0,53,-5152.85,621.4561,35.87352,5.166174,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127349;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127349,0,0,1,0,233,0,''); -- this one does emote
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127350,23287,530,1,1,0,53,-5121.366,693.678,38.92881,1.361357,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127350;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127350,0,0,1,0,233,0,''); -- this one does emote
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127351,23287,530,1,1,0,53,-5144.963,630.1486,35.9286,5.61996,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127351;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127351,0,0,1,0,233,0,''); -- this one does emote
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127352,23287,530,1,1,0,53,-5170.539,614.4111,37.59125,4.921828,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127352;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127352,0,0,1,0,233,0,''); -- this one does emote
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127353,23287,530,1,1,0,53,-5139.44,637.2499,36.16368,5.689773,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127353;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127353,0,0,1,0,233,0,''); -- this one does emote
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127354,23287,530,1,1,0,53,-5140.923,729.5199,45.31025,0.8726646,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127354;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127354,0,0,1,0,233,0,''); -- this one does emote
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127355,23287,530,1,1,0,53,-5138.036,646.6555,36.65028,0.2443461,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127355;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127355,0,0,1,0,233,0,''); -- this one does emote
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127356,23287,530,1,1,0,53,-5135.893,721.6864,44.35764,0.08726646,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127356;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127356,0,0,1,0,233,0,''); -- this one does emote
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127357,23287,530,1,1,0,53,-5133.994,712.6088,42.61035,0.2268928,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127357;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127357,0,0,1,0,233,0,''); -- this one does emote
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127358,23287,530,1,1,0,53,-5131.758,701.3122,41.26741,0.5235988,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127358;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127358,0,0,1,0,233,0,''); -- this one does emote
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127359,23287,530,1,1,0,53,-5186.184,617.5848,42.23409,4.34587,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127359;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127359,0,0,1,0,233,0,''); -- this one does emote
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127360,23287,530,1,1,0,53,-5195.912,618.5502,44.35371,4.555309,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127360;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127360,0,0,1,0,233,0,''); -- this one does emote
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127361,23287,530,1,1,0,53,-5219.054,621.868,47.97065,4.310963,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127361;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127361,0,0,1,0,233,0,''); -- this one does emote
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127362,23287,530,1,1,0,53,-5209.135,619.5105,46.42957,4.502949,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127362;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127362,0,0,1,0,233,0,''); -- this one does emote
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127363,23287,530,1,1,0,53,-5164.475,734.2371,47.03968,3.438299,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127363;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127363,0,0,1,0,233,0,''); -- this one does emote
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127364,23287,530,1,1,0,53,-5159.912,725.4135,45.55035,3.333579,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127364;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127364,0,0,1,0,233,0,''); -- this one does emote
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127365,23287,530,1,1,0,53,-5156.701,715.8916,43.45729,3.106686,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127365;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127365,0,0,1,0,233,0,''); -- this one does emote
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127366,23287,530,1,1,0,53,-5163.108,651.5301,37.39709,2.460914,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127366;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127366,0,0,1,0,233,0,''); -- this one does emote
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127367,23287,530,1,1,0,53,-5209.468,636.0561,45.94989,1.780236,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127367;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127367,0,0,1,0,233,0,''); -- this one does emote
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127368,23287,530,1,1,0,53,-5157.459,707.9813,42.97822,2.75762,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127368;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127368,0,0,1,0,233,0,''); -- this one does emote
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127369,23287,530,1,1,0,53,-5178.181,642.9128,39.79438,1.919862,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127369;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127369,0,0,1,0,233,0,''); -- this one does emote
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127370,23287,530,1,1,0,53,-5160.416,658.8326,38.73607,3.106686,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127370;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127370,0,0,1,0,233,0,''); -- this one does emote
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127371,23287,530,1,1,0,53,-5197.959,636.2016,44.08671,1.64061,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127371;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127371,0,0,1,0,233,0,''); -- this one does emote
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127372,23287,530,1,1,0,53,-5187.549,638.7712,41.74369,1.954769,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127372;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127372,0,0,1,0,233,0,''); -- this one does emote
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127373,23287,530,1,1,0,53,-5158.104,699.1263,42.52824,3.473205,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127373;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127373,0,0,1,0,233,0,''); -- this one does emote
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127374,23287,530,1,1,0,53,-5156.376,687.0754,41.27747,2.80998,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127374;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127374,0,0,1,0,233,0,''); -- this one does emote
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127375,23287,530,1,1,0,53,-5161.212,668.8508,40.50122,3.281219,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 127375;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(127375,0,0,1,0,233,0,''); -- this one does emote
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (128590,23287,530,1,1,0,53,-5160.553,678.9923,41.02322,2.792527,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 128590;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(128590,0,0,1,0,233,0,''); -- this one does emote
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (128591,23287,530,1,1,0,53,-5219.594,636.9407,48.11805,1.605703,180,0,0,6986,0,0,0);
+DELETE FROM creature_addon WHERE guid = 128591;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(128591,0,0,1,0,233,0,''); -- this one does emote
+-- Disobedient Dragonmaw Peon - any has diff aura (ones with 40714 - have random movement)
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (128592,23311,530,1,1,0,2334,-4971.56,620.654,79.2093,0.462051,180,0,0,6542,0,0,0);
+DELETE FROM creature_addon WHERE guid = 128592;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(128592,0,0,1,0,0,0,'40732');
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (128593,23311,530,1,1,0,04,-4993.75,810.583,58.8287,4.87498,180,5,0,6542,0,0,1);
+DELETE FROM creature_addon WHERE guid = 128593;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(128593,0,0,1,0,0,0,'40714');
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (128594,23311,530,1,1,0,04,-5174.24,590.686,77.5167,5.46481,180,0,0,6761,0,0,0);
+DELETE FROM creature_addon WHERE guid = 128594;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(128594,0,0,1,0,15,0,'40735');
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (128595,23311,530,1,1,0,04,-5211.27,610.191,64.442,6.10334,180,0,0,6761,0,0,0);
+DELETE FROM creature_addon WHERE guid = 128595;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(128595,0,0,1,0,0,0,'40732');
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (128596,23311,530,1,1,0,04,-5239.74,712.173,52.4285,6.10334,180,5,0,6542,0,0,1);
+DELETE FROM creature_addon WHERE guid = 128596;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(128596,0,0,1,0,0,0,'40714');
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (128597,23311,530,1,1,0,04,-5063.71,578.831,87.0778,4.03146,180,0,0,6761,0,0,0);
+DELETE FROM creature_addon WHERE guid = 128597;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(128597,0,0,1,0,0,0,'40732');
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (128598,23311,530,1,1,0,04,-4830.68,454.307,55.3361,3.18244,180,0,0,6761,0,0,0);
+DELETE FROM creature_addon WHERE guid = 128598;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(128598,0,0,1,0,15,0,'40735');
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (128599,23311,530,1,1,0,04,-4942,129.533,59.3296,4.8789,180,5,0,6542,0,0,1);
+DELETE FROM creature_addon WHERE guid = 128599;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(128599,0,0,1,0,0,0,'40714');
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (128600,23311,530,1,1,0,04,-5080.98,30.7558,80.5373,3.41021,180,0,0,6542,0,0,0);
+DELETE FROM creature_addon WHERE guid = 128600;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(128600,0,0,1,0,0,0,'40732');
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (131748,23311,530,1,1,0,04,-5147.53,34.5626,78.2859,5.09096,180,0,0,6761,0,0,0);
+DELETE FROM creature_addon WHERE guid = 131748;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(131748,0,0,1,0,15,0,'40735');
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (131751,23311,530,1,1,0,04,-5197.39,-111.186,66.8739,2.32243,180,0,0,6761,0,0,0);
+DELETE FROM creature_addon WHERE guid = 131751;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(131751,0,0,1,0,0,0,'40732');
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (131752,23311,530,1,1,0,04,-4891.63,708.756,68.2959,2.61224,180,0,0,6761,0,0,0);
+DELETE FROM creature_addon WHERE guid = 131752;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(131752,0,0,1,0,0,0,'40732');
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (131778,23311,530,1,1,0,04,-4864.73,457.578,65.1092,3.75893,180,5,0,6542,0,0,1);
+DELETE FROM creature_addon WHERE guid = 131778;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(131778,0,0,1,0,0,0,'40714');
+-- Warden's Cage - SHADOWMOON VALLEY
+-- Ashtongue Deathsworn - missing
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (132115,21701,530,1,1,0,237,-3694.19,1073.53,56.7576,3.263766,180,0,0,22680,3155,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (132116,21701,530,1,1,0,237,-3694.14,1069.22,56.7586,3.141593,180,0,0,22680,3155,0,0);
+
+-- Ruins of Karabor - SHADOWMOON VALLEY
+-- Sunfury Eradicator
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (132117,21742,530,1,1,0,2094,-3766.44,551.222,64.6248,1.623156,180,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (132118,21742,530,1,1,0,2094,-3782.88,516.191,84.4329,3.159046,180,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (132945,21742,530,1,1,0,2094,-3681.99,574.679,33.1101,4.660029,180,0,0,5060,2933,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (132946,21742,530,1,1,0,2094,-3660.3,550.399,25.6722,1.53589,180,0,0,5060,2933,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (132947,21742,530,1,1,0,2094,-3726.59,575.823,48.611,4.834562,180,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (132948,21742,530,1,1,0,2094,-3702,550.118,40.0748,1.658063,180,0,0,5060,2933,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (132949,21742,530,1,1,0,2094,-3702.24,575.461,39.9766,4.764749,180,0,0,5233,2991,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (132950,21742,530,1,1,0,2094,-3681.77,550.108,33.43,1.64061,180,0,0,5060,2933,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (132951,21742,530,1,1,0,2094,-3694.42,349.589,90.9803,0.5061455,180,0,0,5060,2933,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (132952,21742,530,1,1,0,2094,-3695.26,362.017,90.979,4.45059,180,0,0,5060,2933,0,0);
+DELETE FROM creature_addon WHERE guid = 132952;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(132952,0,8,1,16,0,0,''); -- he should kneel
+-- Demon Hunter Initiate
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (132953,21180,530,1,1,0,2090,-3754.97,317.263,104.117,6.19871,180,0,0,5589,3155,0,0);
+
+-- Ata'mal Terrace
+-- Shadowmoon Chosen <Servant of Illidan>
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (132954,22084,530,1,1,0,1330,-3271.11,354.358,119.73,3.193953,180,0,0,6986,0,0,0);
+
+-- Shadowmoon Village -- SHADOWMOON VALLEY
+-- Kor'kron Rider - missing on map
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (132955,19364,530,1,1,0,646,-3067.95,2527.76,61.7542,4.94326,300,0,0,17742,0,0,0);
+DELETE FROM creature_addon WHERE guid = 132955;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(132955,14334,0,1,16,0,0,'');
+DELETE FROM creature_linking WHERE guid = 132955;
+INSERT INTO creature_linking (guid, master_guid, flag) VALUES
+(132955,69096,518); -- Kor'kron Rider linked to his master
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (132956,19364,530,1,1,0,646,-3072.14,2528.19,61.8032,4.98645,300,0,0,17742,0,0,0);
+DELETE FROM creature_addon WHERE guid = 132956;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(132956,14336,0,1,16,0,0,'');
+DELETE FROM creature_linking WHERE guid = 132956;
+INSERT INTO creature_linking (guid, master_guid, flag) VALUES
+(132956,69096,518); -- Kor'kron Rider linked to his master
+
+-- Entrance into Black Temple (area outside) -- SHADOWMOON VALLEY
+-- Boss Portal: Purple (3.00) -- all missing on map
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (132957,24925,530,1,1,0,0,-3560.61,372.614,32.7836,1.570796,25,0,0,42,0,0,0);
+DELETE FROM creature_addon WHERE guid = 132957;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(132957,0,0,1,16,422,0,'');
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (132958,24925,530,1,1,0,0,-3618.64,396.125,33.1356,0.03490658,25,0,0,42,0,0,0);
+DELETE FROM creature_addon WHERE guid = 132958;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(132958,0,0,1,16,422,0,'');
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (132959,24925,530,1,1,0,0,-3500.62,395.197,32.8023,3.054326,25,0,0,42,0,0,0);
+DELETE FROM creature_addon WHERE guid = 132959;
+INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
+(132959,0,0,1,16,422,0,'');
+-- Scryer Cavalier
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (132960,22967,530,1,1,0,259,-3609.14,739.651,-9.26425,0.196605,180,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (132961,22967,530,1,1,0,259,-3605.89,738.174,-9.79895,0.130639,180,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (132962,22967,530,1,1,0,259,-3608.7,730.693,-9.24896,0.130639,180,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (132963,22967,530,1,1,0,259,-3602.65,735.693,-10.0605,0.130639,180,0,0,6761,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (132964,22967,530,1,1,0,259,-3605.52,733.791,-9.77686,0.130639,180,0,0,6761,0,0,0);
+-- Lightsworn Elekk Rider
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (132965,22966,530,1,1,0,2367,-3522.26,738.341,-25.4523,3.298672,180,0,0,1073,3155,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (132966,22966,530,1,1,0,2367,-3520.18,747.038,-25.5588,3.12458,180,0,0,1073,3155,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (132967,22966,530,1,1,0,2367,-3524.67,740.825,-24.8284,3.12458,180,0,0,1073,3155,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (132968,22966,530,1,1,0,2367,-3522.77,743.976,-25.1917,3.12458,180,0,0,1073,3155,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (132969,22966,530,1,1,0,2367,-3518.95,736.246,-26.1553,3.12458,180,0,0,1073,3155,0,0);
+-- Formation Marker -- all missing
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (132972,19179,530,1,1,0,0,-3541.39,503.698,21.9048,4.62194,25,0,0,42,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (133034,19179,530,1,1,0,0,-3553.53,504.232,20.174,4.80481,25,0,0,42,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (133818,19179,530,1,1,0,0,-3593.3,512.656,20.8712,4.80481,25,0,0,42,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (133860,19179,530,1,1,0,0,-3551.28,509.524,19.8449,4.80481,25,0,0,42,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (133863,19179,530,1,1,0,0,-3533.95,511.558,21.5344,4.80481,25,0,0,42,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (133867,19179,530,1,1,0,0,-3547.08,512.385,19.7709,4.70035,25,0,0,42,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (133868,19179,530,1,1,0,0,-3582.73,512.045,20.5484,4.71215,25,0,0,42,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (133902,19179,530,1,1,0,0,-3571.86,509.352,20.5433,4.71215,25,0,0,42,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (133915,19179,530,1,1,0,0,-3576.7,505.453,21.5,4.71215,25,0,0,42,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (133916,19179,530,1,1,0,0,-3587.03,505.701,22.3002,4.71215,25,0,0,42,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (133934,19179,530,1,1,0,0,-3571.7,512.577,19.5381,4.79701,25,0,0,42,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (133935,19179,530,1,1,0,0,-3565.1,504.98,20.0117,4.81141,25,0,0,42,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (133936,19179,530,1,1,0,0,-3559.11,512.291,19.1972,4.81141,25,0,0,42,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (133937,19179,530,1,1,0,0,-3523.41,578.399,13.8605,4.55906,25,0,0,42,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (133938,19179,530,1,1,0,0,-3575.75,586.576,10.8351,4.66902,25,0,0,42,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (133941,19179,530,1,1,0,0,-3593.9,579.43,13.8169,4.66902,25,0,0,42,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (133942,19179,530,1,1,0,0,-3533.38,575.546,14.7792,4.66902,25,0,0,42,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (133943,19179,530,1,1,0,0,-3524.12,571.051,14.6026,4.66902,25,0,0,42,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (133944,19179,530,1,1,0,0,-3543.75,573.521,13.8127,4.79433,25,0,0,42,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (134020,19179,530,1,1,0,0,-3594.85,571.985,14.1431,4.79433,25,0,0,42,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (134021,19179,530,1,1,0,0,-3574.83,573.973,11.6697,4.7904,25,0,0,42,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (134023,19179,530,1,1,0,0,-3552.53,573.27,12.6881,4.78255,25,0,0,42,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (137582,19179,530,1,1,0,0,-3533.57,567.885,14.8681,4.41026,25,0,0,42,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (139973,19179,530,1,1,0,0,-3566.01,573.712,11.3107,4.80401,25,0,0,42,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (139974,19179,530,1,1,0,0,-3584.34,567.399,13.4401,4.80815,25,0,0,42,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (139975,19179,530,1,1,0,0,-3543.12,565.057,14.6089,4.76573,25,0,0,42,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (139976,19179,530,1,1,0,0,-3552.36,565.366,13.5795,3.20672,25,0,0,42,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (139977,19179,530,1,1,0,0,-3565.7,564.905,12.7033,4.82071,25,0,0,42,0,0,0);
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (139978,19179,530,1,1,0,0,-3574.95,564.225,13.0331,4.33377,25,0,0,42,0,0,0);
+-- Black Temple Battle Sensor -- event controler
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (139979,22934,530,1,1,0,0,-3565.66,499.164,20.2467,2.548181,25,0,0,42,0,0,0);

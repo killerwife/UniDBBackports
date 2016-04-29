@@ -22,14 +22,15 @@ FROM creature t1
 WHERE t2.guid IS NULL;
 
 select * from creature where guid=81;
-
 select * from gameobject where id in(141979);
 select count(guid) from gameobject where id in(184701);
-
-select * from creature_template where entry IN(21044);
-select * from creature where guid IN (871) or guid between 140572 and 140580;
-select * from creature where id IN(21753);
-select * from udbmangos.creature where id IN(27946);
-select count(guid) from creature where id IN(19784);
-select count(guid) from udbmangos.creature where id IN(19784);
+select * from creature where position_x=-4231.41;
+select * from creature_movement where id in(64248);
+select * from creature where guid IN(139992) or guid between 75023 and 75025;
+select * from udbmangos.creature where guid in(22252);
+select * from creature_template where entry IN(22252);
+select * from creature where id in(22934);
+select * from udbmangos.creature where id IN(21347);
+select count(guid) from creature where id IN(21789);
+select count(guid) from udbmangos.creature where id IN(21789);
 select * from creature_template where name like '%bleeding hollow dark shaman%';
