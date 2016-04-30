@@ -1,5 +1,6 @@
 -- Netherwing Fields -- SHADOWMOON VALLEY FLIGHT TWITCHES @ START OF PATH
 -- Ruul the Darkener - correct spawnpoint + wps
+UPDATE creature_template SET inhabitType=3 WHERE entry = 21315;
 UPDATE creature SET MovementType = 2, spawndist = 0, spawntimesecs = 120, position_x = -3807.048, position_y = 1074.558, position_z = 125.2456, orientation = 3.60 WHERE guid = 74638;
 DELETE FROM creature_movement WHERE id = 74638;
 UPDATE creature_template SET MovementType = 2 WHERE entry = 21315; -- now move his wps to template (unique npc)
