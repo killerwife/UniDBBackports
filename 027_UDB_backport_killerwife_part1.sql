@@ -1,8 +1,5 @@
--- cleanup
-DELETE FROM gameobject WHERE guid BETWEEN 121700 AND 121846;
-DELETE FROM gameobject WHERE guid BETWEEN 121915 AND 121925;
-DELETE FROM gameobject WHERE guid = 150000;
 -- Coilskar chest
+DELETE FROM gameobject WHERE guid IN (121701, 121702, 121703, 121704, 121705, 121706, 121707, 121708, 121709, 121710, 121711, 121712, 121713, 121714, 121715, 121716, 121717, 121718, 121719, 121720, 121721, 121722);
 INSERT INTO gameobject (guid, id, map, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecs, animprogress, state) VALUES
 (121701, 184716, 530, 1,-2962.65, 1303.57, 8.06647, 0.6283169, 0, 0, 0.3090162, 0.9510568, 120, 255, 1),
 (121702, 184716, 530, 1,-2900.39, 1302.51, 6.85874, 2.129301, 0, 0, 0.8746195, 0.4848101, 120, 255, 1),
@@ -27,37 +24,46 @@ INSERT INTO gameobject (guid, id, map, spawnMask, position_x, position_y, positi
 (121721, 184716, 530, 1,-2715.44, 1336.68, 34.3086, 5.1049, 0, 0, 0.55565, -0.831416, 120, 255, 1),
 (121722, 184716, 530, 1,-2665.92, 1331.43, 34.4453, 1.82562, 0, 0, 0.791227, 0.611523, 120, 255, 1);
 -- Bonfire - missing in Oronok's Farm (Shadowmoon Valley)
+DELETE FROM gameobject WHERE guid IN (121723);
 INSERT INTO gameobject (guid, id, map, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecs, animprogress, state) VALUES
 (121723, 184683, 530, 1,-2804.579, 1259.304, 74.66774, 3.13983, 0.004361629, -0.02181435, 0.999752, 0.0009765625, 25, 255, 1);
 -- Burning Horde Siege Engine - req. for (q.10087) -- sniff
+DELETE FROM gameobject WHERE guid IN (121769, 121770);
 INSERT INTO gameobject (guid, id, map, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecs, animprogress, state) VALUES
 (121769, 182817, 530, 1,-353.264, 2714.73, 44.4037, 0.53776, 0, 0, 0.06975555, 0.9975641, -300, 255, 1),
 (121770, 182817, 530, 1,-300.684, 2407.6, 60.7085, 0.113659, 0, 0, -0.7604055, 0.6494485, -300, 255, 1);
 -- Vector Coil Fire - req. for (q.10129) - sniff
+DELETE FROM gameobject WHERE guid IN (121771, 121772, 121773, 121774);
 INSERT INTO gameobject (guid, id, map, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecs, animprogress, state) VALUES
 (121771, 182090, 530, 1,-294.437, 1525.48, 36.6622, 4.09861, 0, 0, 0.9681473, 0.2503814, -180, 255, 1),
 (121772, 182090, 530, 1,-297.022, 1520.55, 67.9861, 3.90619, 0, 0, 0.92781, -0.373052, -180, 255, 1),
 (121773, 182090, 530, 1,-308.298, 1530.72, 54.7025, 2.2372, 0, 0, 0.899489, 0.436943, -180, 255, 1),
 (121774, 182090, 530, 1,-320.928, 1530.98, 40.3923, 5.85003, 0, 0, 0.214889, -0.976638, -180, 255, 1);
 -- Fetish of Sar'this - req. for (q.11089) 
+DELETE FROM gameobject WHERE guid IN (121775);
 INSERT INTO gameobject (guid, id, map, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecs, animprogress, state) VALUES
 (121775, 185856, 530, 1,-2466.6, 4699.98, 156.65, 0.7544816, 0, 0, 0.3683567, 0.9296846, -300, 255, 1); 
 -- Ethereal Repair Kit  - req. for (q.10436) 
+DELETE FROM gameobject WHERE guid IN (121776, 121777, 121778, 121779);
 INSERT INTO gameobject (guid, id, map, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecs, animprogress, state) VALUES
 (121776, 184614, 530, 1,4924.32, 2991.21, 93.8808, 3.88003, 0, 0, 0.932609, -0.360887, -15, 255, 1),
 (121777, 184614, 530, 1,4924.47, 2990.35, 93.8867, 2.25067, 0, 0, 0.902413, 0.430872, -15, 255, 1),
 (121778, 184614, 530, 1,4923.45, 2991.21, 93.9248, 5.49404, 0, 0, 0.384413, -0.923161, -15, 255, 1),
 (121779, 184614, 530, 1,4923.56, 2990.45, 93.9413, 0.813699, 0, 0, 0.395718, 0.918372, -15, 255, 1);
 -- Forge -- missing in Orgrimmar - 3.3.5 sniff
+DELETE FROM gameobject WHERE guid IN (121915);
 INSERT INTO gameobject (guid, id, map, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecs, animprogress, state) VALUES
 (121915, 1685, 1, 1,1523.78, -4368.24, 18.2141, 2.55201, 0, 0, 0, 1, 25, 255, 1);
 -- Blacksmith's Anvil -- missing in Orgrimmar - 3.3.5 sniff
+DELETE FROM gameobject WHERE guid IN (121916);
 INSERT INTO gameobject (guid, id, map, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecs, animprogress, state) VALUES
 (121916, 1684, 1, 1,1524.93, -4371.18, 17.9437, 2.60698, 0, 0, 0.7253742, 0.6883547, 25, 255, 1);
 -- Roland's Mana Gem
+DELETE FROM gameobject WHERE guid IN (150000);
 INSERT INTO gameobject (guid, id, map, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecs, animprogress, state) VALUES 
 (150000, 148842, 1, 1,1697.41, -5866.47, -130.590, 0.353373, 0, 0, 0.175769, 0.984432, 25, 255, 1);
 -- Fissure plant  - all missing ones added 
+DELETE FROM gameobject WHERE guid IN (121921, 121922, 121923, 121924, 121925);
 INSERT INTO gameobject (guid, id, map, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecs, animprogress, state) VALUES 
 (121921, 3743, 1, 1,-1278.97, -3008.1, 72.0716, 0.86185, 0, 0, 0.417711, 0.90858, -30, 100, 1),
 (121922, 3743, 1, 1,-1275.4, -3006.46, 72.5618, 1.29382, 0, 0, 0.602723, 0.79795, -30, 100, 1),
@@ -68,14 +74,10 @@ INSERT INTO gameobject (guid, id, map, spawnMask, position_x, position_y, positi
 -- -----------------
 -- Gameobject w/ script or pool
 -- -----------------
--- cleanup
-DELETE FROM gameobject WHERE guid BETWEEN 121847 AND 121904;
-DELETE FROM pool_gameobject WHERE guid IN (50422,50423,50424);
-DELETE FROM pool_gameobject WHERE guid BETWEEN 121847 AND 121904;
-
 -- Grz3s
 -- Netherwing Eggs + pools
 -- Netherwing Eggs - Dragonmaw Fortrees
+DELETE FROM gameobject WHERE guid BETWEEN 121847 AND 121857;
 INSERT INTO gameobject (guid, id, map, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecs, animprogress, state) VALUES
 (121847, 185915, 530, 1,-4138.304, 482.0097, 60.31463, 3.089183, 0, 0, 0.9996567, 0.02620165, 4200, 255, 1),
 (121848, 185915, 530, 1,-4221.473, 370.1472, 136.2317, 2.111848, 0, 0, 0.8703556, 0.4924237, 4200, 255, 1),
@@ -89,6 +91,7 @@ INSERT INTO gameobject (guid, id, map, spawnMask, position_x, position_y, positi
 (121856, 185915, 530, 1,-4188.79, 455.691, 30.549, 5.53863, 0, 0, 0.363738, -0.931501, 4200, 255, 1),
 (121857, 185915, 530, 1,-4244.2, 324.641, 134.416, 2.40488, 0, 0, 0.932921, 0.360082, 4200, 255, 1);
 -- Netherwing Eggs - Ledge
+DELETE FROM gameobject WHERE guid BETWEEN 121858 AND 121891;
 INSERT INTO gameobject (guid, id, map, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecs, animprogress, state) VALUES
 (121858, 185915, 530, 1,-4930.131, 41.44596, 61.44243, 1.884953, 0, 0, 0.8090162, 0.5877863, 4200, 255, 1),
 (121859, 185915, 530, 1,-5103.112, 707.9791, 85.04285, 0.2792516, 0, 0, 0.1391726, 0.9902682, 4200, 255, 1),
@@ -125,6 +128,7 @@ INSERT INTO gameobject (guid, id, map, spawnMask, position_x, position_y, positi
 (121890, 185915, 530, 1,-5065.14, 116.682, 170.545, 4.05313, 0, 0, 0.898055, -0.439884, 4200, 255, 1),
 (121891, 185915, 530, 1,-5098.13, 383.002, 231.763, 5.10103, 0, 0, 0.557255, -0.830342, 4200, 255, 1);
 -- Netherwing Eggs - Mine 
+DELETE FROM gameobject WHERE guid BETWEEN 121892 AND 121904;
 INSERT INTO gameobject (guid, id, map, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecs, animprogress, state) VALUES
 (121892, 185915, 530, 1,-4961.216, 326.4431, -3.231219, 3.438303, 0, 0, -0.9890156, 0.1478114, 4200, 255, 1),
 (121893, 185915, 530, 1,-5121.468, 411.8553, -11.86014, 4.171338, 0, 0, -0.8703556, 0.4924237, 4200, 255, 1),
@@ -144,6 +148,7 @@ INSERT INTO gameobject (guid, id, map, spawnMask, position_x, position_y, positi
 DELETE FROM pool_template WHERE entry = 25427;
 INSERT INTO pool_template (entry, max_limit, description) VALUES 
 (25427,4,'Netherwing eggs - Dragonmaw fortrees');
+DELETE FROM pool_gameobject WHERE guid BETWEEN 121847 AND 121904;
 INSERT INTO pool_gameobject (guid, pool_entry, chance, description) VALUES 
 (121847,25427,9,'1852515 - Netherwing Egg #1'),
 (121848,25427,9,'1852515 - Netherwing Egg #2'),
@@ -160,6 +165,7 @@ INSERT INTO pool_gameobject (guid, pool_entry, chance, description) VALUES
 DELETE FROM pool_template WHERE entry = 25428;
 INSERT INTO pool_template (entry, max_limit, description) VALUES 
 (25428,7,'Netherwing eggs - Ledge');
+DELETE FROM pool_gameobject WHERE guid IN (50422,50423,50424);
 INSERT INTO pool_gameobject (guid, pool_entry, chance, description) VALUES 
 (50424,25428,2.77,'1852515 - Netherwing Egg #1'),  -- 50424,50423,50422 - are already in DB cannot be changed!!!!
 (50423,25428,2.77,'1852515 - Netherwing Egg #2'),  -- 50424,50423,50422 - are already in DB cannot be changed!!!!
@@ -337,22 +343,29 @@ INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_flags, emote,
 (140747,0,0,1,0,0,0,31261), (140748,0,0,1,0,0,0,31261), (140749,0,0,1,0,0,0,31261), (140750,0,0,1,0,0,0,31261), (140751,0,0,1,0,0,0,31261), (140752,0,0,1,0,0,0,31261), (140753,0,0,1,0,0,0,31261),
 (140754,0,0,1,0,0,0,31261);
 -- Naga Distiller - Coilskar Point (Shadowmoon Valley)
+DELETE FROM creature WHERE guid = 150076;
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES 
 (150076,20076,530,1,0,0,-3002.2,1593.34,59.7365,2.07661,180,0,0,12000,0,0,0);
 -- Coilskar Myrmidon #1 - Coilskar Cistern (Shadowmoon Valley)
+DELETE FROM creature WHERE guid = 150075;
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES 
 (150075,19765,530,1,0,343,-2797.2,1159.63,6.59181,4.52004,300,0,0,7000,0,0,0);
+DELETE FROM creature_addon WHERE guid = 150075;
 INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
 (150075,0,0,1,16,173,0,NULL);  -- must work
 -- Coilskar Myrmidon #2 - Coilskar Cistern (Shadowmoon Valley)
+DELETE FROM creature WHERE guid = 150074;
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES 
 (150074,19765,530,1,0,343,-2725.14,1268.87,33.2397,0.988205,300,0,0,7000,0,0,0);
+DELETE FROM creature_addon WHERE guid = 150074;
 INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
 (150074,0,0,1,16,173,0,NULL);  -- must work
 -- Coilskar Myrmidon #3 - Coilskar Cistern (Shadowmoon Valley)
+DELETE FROM creature WHERE guid = 150073;
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES 
 (150073,19765,530,1,0,272,-2642.37,1231.22,11.3652,1.22372,300,5,0,6800,0,0,1);
 -- Coilskar Myrmidon #4-9 - Coilskar Cistern (Shadowmoon Valley)
+DELETE FROM creature WHERE guid BETWEEN 150067 AND 150072; 
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES 
 (150072,19765,530,1,0,272,-2787.05,1147.31,7.45318,1.33523,300,0,0,6800,0,0,0),
 (150071,19765,530,1,0,272,-2765.61,1318.13,33.4387,5.33329,300,0,0,6800,0,0,0),
@@ -361,6 +374,7 @@ INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_
 (150068,19765,530,1,0,272,-2675.32,1381.04,37.7423,5.21902,300,0,0,6800,0,0,0),
 (150067,19765,530,1,0,272,-2703.64,1374.07,38.5804,5.28805,300,0,0,6800,0,0,0);
 -- Coilskar Sorceress #1-7 - Coilskar Cistern (Shadowmoon Valley)
+DELETE FROM creature WHERE guid BETWEEN 150060 AND 150066;
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES 
 (150066,19767,530,1,0,0,-2774.5,1157.2,7.15576,1.83316,300,0,0,5589,3155,0,0),
 (150065,19767,530,1,0,127,-2651.43,1292.03,28.1707,4.99975,300,0,0,5589,3155,0,0),
@@ -370,6 +384,7 @@ INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_
 (150061,19767,530,1,0,127,-2650.88,1350.89,34.7686,3.53907,300,5,0,5589,3155,0,1),
 (150060,19767,530,1,0,127,-2701.55,1392.63,38.5803,5.2465,300,0,0,5409,3080,0,0);
 -- Coilskar Cobra - Coilskar Cistern (Shadowmoon Valley)
+DELETE FROM creature WHERE guid BETWEEN 150021 AND 150059;
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES 
 (150059,19784,530,1,0,0,-2841.49,1248.57,6.80746,2.67519,300,5,0,6542,0,0,1),
 (150058,19784,530,1,0,0,-2738.83,1137.51,3.69936,2.48028,300,0,0,6542,0,0,0),
@@ -405,6 +420,8 @@ INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_
 (150034,21061,530,1,0,0,-3276.38,1438.22,50.959,5.02078,180,5,0,6542,0,0,1),
 (150033,21061,530,1,0,0,-3217.52,1507.1,51.7725,1.02703,180,5,0,6761,0,0,1);
 -- Enraged Earth Spirit - (Shadowmoon Valley)
+DELETE FROM creature WHERE guid BETWEEN 86995 AND 86999;
+DELETE FROM creature WHERE guid BETWEEN 87000 AND 87003;
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES 
 (150032,21050,530,1,0,0,-3752.4,1872.34,92.017,1.51687,180,5,0,6542,0,0,1),
 (150031,21050,530,1,0,0,-3723.76,1876.9,88.5617,1.37943,180,5,0,6542,0,0,1),
@@ -428,7 +445,7 @@ INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_
 (87002,21050,530,1,0,0,-3075.32,1438.21,12.2659,2.52687,180,5,0,6761,0,0,1),
 (87003,21050,530,1,0,0,-3757.78,1613.37,41.3264,0.784434,180,5,0,6761,0,0,1);
 -- Felboar - (Shadowmoon Valley)
-DELETE FROM creature WHERE guid IN(87004,87013,87015,87512,87513,87514,87515,87516,87517,87518,87519,87520,87521,87522,87523,87524,87526,875230,87531,87532,87533,150184);
+DELETE FROM creature WHERE guid IN(87004,87013,87015,87512,87513,87514,87515,87516,87517,87518,87519,87520,87521,87522,87523,87524,87526,875230,87531,87532,87533,150184,87530);
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES 
 (87004,21878,530,1,0,0,-3689.46,2281.13,79.3034,1.84775,180,5,0,6326,0,0,1),
 (87013,21878,530,1,0,0,-3667.53,2245.21,76.9954,5.28779,180,5,0,6326,0,0,1),
@@ -453,6 +470,7 @@ INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_
 (87532,21878,530,1,0,0,-2665.61,1671.57,15.4322,2.14699,180,5,0,6326,0,0,1),
 (87533,21878,530,1,0,0,-2750.15,1688.41,17.9979,2.14385,180,5,0,6542,0,0,1);
 -- Felfire Diemetradon - (Shadowmoon Valley)
+DELETE FROM creature WHERE guid BETWEEN 150002 AND 150020;
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES 
 (150020,21408,530,1,0,0,-3620.38,2067.02,66.4956,2.17773,180,5,0,6542,0,0,1),
 (150019,21408,530,1,0,0,-3610.47,2041.19,66.4933,5.81804,180,5,0,6326,0,0,1),
@@ -474,6 +492,7 @@ INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_
 (150003,21462,530,1,0,0,-2733.45,1018.92,-1.84162,4.01347,180,5,0,6761,0,0,1),
 (150002,21462,530,1,0,0,-2699.88,1027.77,-6.76849,1.3117,180,5,0,6542,0,0,1);
 -- Enraged Air Spirit - (Shadowmoon Valley)
+DELETE FROM creature WHERE guid IN (150001,150000,108877,117311,120880);
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES 
 (150001,21060,530,1,14515,0,-2750.4,936.205,1.61415,4.98343,180,5,0,5589,3155,0,1),
 (150000,21060,530,1,14515,0,-2759.31,875.419,-0.952728,5.2065,180,5,0,5589,3155,0,1),
@@ -482,6 +501,7 @@ INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_
 (120880,21060,530,1,14515,0,-2717.49,774.845,-16.7461,4.80831,180,5,0,5409,3080,0,1);
 -- Infernal Attackers Event - part2 - (Shadowmoon Valley)
 -- Wildhammer Defender - (Shadowmoon Valley)
+DELETE FROM creature WHERE guid IN (120881,120882,120883,120884,120903,120904,120905,120907,150192,123103,123108,124444,140451,134664,134660,129451,133355,134657,133486,133493,133525,133585,133640,133649,133801,133932,133917,134669,136254,136471,136555,136576,136768,136924,137599,138914,140418,140419,140420,140421,140422,140423,140424,140425,140426,140427,140428,140429,140430,140431,140432,140433,140434,140435,140436,140437,140438,140439,140440,140441,140442,140443,140444,140445,140446,140447,140448,140449,140450,14051,140452,140453,140454,140455,140456,140457);
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES 
 (120881,21736,530,1,0,47,-3781.84,2286.79,82.529,6.07208,300,1,0,9489,0,0,1),
 (120882,21736,530,1,0,47,-3782.08,2290.53,83.5589,5.4327,300,1,0,9489,0,0,1),
@@ -559,6 +579,7 @@ INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_
 (140456,21736,530,1,0,47,-3717.79,2080.88,79.7053,6.01994,300,1,0,9489,0,0,1),
 (140457,21736,530,1,0,47,-3713.21,2081.54,79.7971,3.69124,300,1,0,9489,0,0,1);
 -- Invis Infernal Caster - (Shadowmoon Valley)
+DELETE FROM creature WHERE guid BETWEEN 140458 AND 140484;
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES 
 (140458,21417,530,1,0,0,-3783.13,1918.5,118.92,2.33643,300,0,0,41,60,0,0),
 (140459,21417,530,1,0,0,-3716.39,1983.24,103.94,2.33643,300,0,0,41,60,0,0),
@@ -588,6 +609,7 @@ INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_
 (140483,21417,530,1,0,0,-3782.97,2082.78,107.031,1.53891,300,0,0,41,60,0,0),
 (140484,21417,530,1,0,0,-3782.79,2048.17,109.419,1.53891,300,0,0,41,60,0,0);
 -- Netherskate - (Shadowmoon Valley)
+DELETE FROM creature WHERE guid BETWEEN 140496 AND 140512;
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES 
 (140496,21901,530,1,0,0,-4381.74,353.922,46.5179,3.39443,300,10,0,5589,1578,0,1),
 (140497,21901,530,1,0,0,-4335.86,446.14,115.147,0.609704,300,5,0,5409,1540,0,1),
@@ -608,11 +630,13 @@ INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_
 (140512,21901,530,1,0,0,-4544.11,633.432,56.2809,0.0683952,300,5,0,5409,1540,0,1);
 -- Netherwing Mines (Shadowmoon Valley)
 -- Nethermine Burster
+DELETE FROM creature WHERE guid IN (140537,140538,140539);
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES 
 (140537,23285,530,1,0,0,-5010.47,418.128,-10.2213,1.12906,300,5,0,6986,0,0,1),
 (140538,23285,530,1,0,0,-5107.32,419.949,-12.5462,3.57167,300,5,0,6986,0,0,1),
 (140539,23285,530,1,0,0,-5099.04,399.222,-12.601,4.23532,300,5,0,6986,0,0,1);
 -- Nethermine Flayer
+DELETE FROM creature WHERE guid BETWEEN 140543 AND 140560;
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES 
 (140543,23169,530,1,0,0,-4952.52,483.403,3.33166,2.82631,300,5,0,6986,0,0,1),
 (140544,23169,530,1,0,0,-4974.97,460.03,3.05225,3.22372,300,5,0,6986,0,0,1),
@@ -633,6 +657,7 @@ INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_
 (140559,23169,530,1,0,0,-5097.41,178.122,-8.44018,2.59974,300,5,0,6986,0,0,1),
 (140560,23169,530,1,0,0,-5164.15,153.849,-12.7468,2.80001,300,5,0,7181,0,0,1);
 -- Nethermine Ravager
+DELETE FROM creature WHERE guid BETWEEN 140561 AND 140571;
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES 
 (140561,23326,530,1,0,0,-4946.79,403.189,-0.796316,4.58246,300,5,0,5240,0,0,1),
 (140562,23326,530,1,0,0,-4966.87,347.387,-1.60104,4.25259,300,5,0,5240,0,0,1),
@@ -646,8 +671,10 @@ INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_
 (140570,23326,530,1,0,0,-5034.53,160.782,-14.3529,5.56704,300,5,0,5240,0,0,1),
 (140571,23326,530,1,0,0,-5070.61,163.745,-10.0831,3.09304,300,5,0,5240,0,0,1);
 -- Coilskar Siren  - Coilskar Point (Shadowmoon Valley)
+DELETE FROM creature WHERE guid = 140623;
 INSERT INTO creature (guid,id,map,spawnMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
 (140623,19768,530,1,0,415,-2953.91,1632.53,55.186,5.20641,180,0,0,5233,2991,0,2);
+DELETE FROM creature_movement WHERE id = 140623;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
 (140623,1,-2948.849854,1620.521973,50.933853,0,0,0,0,0,0,0,0,0,4.927598,0,0),
 (140623,2,-2948.619385,1606.714722,46.370586,0,0,0,0,0,0,0,0,0,4.719469,0,0),
@@ -677,6 +704,7 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z, wa
 (140623,26,-2957.019043,1641.534790,57.795250,0,0,0,0,0,0,0,0,0,5.029696,0,0),
 (140623,27,-2954.482910,1632.207031,55.236446,0,0,0,0,0,0,0,0,0,5.306942,0,0);
 -- Coilskar Muckwatcher #1 - Coilskar Cistern (Shadowmoon Valley)
+DELETE FROM creature WHERE guid = 140624;
 INSERT INTO creature (guid,id,map,spawnMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
 (140624,19788,530,1,0,2077,-2703.59,1159.87,5.30619,4.24358,300,0,0,6986,0,0,2);
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
@@ -3249,6 +3277,7 @@ INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (139977,19179,530,1,0,0,-3565.7,564.905,12.7033,4.82071,25,0,0,42,0,0,0);
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (139978,19179,530,1,0,0,-3574.95,564.225,13.0331,4.33377,25,0,0,42,0,0,0);
 -- Black Temple Battle Sensor -- event controler
+DELETE FROM Creature WHERE guid IN (139979);
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (139979,22934,530,1,0,0,-3565.66,499.164,20.2467,2.548181,25,0,0,42,0,0,0);
 
 
