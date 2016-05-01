@@ -87,9 +87,6 @@ INSERT INTO spell_script_target (entry, TYPE, targetEntry) VALUES
 (64425, 1, 33856),
 (64620, 1, 33856);
 
--- Fix Ulduar, HoS Tribunal Encounter Chest (has GO_FLAG_NO_INTERACT, must be spawned)
-UPDATE gameobject SET spawntimesecs = 86400 WHERE id IN (190586, 193996);
-
 -- Dire Maul doors to library, appears ONLY 179550 can have flags 48, but if and only if entering DM north
 UPDATE gameobject_template SET flags=34 WHERE entry IN (179550, 179549);
 

@@ -1,7 +1,3 @@
--- spell must have a target -- Eclipsion Spellbinder uses it to channel Eclipse Point - Bloodcrystal Spell Orgin
-DELETE FROM spell_script_target WHERE entry = 35190;
-INSERT INTO spell_script_target (entry, type, targetEntry) VALUES 
-(35190, 1, 20431);
 -- spell must have a target -- Sunfury Summoner uses it to channel on Spellbound Terrorguard
 DELETE FROM spell_script_target WHERE entry = 38711;
 INSERT INTO spell_script_target (entry, type, targetEntry) VALUES 
@@ -14,10 +10,6 @@ INSERT INTO spell_script_target (entry, type, targetEntry) VALUES
 DELETE FROM spell_script_target WHERE entry = 38722;
 INSERT INTO spell_script_target (entry, type, targetEntry) VALUES 
 (38722, 1, 21506);
--- Chain of Shadows - updates
-DELETE FROM spell_script_target WHERE entry = 37784; -- spell should have target
-INSERT INTO spell_script_target (entry, type, targetEntry) VALUES
-(37784, 1, 21797);
 -- Summoner Skartax - EVENT
 DELETE FROM spell_script_target WHERE entry = 36431;
 INSERT INTO spell_script_target (entry, type, targetEntry) VALUES

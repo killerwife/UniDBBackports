@@ -38,27 +38,27 @@ INSERT INTO gameobject_loot_template (entry, item, ChanceOrQuestChance, groupid,
 DELETE FROM reference_loot_template WHERE entry = 12007;
 INSERT INTO reference_loot_template (entry, item, ChanceOrQuestChance, groupid, mincountOrRef, maxcount, condition_id) VALUES
 -- 1 boss alive, additional
-(12007, 18475, 0, 1, 1, 1, 0), -- Oddly Magical Belt, 2, 60
-(12007, 18476, 0, 1, 1, 1, 0), -- Mud Stained Boots, 2, 60
-(12007, 18477, 0, 1, 1, 1, 0), -- Shaggy Leggings, 2, 60
-(12007, 18478, 0, 1, 1, 1, 0), -- Hyena Hide Jerkin, 2, 60
-(12007, 18479, 0, 1, 1, 1, 0), -- Carrion Scorpid Helm, 2, 60
-(12007, 18480, 0, 1, 1, 1, 0), -- Scarab Plate Helm, 2, 60
-(12007, 18481, 0, 1, 1, 1, 0), -- Skullcracking Mace, 2, 60
-(12007, 18482, 0, 1, 1, 1, 0), -- Ogre Toothpick Shooter, 2, 60
+(1200701, 18475, 0, 1, 1, 1, 0), -- Oddly Magical Belt, 2, 60
+(1200701, 18476, 0, 1, 1, 1, 0), -- Mud Stained Boots, 2, 60
+(1200701, 18477, 0, 1, 1, 1, 0), -- Shaggy Leggings, 2, 60
+(1200701, 18478, 0, 1, 1, 1, 0), -- Hyena Hide Jerkin, 2, 60
+(1200701, 18479, 0, 1, 1, 1, 0), -- Carrion Scorpid Helm, 2, 60
+(1200701, 18480, 0, 1, 1, 1, 0), -- Scarab Plate Helm, 2, 60
+(1200701, 18481, 0, 1, 1, 1, 0), -- Skullcracking Mace, 2, 60
+(1200701, 18482, 0, 1, 1, 1, 0), -- Ogre Toothpick Shooter, 2, 60
 -- 2 bosses alive, additional
-(12007, 18500, 0, 2, 1, 1, 0), -- Tarnished Elven Ring, 3, 61
-(12007, 18528, 0, 2, 1, 1, 0), -- Cyclone Spaulders, 3, 61
-(12007, 18529, 0, 2, 1, 1, 0), -- Elemental Plate Girdle, 3, 61
+(1200702, 18500, 0, 2, 1, 1, 0), -- Tarnished Elven Ring, 3, 61
+(1200702, 18528, 0, 2, 1, 1, 0), -- Cyclone Spaulders, 3, 61
+(1200702, 18529, 0, 2, 1, 1, 0), -- Elemental Plate Girdle, 3, 61
 -- 3 bosses alive, additional
-(12007, 18499, 0, 3, 1, 1, 0), -- Barrier Shield, 3, 62
-(12007, 18530, 0, 3, 1, 1, 0), -- Ogre Forged Hauberk, 3, 62
-(12007, 18531, 0, 3, 1, 1, 0), -- Unyielding Maul, 3, 62
-(12007, 18532, 0, 3, 1, 1, 0), -- Mindsurge Robe, 3, 62
+(1200703, 18499, 0, 3, 1, 1, 0), -- Barrier Shield, 3, 62
+(1200703, 18530, 0, 3, 1, 1, 0), -- Ogre Forged Hauberk, 3, 62
+(1200703, 18531, 0, 3, 1, 1, 0), -- Unyielding Maul, 3, 62
+(1200703, 18532, 0, 3, 1, 1, 0), -- Mindsurge Robe, 3, 62
 -- 4 bosses alive, additional
-(12007, 18655, 0, 4, 1, 1, 0), -- Schematic: Major Recombobulator, 2, 55
-(12007, 18495, 0, 4, 1, 1, 0), -- Redoubt Cloak, 3, 63
-(12007, 18533, 0, 4, 1, 1, 0), -- Gordok Bracers of Power, 3, 63
-(12007, 18534, 0, 4, 1, 1, 0), -- Rod of the Ogre Magi, 3, 63
-(12007, 18537, 0, 4, 1, 1, 0), -- Counterattack Lodestone, 3, 63
-(12007, 18538, 0, 4, 1, 1, 0); -- Treant's Bane  4  63
+(1200704, 18655, 0, 4, 1, 1, 0), -- Schematic: Major Recombobulator, 2, 55
+(1200704, 18495, 0, 4, 1, 1, 0), -- Redoubt Cloak, 3, 63
+(1200704, 18533, 0, 4, 1, 1, 0), -- Gordok Bracers of Power, 3, 63
+(1200704, 18534, 0, 4, 1, 1, 0), -- Rod of the Ogre Magi, 3, 63
+(1200704, 18537, 0, 4, 1, 1, 0), -- Counterattack Lodestone, 3, 63
+(1200704, 18538, 0, 4, 1, 1, 0); -- Treant's Bane  4  63

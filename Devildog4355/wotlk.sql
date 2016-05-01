@@ -1074,3 +1074,32 @@ INSERT INTO creature (guid, id,map,spawnMask,phaseMask,modelid,equipment_id,posi
 (140164, 32780, 658, 3, 1, 0, 0, 1037.52, -125.868, 627.045, 2.94961, 86400, 0, 0, 1, 0, 0, 0),
 (140165, 32780, 658, 3, 1, 0, 0, 1062.55, -23.7222, 634.076, 0.628319, 86400, 0, 0, 1, 0, 0, 0);
 
+
+-- Nexus 70, Telestra'shere, should be GO_FLAG_NO_INTERACT
+UPDATE gameobject_template SET flags = flags | 16 WHERE entry = 188526;
+
+-- remove gender requirement from a quest-spell (quest 12498)
+UPDATE spell_area SET gender = 2 WHERE spell = 50426;
+-- Cooking quest 13571 - Fletcher's Lost and Found
+DELETE FROM creature_questrelation WHERE quest = 13571;
+INSERT INTO creature_questrelation (id, quest) VALUES
+(32516, 13571);
+DELETE FROM creature_involvedrelation WHERE quest = 13571;
+INSERT INTO creature_involvedrelation (id, quest) VALUES
+(32516, 13571);
+-- Zarithrian Spawn Stalker
+DELETE FROM creature WHERE guid IN (140025, 140026);
+INSERT INTO creature (guid, id,map,spawnMask,phaseMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
+(140025, 39794, 724, 15, 1, 0, 0, 3043.97, 419.88, 87.0399, 0, 604800, 0, 0, 1, 0, 0, 0),
+(140026, 39794, 724, 15, 1, 0, 0, 3062.6, 636.998, 82.7377, 0, 604800, 0, 0, 1, 0, 0, 0);
+-- Halion controller
+DELETE FROM creature WHERE guid = 140027;
+INSERT INTO creature (guid, id,map,spawnMask,phaseMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
+(140027, 40146, 724, 15, 1, 0, 0, 3156.037, 533.2656, 72.97205, 0.72, 604800, 0, 0, 1, 0, 0, 0);
+-- Halion twilight
+DELETE FROM creature WHERE guid = 140028;
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES
+(140028, 40142, 724, 15, 32, 0, 0, 3156.625, 533.2674, 72.97205, 0, 604800, 0, 0, 11156000, 0, 0, 0);
+
+-- Fix Ulduar, HoS Tribunal Encounter Chest (has GO_FLAG_NO_INTERACT, must be spawned)
+UPDATE gameobject SET spawntimesecs = 86400 WHERE id IN (190586, 193996);

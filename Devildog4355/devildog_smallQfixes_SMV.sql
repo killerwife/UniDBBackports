@@ -17,29 +17,10 @@ DELETE FROM dbscripts_on_go_template_use WHERE id = 185156;
 INSERT INTO dbscripts_on_go_template_use (id, delay, command, datalong, comments) VALUES
 (185156, 1, 8, 22112, 'quest 10866: at least make completable');
 
--- Quest 9545 - Requires some additional core fix for spell 30489  (summoning does not work)
--- Also requires some proper scripting, but the proper scripting is to be done with this event_script if possible
-DELETE FROM dbscripts_on_event WHERE id = 10745 AND command = 7;
-INSERT INTO dbscripts_on_event (id, delay, command, datalong, comments) VALUES
-(10745, 1, 7,9545, 'hack? - add quest completed');
-
--- Nexus 70, Telestra'shere, should be GO_FLAG_NO_INTERACT
-UPDATE gameobject_template SET flags = flags | 16 WHERE entry = 188526;
-
 -- Port from ytdb, http://www.wowhead.com/quest=12240
 DELETE FROM dbscripts_on_event WHERE id = 17868;
 INSERT INTO dbscripts_on_event (id, delay, command, datalong, datalong2, x, y, z, o, comments) VALUES
 (17868, 5, 10, 27238, 600000, 2797.68, -201.873, 139.161, 3.5791, 'Summon Npc for quest 12240');
-
--- remove gender requirement from a quest-spell (quest 12498)
-UPDATE spell_area SET gender = 2 WHERE spell = 50426;
--- Cooking quest 13571 - Fletcher's Lost and Found
-DELETE FROM creature_questrelation WHERE quest = 13571;
-INSERT INTO creature_questrelation (id, quest) VALUES
-(32516, 13571);
-DELETE FROM creature_involvedrelation WHERE quest = 13571;
-INSERT INTO creature_involvedrelation (id, quest) VALUES
-(32516, 13571);
 
 -- Quest 4740 | WANTED: Murkdeep!
 UPDATE creature_template SET MovementType = 0 WHERE entry IN (2202, 2205, 2206, 10323);
