@@ -395,3 +395,115 @@ INSERT INTO creature_template_addon (entry, mount, bytes1, b2_0_sheath, b2_1_fla
 UPDATE creature SET spawndist = 20 WHERE id = 29753 AND MovementType = 1;
 -- Spawntime TBC-Worldbosses: Doomlord Kazzak and Doomwalker
 UPDATE creature SET spawntimesecs = 108000 WHERE id IN (18728, 17711);
+-- kolkar packhound linked to Kolkar Pack Runner -- thx Axel
+DELETE FROM creature_linking WHERE guid IN (20855, 20856, 20857, 20858, 20859, 20863, 20864, 20865, 20866, 20867, 20868, 20869);
+INSERT INTO creature_linking (guid, master_guid, flag) VALUES
+(20858, 20566, 515),
+(20859, 20567, 515),
+(20855, 20563, 515),
+(20856, 20564, 515),
+(20857, 20565, 515),
+(20863, 20568, 515),
+(20864, 20569, 515),
+(20865, 20570, 515),
+(20867, 20571, 515),
+(20868, 20572, 515),
+(20866, 20573, 515),
+(20869, 20574, 515);
+-- Kolkar Pack Runner falling under the map -- thx Axel
+UPDATE creature SET position_X = -916.169, position_y = -2215.29, position_z = 93.7780 WHERE guid = 20567; 
+-- Kolkar Packhound moved for creature_linking -- thx Axel
+UPDATE creature SET position_X = -914.714, position_y = -2213.8, position_z = 93.7742 WHERE guid = 20859;
+-- Zevra Runner - falling under the map -- thx Axel
+UPDATE creature SET position_x = -930.640, position_y = -2202.52, position_z = 91.9847, orientation = 1.314, spawndist = 10, MovementType = 1 WHERE guid = 17450;
+UPDATE creature SET position_x = -996.647, position_y = -2236.51, position_z = 92.8457, orientation = 2.009, spawndist = 10, MovementType = 1 WHERE guid = 18552; 
+-- Kolkar Bloodcharger linked to Hezrul Bloodmark -- thx Axel
+DELETE FROM creature_linking WHERE guid IN (13991, 13992);
+INSERT INTO creature_linking (guid, master_guid, flag) VALUES
+(13991, 13990, 515), -- guards
+(13992, 13990, 515); -- guards
+-- Ancient Shadowmoon Spirit - updates
+UPDATE creature SET position_x = -4543.69, position_y = 1022.35, position_z = 9.979, orientation = 3.874631, spawntimesecs = 30 WHERE guid = 86139;
+UPDATE creature_template_addon SET b2_0_sheath = 0, auras = '37497 37509 37728' WHERE entry = 21797;
+UPDATE spell_script_target SET targetEntry = 21797 WHERE entry = 37748; -- wrong target was set
+-- The Voice of Gorefiend
+UPDATE creature SET MovementType = 0, spawndist = 0 WHERE guid = 76573;
+-- Karsius the Ancient Watcher
+UPDATE creature_template SET MovementType = 0, EquipmentTemplateId = 1833 WHERE entry = 21877;
+UPDATE creature_template_addon SET emote = 333 WHERE entry = 21877;
+-- Chain of Shadows - updates
+UPDATE creature_template SET MovementType = 0, InhabitType = 4 WHERE entry = 21876;
+UPDATE creature SET MovementType = 0, spawndist = 0 WHERE id = 21876;
+DELETE FROM creature_linking_template WHERE entry = 21876; -- link between Karsius the Ancient Watcher and Chain of Shadows 
+INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES    
+(21876, 530, 21877, 16, 100);
+-- new equipment in Netherwing Ledge
+DELETE FROM creature_equip_template WHERE entry = 2509;
+INSERT INTO creature_equip_template (entry, equipentry1, equipentry2, equipentry3) VALUES    
+(2509, 31601, 0, 0);
+DELETE FROM creature_equip_template WHERE entry = 2510;
+INSERT INTO creature_equip_template (entry, equipentry1, equipentry2, equipentry3) VALUES    
+(2510, 31603, 31466, 0);
+-- new equipment in Ruins of Karabor
+DELETE FROM creature_equip_template WHERE entry = 2511;
+INSERT INTO creature_equip_template (entry, equipentry1, equipentry2, equipentry3) VALUES    
+(2511, 5956, 24322, 0);
+-- Treebole - correct spawn point
+UPDATE creature SET position_x = 3605.68, position_y = 6836.18, position_z = 137.95, orientation = 4.6 WHERE guid = 77879;
+-- Raven's Wood Leafbeard - correct spawn point
+UPDATE creature SET position_x = 3479.97, position_y = 6883.62, position_z = 137.97, orientation = 5.86 WHERE guid = 74694;
+-- Zeth'Gor  
+-- Bleeding Hollow Worg #1 #2 - correct spawn point
+UPDATE creature SET position_x = -1100.47, position_y = 1954.13, position_z = 76.31, orientation = 1.80 WHERE guid = 69466;
+UPDATE creature SET position_x = -1084.39, position_y = 1984.25, position_z = 69.71, orientation = 0.25 WHERE guid = 69467;
+-- Bleeding Hollow Grunt #1 #2 #3 - Must be like others in battle stand + correct spawn point 
+DELETE FROM creature_addon WHERE guid IN (58243, 58244, 58246);
+UPDATE creature SET position_x = -966.78, position_y = 1880.16, position_z = 93.98, orientation = 0.13, spawndist = 0, MovementType = 0 WHERE guid = 58246;
+UPDATE creature SET position_x = -881.82, position_y = 2038.28, position_z = 40.94, orientation = 0.64, spawndist = 0, MovementType = 0 WHERE guid = 58243;
+UPDATE creature SET position_x = -905.50, position_y = 2012.74, position_z = 61.02, orientation = 1.05, spawndist = 0, MovementType = 0 WHERE guid = 58244;
+-- Bonestripper Buzzard -- now moves correctly ..not with nose underground ;)
+UPDATE creature_template SET InhabitType = 1 WHERE entry = 16972;
+-- Eye of the Citadel -- spawned only after 'Warlord Morkh' death + we shouldnt see him
+UPDATE creature_template SET MovementType = 2, modelid1 = 17612, unitflags = unitflags | 0x2008200 WHERE entry = 21134; -- now move him to template (unique npc)
+-- Greater Windroc -- now moves correctly ..not with nose underground ;)
+UPDATE creature_template SET InhabitType = 1 WHERE entry = 17129;
+-- Wrathwalker  
+UPDATE creature SET spawndist = 10 WHERE guid IN (70658, 70664, 70621);
+-- Wrathwalker #1-11 - correct spawn point
+UPDATE creature SET position_x = -3025.22, position_y = 2885.37, position_z = 88.51, orientation = 3.63 WHERE guid = 70664;
+UPDATE creature SET position_x = -3322.27, position_y = 2883.35, position_z = 142.17, orientation = 5.74 WHERE guid = 70637;
+UPDATE creature SET position_x = -3351.51, position_y = 2849.32, position_z = 149.12, orientation = 6.11 WHERE guid = 70663;
+UPDATE creature SET position_x = -3381.65, position_y = 2862.08, position_z = 175.755, orientation = 0.49 WHERE guid = 70639;
+UPDATE creature SET position_x = -3257.44, position_y = 2785.14, position_z = 119.95, orientation = 5.73 WHERE guid = 70660;
+UPDATE creature SET position_x = -3289.61, position_y = 2855.22, position_z = 126.43, orientation = 6.07 WHERE guid = 70663;
+UPDATE creature SET position_x = -3286.73, position_y = 2886.3, position_z = 130.53, orientation = 5.77 WHERE guid = 70627;
+UPDATE creature SET position_x = -3408.41, position_y = 2860.61, position_z = 130.53, orientation = 6.13 WHERE guid = 70628;
+UPDATE creature SET position_x = -3285.37, position_y = 2763.67, position_z = 133.82, orientation = 6.13 WHERE guid = 70629;
+UPDATE creature SET position_x = -3289.79, position_y = 2976.1, position_z = 136.33, orientation = 6.21 WHERE guid = 70630;
+UPDATE creature SET position_x = -3276.3, position_y = 3047, position_z = 139.83, orientation = 0.23 WHERE guid = 70631;
+-- Enraged Water Spirit - correct spawn points, spawndist, movementype - updates
+UPDATE creature SET spawndist=10, MovementType=1 WHERE guid IN (73967, 73975);
+UPDATE creature SET spawndist=5, MovementType=1 WHERE guid IN (73968, 73969, 73977, 73978, 73979, 73980);
+UPDATE creature_template SET inhabitType= 1 WHERE entry = 21059; -- we don't need '3' .. theres no deep ponds or lakes there, also with 3 he falls under the ground.
+UPDATE creature SET position_x = -2750.37, position_y = 1477.62, position_z = 6.06, orientation = 2.86, spawndist = 10, MovementType = 1 WHERE guid = 73973;
+UPDATE creature SET position_x = -2778.82, position_y = 1515.12, position_z = 6.46, orientation = 0.48, spawndist = 10, MovementType = 1 WHERE guid = 73972;
+UPDATE creature SET position_x = -3213.69, position_y = 1757.05, position_z = 88.43, orientation = 3.01, spawndist = 10, MovementType = 1 WHERE guid = 73966;
+UPDATE creature SET position_x = -2753.05, position_y = 1532.47, position_z = 6.38, orientation = 3.67, spawndist = 5, MovementType = 1 WHERE guid = 73974;
+UPDATE creature SET position_x = -2822.20, position_y = 1451.23, position_z = 5.89, orientation = 3.50, spawndist = 10, MovementType = 1 WHERE guid = 73971;
+-- Coilskar Myrmidon - correct spawn point
+UPDATE creature SET position_x = -2984.79, position_y = 1302.27, position_z = 7.42, orientation = 1.87, spawndist = 10, MovementType = 1 WHERE guid = 70708;
+-- Coilskar Sorceress -- we don't need '3' .. theres no deep ponds or lakes there, also with 3 he falls under the ground.
+UPDATE creature_template SET inhabitType = 1 WHERE entry = 19767;
+-- Deathforge Guardians #1 #2 #3 #4 #5 - correct spawnpoint and movement
+UPDATE creature SET position_x = -3257.48, position_y = 2049.87, position_z = 74.52, orientation = 1.31, spawndist = 0, MovementType = 0 WHERE guid = 73639;
+UPDATE creature SET position_x = -3385.90, position_y = 2105.63, position_z = 78.86, orientation = 0.97, spawndist = 0, MovementType = 0 WHERE guid = 73634;
+UPDATE creature SET position_x = -3361.27, position_y = 1980.23, position_z = 26.28, orientation = 1.89, spawndist = 0, MovementType = 0 WHERE guid = 73623;
+UPDATE creature SET position_x = -3375.14, position_y = 2098.52, position_z = 33.92, orientation = 4.87, spawndist = 0, MovementType = 0  WHERE guid = 73625;
+UPDATE creature SET position_x = -3359.73, position_y = 2105.12, position_z = 11.52, orientation = 4.48, spawndist = 0, MovementType = 0 WHERE guid = 73626;
+-- Cooling Infernal - update
+UPDATE creature_template SET unitflags=unitflags&~0x2000100 WHERE entry = 19760;
+UPDATE creature_template_addon SET auras =NULL WHERE entry =19760;
+-- these 2 should be death (flag 0x2000100)
+UPDATE creature SET DeathState = 1 WHERE guid IN (84621, 84620);
+-- Warbringer Razuun - correct spawn point
+UPDATE creature SET position_x = -3667.163, position_y = 2082.57, position_z = 10.45, orientation = 5.81 WHERE guid = 84861;

@@ -13,6 +13,9 @@ DELETE FROM gameobject WHERE id=185523;
 INSERT INTO gameobject (guid, id, map, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecs, animprogress, state) VALUES 
 (121700, 185523, 530, 1,3024.36, 5509, 145.957, 2.29514, 0, 0, 0.911768, 0.410706, -600, 255, 1);
 
+-- Raven Stone Fragment Triggers Set to Invisable
+UPDATE creature_template SET ExtraFlags =128 WHERE entry IN (22986);
+
 DELETE FROM gameobject WHERE guid BETWEEN 121724 AND 121768;
 -- Raven Stone Fragment - (Terrokar Forest) - all misiing added Killerwife Note: we allready had some in TBC-DB
 INSERT INTO gameobject (guid, id, map, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecs, animprogress, state) VALUES
@@ -68,6 +71,7 @@ DELETE FROM gameobject WHERE guid IN (39908,39909,39910,39911,39912,39913,39914,
 -- Cenarion Sparrowhawk should be spawned 'only' in q.10988.
 DELETE FROM creature WHERE guid = 78965;
 -- Skettis - Invis Raven Stone - (Terrokar Forest)
+DELETE FROM creature WHERE guid IN (140488,140489,140490,140491,140492,140493,140494,140495);
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES 
 (140488,22986,530,1,0,0,-3709.53,3744.06,277.073,1.62054,320,0,0,41,60,0,0),
 (140489,22986,530,1,0,0,-3758.84,3732.39,276.846,5.73288,320,0,0,41,60,0,0),
