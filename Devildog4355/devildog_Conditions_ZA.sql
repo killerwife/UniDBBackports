@@ -1,4 +1,3 @@
--- KILLERWIFE | Please double check this condition against your DB, you may have it.
 DELETE FROM conditions WHERE condition_entry IN (733, 734, 735, 736, 737, 738, 739);
 INSERT INTO conditions (condition_entry, TYPE, value1, value2) VALUES
 (733, 18, 0, 0),
@@ -32,19 +31,15 @@ INSERT INTO conditions (condition_entry, TYPE, value1, value2) VALUES
 (761, -1, 760, 757); -- lvl and skill and quest;
 
 -- UPDATE creature_template SET ScriptName='' WHERE entry = 28776;
-DELETE FROM conditions WHERE condition_entry IN (762, 763, 764, 765, 766, 767, 768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, 790, 791, 792, 793,
+DELETE FROM conditions WHERE condition_entry IN (762, 763, 767, 768, 769, 770, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, 790, 791, 792,
 794, 795, 796, 797, 798, 799, 800, 801, 802, 803, 804, 805);
 INSERT INTO conditions (condition_entry, TYPE, value1, value2) VALUES
 (762, 24, 31404, 1), -- no item Green Trophy Tabard of the Illidari
 (763, 24, 31405, 1), -- no item Purple Trophy Tabard of the Illidari
-(764, 20, 1681, 0), -- has achievement The Loremaster
-(765, 20, 1682, 0), -- has achievement The Loremaster
-(766, 20, 45, 0), -- has achievement Explore Northrend --> Tabard of the Explorer
 (767, 8, 11972, 0), -- has quest rewarded Shards of Ahune
 (768, 8, 9737, 0), -- has quest rewarded True Masters of the Light --> Blood Knight Tabard
 (769, 8, 9762, 0), -- has quest rewarded The Unwritten Prophecy --> Tabard of the Hand
 (770, 8, 10259, 0), -- has quest rewarded Into the Breach --> tobard of protector
-(771, 20, 1021, 0), -- has achievement Twenty-Five Tabards --> Tabard of the Achiever
 (772, 24, 43300, 1), -- has no item Loremaster's Colors
 (773, 24, 43348, 1), -- has no item Tabard of the Explorer
 (774, 24, 35280, 1), -- has no item Tabard of Summer Flames
@@ -66,7 +61,6 @@ INSERT INTO conditions (condition_entry, TYPE, value1, value2) VALUES
 (790, 24, 31408, 1), -- has no item Offering of the Sha'tar
 (791, -1, 763, 762), 
 (792, -2, 788, 789),
-(793, 20, 876, 0), -- has achievement Brutally Dedicated
 (794, -1, 790, 780),
 (795, -1, 791, 794),
 (796, -1, 785, 775),
@@ -84,7 +78,7 @@ DELETE FROM conditions WHERE condition_entry IN
 (806, 807, 808, 809, 810, 811, 812, 813, 814, 815, 816, 817, 818, 819, 820,
 821, 822, 823, 824, 825, 826, 827, 828, 829, 830, 831, 832, 833, 834, 835, 836, 837, 838,
 839, 840, 841, 842, 843, 844, 845, 846, 847, 848, 849, 850, 851, 852, 853, 854);
-INSERT INTO conditions (condition_entry, type, value1, value2) VALUES
+INSERT INTO conditions (condition_entry, TYPE, value1, value2) VALUES
 (806, 5, 76, 7),
 (807, 5, 72, 7),
 (808, 5, 81, 7),
@@ -137,7 +131,7 @@ INSERT INTO conditions (condition_entry, type, value1, value2) VALUES
 -- npc_sayge
 -- UPDATE creature_template SET ScriptName='' WHERE entry=14822;
 DELETE FROM conditions WHERE condition_entry IN (855, 856, 857, 858, 859, 860, 861, 862, 863, 864, 865, 866, 867, 868, 869, 870);
-INSERT INTO conditions (condition_entry, type, value1, value2) VALUES
+INSERT INTO conditions (condition_entry, TYPE, value1, value2) VALUES
 (855, 1, 23768, 0),
 (856, 1, 23769, 0),
 (857, 1, 23767, 0),
