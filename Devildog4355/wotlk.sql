@@ -1137,3 +1137,11 @@ INSERT INTO npc_spellclick_spells (npc_entry, spell_id, quest_start, quest_start
 (27626, 49138, 0, 0, 0, 1),
 (28710, 46598, 0, 0, 0, 1),
 (29579, 46598, 0, 0, 0, 1);
+-- WOTLK Achievements
++DELETE FROM conditions WHERE condition_entry IN (764, 765, 766, 771, 793); 
+ INSERT INTO conditions (condition_entry, TYPE, value1, value2) VALUES
+(764, 20, 1681, 0), -- has achievement The Loremaster
+(765, 20, 1682, 0), -- has achievement The Loremaster
+(766, 20, 45, 0), -- has achievement Explore Northrend --> Tabard of the Explorer
+(771, 20, 1021, 0), -- has achievement Twenty-Five Tabards --> Tabard of the Achiever
+(793, 20, 876, 0), -- has achievement Brutally Dedicated
