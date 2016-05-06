@@ -1,3 +1,5 @@
+select * from `gameobject_template` where `displayId` in (7364,7365,7366,7367,7369,7371,7373,7375);
+
 -- ------------------
 -- Simon Game data
 -- ------------------

@@ -131,6 +131,11 @@ INSERT INTO dbscripts_on_event (id, delay, command, datalong, datalong2, buddy_e
 (14860,0,20,2,0,23102,140757,7 | 0x10,0,0,0,0,0,0,0,0,'movement chenged to 2:waypoint');
 
 -- The Soul Cannon of Reth'hedron (q.11089) -H -A
+-- Srat'his -- gossip update
+UPDATE gossip_menu_option SET condition_id = 963, action_script_id = 8725 WHERE menu_id = 8725;
+DELETE FROM conditions WHERE condition_entry = 963;
+INSERT INTO conditions (condition_entry, type, value1, value2) VALUES
+(963, 9, 11089, 0);
 DELETE FROM dbscripts_on_gossip WHERE id = 8725;
 INSERT INTO dbscripts_on_gossip (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
 (8725,0,29,3,2,0,0,0,0,0,0,0,0,0,0,0,'23093 - npc_flag removed'),
@@ -184,6 +189,7 @@ INSERT INTO creature_movement_template (entry, point, position_x, position_y, po
 (23093,45,-2479.86,4694.21,154.879,0,0,0,0,0,0,0,0,0,1.28596,0,0),
 (23093,46,-2478.81,4698.33,154.796,0,0,0,0,0,0,0,0,0,0.593238,0,0),
 (23093,47,-2475.14,4700.05,155.206,17000,2309308,0,0,0,0,0,0,0,6.24303,0,0);
+
 DELETE FROM dbscripts_on_creature_movement WHERE id BETWEEN 2309301 AND 2309308; 
 INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
 (2309301,1,21,1,0,0,0,0,0,0,0,0,0,0,0,0,'Sar\'this active'),

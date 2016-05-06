@@ -1533,3 +1533,19 @@ INSERT INTO gameobject (guid, id, map, spawnMask, phaseMask, position_x, positio
 (94151, 191302, 609, 1, 128, 2256.331, -5269.824, 80.03564, 1.012289, 0, 0, 0, 1, -120, 255, 1),
 (94152, 191302, 609, 1, 128, 2299.604, -5267.319, 81.93887, 2.356195, 0, 0, 0, 1, -120, 255, 1),
 (94153, 191302, 609, 1, 128, 2291.603, -5331.028, 131.3173, -0.8726639, 0, 0, 0, 1, -120, 255, 1);
+
+-- KILLERWIFE | Please validate change "Spell_loot_Template" to "gameobject_loot_template"
+-- NeatElves: Jewelcrafting loot spell 62941
+-- Chances are unclear, but probably equally is just fine
+DELETE FROM gameobject_loot_template WHERE entry = 62941;
+INSERT INTO gameobject_loot_template (entry, item, ChanceOrQuestChance, groupid, mincountOrRef, maxcount, condition_id) VALUES
+(62941, 23094, 0, 1, 1, 1, 0), -- Teardrop(Brilliant) Blood Garnet      5 7
+(62941, 23095, 0, 1, 1, 1, 0), -- Bold Blood Garnet          6 5
+(62941, 23097, 0, 1, 1, 1, 0), -- Delicate Blood Garnet        1
+(62941, 23114, 0, 1, 1, 1, 0), -- Gleaming Golden Draenite  
+(62941, 23115, 0, 1, 1, 1, 0), -- Thick Golden Draenite     
+(62941, 23116, 0, 1, 1, 1, 0), -- Rigid Golden Draenite     
+(62941, 23118, 0, 1, 1, 1, 0), -- Solid Azure Moonstone      5 6
+(62941, 23119, 0, 1, 1, 1, 0), -- Sparkling Azure Moonstone 11 5
+(62941, 23120, 0, 1, 1, 1, 0), -- Stormy Azure Moonstone    
+(62941, 28595, 0, 1, 1, 1, 0); -- Bright Blood Garnet        4

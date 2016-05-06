@@ -1725,11 +1725,6 @@ INSERT INTO dbscripts_on_gossip (id, delay, command, datalong, datalong2, buddy_
 DELETE FROM conditions WHERE condition_entry = 962;
 INSERT INTO conditions (condition_entry, type, value1, value2) VALUES
 (962, 9, 11108, 0);
--- Srat'his -- gossip update
-UPDATE gossip_menu_option SET condition_id = 963, action_script_id = 8725 WHERE menu_id = 8725;
-DELETE FROM conditions WHERE condition_entry = 963;
-INSERT INTO conditions (condition_entry, type, value1, value2) VALUES
-(963, 9, 11089, 0);
 -- Captured Arko'narin - gossips
 DELETE FROM gossip_menu WHERE entry = 3129; 
 INSERT INTO gossip_menu (entry, text_id, script_id, condition_id) VALUES

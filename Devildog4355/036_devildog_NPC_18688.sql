@@ -171,33 +171,32 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@GUID, @POINT := @POINT + '1', '-2435.879395', '8254.694336', '-38.234631', '1000', '1', '0', '0', '0', '0', '0', '0', '0', '3.7', '0', '0');
 
 -- #8
-
 -- Gossip
-DELETE FROM db_script_string WHERE entry IN (2000005779, 2000005780, 2000005781, 2000005782, 2000005783, 2000005784, 2000005785, 2000005786);
+DELETE FROM db_script_string WHERE entry IN (2000005800, 2000005801, 2000005802, 2000005803, 2000005804, 2000005805, 2000005806, 2000005807);
 INSERT INTO db_script_string (entry, content_default, content_loc1, content_loc2, content_loc3, content_loc4, content_loc5, content_loc6, content_loc7, content_loc8) VALUES
-(2000005779,'What will become of us when it falls? ',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+(2000005800,'What will become of us when it falls? ',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO db_script_string (entry, content_default, content_loc1, content_loc2, content_loc3, content_loc4, content_loc5, content_loc6, content_loc7, content_loc8) VALUES
-(2000005780,'What is happening to me?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+(2000005801,'What is happening to me?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO db_script_string (entry, content_default, content_loc1, content_loc2, content_loc3, content_loc4, content_loc5, content_loc6, content_loc7, content_loc8) VALUES
-(2000005781,'I remember everything...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+(2000005802,'I remember everything...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO db_script_string (entry, content_default, content_loc1, content_loc2, content_loc3, content_loc4, content_loc5, content_loc6, content_loc7, content_loc8) VALUES
-(2000005782,'It is dying. It is dying. It is dying.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+(2000005803,'It is dying. It is dying. It is dying.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO db_script_string (entry, content_default, content_loc1, content_loc2, content_loc3, content_loc4, content_loc5, content_loc6, content_loc7, content_loc8) VALUES
-(2000005783,'The pain is unbearable.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+(2000005804,'The pain is unbearable.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO db_script_string (entry, content_default, content_loc1, content_loc2, content_loc3, content_loc4, content_loc5, content_loc6, content_loc7, content_loc8) VALUES
-(2000005784,'The spirts call... I am consumed.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+(2000005805,'The spirts call... I am consumed.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO db_script_string (entry, content_default, content_loc1, content_loc2, content_loc3, content_loc4, content_loc5, content_loc6, content_loc7, content_loc8) VALUES
-(2000005785,'Cannot control... It draws me in... The void grows...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+(2000005806,'Cannot control... It draws me in... The void grows...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO db_script_string (entry, content_default, content_loc1, content_loc2, content_loc3, content_loc4, content_loc5, content_loc6, content_loc7, content_loc8) VALUES
-(2000005786,'Cease your crying! STOP!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+(2000005807,'Cease your crying! STOP!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (240000, 240001, 240002, 240003, 240004, 240005, 240006, 240007); 
 INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, X, Y, z, o, comments) VALUES
-(240000,0,0,0,0,0,15,0,2000005779,0,0,0,0,0,0,0,'NPC Chat 18688'),
-(240001,0,0,0,0,0,15,0,2000005780,0,0,0,0,0,0,0,'NPC Chat 18688'),
-(240002,0,0,0,0,0,15,0,2000005781,0,0,0,0,0,0,0,'NPC Chat 18688'),
-(240003,0,0,0,0,0,15,0,2000005782,0,0,0,0,0,0,0,'NPC Chat 18688'),
-(240004,0,0,0,0,0,15,0,2000005783,0,0,0,0,0,0,0,'NPC Chat 18688'),
-(240005,0,0,0,0,0,15,0,2000005784,0,0,0,0,0,0,0,'NPC Chat 18688'),
-(240006,0,0,0,0,0,15,0,2000005785,0,0,0,0,0,0,0,'NPC Chat 18688'),
-(240007,0,0,0,0,0,15,0,2000005786,0,0,0,0,0,0,0,'NPC Chat 18688');
+(240000,0,0,0,0,0,15,0,2000005800,0,0,0,0,0,0,0,'NPC Chat 18688'),
+(240001,0,0,0,0,0,15,0,2000005801,0,0,0,0,0,0,0,'NPC Chat 18688'),
+(240002,0,0,0,0,0,15,0,2000005802,0,0,0,0,0,0,0,'NPC Chat 18688'),
+(240003,0,0,0,0,0,15,0,2000005803,0,0,0,0,0,0,0,'NPC Chat 18688'),
+(240004,0,0,0,0,0,15,0,2000005804,0,0,0,0,0,0,0,'NPC Chat 18688'),
+(240005,0,0,0,0,0,15,0,2000005805,0,0,0,0,0,0,0,'NPC Chat 18688'),
+(240006,0,0,0,0,0,15,0,2000005806,0,0,0,0,0,0,0,'NPC Chat 18688'),
+(240007,0,0,0,0,0,15,0,2000005807,0,0,0,0,0,0,0,'NPC Chat 18688');
 
