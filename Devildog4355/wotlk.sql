@@ -1138,10 +1138,57 @@ INSERT INTO npc_spellclick_spells (npc_entry, spell_id, quest_start, quest_start
 (28710, 46598, 0, 0, 0, 1),
 (29579, 46598, 0, 0, 0, 1);
 -- WOTLK Achievements
-+DELETE FROM conditions WHERE condition_entry IN (764, 765, 766, 771, 793); 
+DELETE FROM conditions WHERE condition_entry IN (764, 765, 766, 771, 793); 
  INSERT INTO conditions (condition_entry, TYPE, value1, value2) VALUES
 (764, 20, 1681, 0), -- has achievement The Loremaster
 (765, 20, 1682, 0), -- has achievement The Loremaster
 (766, 20, 45, 0), -- has achievement Explore Northrend --> Tabard of the Explorer
 (771, 20, 1021, 0), -- has achievement Twenty-Five Tabards --> Tabard of the Achiever
-(793, 20, 876, 0), -- has achievement Brutally Dedicated
+(793, 20, 876, 0); -- has achievement Brutally Dedicated
+
+-- thx to Reamer
+DELETE FROM spell_script_target WHERE entry IN (63820, 64425, 64620);
+INSERT INTO spell_script_target (entry, TYPE, targetEntry) VALUES
+(63820, 1, 33856),
+(64425, 1, 33856),
+(64620, 1, 33856);
+
+-- NeatElves, slightly adapted for UDB, text corrected
+UPDATE creature_template SET gossipmenuid = 10638 WHERE entry = 35364;
+DELETE FROM conditions WHERE condition_entry IN (743, 744);
+INSERT INTO conditions (condition_entry, TYPE, value1, value2) VALUES
+(743, 34, 1, 0),
+(744, 34, 0, 0);
+DELETE FROM dbscripts_on_gossip WHERE id IN (1063801, 1063802);
+INSERT INTO dbscripts_on_gossip (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, X, Y, z, o, comments) VALUES
+(1063801, 0, 33, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'stop XP USER'),
+(1063802, 0, 33, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'start XP USER');
+UPDATE gossip_menu_option SET action_menu_id = -1, action_script_id = 1063801, condition_id = 743 WHERE menu_id = 10638 AND id = 0;
+DELETE FROM gossip_menu_option WHERE menu_id = 10638 AND id = 1;
+INSERT INTO gossip_menu_option (menu_id, id, option_icon, option_text, option_id, npc_option_npcflag, action_menu_id, action_poi_id, action_script_id, box_coded, box_money, box_text, condition_id) VALUES
+(10638, 1, 16, 'I wish to start gaining experience again.', 1, 1, -1, 0, 1063802, 0, 100000, 'Are you certain you wish to start gaining experience again?', 744);
+
+DELETE FROM gossip_menu_option WHERE menu_id = 9832 AND id != 0;
+INSERT INTO gossip_menu_option (menu_id, id, option_icon, option_text, option_id, npc_option_npcflag, action_menu_id, action_poi_id, action_script_id, box_coded, box_money, box_text, condition_id) VALUES
+(9832, 1, 0, 'I\'ve lost my Tabard of Blood Knight.', 1, 1, -1, 0, 983201, 0, 0, NULL, 781),
+(9832, 2, 0, 'I\'ve lost my Tabard of the Hand.', 1, 1, -1, 0, 983202, 0, 0, NULL, 782),
+(9832, 3, 0, 'I\'ve lost my Tabard of the Protector.', 1, 1, -1, 0, 983203, 0, 0, NULL, 783),
+(9832, 4, 0, 'I\'ve lost my Green Trophy Tabard of the Illidari.', 1, 1, -1, 0, 983204, 0, 0, NULL, 795),
+(9832, 5, 0, 'I\'ve lost my Purple Trophy Tabard of the Illidari.', 1, 1, -1, 0, 983205, 0, 0, NULL, 795),
+(9832, 6, 0, 'I\'ve lost my Tabard of Summer Skies.', 1, 1, -1, 0, 983206, 0, 0, NULL, 796),
+(9832, 7, 0, 'I\'ve lost my Tabard of Summer Flames.', 1, 1, -1, 0, 983207, 0, 0, NULL, 797),
+(9832, 12, 0, 'I\'ve lost my Arathor Battle Tabard.', 1, 1, -1, 0, 983212, 0, 0, NULL, 802),
+(9832, 13, 0, 'I\'ve lost my Battle Tabard of the Defilers.', 1, 1, -1, 0, 983213, 0, 0, NULL, 805);
+
+DELETE FROM dbscripts_on_gossip WHERE id IN (983201,983202,983203,983204,983205,983206,983207,983208,983209,983210,983211,983212,983213);
+INSERT INTO dbscripts_on_gossip (id, command, datalong, comments) VALUES
+(983206, 15, 62768, 'Create Tabard of Summer Skies'),
+(983207, 15, 62769, 'Create Tabard of Summer Flames'),
+(983204, 15, 54977, 'Create Green Trophy Tabard of the Illidari'),
+(983205, 15, 54982, 'Create Purple Trophy Tabard of the Illidari'),
+(983201, 15, 54974, 'Create Blood Knight Tabard'),
+(983202, 15, 54976, 'Create Tabard of the Hand'),
+(983203, 15, 55008, 'Create Tabard of the Protector'),
+(983212, 15, 54971, 'Create Arathor Battle Tabard'),
+(983213, 15, 54973, 'Create Battle Tabard of the Defilers');
+-- UPDATE creature_template SET ScriptName='' WHERE entry IN (384,1261,1460,2357,3362,3685,4730,4731,4885,7952,7955,16264,17584);

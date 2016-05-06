@@ -4311,3 +4311,290 @@ UPDATE gossip_menu_option SET condition_id=806 WHERE condition_id=778;
 UPDATE gossip_menu SET condition_id=807 WHERE condition_id=803;
 UPDATE gossip_menu_option SET condition_id=808 WHERE condition_id=804;
 UPDATE gossip_menu SET condition_id=809 WHERE condition_id=805;
+
+-- ### BWL ###
+-- Orb of Domination event
+DELETE FROM dbscripts_on_event WHERE id = 8302;
+INSERT INTO dbscripts_on_event (id, delay, command, datalong, buddy_entry, search_radius, data_flags, comments) VALUES
+(8302, 0, 15, 23014, 14449, 10, 7, 'Blackwing Orb Trigger - Cast Possess visual'),
+(8302, 90, 14, 23014, 12435, 100, 7, 'Razorgore - Remove Possess visual'),
+(8302, 90, 15, 23958, 0, 0, 4, 'Cast Mind Exhaustion on player');
+-- Increase Eggs spawntime
+
+-- quest 1920 
+DELETE FROM creature_template_addon WHERE entry = 6492;
+INSERT INTO creature_template_addon (entry, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
+(6492, 0, 0, 0, 0, 0, 0, '9093');
+
+-- The Path of Conquest -- SHADOWMOON VALLEY
+-- Update for Kor'Kron Wind Rider
+DELETE FROM creature_template_addon WHERE entry = 21998;
+INSERT INTO creature_template_addon (entry, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
+(21998,17719,0,0,0,0,0,NULL);
+-- Update for Eclipsion Dragonhawks
+UPDATE creature SET spawndist = 10, MovementType = 1 WHERE guid IN (72573, 72575, 72578, 72582, 72581, 72583, 72584, 72574, 72572, 72571, 72569, 72567, 72570, 72569, 72568, 72566, 72577, 72599, 72600, 72597, 72595, 72594, 72595);
+UPDATE creature SET position_x = -4365.263184, position_y = 1842.046143, position_z = 148.297089, orientation = 1.747304, spawndist = 10, MovementType = 1 WHERE guid = 72598;
+UPDATE creature SET position_x = -4494.605957, position_y = 1843.634766, position_z = 178.340988, orientation = 1.016883, spawndist = 10, MovementType = 1 WHERE guid = 72592;
+UPDATE creature SET position_x = -4517.538086, position_y = 1798.327148, position_z = 174.528366, orientation = 3.863947, spawndist = 10, MovementType = 1 WHERE guid = 72593;
+UPDATE creature SET position_x = -4283.729004, position_y = 1634.765991, position_z = 125.962234, orientation = 3.600266, spawndist = 10, MovementType = 1 WHERE guid = 72579;
+UPDATE creature SET spawndist = 5, MovementType = 1 WHERE guid IN (72585, 72596, 72590, 72580, 72586, 72587, 72589, 72588);
+-- Son of Coroc  - wps
+UPDATE creature SET MovementType = 2, spawndist = 0 WHERE guid IN (70939, 70936, 70934);
+DELETE FROM creature_movement WHERE id IN (70939, 70936, 70934);
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
+-- #1
+(70939,1,-4302.041016,1379.116821,144.067978,0,0,0,0,0,0,0,0,0,3.313551,0,0),
+(70939,2,-4313.116211,1379.322876,144.471588,0,0,0,0,0,0,0,0,0,2.851737,0,0),
+(70939,3,-4332.434082,1387.003540,143.703278,0,0,0,0,0,0,0,0,0,5.959304,0,0),
+(70939,4,-4314.086426,1382.061401,144.252197,0,0,0,0,0,0,0,0,0,0.082952,0,0),
+(70939,5,-4286.747070,1388.098633,141.378662,0,0,0,0,0,0,0,0,0,0.494499,0,0),
+(70939,6,-4234.646484,1408.494507,129.535614,0,0,0,0,0,0,0,0,0,5.776299,0,0),
+(70939,7,-4280.677246,1390.305908,139.965790,0,0,0,0,0,0,0,0,0,3.533992,0,0),
+-- #2
+(70936,1,-4367.305664,1390.498779,140.920059,0,0,0,0,0,0,0,0,0,0.093944,0,0),
+(70936,2,-4402.882324,1382.583130,138.072495,0,0,0,0,0,0,0,0,0,3.413194,0,0),
+(70936,3,-4446.633301,1367.277588,130.555634,0,0,0,0,0,0,0,0,0,3.732066,0,0),
+(70936,4,-4481.846680,1341.679199,125.965645,0,0,0,0,0,0,0,0,0,3.939411,0,0),
+(70936,5,-4455.745117,1361.393799,130.049927,0,0,0,0,0,0,0,0,0,0.422399,0,0),
+(70936,6,-4432.810547,1370.785767,132.493011,0,0,0,0,0,0,0,0,0,0.417908,0,0),
+-- #3
+(70934,1,-4418.845215,1290.742554,78.729057,0,0,0,0,0,0,0,0,0,0.406114,0,0),
+(70934,2,-4394.375977,1304.033936,85.510612,0,0,0,0,0,0,0,0,0,0.519945,0,0),
+(70934,3,-4417.289551,1291.203247,79.145859,0,0,0,0,0,0,0,0,0,3.825686,0,0),
+(70934,4,-4440.317871,1270.367554,68.811790,0,0,0,0,0,0,0,0,0,3.956062,0,0),
+(70934,5,-4496.845215,1210.276001,40.881477,0,0,0,0,0,0,0,0,0,3.944281,0,0),
+(70934,6,-4455.572266,1251.860718,61.227314,0,0,0,0,0,0,0,0,0,0.841958,0,0),
+(70934,7,-4425.860352,1281.942505,74.528885,0,0,0,0,0,0,0,0,0,0.645608,0,0);
+
+-- Invasion point: Cataclysm -- Shadowmoon Valley
+-- Deathforged Infernal - existed objects ..correct spawn points
+UPDATE gameobject SET position_x = -2681.76, position_y = 2650.57, position_z = 74.9248, orientation = 1.49062, rotation2 = 0.6782, rotation3 = 0.734878, spawntimesecs = 120 WHERE guid = 64100;
+UPDATE gameobject SET position_x = -2667.45, position_y = 2650.3, position_z = 74.9248, orientation = 1.49062, rotation2 = 0.6782, rotation3 = 0.734878, spawntimesecs = 120 WHERE guid = 64102;
+UPDATE gameobject SET position_x = -2650.01, position_y = 2650.63, position_z = 74.9207, orientation = 1.50005, rotation2 = 0.681655, rotation3 = 0.731673, spawntimesecs = 120 WHERE guid = 64103;
+UPDATE gameobject SET position_x = -2635.25, position_y = 2651.28, position_z = 74.2272, orientation = 1.5024, rotation2 = 0.682516, rotation3 = 0.730871, spawntimesecs = 120 WHERE guid = 64104;
+UPDATE gameobject SET position_x = -2619.16, position_y = 2651.79, position_z = 74.0234, orientation = 1.38538, rotation2 = 0.63861, rotation3 = 0.76953, spawntimesecs = 120 WHERE guid = 64105;
+UPDATE gameobject SET position_x = -2681.33, position_y = 2637.01, position_z = 74.9247, orientation = 1.52707, rotation2 = 0.69148, rotation3 = 0.722396, spawntimesecs = 120 WHERE guid = 64106;
+UPDATE gameobject SET position_x = -2667.66, position_y = 2636.73, position_z = 74.9247, orientation = 1.52707, rotation2 = 0.69148, rotation3 = 0.722396, spawntimesecs = 120 WHERE guid = 64107;
+UPDATE gameobject SET position_x = -2649.8, position_y = 2636.73, position_z = 74.9247, orientation = 1.64017, rotation2 = 0.731203, rotation3 = 0.68216, spawntimesecs = 120 WHERE guid = 64108;
+UPDATE gameobject SET position_x = -2634.09, position_y = 2637.02, position_z = 74.9247, orientation = 1.65588, rotation2 = 0.736538, rotation3 = 0.676396, spawntimesecs = 120 WHERE guid = 64109;
+UPDATE gameobject SET position_x = -2618.6, position_y = 2637.48, position_z = 74.5369, orientation = 1.5365, rotation2 = 0.694876, rotation3 = 0.719129, spawntimesecs = 120 WHERE guid = 64110;
+UPDATE gameobject SET position_x = -2681.85, position_y = 2627.42, position_z = 74.3517, orientation = 1.64645, rotation2 = 0.733342, rotation3 = 0.67986, spawntimesecs = 120 WHERE guid = 64111;
+UPDATE gameobject SET position_x = -2667.73, position_y = 2628.37, position_z = 74.9249, orientation = 1.48937, rotation2 = 0.67774, rotation3 = 0.735301, spawntimesecs = 120 WHERE guid = 64112;
+UPDATE gameobject SET position_x = -2649.61, position_y = 2628.14, position_z = 74.78, orientation = 1.59032, rotation2 = 0.713975, rotation3 = 0.700171, spawntimesecs = 120 WHERE guid = 64113;
+UPDATE gameobject SET position_x = -2634.08, position_y = 2628.45, position_z = 74.9248, orientation = 1.59032, rotation2 = 0.713975, rotation3 = 0.700171, spawntimesecs = 120 WHERE guid = 64114;
+UPDATE gameobject SET position_x = -2617.89, position_y = 2628.77, position_z = 74.9248, orientation = 1.59032, rotation2 = 0.713975, rotation3 = 0.700171, spawntimesecs = 120 WHERE guid = 64115;
+UPDATE gameobject SET position_x = -2681.65, position_y = 2616.81, position_z = 74.1963, orientation = 1.52199, rotation2 = 0.689644, rotation3 = 0.724149, spawntimesecs = 120 WHERE guid = 64116;
+UPDATE gameobject SET position_x = -2667.56, position_y = 2618.04, position_z = 74.9077, orientation = 1.54083, rotation2 = 0.696433, rotation3 = 0.717622, spawntimesecs = 120 WHERE guid = 64117;
+UPDATE gameobject SET position_x = -2649.27, position_y = 2619.03, position_z = 74.9252, orientation = 1.54083, rotation2 = 0.696433, rotation3 = 0.717622, spawntimesecs = 120 WHERE guid = 64118;
+-- Doctor Maleficus - correct movement
+DELETE FROM creature WHERE guid=1117;
+INSERT INTO creature(guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) 
+VALUES(1117, 21779, 530, 1, 0, 0, -2695.93, 2632.4, 74.4858, 0.340815, 320, 0, 0, 6761, 0, 0, 0);
+-- Plexi - correct spawn point
+UPDATE creature SET position_x = -2764.22, position_y = 1980.787, position_z = 167.44, orientation = 1.797 WHERE guid = 86238;
+-- Script for Fel Reaver Sentinel
+DELETE FROM dbscripts_on_creature_movement WHERE id = 2194901; 
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, X, Y, z, o, comments) VALUES
+(2194901,0,25,1,0,0,0,0,0,0,0,0,0,0,0,0,'RUN ON');
+-- spell must have a target -- Gan'arg Technician uses this spell on Deathforged Infernal
+DELETE FROM spell_script_target WHERE entry = 38053;
+INSERT INTO spell_script_target (entry, TYPE, targetEntry) VALUES 
+(38053, 0, 184979);
+
+-- Tested By Devildog | WORKING
+-- Enraged Spirits of Air(q.10481) -H -A
+DELETE FROM dbscripts_on_quest_end WHERE id = 10481;
+INSERT INTO dbscripts_on_quest_end (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, X, Y, z, o, comments) VALUES
+(10481,0,0,0,0,0,0,0,2000005489,0,0,0,0,0,0,0,''),
+(10481,2,10,21129,84000,0,0,0,0,0,0,0,-3604.86,1915.55,48.033,4.92384,'summon - Scorned Spirit of Earth'),
+(10481,2,10,21130,84000,0,0,0,0,0,0,0,-3596.865,1914.886,47.969,4.393,'summon - Scorned Spirit of Fire'),
+(10481,3,15,25035,0,21129,15,7,0,0,0,0,0,0,0,0,'cast Elemental Spawn-in'),
+(10481,3,15,25035,0,21130,15,7,0,0,0,0,0,0,0,0,'cast Elemental Spawn-in'),
+(10481,3,10,21131,83000,0,0,0,0,0,0,0,-3611.59,1912.09,47.6579,5.31953,'summon - Scorned Spirit of Water'),
+(10481,3,10,21132,83000,0,0,0,0,0,0,0,-3591.5,1911.29,47.3262,4.03163,'summon - Scorned Spirit of Air'),
+(10481,4,15,25035,0,21131,15,7,0,0,0,0,0,0,0,0,'cast Elemental Spawn-in'),
+(10481,4,15,25035,0,21132,15,7,0,0,0,0,0,0,0,0,'cast Elemental Spawn-in'),
+(10481,4,3,0,0,0,0,0,0,0,0,0,0,0,0,1.60145,''),
+(10481,4,3,0,0,21026,15,0x04,0,0,0,0,0,0,0,1.60145,''),
+(10481,7,0,0,0,21129,15,0x04,2000005490,0,0,0,0,0,0,0,''),
+(10481,9,0,0,0,21130,15,0x04,2000005491,0,0,0,0,0,0,0,''),
+(10481,11,1,2,0,0,0,0,0,0,0,0,0,0,0,0,''),
+(10481,11,0,2,0,0,0,0,2000005492,0,0,0,0,0,0,0,''),
+(10481,14,1,1,0,0,0,0,0,0,0,0,0,0,0,0,''),
+(10481,14,0,0,0,0,0,0,2000005493,0,0,0,0,0,0,0,''),
+(10481,18,0,0,0,21131,15,0x04,2000005494,0,0,0,0,0,0,0,''),
+(10481,21,0,0,0,21132,15,0x04,2000005495,0,0,0,0,0,0,0,''),
+(10481,25,1,273,0,0,0,0,0,0,0,0,0,0,0,0,''),
+(10481,25,0,2,0,0,0,0,2000005496,0,0,0,0,0,0,0,''),
+(10481,28,1,1,0,0,0,0,0,0,0,0,0,0,0,0,''),
+(10481,29,0,0,0,0,0,0,2000005497,0,0,0,0,0,0,0,''),
+(10481,34,1,6,0,0,0,0,0,0,0,0,0,0,0,0,''),
+(10481,34,0,0,0,0,0,0,2000005498,0,0,0,0,0,0,0,''),
+(10481,38,0,0,0,21129,15,0x04,2000005499,0,0,0,0,0,0,0,''),
+(10481,45,1,6,0,0,0,0,0,0,0,0,0,0,0,0,''),
+(10481,45,0,0,0,0,0,0,2000005500,0,0,0,0,0,0,0,''),
+(10481,48,1,1,0,0,0,0,0,0,0,0,0,0,0,0,''),
+(10481,52,0,0,0,21130,15,0x04,2000005501,0,0,0,0,0,0,0,''),
+(10481,55,1,1,0,0,0,0,0,0,0,0,0,0,0,0,''),
+(10481,55,0,0,0,0,0,0,2000005502,0,0,0,0,0,0,0,''),
+(10481,59,0,0,0,21131,15,0x04,2000005503,0,0,0,0,0,0,0,''),
+(10481,63,1,1,0,0,0,0,0,0,0,0,0,0,0,0,''),
+(10481,63,0,0,0,0,0,0,2000005504,0,0,0,0,0,0,0,''),
+(10481,68,0,0,0,21132,15,0x04,2000005505,0,0,0,0,0,0,0,''),
+(10481,71,0,0,0,21129,15,0x04,2000005506,0,0,0,0,0,0,0,''),
+(10481,75,0,0,0,21130,15,0x04,2000005507,0,0,0,0,0,0,0,''),
+(10481,78,1,1,0,0,0,0,0,0,0,0,0,0,0,0,''),
+(10481,78,0,0,0,0,0,0,2000005508,0,0,0,0,0,0,0,''),
+(10481,82,0,0,0,21129,15,0x04,2000005509,0,0,0,0,0,0,0,''),
+(10481,86,1,273,0,0,0,0,0,0,0,0,0,0,0,0,''),
+(10481,86,0,2,0,0,0,0,2000005496,0,0,0,0,0,0,0,''),
+(10481,90,0,0,0,0,0,0,2000005510,0,0,0,0,0,0,0,''),
+(10481,90,3,0,0,0,0,0,0,0,0,0,0,0,0,4.93928,''),
+(10481,90,3,0,0,21026,15,0x04,0,0,0,0,0,0,0,4.90438,'');
+UPDATE quest_template SET CompleteScript = 10481 WHERE entry = 10481;
+UPDATE creature_template SET MovementType = 0 WHERE entry IN (21129, 21130, 21131, 21132);
+DELETE FROM db_script_string WHERE entry BETWEEN 2000005489 AND 2000005510;
+INSERT INTO db_script_string (entry, content_default) VALUES
+(2000005489,'Stand back, $N. The spirits may lash out.'),
+(2000005490,'Why have you captured us?'),
+(2000005491,'What is it that you hope to gain from this?'),
+(2000005492,'%s bows.'),
+(2000005493,'We wish to help you, spirit. We seek your wisdom.'),
+(2000005494,'Wisdom? It was your people that caused the insufferable wrath of Cyrukh.'),
+(2000005495,'Why should we help you? The world is ruined. Destroyed.'),
+(2000005496,'%s nods.'),
+(2000005497,'You are right, spirit. It was my people that did this to you. Allow us to make it right.'),
+(2000005498,'Please tell us this: Who or what is Cyrukh?'),
+(2000005499,'Fool! Cyrukh the fire lord! When the tie was severed, Cyrukh awoke. It is the tears of Cyrukh that fill this land with molten rock.'),
+(2000005500,'The... The fire lord? An elemental lord was unearthed? Of course... Gul\'dan you were a damned fool!'),
+(2000005501,'He is insane now. Driven mad during the shattering. There is no rest for the elements.'),
+(2000005502,'There must be a way.'),
+(2000005503,'Yes, a way. Destroy Cyrukh. Destroy an elemental lord.'),
+(2000005504,'Do not doubt my comrades and I, spirit. Tell us how to conjure the fire lord. My allies will destroy him.'),
+(2000005505,'You must utter the words...'),
+(2000005506,'Yes... Yes... the words. The words of damnation. The words spoken by the dark one. Your master.'),
+(2000005507,'Yes... Gul\'dan...'),
+(2000005508,'We will find these words. We will summon your master and we will destroy him.'),
+(2000005509,'Talk. More talk... Now release us, mortal.'),
+(2000005510,'Now to recover the lost words!');
+
+
+-- Schmoozerd
+-- Important - vehicle accessory related
+UPDATE creature_template_addon SET auras=NULL WHERE entry IN (32638, 32639, 32642, 32641);
+
+-- Dire Maul doors to library, appears ONLY 179550 can have flags 48, but if and only if entering DM north
+UPDATE gameobject_template SET flags=34 WHERE entry IN (179550, 179549);
+
+-- Drop ReqSpellCast fields
+UPDATE quest_template SET ReqSpellCast1 = 0, ReqSpellCast2 = 0, ReqSpellCast3 = 0,ReqSpellCast4 = 0 WHERE entry IN (28, 29, 532, 553, 849, 13119, 11607, 5096, 9294, 10488, 10833);
+
+UPDATE creature_template SET GossipMenuId=4001,NpcFlags=129 WHERE entry=1261;
+DELETE FROM gossip_menu_option WHERE menu_id = 4001 AND id = 0;
+INSERT INTO gossip_menu_option (menu_id, id, option_icon, option_text, option_id, npc_option_npcflag, action_menu_id, action_poi_id, action_script_id, box_coded, box_money, box_text, condition_id) VALUES
+(4001, 0, 1, 'I would like to buy from you.', 3, 1, 0, 0, 0, 0, 0, NULL, 312);
+
+-- q57852
+DELETE FROM dbscripts_on_spell WHERE id = 57852;
+INSERT INTO dbscripts_on_spell (id, command, comments) VALUES (57852, 8, 'quest credit q13119');
+DELETE FROM creature where id IN (30742, 30744, 30745, 30950);
+INSERT INTO creature(guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES
+(121091, 30742, 571, 1, 0, 0, 6470.42, 3139.73, 659.273, 2.70526, 300, 0, 0, 12600, 3994, 0, 0),
+(121122, 30744, 571, 1, 0, 0, 6431.48, 3148.91, 659.196, 5.86431, 300, 0, 0, 12600, 3994, 0, 0),
+(121130, 30745, 571, 1, 0, 0, 6469.17, 3071.56, 659.218, 1.55334, 300, 0, 0, 12600, 3994, 0, 0),
+(124617, 30950, 571, 1, 0, 0, 6436.78, 3100.7, 658.905, 5.86431, 300, 0, 0, 12600, 3994, 0, 0);
+
+-- q11607
+DELETE FROM item_required_target WHERE entry = 34711;
+INSERT INTO item_required_target VALUES
+(34711, 1, 25321),
+(34711, 1, 25322);
+DELETE FROM dbscripts_on_spell WHERE id = 45504;
+INSERT INTO dbscripts_on_spell (id, command, comments) VALUES (45504, 8, 'quest credit q12094');
+
+-- Port from ytdb, http://www.wowhead.com/quest=12240
+DELETE FROM dbscripts_on_event WHERE id = 17868;
+INSERT INTO dbscripts_on_event (id, delay, command, datalong, datalong2, x, y, z, o, comments) VALUES
+(17868, 5, 10, 27238, 600000, 2797.68, -201.873, 139.161, 3.5791, 'Summon Npc for quest 12240');
+
+-- Quest 4740 | WANTED: Murkdeep!
+UPDATE creature_template SET MovementType = 0 WHERE entry IN (2202, 2205, 2206, 10323);
+
+-- quest 11008
+DELETE FROM dbscripts_on_spell WHERE id = 39844;
+INSERT INTO dbscripts_on_spell (id, delay, command, datalong, data_flags, comments) VALUES
+(39844, 0, 8, 0, 0, 'quest 11008 kill credit'),
+(39844, 1, 18, 0, 0, 'despawn 11008 trigger despawn');
+
+-- Harlan Needs a Resupply (forum - thx Axel, that he found this bug)
+UPDATE creature_movement_template SET orientation = 2.66 WHERE entry = 1433 AND POINT = 15;
+
+-- The Summoning Chamber (q.10602) -H  (q.10585) -A
+DELETE FROM dbscripts_on_event WHERE id = 13980;
+INSERT INTO dbscripts_on_event (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, X, Y, z, o, comments) VALUES
+(13980,1,10,21735,300000,0,0,0,0,0,0,0,-3368.91,2145.37,-8.39026,4.4855,'summon - Infernal Oversoul'),
+(13980,1,15,7,0,21207,100,7,0,0,0,0,0,0,0,0,'cast death - 1st target'),
+(13980,2,15,7,0,21210,100,7,0,0,0,0,0,0,0,0,'cast death - 2nd target'),
+(13980,3,15,7,0,21210,100,7,0,0,0,0,0,0,0,0,'cast death - 3rd target'),
+(13980,4,15,7,0,21210,100,7,0,0,0,0,0,0,0,0,'cast death - 4th target'),
+(13980,5,15,7,0,21210,100,7,0,0,0,0,0,0,0,0,'cast death - 5th target'),
+(13980,6,15,7,0,21210,100,7,0,0,0,0,0,0,0,0,'cast death - 6th target');
+-- spell should have target
+DELETE FROM spell_script_target WHERE entry = 37285;
+INSERT INTO spell_script_target (entry,TYPE,targetEntry) VALUES
+(37285, 1, 21211);
+
+-- The Fel and the Furious (q.10612) -A (q.10613) -H
+DELETE FROM dbscripts_on_quest_start WHERE id IN (10612, 10613);
+INSERT INTO dbscripts_on_quest_start (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, X, Y, z, o, comments) VALUES
+(10612,1,0,0,0,0,0,0,2000005459,0,0,0,0,0,0,0,''),
+(10612,3,1,25,0,0,0,0,0,0,0,0,0,0,0,0,''),
+(10613,1,0,0,0,0,0,0,2000005459,0,0,0,0,0,0,0,''),
+(10613,3,1,25,0,0,0,0,0,0,0,0,0,0,0,0,'');
+UPDATE quest_template SET StartScript = 10612 WHERE entry = 10612; -- Alliance
+UPDATE quest_template SET StartScript = 10613 WHERE entry = 10613; -- Horde
+DELETE FROM db_script_string WHERE entry = 2000005459;
+INSERT INTO db_script_string (entry, content_default, content_loc1, content_loc2, content_loc3, content_loc4, content_loc5, content_loc6, content_loc7, content_loc8) VALUES 
+(2000005459,'I\'ve rigged a few control consoles down the slope. Get one quickly and take control of the fel reaver! You\'ll only have a limited amount of time.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+-- fix for fel reaver possession (fixed for both sides -A and -H)
+-- spell must have target for possession -A -H 
+DELETE FROM spell_script_target WHERE entry IN (38003, 38121, 38123, 38126, 38128,38130);
+INSERT INTO spell_script_target (entry, TYPE, targetEntry) VALUES 
+(38003, 1, 21949),(38121, 1, 21949),(38123, 1, 21949),(38126, 1, 21949),(38128, 1, 21949),(38130, 1, 21949);
+-- link between console and Fel Reaver -A -H 
+DELETE FROM dbscripts_on_spell WHERE id IN (38002, 38120, 38122, 38125, 38127, 38129);
+INSERT INTO dbscripts_on_spell (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, X, Y, z, o, comments) VALUES
+(38002,0,15,38003,0,0,0,0,0,0,0,0,0,0,0,0,''),
+(38120,0,15,38121,0,0,0,0,0,0,0,0,0,0,0,0,''),
+(38122,0,15,38123,0,0,0,0,0,0,0,0,0,0,0,0,''),
+(38125,0,15,38126,0,0,0,0,0,0,0,0,0,0,0,0,''),
+(38127,0,15,38128,0,0,0,0,0,0,0,0,0,0,0,0,''),
+(38129,0,15,38130,0,0,0,0,0,0,0,0,0,0,0,0,'');
+-- 38055 casted by us should trigger 38054(with target script 184979)
+DELETE FROM dbscripts_on_spell WHERE id = 38055;
+INSERT INTO dbscripts_on_spell (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, X, Y, z, o, comments) VALUES
+(38055,0,15,38054,0,0,0,0,0,0,0,0,0,0,0,0,'');
+
+DELETE FROM spell_script_target WHERE entry = 38054;
+INSERT INTO spell_script_target (entry, TYPE, targetEntry) VALUES 
+(38054, 0, 184979);
+-- activated gobject should force our possessed npc to cast kill credit on himself
+DELETE FROM dbscripts_on_go_template_use WHERE id = 184979;
+INSERT INTO dbscripts_on_go_template_use (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, X, Y, z, o, comments) VALUES
+(184979,0,31,21949,20,0,0,0,0,0,0,0,0,0,0,0,''), -- prevent from any error logs if player use object
+(184979,1,15,38022,0,21949,20,15,0,0,0,0,0,0,0,0,'');
+-- Fel Reaver Sentinel - updates
+UPDATE creature_template SET factionalliance = 14, factionhorde = 14, unitflags = 256, speedwalk = 2.1, speedrun = 1.7 WHERE entry = 21949;
+-- Pusillin (Dire Maul) - scripted
+UPDATE creature_template SET MovementType = 2, speedrun = 1.3, factionalliance = 35, factionhorde = 35 WHERE entry = 14354; -- now move him to template (unique npc)
+
+-- Dissension Amongst the Ranks... (q.10769) -H  (q.10776) -A
+DELETE FROM dbscripts_on_spell WHERE id = 38223; 
+INSERT INTO dbscripts_on_spell (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, X, Y, z, o, comments) VALUES 
+(38223,0,8,22051,1,0,0,0,0,0,0,0,0,0,0,0,'Quest Credit: Crazed Colossus');
+
+-- Teron Gorefiend, I am...(q.10639) -H  (q.10645) -A
+UPDATE dbscripts_on_event SET datalong2 = 300000 WHERE id = 14092; -- aura works 5min. so event should do the same
+-- Hellfire Fire -- objects respawned only in q.10895
+UPDATE gameobject SET spawntimesecs =-90 WHERE guid IN (24683, 24684, 24685, 24686, 32137, 32138, 32139, 32141, 32142, 32143);
+
