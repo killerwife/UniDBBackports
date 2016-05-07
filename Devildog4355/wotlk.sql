@@ -1192,3 +1192,6 @@ INSERT INTO dbscripts_on_gossip (id, command, datalong, comments) VALUES
 (983212, 15, 54971, 'Create Arathor Battle Tabard'),
 (983213, 15, 54973, 'Create Battle Tabard of the Defilers');
 -- UPDATE creature_template SET ScriptName='' WHERE entry IN (384,1261,1460,2357,3362,3685,4730,4731,4885,7952,7955,16264,17584);
+
+-- Pure guesswork, but big mobs clearly need a way bigger spawndist than 5
+UPDATE creature SET spawndist = 20 WHERE id = 29753 AND MovementType = 1;
