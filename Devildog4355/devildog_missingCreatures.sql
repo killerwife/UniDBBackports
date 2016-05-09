@@ -172,6 +172,7 @@ INSERT INTO creature(guid, id, map, spawnMask, modelid, equipment_id, position_x
 (132817, 23188, 530, 1, 0, 0, -4931.25, 32.0997, 61.9082, 0.564719, 25, 0, 0, 7266, 3155, 0, 2),
 (132818, 23188, 530, 1, 0, 0, -4699.26, 84.1677, 93.9215, 3.01908, 25, 0, 0, 7266, 3155, 0, 2);
 -- Dragonmaw Transporter - wps
+UPDATE creature SET MovementType = 2, spawndist = 0, spawntimesecs = 25 WHERE guid IN (132814, 132815, 132816, 132817, 132818);
 UPDATE creature_template SET speedwalk = 2.3 WHERE entry = 23188;
 
 -- Overmine Flayer -- correct spawn points for them
@@ -1397,10 +1398,6 @@ DELETE FROM creature_linking WHERE guid IN (76085, 76082, 76083);
 INSERT INTO creature_linking (guid, master_guid, flag) VALUES    
 (76082, 76083, 518),(76083, 76084, 518),(76085, 76082, 518); -- Ghostrider of Karabor
 
--- Ghostrider of Karabor
-DELETE FROM creature_linking WHERE guid IN (76085, 76082, 76083);
-INSERT INTO creature_linking (guid, master_guid, flag) VALUES    
-(76082, 76083, 518),(76083, 76084, 518),(76085, 76082, 518); -- Ghostrider of Karabor
 DELETE FROM creature_movement WHERE id = 76084;
 INSERT INTO creature_movement (id, POINT, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
 (76084,1,-3095.899170,854.939697,-20.774427,0,0,0,0,0,0,0,0,0,1.356792,0,0),
@@ -1999,6 +1996,9 @@ INSERT INTO creature_movement (id, POINT, position_x, position_y, position_z, wa
 (52264,4,-5121.2,532.319,85.3588,3000,0,0,0,0,0,275,0,0,2.64879,0,0);
 
 -- Dragonmaw Skybreaker
+DELETE FROM creature WHERE guid= 132538;
+INSERT INTO creature(guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES
+(132538, 22274, 530, 1, 0, 0, -4883.63, 274.067, 129.446, 0.885024, 180, 0, 0, 7266, 3155, 0, 2);
 UPDATE creature_template SET speedwalk = 3.5 WHERE entry = 22274;
 UPDATE creature SET MovementType = 2, spawndist = 0 WHERE guid IN (78291, 78292, 78293, 78294, 78295, 78296, 78297, 78298, 78299, 78300, 132538);
 DELETE FROM creature_movement WHERE id IN (78291, 78292, 78293, 78294, 78295, 78296, 78297, 78298, 78299, 78300, 132538);
@@ -2497,7 +2497,6 @@ INSERT INTO creature_movement (id, POINT, position_x, position_y, position_z, wa
 (32700,1,-3794.57,427.432,104.227,9000,0,0,0,0,0,0,0,0,1.68447,0,0),
 (32700,2,-3794.57,427.432,104.227,300000,2117902,0,0,0,0,0,0,0,1.68447,0,0);
 -- Demon Hunter Initiate
-UPDATE creature_template SET factionAlliance = 1826, factionHorde = 1826 WHERE entry = 21180;
 -- #1
 UPDATE creature SET MovementType = 2, spawndist = 0 WHERE guid = 74278;
 DELETE FROM creature_movement WHERE id = 74278;
