@@ -8,7 +8,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_
 ('301677','18688','530','1','0','0','-2126.526855','8399.152344','-12.993474','3.3','120','0','0','1','0','0','2'),
 ('301678','18688','530','1','0','0','-2063.336670','8261.949219','-9.946277','2.8','120','0','0','1','0','0','2'),
 ('301679','18688','530','1','0','0','-831.663086','7798.496582','38.461380','2.8','120','0','0','1','0','0','2'),
-('301680','18688','530','1','0','0','-1212.283203','7399.475586','28.820879','1.5','120','0','0','1','0','0','2');
+('301680','18688','530','1','0','0','-1212.283203','7399.475586','28.820879','1.5','120','0','0','1','0','0','2'),
+('301681','18688','530','1','0','0','-1212.283203','7399.475586','28.820879','1.5','120','0','0','1','0','0','2');
 -- Movements
 -- # 1
 SET @GUID := '301673';
@@ -169,34 +170,78 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@GUID, @POINT := @POINT + '1', '-2397.59877', '8310.372070', '-38.471684', '0', '0', '0', '0', '0', '0', '0', '0', '0', '4.2', '0', '0'),
 (@GUID, @POINT := @POINT + '1', '-2407.098633', '8290.999023', '-39.538261', '0', '0', '0', '0', '0', '0', '0', '0', '0', '4.2', '0', '0'),
 (@GUID, @POINT := @POINT + '1', '-2435.879395', '8254.694336', '-38.234631', '1000', '1', '0', '0', '0', '0', '0', '0', '0', '3.7', '0', '0');
-
 -- #8
+SET @GUID := '301680';
+SET @POINT := '0';
+DELETE FROM `creature_movement` WHERE `id`=@GUID;
+INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) VALUES
+(@GUID, @POINT := @POINT + '1', '-1221.815674', '7471.260742', '22.378185', '0', '0', '0', '0', '0', '0', '0', '0', '0', '1.5', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-1220.516357', '7498.369629', '20.396124', '0', '0', '0', '0', '0', '0', '0', '0', '0', '1.3', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-1211.912842', '7559.846680', '17.247362', '0', '0', '0', '0', '0', '0', '0', '0', '0', '1.8', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-1227.165161', '7631.376465', '11.871344', '0', '0', '0', '0', '0', '0', '0', '0', '0', '1.89', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-1246.71350', '7674.930664', '9.150620', '0', '0', '0', '0', '0', '0', '0', '0', '0', '2.3', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-1282.989014', '7714.592285', '2.970059', '0', '0', '0', '0', '0', '0', '0', '0', '0', '2.4', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-1342.366699', '7757.892578', '-5.501575', '0', '0', '0', '0', '0', '0', '0', '0', '0', '2.4', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-1369.51770', '7788.182617', '-10.475129', '0', '240007', '0', '0', '0', '0', '0', '0', '0', '2.1', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-1400.006592', '7836.298340', '-16.654926', '0', '0', '0', '0', '0', '0', '0', '0', '0', '2.3', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-1414.780273', '7851.906250', '-20.280634', '0', '0', '0', '0', '0', '0', '0', '0', '0', '2.4', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-1428.094116', '7862.684570', '-26.573586', '0', '0', '0', '0', '0', '0', '0', '0', '0', '2.4', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-1451.840454', '7880.557617', '-29.603809', '0', '0', '0', '0', '0', '0', '0', '0', '0', '2.5', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-1472.422852', '7895.916992', '-23.330120', '0', '0', '0', '0', '0', '0', '0', '0', '0', '2.5', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-1495.762695', '7911.707520', '-19.182034', '0', '0', '0', '0', '0', '0', '0', '0', '0', '2.7', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-1521.94226', '7921.346680', '-20.360960', '0', '0', '0', '0', '0', '0', '0', '0', '0', '3.0', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-1539.738037', '7922.632324', '-21.174793', '0', '0', '0', '0', '0', '0', '0', '0', '0', '2.3', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-1578.755127', '7971.206055', '-22.525999', '0', '240005', '0', '0', '0', '0', '0', '0', '0', '2.2', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-1608.993286', '7995.193359', '-24.442539', '0', '0', '0', '0', '0', '0', '0', '0', '0', '3.1', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-1665.522583', '7994.134766', '-28.188717', '0', '0', '0', '0', '0', '0', '0', '0', '0', '3.1', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-1691.903564', '7994.310059', '-36.265900', '0', '0', '0', '0', '0', '0', '0', '0', '0', '3.1', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-1718.610229', '7994.921875', '-35.740917', '0', '0', '0', '0', '0', '0', '0', '0', '0', '3', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-1747.505615', '7996.129395', '-26.966997', '0', '0', '0', '0', '0', '0', '0', '0', '0', '3', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-1839.235596', '8007.994629', '-24.875704', '0', '0', '0', '0', '0', '0', '0', '0', '0', '2.8', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-1873.442749', '8032.722168', '-21937347', '0', '0', '0', '0', '0', '0', '0', '0', '0', '1.9', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-1884.065430', '8080.205078', '-20.481651', '0', '0', '0', '0', '0', '0', '0', '0', '0', '1.9', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-1905.665039', '8120.760742', '-18.145897', '0', '0', '0', '0', '0', '0', '0', '0', '0', '2..1', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-1926.087524', '8142.629395', '-14.247545', '0', '0', '0', '0', '0', '0', '0', '0', '0', '2.4', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-1950.394043', '8161.948242', '-9.826014', '0', '0', '0', '0', '0', '0', '0', '0', '0', '2.4', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-1984.611328', '8195.778320', '0.55387', '0', '0', '0', '0', '0', '0', '0', '0', '0', '2.3', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-2079.384033', '8211.417969', '-8.845363', '0', '0', '0', '0', '0', '0', '0', '0', '0', '3.1', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-2130.915527', '8209.665039', '-18.522982', '0', '0', '0', '0', '0', '0', '0', '0', '0', '3.1', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-2170.114014', '8210.001953', '-24.558580', '0', '0', '0', '0', '0', '0', '0', '0', '0', '3.1', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-2197.301025', '8210.235352', '-29.073748', '0', '0', '0', '0', '0', '0', '0', '0', '0', '3.1', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-2226.800049', '8212.688477', '-26.975344', '0', '0', '0', '0', '0', '0', '0', '0', '0', '2.9', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-2250.636475', '8216.520508', '-31.129158', '0', '240007', '0', '0', '0', '0', '0', '0', '0', '2.9', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-2277.959717', '8220.758789', '-31.129171', '0', '0', '0', '0', '0', '0', '0', '0', '0', '2.9', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-2310.825928', '8225.793945', '-35.988243', '0', '0', '0', '0', '0', '0', '0', '0', '0', '2.9', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-2344.218262', '8230.319336', '-36.140984', '0', '0', '0', '0', '0', '0', '0', '0', '0', '3', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-2373.062256', '8234.559570', '-41.084953', '0', '0', '0', '0', '0', '0', '0', '0', '0', '3', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-2391.203369', '8236.008789', '-38.930347', '0', '0', '0', '0', '0', '0', '0', '0', '0', '3', '0', '0'),
+(@GUID, @POINT := @POINT + '1', '-2411.850586', '8237.567383', '-39.367798', '1000', '1', '0', '0', '0', '0', '0', '0', '0', '3', '0', '0');
 -- Gossip
-DELETE FROM db_script_string WHERE entry IN (2000005800, 2000005801, 2000005802, 2000005803, 2000005804, 2000005805, 2000005806, 2000005807);
+DELETE FROM db_script_string WHERE entry IN (2000005779, 2000005780, 2000005781, 2000005782, 2000005783, 2000005784, 2000005785, 2000005786);
 INSERT INTO db_script_string (entry, content_default, content_loc1, content_loc2, content_loc3, content_loc4, content_loc5, content_loc6, content_loc7, content_loc8) VALUES
-(2000005800,'What will become of us when it falls? ',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+(2000005779,'What will become of us when it falls? ',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO db_script_string (entry, content_default, content_loc1, content_loc2, content_loc3, content_loc4, content_loc5, content_loc6, content_loc7, content_loc8) VALUES
-(2000005801,'What is happening to me?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+(2000005780,'What is happening to me?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO db_script_string (entry, content_default, content_loc1, content_loc2, content_loc3, content_loc4, content_loc5, content_loc6, content_loc7, content_loc8) VALUES
-(2000005802,'I remember everything...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+(2000005781,'I remember everything...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO db_script_string (entry, content_default, content_loc1, content_loc2, content_loc3, content_loc4, content_loc5, content_loc6, content_loc7, content_loc8) VALUES
-(2000005803,'It is dying. It is dying. It is dying.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+(2000005782,'It is dying. It is dying. It is dying.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO db_script_string (entry, content_default, content_loc1, content_loc2, content_loc3, content_loc4, content_loc5, content_loc6, content_loc7, content_loc8) VALUES
-(2000005804,'The pain is unbearable.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+(2000005783,'The pain is unbearable.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO db_script_string (entry, content_default, content_loc1, content_loc2, content_loc3, content_loc4, content_loc5, content_loc6, content_loc7, content_loc8) VALUES
-(2000005805,'The spirts call... I am consumed.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+(2000005784,'The spirts call... I am consumed.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO db_script_string (entry, content_default, content_loc1, content_loc2, content_loc3, content_loc4, content_loc5, content_loc6, content_loc7, content_loc8) VALUES
-(2000005806,'Cannot control... It draws me in... The void grows...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+(2000005785,'Cannot control... It draws me in... The void grows...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO db_script_string (entry, content_default, content_loc1, content_loc2, content_loc3, content_loc4, content_loc5, content_loc6, content_loc7, content_loc8) VALUES
-(2000005807,'Cease your crying! STOP!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+(2000005786,'Cease your crying! STOP!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (240000, 240001, 240002, 240003, 240004, 240005, 240006, 240007); 
 INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, X, Y, z, o, comments) VALUES
-(240000,0,0,0,0,0,15,0,2000005800,0,0,0,0,0,0,0,'NPC Chat 18688'),
-(240001,0,0,0,0,0,15,0,2000005801,0,0,0,0,0,0,0,'NPC Chat 18688'),
-(240002,0,0,0,0,0,15,0,2000005802,0,0,0,0,0,0,0,'NPC Chat 18688'),
-(240003,0,0,0,0,0,15,0,2000005803,0,0,0,0,0,0,0,'NPC Chat 18688'),
-(240004,0,0,0,0,0,15,0,2000005804,0,0,0,0,0,0,0,'NPC Chat 18688'),
-(240005,0,0,0,0,0,15,0,2000005805,0,0,0,0,0,0,0,'NPC Chat 18688'),
-(240006,0,0,0,0,0,15,0,2000005806,0,0,0,0,0,0,0,'NPC Chat 18688'),
-(240007,0,0,0,0,0,15,0,2000005807,0,0,0,0,0,0,0,'NPC Chat 18688');
+(240000,0,0,0,0,0,15,0,2000005779,0,0,0,0,0,0,0,'NPC Chat 18688'),
+(240001,0,0,0,0,0,15,0,2000005780,0,0,0,0,0,0,0,'NPC Chat 18688'),
+(240002,0,0,0,0,0,15,0,2000005781,0,0,0,0,0,0,0,'NPC Chat 18688'),
+(240003,0,0,0,0,0,15,0,2000005782,0,0,0,0,0,0,0,'NPC Chat 18688'),
+(240004,0,0,0,0,0,15,0,2000005783,0,0,0,0,0,0,0,'NPC Chat 18688'),
+(240005,0,0,0,0,0,15,0,2000005784,0,0,0,0,0,0,0,'NPC Chat 18688'),
+(240006,0,0,0,0,0,15,0,2000005785,0,0,0,0,0,0,0,'NPC Chat 18688'),
+(240007,0,0,0,0,0,15,0,2000005786,0,0,0,0,0,0,0,'NPC Chat 18688');
 
