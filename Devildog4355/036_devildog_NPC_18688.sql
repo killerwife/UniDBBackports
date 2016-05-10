@@ -1,5 +1,5 @@
 -- Ancient Orc Ancestor
-DELETE FROM creature WHERE guid IN (301673, 301674, 301675, 301676, 301677, 301678, 301679, 301680);
+DELETE FROM creature WHERE guid IN (301673, 301674, 301675, 301676, 301677, 301678, 301679, 301680, 301681);
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES
 ('301673','18688','530','1','0','0','-3115.32','5931.75','1.44551','0.519631','120','0','0','1','0','0','2'),
 ('301674','18688','530','1','0','0','-2201.538330','8605.272461','-5.685029','4.0','120','0','0','1','0','0','2'),
