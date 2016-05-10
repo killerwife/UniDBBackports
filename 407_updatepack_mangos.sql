@@ -3978,35 +3978,7 @@ INSERT INTO dbscripts_on_creature_death (id, delay, command, datalong, datalong2
 DELETE FROM db_script_string WHERE entry = 2000005766;
 INSERT INTO db_script_string (entry, content_default, content_loc1, content_loc2, content_loc3, content_loc4, content_loc5, content_loc6, content_loc7, content_loc8, sound, type, language, emote, comment) VALUES
 (2000005766,'Thank you, kind soul. You have freed me from the watery prison of Coilskar but many more are being held prisoner nearby. Will you assist me in freeing them as well?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,NULL);
--- Shadowmoon Peon - Shadowmoon Village
-UPDATE creature_addon SET emote = 0 WHERE guid = 69058;
-UPDATE creature SET MovementType = 2, spawndist = 0 WHERE guid = 69058;
-DELETE FROM creature_movement WHERE id = 69058;
-INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
-(69058,1,-2961.774170,2580.015869,76.631531,0,0,0,0,0,0,0,0,0,0,2.768029,0,0),
-(69058,2,-2969.927490,2582.729248,76.607407,0,0,0,0,0,0,0,0,0,0,3.031923,0,0),
-(69058,3,-2979.893066,2582.202148,76.715851,0,0,0,0,0,0,0,0,0,0,3.549500,0,0),
-(69058,4,-2986.861816,2578.180908,76.546669,0,0,0,0,0,0,0,0,0,0,4.036511,0,0),
-(69058,5,-2994.655762,2565.473633,76.596931,0,0,0,0,0,0,0,0,0,0,4.621631,0,0),
-(69058,6,-2995.001953,2561.250488,76.702522,0,0,0,0,0,0,0,0,0,0,5.065379,0,0),
-(69058,7,-2989.698730,2553.022949,76.543983,0,0,0,0,0,0,0,0,0,0,5.509913,0,0),
-(69058,8,-2975.715332,2541.499268,76.543983,0,0,0,0,0,0,0,0,0,0,5.963866,0,0),
-(69058,9,-2966.205322,2538.266357,76.543983,0,0,0,0,0,0,0,0,0,0,6.130624,0,0),
-(69058,10,-2958.140137,2537.125488,76.543983,0,0,0,0,0,0,0,0,0,0,1.228167,0,0),
-(69058,11,-2957.458252,2540.130371,76.543983,60000,1935502,0,0,0,0,0,0,0,0,1.509652,0,0),
-(69058,12,-2954.924072,2539.234863,76.543983,0,0,0,0,0,0,0,0,0,0,6.165494,0,0),
-(69058,13,-2950.717285,2539.540283,76.543983,0,0,0,0,0,0,0,0,0,0,0.541258,0,0),
-(69058,14,-2941.844482,2555.097168,76.536819,0,0,0,0,0,0,0,0,0,0,1.365926,0,0),
-(69058,15,-2942.377686,2560.673584,76.453033,0,0,0,0,0,0,0,0,0,0,1.860727,0,0),
-(69058,16,-2950.020020,2573.233887,76.505234,0,0,0,0,0,0,0,0,0,0,2.251856,0,0),
-(69058,17,-2955.780273,2578.837891,76.809959,0,0,0,0,0,0,0,0,0,0,2.840119,0,0),
-(69058,18,-2959.706299,2578.552734,76.627914,60000,1935502,0,0,0,0,0,0,0,0,3.770032,0,0);
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1935502,1935503); 
-INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
-(1935502,3,1,69,0,0,0,0,0,0,0,0,0,0,0,0,''),
-(1935502,57,1,0,0,0,0,0,0,0,0,0,0,0,0,0,''),
-(1935503,3,1,173,0,0,0,0,0,0,0,0,0,0,0,0,''),
-(1935503,57,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'');
+
 -- Enraged Fire Spirit - all in Shadowmoon Valley
 -- Enraged Fire Spirit - updates
 UPDATE creature_template SET InhabitType = 1 WHERE entry = 21061;
@@ -5203,73 +5175,7 @@ UPDATE creature_movement SET script_id = 1482801, textid1 = 0, textid2 = 0 WHERE
 DELETE FROM dbscripts_on_creature_movement WHERE id = 1482801; 
 INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
 (1482801,1,0,0,0,0,0,0,2000005025,2000005212,0,0,0,0,0,0,'');
--- Shadowmoon Peon#1 c.19355
-UPDATE creature_movement SET waittime = 5000 WHERE id = 69056 AND point = 1;
-UPDATE creature_movement SET script_id = 1935503, emote = 0 WHERE id = 69056 AND point = 2;
-UPDATE creature_movement SET script_id = 1935502, emote = 0 WHERE id = 69056 AND point = 4;
--- Shadowmoon Peon#2 c.19355
-UPDATE creature_movement SET waittime = 60000, script_id = 1935503, emote = 0 WHERE id = 69070 AND point = 2;
-UPDATE creature_movement SET waittime = 60000, script_id = 1935503, emote = 0 WHERE id = 69070 AND point = 4;
--- Shadowmoon Peon#3 c.19355
-UPDATE creature_movement SET waittime = 12000 WHERE id = 69066 AND point = 1;
-UPDATE creature_movement SET waittime = 60000, script_id = 1935503, emote = 0 WHERE id = 69066 AND point = 2;
-UPDATE creature_movement SET waittime = 60000, script_id = 1935503, emote = 0 WHERE id = 69066 AND point = 7;
--- Shadowmoon Peon#4 c.19355
-UPDATE creature_movement SET waittime = 2000 WHERE id = 69071 AND point = 1;
-UPDATE creature_movement SET waittime = 60000, script_id = 1935503, emote = 0 WHERE id = 69071 AND point = 2;
-UPDATE creature_movement SET waittime = 60000, script_id = 1935503, emote = 0 WHERE id = 69071 AND point = 4;
--- Shadowmoon Peon#5 c.19355
-UPDATE creature_movement SET script_id = 1935502, emote = 0 WHERE id = 69061 AND point = 1;
-UPDATE creature_movement SET script_id = 1935503, emote = 0 WHERE id = 69061 AND point = 3;
--- Shadowmoon Peon#6 c.19355
-UPDATE creature_movement SET script_id = 1935503, emote = 0 WHERE id = 69060 AND point = 2;
-UPDATE creature_movement SET script_id = 1935502, emote = 0 WHERE id = 69060 AND point = 4;
--- Shadowmoon Peon#7 c.19355
-UPDATE creature_movement SET script_id = 1935502, emote = 0 WHERE id = 69062 AND point = 6;
-UPDATE creature_movement SET script_id = 1935502, emote = 0 WHERE id = 69062 AND point = 12;
--- Shadowmoon Peon#8 c.19355
-UPDATE creature_movement SET script_id = 1935502, emote = 0 WHERE id = 69063 AND point = 6;
-UPDATE creature_movement SET script_id = 1935502, emote = 0 WHERE id = 69063 AND point = 12;
--- Shadowmoon Peon#9 c.19355
-UPDATE creature_movement SET script_id = 1935502, emote = 0 WHERE id = 69069 AND point = 5;
-UPDATE creature_movement SET script_id = 1935502, emote = 0 WHERE id = 69069 AND point = 10;
--- Dragonmaw Pitfighters #1-#7 c.23150
-DELETE FROM creature_movement WHERE id IN (52232,52236,52237,52259,52261,52263,52264);
-INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
-(52264,1,-5121.2,532.319,85.3588,6000,2315003,0,0,0,0,0,0,0,0,2.64879,0,0),
-(52264,2,-5121.2,532.319,85.3588,4000,2315001,0,0,0,0,0,0,0,0,2.64879,0,0),
-(52264,3,-5121.2,532.319,85.3588,6000,2315003,0,0,0,0,0,0,0,0,2.64879,0,0),
-(52264,4,-5121.2,532.319,85.3588,3000,2315004,0,0,0,0,0,0,0,0,2.64879,0,0),
-(52263,1,-5130.06,525.152,85.6852,4000,2315001,0,0,0,0,0,0,0,0,2.06209,0,0),
-(52263,2,-5130.06,525.152,85.6852,3000,2315004,0,0,0,0,0,0,0,0,2.06209,0,0),
-(52263,3,-5130.06,525.152,85.6852,6000,2315003,0,0,0,0,0,0,0,0,2.06209,0,0),
-(52263,4,-5130.06,525.152,85.6852,7000,2315002,0,0,0,0,0,0,0,0,2.06209,0,0),
-(52261,1,-5143.59,525.125,83.6451,3000,2315004,0,0,0,0,0,0,0,0,1.25336,0,0),
-(52261,2,-5143.59,525.125,83.6451,7000,2315002,0,0,0,0,0,0,0,0,1.25336,0,0),
-(52261,3,-5143.59,525.125,83.6451,4000,2315001,0,0,0,0,0,0,0,0,1.25336,0,0),
-(52261,4,-5143.59,525.125,83.6451,6000,2315003,0,0,0,0,0,0,0,0,1.25336,0,0),
-(52259,1,-5145.34,560.053,83.7917,7000,2315002,0,0,0,0,0,0,0,0,4.86383,0,0),
-(52259,2,-5145.34,560.053,83.7917,6000,2315003,0,0,0,0,0,0,0,0,4.86383,0,0),
-(52259,3,-5145.34,560.053,83.7917,4000,2315001,0,0,0,0,0,0,0,0,4.86383,0,0),
-(52259,4,-5145.34,560.053,83.7917,3000,2315004,0,0,0,0,0,0,0,0,4.86383,0,0),
-(52232,1,-5155.46,545.921,82.4144,4000,2315001,0,0,0,0,0,0,0,0,5.95711,0,0),
-(52232,2,-5155.46,545.921,82.4144,7000,2315002,0,0,0,0,0,0,0,0,5.95711,0,0),
-(52232,3,-5155.46,545.921,82.4144,3000,2315004,0,0,0,0,0,0,0,0,5.95711,0,0),
-(52232,4,-5155.46,545.921,82.4144,6000,2315003,0,0,0,0,0,0,0,0,5.95711,0,0),
-(52236,1,-5153.63,533.852,83.8562,3000,2315004,0,0,0,0,0,0,0,0,0.379207,0,0),
-(52236,2,-5153.63,533.852,83.8562,4000,2315001,0,0,0,0,0,0,0,0,0.379207,0,0),
-(52236,3,-5153.63,533.852,83.8562,7000,2315002,0,0,0,0,0,0,0,0,0.379207,0,0),
-(52236,4,-5153.63,533.852,83.8562,6000,2315003,0,0,0,0,0,0,0,0,0.379207,0,0),
-(52237,1,-5152.51,553.331,83.562,6000,2315003,0,0,0,0,0,0,0,0,5.34214,0,0),
-(52237,2,-5152.51,553.331,83.562,3000,2315004,0,0,0,0,0,0,0,0,5.34214,0,0),
-(52237,3,-5152.51,553.331,83.562,7000,2315002,0,0,0,0,0,0,0,0,5.34214,0,0),
-(52237,4,-5152.51,553.331,83.562,4000,2315001,0,0,0,0,0,0,0,0,5.34214,0,0);
-DELETE FROM dbscripts_on_creature_movement WHERE id BETWEEN 2315001 AND 2315004; 
-INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
-(2315001,1,1,53,0,0,0,0,0,0,0,0,0,0,0,0,''),
-(2315002,1,1,54,0,0,0,0,0,0,0,0,0,0,0,0,''),
-(2315003,1,1,71,0,0,0,0,0,0,0,0,0,0,0,0,''),
-(2315004,1,1,275,0,0,0,0,0,0,0,0,0,0,0,0,'');
+
 -- Spirit of the Past#1 c.21049
 UPDATE creature_movement SET script_id = 2104901, textid1 = 0, textid2 = 0, textid3 = 0, emote = 0 WHERE id = 73921 AND point = 1;
 UPDATE creature_movement SET script_id = 2104901, textid1 = 0, textid2 = 0, textid3 = 0, emote = 0 WHERE id = 73921 AND point = 2;
@@ -7036,25 +6942,6 @@ INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalo
 (1659101,57,1,0,0,0,0,0,0,0,0,0,0,0,0,0,''),
 (1659102,3,1,233,0,0,0,0,0,0,0,0,0,0,0,0,''),
 (1659102,57,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'');
--- Bleeding Hollow Peon#1 c.16907
-UPDATE creature_movement SET script_id = 1690701, emote = 0 WHERE id = 58632 AND point = 3;
-UPDATE creature_movement SET script_id = 1690701, emote = 0 WHERE id = 58632 AND point = 12;
--- Bleeding Hollow Peon#2 c.16907
-UPDATE creature_movement SET script_id = 1690701, emote = 0 WHERE id = 58636 AND point = 5;
-UPDATE creature_movement SET script_id = 1690701, emote = 0 WHERE id = 58636 AND point = 12;
--- Bleeding Hollow Peon#3 c.16907
-UPDATE creature_movement SET script_id = 1690701, emote = 0 WHERE id = 58638 AND point = 3;
-UPDATE creature_movement SET script_id = 1690701, emote = 0 WHERE id = 58638 AND point = 11;
--- Bleeding Hollow Peon#4 c.16907
-UPDATE creature_movement SET script_id = 1690701, emote = 0 WHERE id = 58635 AND point = 2;
-UPDATE creature_movement SET script_id = 1690701, emote = 0 WHERE id = 58635 AND point = 6;
--- Bleeding Hollow Peon#5 c.16907
-UPDATE creature_movement SET script_id = 1690701, emote = 0 WHERE id = 58628 AND point = 6;
-UPDATE creature_movement SET script_id = 1690701, emote = 0 WHERE id = 58628 AND point = 12;
-DELETE FROM dbscripts_on_creature_movement WHERE id = 1690701; 
-INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
-(1690701,2,1,69,0,0,0,0,0,0,0,0,0,0,0,0,''),
-(1690701,42,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'');
 -- Karlee Chaddis c.2330 + Paige Chaddis c.2331 and Gil c.3504
 DELETE FROM creature_movement WHERE id = 90439;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES

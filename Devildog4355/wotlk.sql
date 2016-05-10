@@ -1195,3 +1195,26 @@ INSERT INTO dbscripts_on_gossip (id, command, datalong, comments) VALUES
 
 -- Pure guesswork, but big mobs clearly need a way bigger spawndist than 5
 UPDATE creature SET spawndist = 20 WHERE id = 29753 AND MovementType = 1;
+
+-- q57852
+DELETE FROM dbscripts_on_spell WHERE id = 57852;
+INSERT INTO dbscripts_on_spell (id, command, comments) VALUES (57852, 8, 'quest credit q13119');
+DELETE FROM creature where id IN (30742, 30744, 30745, 30950);
+INSERT INTO creature(guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES
+(121091, 30742, 571, 1, 0, 0, 6470.42, 3139.73, 659.273, 2.70526, 300, 0, 0, 12600, 3994, 0, 0),
+(121122, 30744, 571, 1, 0, 0, 6431.48, 3148.91, 659.196, 5.86431, 300, 0, 0, 12600, 3994, 0, 0),
+(121130, 30745, 571, 1, 0, 0, 6469.17, 3071.56, 659.218, 1.55334, 300, 0, 0, 12600, 3994, 0, 0),
+(124617, 30950, 571, 1, 0, 0, 6436.78, 3100.7, 658.905, 5.86431, 300, 0, 0, 12600, 3994, 0, 0);
+
+-- q11607
+DELETE FROM item_required_target WHERE entry = 34711;
+INSERT INTO item_required_target VALUES
+(34711, 1, 25321),
+(34711, 1, 25322);
+DELETE FROM dbscripts_on_spell WHERE id = 45504;
+INSERT INTO dbscripts_on_spell (id, command, comments) VALUES (45504, 8, 'quest credit q12094');
+
+-- Port from ytdb, http://www.wowhead.com/quest=12240
+DELETE FROM dbscripts_on_event WHERE id = 17868;
+INSERT INTO dbscripts_on_event (id, delay, command, datalong, datalong2, x, y, z, o, comments) VALUES
+(17868, 5, 10, 27238, 600000, 2797.68, -201.873, 139.161, 3.5791, 'Summon Npc for quest 12240');
