@@ -3721,87 +3721,9 @@ INSERT INTO creature_movement_template (entry, POINT, position_x, position_y, po
 DELETE FROM dbscripts_on_creature_movement WHERE id = 1026404;
 INSERT INTO dbscripts_on_creature_movement (id, command, datalong, datalong2, data_flags, comments) VALUES
 (1026404, 20, 1, 20, 0x08, 'UBRS-Rookery event: Random movement around current position');
--- Leotheras
-DELETE FROM creature_linking_template WHERE entry IN (21875, 21857, 21806);
-INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES
-(21875, 548, 21215, 4112, 0),
-(21857, 548, 21215, 4112, 0),
-(21806, 548, 21806, 3, 0);
-DELETE FROM spell_script_target WHERE entry = 37626;
-INSERT INTO spell_script_target (entry, TYPE, targetEntry) VALUES
-(37626, 1, 21215);
--- Karathress
-DELETE FROM creature_linking_template WHERE entry IN (21964, 21966, 21965);
-INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES
-(21964, 548, 21214, 7, 0),
-(21966, 548, 21214, 7, 0),
-(21965, 548, 21214, 7, 0);
 -- Lurker
 UPDATE creature_template SET unitflags = unitflags | 32832, InhabitType = InhabitType | 1 WHERE entry = 21217;
-DELETE FROM creature_linking_template WHERE entry IN (21865, 21873);
-INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES
-(21865, 548, 21217, 4096, 0),
-(21873, 548, 21217, 4096, 0);
--- Morogrim
-UPDATE creature_template SET unitflags = unitflags | 33554432 WHERE entry = 21913;
-DELETE FROM creature_linking_template WHERE entry IN (21913, 21920);
-INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES
-(21913, 548, 21213, 4112, 0),
-(21920, 548, 21213, 4112, 0);
-DELETE FROM spell_script_target WHERE entry = 38015;
-INSERT INTO spell_script_target (entry, TYPE, targetEntry) VALUES
-(38015, 1, 21216);
-DELETE FROM creature_linking_template WHERE entry IN (22035, 22036);
-INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES
-(22035, 548, 21216, 4112, 0),
-(22036, 548, 21216, 4112, 0);
-DELETE FROM spell_target_position WHERE id = 36459;
-INSERT INTO spell_target_position (id, target_map, target_position_x, target_position_y, target_position_z, target_orientation) VALUES
-(36459, 548, -347.518, -350.367, 1.07459, 4.48);
--- Lady Vashj
-DELETE FROM creature_linking_template WHERE entry IN (21958, 22009, 22056, 22055, 22140);
-INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES
-(21958, 548, 21212, 4096, 0),
-(22009, 548, 21212, 4096, 0),
-(22056, 548, 21212, 4096, 0),
-(22055, 548, 21212, 4096, 0),
-(22140, 548, 21212, 4096, 0);
--- #### Magtheridon ####
-UPDATE creature SET MovementType = 0 WHERE id = 17376;
-DELETE FROM creature_linking_template WHERE entry IN (17256, 17454);
-INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES
-(17256, 544, 17256, 15, 0),
-(17454, 544, 17256, 4112, 0);
--- ### Ruins of AQ ###
-DELETE FROM creature_linking_template WHERE entry = 15428;
-INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES
-(15428, 509, 15339, 4112, 0);
-UPDATE creature_template SET MovementType = 2, equipmenttemplateid = 321, speedrun = 1.5 WHERE entry = 21867;
-UPDATE creature_template_addon SET mount = 10720 WHERE entry = 21867;  -- need his mount 
-DELETE FROM creature_movement_template WHERE entry = 21867;
-INSERT INTO creature_movement_template (entry, POINT, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
-(21867,1,-4542.21,1023.72,9.66909,17000,2186701,0,0,0,0,0,0,0,0.864165,0,0),
-(21867,2,-4527.459473,1015.657593,10.890298,0,0,0,0,0,0,0,0,0,5.282815,0,0),
-(21867,3,-4520.572266,1000.627075,12.485450,0,0,0,0,0,0,0,0,0,4.782524,0,0),
-(21867,4,-4521.288086,982.703003,11.543771,0,0,0,0,0,0,0,0,0,4.804492,0,0),
-(21867,5,-4519.058594,964.810120,12.235850,0,0,0,0,0,0,0,0,0,4.878321,0,0),
-(21867,6,-4512.545410,944.781250,4.226434,0,0,0,0,0,0,0,0,0,4.973356,0,0),
-(21867,7,-4505.491211,931.839050,-0.856650,0,0,0,0,0,0,0,0,0,5.517634,0,0),
-(21867,8,-4493.015625,922.165771,5.736859,0,0,0,0,0,0,0,0,0,5.511348,0,0),
-(21867,9,-4463.642090,907.782104,7.652451,0,0,0,0,0,0,0,0,0,5.856919,0,0);
-DELETE FROM dbscripts_on_creature_movement WHERE id = 2186701; 
-INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, X, Y, z, o, comments) VALUES
-(2186701,0,23,21797,0,21797,100,7,0,0,0,0,0,0,0,0,''),
-(2186701,1,18,0,0,21797,100,7,0,0,0,0,0,0,0,0,''),
-(2186701,7,0,0,0,0,0,0,2000005471,0,0,0,0,0,0,0,''),
-(2186701,8,1,1,0,0,0,0,0,0,0,0,0,0,0,0,''),
-(2186701,10,25,1,0,0,0,0,0,0,0,0,0,0,0,0,'RUN ON'),
-(2186701,12,0,6,0,0,0,0,2000005472,0,0,0,0,0,0,0,''),
-(2186701,13,1,22,0,0,0,0,0,0,0,0,0,0,0,0,'');
-DELETE FROM db_script_string WHERE entry IN (2000005471, 2000005472);
-INSERT INTO db_script_string (entry, content_default, content_loc1, content_loc2, content_loc3, content_loc4, content_loc5, content_loc6, content_loc7, content_loc8) VALUES
-(2000005471,'We will meet again... Someday.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-(2000005472,'Death incarnate has been released upon the world once more! Teron Gorefiend has returned...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+
 
 -- ## -- Random updates -- ## --
 -- Defias Messenger (Westfall) - update (rubish removed: after new script system was created)
@@ -3809,8 +3731,6 @@ UPDATE dbscripts_on_creature_movement SET datalong = 1, datalong2 = 0  WHERE id 
 UPDATE dbscripts_on_creature_movement SET datalong = 0, datalong2 = 0  WHERE id = 55002;
 
 -- Edrick Killian -- Undercity
-UPDATE creature SET MovementType = 2, spawndist = 0 WHERE guid = 38430;
-DELETE FROM creature_movement WHERE id = 38430;
 UPDATE creature_template SET MovementType = 2 WHERE entry = 5670; -- now move him to template (unique npc)
 DELETE FROM creature_movement_template WHERE entry = 5670;
 INSERT INTO creature_movement_template (entry, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
@@ -3850,9 +3770,6 @@ INSERT INTO creature_movement_template (entry, point, position_x, position_y, po
 (5670,34,1597.119507,314.250580,-62.178776,0,0,0,0,0,0,0,0,0,1.932232,0,0),
 (5670,35,1595.592285,321.994965,-62.178776,0,0,0,0,0,0,0,0,0,1.713891,0,0),
 (5670,36,1596.298096,340.950775,-62.178776,0,0,0,0,0,0,0,0,0,1.556811,0,0);
-DELETE FROM creature_linking_template WHERE entry = 5668; -- Mattie Alred linked to Edrick Killian 
-INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES    
-(5668, 0, 5670, 518, 20);
 -- Davitt Hickson -- Undercity
 UPDATE creature SET MovementType = 2,spawndist = 0 WHERE guid = 41830;
 DELETE FROM creature_movement WHERE id = 41830;
@@ -3886,10 +3803,6 @@ INSERT INTO creature_movement_template (entry, point, position_x, position_y, po
 (5706,25,1599.237915,109.457069,-62.177586,0,0,0,0,0,0,0,0,0,2.270616,0,0),
 (5706,26,1595.918213,120.261322,-62.177586,0,0,0,0,0,0,0,0,0,1.636014,0,0),
 (5706,27,1595.887329,130.826263,-62.177586,0,0,0,0,0,0,0,0,0,1.608525,0,0);
-DELETE FROM creature_linking_template WHERE entry IN (5707, 5701); -- Reginald Grimsford and Selina Pickman linked to Davitt Hickson 
-INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES    
-(5707, 0, 5706, 518, 20),
-(5701, 0, 5706, 518, 20);
 
 -- Raven's Wood Stonebark #1 - Raven's Wood
 UPDATE creature SET MovementType = 2, spawndist = 0 WHERE guid = 74684;
