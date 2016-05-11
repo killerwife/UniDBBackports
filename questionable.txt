@@ -1,0 +1,35 @@
+-- Shadowmoon Valley - zone entrance event
+-- Bonechewer Marauder - (Shadowmoon Valley)
+DELETE FROM creature WHERE guid BETWEEN 140647 and 140650;
+INSERT INTO creature (guid,id,map,spawnMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
+(140647,21245,530,1,0,1481,-2999.88,2974.73,80.2611,3.92809,300,0,0,4057,0,0,0),
+(140648,21245,530,1,0,1481,-2996.8,2971.39,80.389,3.87311,300,0,0,4057,0,0,0),
+(140649,21245,530,1,0,1481,-2995.1,2975.98,79.3633,3.87311,300,0,0,4057,0,0,0),
+(140650,21245,530,1,0,1481,-3000.81,2970.65,81.1242,3.9006,300,0,0,4057,0,0,0);
+-- Bonechewer Messenger - (Shadowmoon Valley)
+DELETE FROM creature WHERE id=21244 and guid=140651;
+INSERT INTO creature (guid,id,map,spawnMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
+(140651,21244,530,1,0,33,-2998.02,2973.14,80.4613,3.90061,300,0,0,4906,0,0,2);
+DELETE FROM creature_movement WHERE id=140651;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell,  orientation, model1, model2) VALUES
+(140651,1,-3034.623291,2937.464600,86.423225,10000,2124401,0,0,0,0,0,0,0,3.975207,0,0),
+(140651,2,-2998.161377,2973.201904,80.465218,0,0,0,0,0,0,0,0,0,3.880181,0,0);
+-- Bonechewer Marauder linked to Bonechewer Messenger
+DELETE FROM creature_linking WHERE guid BETWEEN 140647 and 140650;
+INSERT INTO creature_linking (guid, master_guid, flag) VALUES
+(140647, 140651, 643),
+(140648, 140651, 643),
+(140649, 140651, 643),
+(140650, 140651, 643);
+
+-- Shadowmoon Valley - zone entrance event
+DELETE FROM dbscripts_on_creature_movement WHERE id = 2124401; 
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(2124401,3,0,0,0,0,0,0,2000005765,0,0,0,0,0,0,0,''),
+(2124401,5,10,21249,20000,0,0,0,0,0,0,0,-3040.230713,2923.361572,86.667702,0.959264,'summon - Wrathstalker'),
+(2124401,5,10,21249,20000,0,0,0,0,0,0,0,-3049.942139,2944.359863,91.529282,6.221430,'summon - Wrathstalker'),
+(2124401,5,10,21249,20000,0,0,0,0,0,0,0,-3018.137207,2925.356201,90.870773,1.300909,'summon - Wrathstalker'),
+(2124401,5,10,21249,20000,0,0,0,0,0,0,0,-3047.662842,2927.633301,86.636345,0.723925,'summon - Wrathstalker');
+DELETE FROM db_script_string WHERE entry = 2000005765;
+INSERT INTO db_script_string (entry, content_default, content_loc1, content_loc2, content_loc3, content_loc4, content_loc5, content_loc6, content_loc7, content_loc8, sound, type, language, emote, comment) VALUES
+(2000005765,'There they are!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL); 

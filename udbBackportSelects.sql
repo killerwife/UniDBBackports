@@ -20,33 +20,35 @@ FROM creature t1
    LEFT JOIN creature t2
        ON t1.guid + 1 = t2.guid
 WHERE t2.guid IS NULL;
-select * from gameobject_template where entry=188526;
+select * from gameobject_template where entry=1684;
+select * from gameobject_template where name like 'Blacksmith''s Anvil';
+select * from udbmangos.gameobject_template where entry=1684;
 select * from gameobject where guid > 150000 order by guid;
-select * from conditions WHERE condition_entry IN (717, 718);
+select * from udbmangos.conditions WHERE condition_entry IN (435);
+select * from conditions WHERE type = -1 and value1=432 and value2=435;
 select * from gameobject where id in(188526);
 select * from gameobject where guid BETWEEN 121847 AND 121904;
 select count(guid) from gameobject where id in(185915);
 select count(guid) from udbmangos.gameobject where id in(185915);
-select * from udbmangos.creature_equip_template where entry=47;
-select * from creature_equip_template where equipentry1=1911;
-select * from creature_equip_template where equipentry1=2182 and equipentry2=1984 and equipentry3=0;
+select * from udbmangos.creature_movement where id=69069;
+select * from udbmangos.creature_equip_template where entry=273;
+select * from creature_equip_template where entry=974;
+select * from creature_equip_template where equipentry1=18122 and equipentry2=0 and equipentry3=0;
 select * from item_template where entry=31603;
-DELETE FROM creature_equip_template WHERE entry IN(2422);
-INSERT INTO creature_equip_template VALUES(2422, 31551, 0, 0),
-(2432, 31206, 31466, 0);
--- missing items 31603,31600,31466
+-- missing items 31603,31600,31466,11343,14707,13625,14533,28965,18122,13504,12182,17462,13698,30625,30182,24321,29417,31605,31551,31206,31601
 
 select * from spell_target_position WHERE id = 36459;
 select * from db_script_string;
 select * from db_script_string WHERE entry BETWEEN 2000005452 AND 2000005458;
-select * from dbscripts_on_creature_movement WHERE id IN (1935502,1935503); 
+select * from dbscripts_on_creature_movement WHERE id IN (2124402,2124403,2124404);
+select * from dbscripts_on_creature_movement where delay=3 and dataint =  '2000005765';
 select * from creature where guid in(140705);
 select * from creature_addon WHERE guid IN (58628);
 select * from creature_movement_template WHERE entry IN (21867);
 select * from creature_movement WHERE id IN (69058);
 select * from creature_linking WHERE guid IN (69097);
 select * from creature_linking_template WHERE entry IN (5707, 5701);
-select * from creature where id IN (23287);
+select * from creature where id IN (21455);
 select * from gameobject where guid=140705;
 select * from creature_template where entry IN (21049);
 select * from creature_template_addon where entry = 16907;

@@ -3658,17 +3658,6 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z, wa
 -- ---------------
 -- Shadowmoon Valley
 -- ---------------
--- Shadowmoon Valley - zone entrance event
-DELETE FROM dbscripts_on_creature_movement WHERE id = 2124401; 
-INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
-(2124401,3,0,0,0,0,0,0,2000005765,0,0,0,0,0,0,0,''),
-(2124401,5,10,21249,20000,0,0,0,0,0,0,0,-3040.230713,2923.361572,86.667702,0.959264,'summon - Wrathstalker'),
-(2124401,5,10,21249,20000,0,0,0,0,0,0,0,-3049.942139,2944.359863,91.529282,6.221430,'summon - Wrathstalker'),
-(2124401,5,10,21249,20000,0,0,0,0,0,0,0,-3018.137207,2925.356201,90.870773,1.300909,'summon - Wrathstalker'),
-(2124401,5,10,21249,20000,0,0,0,0,0,0,0,-3047.662842,2927.633301,86.636345,0.723925,'summon - Wrathstalker');
-DELETE FROM db_script_string WHERE entry = 2000005765;
-INSERT INTO db_script_string (entry, content_default, content_loc1, content_loc2, content_loc3, content_loc4, content_loc5, content_loc6, content_loc7, content_loc8, sound, type, language, emote, comment) VALUES
-(2000005765,'There they are!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL); 
 -- Parshah
 UPDATE creature SET MovementType = 2,spawndist = 0, position_x = -3493.565918, position_y = 2277.088867, position_z = 65.308090, orientation = 0.030873 WHERE guid = 86493;
 DELETE FROM creature_movement WHERE id = 86493;
@@ -3934,13 +3923,6 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z, wa
 (70808,11,-2786.434082,1380.662354,37.805660,0,0,0,0,0,0,0,0,0,0,3.070529,0,0),
 (70808,12,-2797.033203,1379.113647,38.019535,0,0,0,0,0,0,0,0,0,0,3.598316,0,0),
 (70808,13,-2804.693359,1370.212280,37.794846,0,0,0,0,0,0,0,0,0,0,4.290251,0,0);
--- Coilskar Sorceress - update + should talk to 19765 on hers wp
-UPDATE creature_template SET EquipmentTemplateId = 127 WHERE entry = 19767;
-DELETE FROM dbscripts_on_creature_movement WHERE id = 1976701; 
-INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
-(1976701,0,31,19765,10,0,0,0,-5000,0,0,0,0,0,0,0,''), -- let him check if creature is alive
-(1976701,2,1,3,0,0,0,0,0,0,0,0,0,0,0,0,''),
-(1976701,4,1,1,0,19765,10,0x04,0,0,0,0,0,0,0,0,'force 19765 to: emote');
 -- Captured water Spirit - update
 UPDATE creature SET position_x = -2708.877930, position_y = 1239.098022, position_z = 38.192089, orientation = 3.089233 WHERE guid = 86808;
 UPDATE creature SET position_x = -2711.530029, position_y = 1230.921997, position_z = 37.322121, orientation = 2.548181 WHERE guid = 86806;
@@ -3951,19 +3933,7 @@ UPDATE creature_template SET FactionAlliance = 7, FactionHorde = 7, UnitFlags = 
 DELETE FROM creature_template_addon WHERE entry = 21029;
 INSERT INTO creature_template_addon (entry, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
 (21029,0,0,1,0,0,0,35929);
--- Earthmender Wilda Trigger - updates + script (all npcs added in new_guids)
-UPDATE creature_template SET UnitFlags = 33555200, InhabitType = 4 WHERE entry = 21041;
-DELETE FROM dbscripts_on_creature_movement WHERE id = 2104101; 
-INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
-(2104101,0,31,21027,40,0,0,0,0,0,0,0,0,0,0,0,''), -- let check if creature is alive
-(2104101,1,3,0,0,21027,40,0x08,0,0,0,0,-2616.361084,1372.072021,46.028641,3.857178,''),
-(2104101,2,15,35928,0,21027,40,1,0,0,0,0,0,0,0,0,'watery prison - channel');
--- Earthmender Wilda
-UPDATE creature SET position_x = -2616.361084, position_y = 1372.072021, position_z = 46.028641, orientation = 3.857178, spawntimesecs = 300 WHERE guid = 86832;
-UPDATE creature_template SET UnitFlags = 32768, NpcFlags = 2, InhabitType = 3 WHERE entry = 21027; -- q.flag is set by event 
-DELETE FROM creature_template_addon WHERE entry = 21027;
-INSERT INTO creature_template_addon (entry, mount, bytes1, b2_0_sheath, b2_1_pvp_state, emote, moveflags, auras) VALUES
-(21027,0,0,1,0,0,0,35921);
+
 -- Keeper of the Cistern
 UPDATE creature_template SET FactionAlliance = 1826, FactionHorde = 1826 WHERE entry = 20795;
 UPDATE creature SET position_x = -2593.757813, position_y = 1384.134766, position_z = 44.286011, orientation = 0.561506, spawntimesecs = 300 WHERE guid = 86872;

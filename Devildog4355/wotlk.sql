@@ -1218,3 +1218,8 @@ INSERT INTO dbscripts_on_spell (id, command, comments) VALUES (45504, 8, 'quest 
 DELETE FROM dbscripts_on_event WHERE id = 17868;
 INSERT INTO dbscripts_on_event (id, delay, command, datalong, datalong2, x, y, z, o, comments) VALUES
 (17868, 5, 10, 27238, 600000, 2797.68, -201.873, 139.161, 3.5791, 'Summon Npc for quest 12240');
+
+DELETE FROM conditions WHERE condition_entry IN (717, 718);
+INSERT INTO conditions (condition_entry, TYPE, value1, value2) VALUES
+(717, 31, 715, 0),
+(718, 31, 716, 0);

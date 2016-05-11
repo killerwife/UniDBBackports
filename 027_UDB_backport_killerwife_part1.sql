@@ -225,30 +225,6 @@ INSERT INTO pool_gameobject (guid, pool_entry, chance, description) VALUES
 
 UPDATE gameobject SET spawntimesecs=25 WHERE id=184731; -- unify respawntime
 
--- Shadowmoon Valley - zone entrance event
--- Bonechewer Marauder - (Shadowmoon Valley)
-DELETE FROM creature WHERE guid BETWEEN 140647 and 140650;
-INSERT INTO creature (guid,id,map,spawnMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
-(140647,21245,530,1,0,1481,-2999.88,2974.73,80.2611,3.92809,300,0,0,4057,0,0,0),
-(140648,21245,530,1,0,1481,-2996.8,2971.39,80.389,3.87311,300,0,0,4057,0,0,0),
-(140649,21245,530,1,0,1481,-2995.1,2975.98,79.3633,3.87311,300,0,0,4057,0,0,0),
-(140650,21245,530,1,0,1481,-3000.81,2970.65,81.1242,3.9006,300,0,0,4057,0,0,0);
--- Bonechewer Messenger - (Shadowmoon Valley)
-DELETE FROM creature WHERE id=21244 and guid=140651;
-INSERT INTO creature (guid,id,map,spawnMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
-(140651,21244,530,1,0,33,-2998.02,2973.14,80.4613,3.90061,300,0,0,4906,0,0,2);
-DELETE FROM creature_movement WHERE id=140651;
-INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell,  orientation, model1, model2) VALUES
-(140651,1,-3034.623291,2937.464600,86.423225,10000,2124401,0,0,0,0,0,0,0,3.975207,0,0),
-(140651,2,-2998.161377,2973.201904,80.465218,0,0,0,0,0,0,0,0,0,3.880181,0,0);
--- Bonechewer Marauder linked to Bonechewer Messenger
-DELETE FROM creature_linking WHERE guid BETWEEN 140647 and 140650;
-INSERT INTO creature_linking (guid, master_guid, flag) VALUES
-(140647, 140651, 643),
-(140648, 140651, 643),
-(140649, 140651, 643),
-(140650, 140651, 643);
-
 -- Domesticated Felboar - Shattered Pains (Shadowmoon Valley)
 DELETE FROM creature WHERE guid BETWEEN 150077 AND 150109;
 INSERT INTO creature (guid, id, map, spawnMask,  modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES 
@@ -3810,19 +3786,15 @@ UPDATE creature_template SET inhabitType = 1 WHERE entry = 21462;
 UPDATE creature_template SET gossipMenuId = 6644 WHERE entry = 15502;
 DELETE FROM gossip_menu WHERE entry = 6644 AND text_id = 8702;
 INSERT INTO gossip_menu (entry, text_id, condition_id) VALUES
-(6644, 8702, 718);
+(6644, 8702, 0);
 DELETE FROM gossip_menu_option WHERE menu_id = 6644;
 INSERT INTO gossip_menu_option (menu_id, id, option_icon, option_text, option_id, npc_option_npcflag, box_coded, box_money, box_text, condition_id, action_script_id) VALUES
-(6644, 0, 0, 'Teleport me to the lair of the Twin Emperors, please.', 1, 1, 0, 0, '', 717, 66441),
-(6644, 1, 0, 'Please teleport me to the final chamber.', 1, 1, 0, 0, '', 718, 66442);
+(6644, 0, 0, 'Teleport me to the lair of the Twin Emperors, please.', 1, 0, 0, 0, '', 0, 66441),
+(6644, 1, 0, 'Please teleport me to the final chamber.', 1, 0, 0, 0, '', 0, 66442);
 DELETE FROM dbscripts_on_gossip WHERE id IN (66441, 66442);
 INSERT INTO dbscripts_on_gossip (id, command, datalong, comments) VALUES
 (66441, 15, 29182, 'teleport - lair of the Twin Emperors'),
 (66442, 15, 29188, 'teleport - final chamber');
-DELETE FROM conditions WHERE condition_entry IN (717, 718);
-INSERT INTO conditions (condition_entry, TYPE, value1, value2) VALUES
-(717, 31, 715, 0),
-(718, 31, 716, 0);
 
 -- Coilfang: Serpentshrine Cavern - beam
 DELETE FROM creature WHERE guid = 140008;
@@ -3884,20 +3856,16 @@ INSERT INTO conditions (condition_entry, TYPE, value1, value2) VALUES
 (724, -1, 229, 114);
 UPDATE gossip_menu_option SET condition_id = 724 WHERE menu_id = 2703 AND id = 0;
 
-DELETE FROM conditions WHERE condition_entry IN (433,434,435,725, 726, 727, 728, 729, 730, 731, 732);
+DELETE FROM conditions WHERE condition_entry IN (728, 729, 730, 731);
 INSERT INTO conditions (condition_entry, TYPE, value1, value2) VALUES
-(725, 30, 942, 4),
-(726, 30, 942, 5),
-(727, 30, 942, 6),
 (728, 30, 942, 7),
-(729, -1, 240, 725),
-(730, -1, 239, 726),
-(731, -1, 435, 727),
-(732, -1, 392, 728);
+(729, -1, 240, 433),
+(730, -1, 239, 434),
+(731, -1, 392, 728);
 UPDATE gossip_menu_option SET condition_id = 729 WHERE menu_id IN (7560, 7559) AND id = 0;
 UPDATE gossip_menu_option SET condition_id = 730 WHERE menu_id IN (7560, 7559) AND id = 1;
-UPDATE gossip_menu_option SET condition_id = 731 WHERE menu_id IN (7560, 7559) AND id = 2;
-UPDATE gossip_menu_option SET condition_id = 732 WHERE menu_id IN (7560, 7559) AND id = 3;
+UPDATE gossip_menu_option SET condition_id = 438 WHERE menu_id IN (7560, 7559) AND id = 2;
+UPDATE gossip_menu_option SET condition_id = 731 WHERE menu_id IN (7560, 7559) AND id = 3;
 
 UPDATE dbscripts_on_gossip SET datalong = 67871 WHERE id = 194502 AND command = 9;
 
@@ -10292,20 +10260,20 @@ INSERT INTO db_script_string (entry, content_default, content_loc1, content_loc2
 (2000005458,'You have damned us all... We are lost.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 
 -- Bleeding Hollow Peon#1 c.16907
-UPDATE creature_movement SET script_id = 1690701, emote = 0 WHERE id = 58632 AND point = 3;
-UPDATE creature_movement SET script_id = 1690701, emote = 0 WHERE id = 58632 AND point = 12;
+UPDATE creature_movement SET script_id = 1690701, emote = 0, textid5 = 0 WHERE id = 58632 AND point = 3;
+UPDATE creature_movement SET script_id = 1690701, emote = 0, textid5 = 0 WHERE id = 58632 AND point = 12;
 -- Bleeding Hollow Peon#2 c.16907
-UPDATE creature_movement SET script_id = 1690701, emote = 0 WHERE id = 58636 AND point = 5;
-UPDATE creature_movement SET script_id = 1690701, emote = 0 WHERE id = 58636 AND point = 12;
+UPDATE creature_movement SET script_id = 1690701, emote = 0, textid5 = 0 WHERE id = 58636 AND point = 5;
+UPDATE creature_movement SET script_id = 1690701, emote = 0, textid5 = 0 WHERE id = 58636 AND point = 12;
 -- Bleeding Hollow Peon#3 c.16907
-UPDATE creature_movement SET script_id = 1690701, emote = 0 WHERE id = 58638 AND point = 3;
-UPDATE creature_movement SET script_id = 1690701, emote = 0 WHERE id = 58638 AND point = 11;
+UPDATE creature_movement SET script_id = 1690701, emote = 0, textid5 = 0 WHERE id = 58638 AND point = 3;
+UPDATE creature_movement SET script_id = 1690701, emote = 0, textid5 = 0 WHERE id = 58638 AND point = 11;
 -- Bleeding Hollow Peon#4 c.16907
-UPDATE creature_movement SET script_id = 1690701, emote = 0 WHERE id = 58635 AND point = 2;
-UPDATE creature_movement SET script_id = 1690701, emote = 0 WHERE id = 58635 AND point = 6;
+UPDATE creature_movement SET script_id = 1690701, emote = 0, textid5 = 0 WHERE id = 58635 AND point = 2;
+UPDATE creature_movement SET script_id = 1690701, emote = 0, textid5 = 0 WHERE id = 58635 AND point = 6;
 -- Bleeding Hollow Peon#5 c.16907
-UPDATE creature_movement SET script_id = 1690701, emote = 0 WHERE id = 58628 AND point = 6;
-UPDATE creature_movement SET script_id = 1690701, emote = 0 WHERE id = 58628 AND point = 12;
+UPDATE creature_movement SET script_id = 1690701, emote = 0, textid5 = 0 WHERE id = 58628 AND point = 6;
+UPDATE creature_movement SET script_id = 1690701, emote = 0, textid5 = 0 WHERE id = 58628 AND point = 12;
 DELETE FROM dbscripts_on_creature_movement WHERE id = 1690701; 
 INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
 (1690701,2,1,69,0,0,0,0,0,0,0,0,0,0,0,0,''),
@@ -10343,34 +10311,34 @@ INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalo
 
 -- Shadowmoon Peon#1 c.19355
 UPDATE creature_movement SET waittime = 5000 WHERE id = 69056 AND point = 1;
-UPDATE creature_movement SET script_id = 1935503, emote = 0 WHERE id = 69056 AND point = 2;
-UPDATE creature_movement SET script_id = 1935502, emote = 0 WHERE id = 69056 AND point = 4;
+UPDATE creature_movement SET script_id = 1935503, emote = 0, textid5 = 0 WHERE id = 69056 AND point = 2;
+UPDATE creature_movement SET script_id = 1935502, emote = 0, textid5 = 0 WHERE id = 69056 AND point = 4;
 -- Shadowmoon Peon#2 c.19355
-UPDATE creature_movement SET waittime = 60000, script_id = 1935503, emote = 0 WHERE id = 69070 AND point = 2;
-UPDATE creature_movement SET waittime = 60000, script_id = 1935503, emote = 0 WHERE id = 69070 AND point = 4;
+UPDATE creature_movement SET waittime = 60000, script_id = 1935503, emote = 0, textid5 = 0 WHERE id = 69070 AND point = 2;
+UPDATE creature_movement SET waittime = 60000, script_id = 1935503, emote = 0, textid5 = 0 WHERE id = 69070 AND point = 4;
 -- Shadowmoon Peon#3 c.19355
 UPDATE creature_movement SET waittime = 12000 WHERE id = 69066 AND point = 1;
-UPDATE creature_movement SET waittime = 60000, script_id = 1935503, emote = 0 WHERE id = 69066 AND point = 2;
-UPDATE creature_movement SET waittime = 60000, script_id = 1935503, emote = 0 WHERE id = 69066 AND point = 7;
+UPDATE creature_movement SET waittime = 60000, script_id = 1935503, emote = 0, textid5 = 0 WHERE id = 69066 AND point = 2;
+UPDATE creature_movement SET waittime = 60000, script_id = 1935503, emote = 0, textid5 = 0 WHERE id = 69066 AND point = 7;
 -- Shadowmoon Peon#4 c.19355
 UPDATE creature_movement SET waittime = 2000 WHERE id = 69071 AND point = 1;
-UPDATE creature_movement SET waittime = 60000, script_id = 1935503, emote = 0 WHERE id = 69071 AND point = 2;
-UPDATE creature_movement SET waittime = 60000, script_id = 1935503, emote = 0 WHERE id = 69071 AND point = 4;
+UPDATE creature_movement SET waittime = 60000, script_id = 1935503, emote = 0, textid5 = 0 WHERE id = 69071 AND point = 2;
+UPDATE creature_movement SET waittime = 60000, script_id = 1935503, emote = 0, textid5 = 0 WHERE id = 69071 AND point = 4;
 -- Shadowmoon Peon#5 c.19355
-UPDATE creature_movement SET script_id = 1935502, emote = 0 WHERE id = 69061 AND point = 1;
-UPDATE creature_movement SET script_id = 1935503, emote = 0 WHERE id = 69061 AND point = 3;
+UPDATE creature_movement SET script_id = 1935502, emote = 0, textid5 = 0 WHERE id = 69061 AND point = 1;
+UPDATE creature_movement SET script_id = 1935503, emote = 0, textid5 = 0 WHERE id = 69061 AND point = 3;
 -- Shadowmoon Peon#6 c.19355
-UPDATE creature_movement SET script_id = 1935503, emote = 0 WHERE id = 69060 AND point = 2;
-UPDATE creature_movement SET script_id = 1935502, emote = 0 WHERE id = 69060 AND point = 4;
+UPDATE creature_movement SET script_id = 1935503, emote = 0, textid5 = 0 WHERE id = 69060 AND point = 2;
+UPDATE creature_movement SET script_id = 1935502, emote = 0, textid5 = 0 WHERE id = 69060 AND point = 4;
 -- Shadowmoon Peon#7 c.19355
-UPDATE creature_movement SET script_id = 1935502, emote = 0 WHERE id = 69062 AND point = 6;
-UPDATE creature_movement SET script_id = 1935502, emote = 0 WHERE id = 69062 AND point = 12;
+UPDATE creature_movement SET script_id = 1935502, emote = 0, textid5 = 0 WHERE id = 69062 AND point = 6;
+UPDATE creature_movement SET script_id = 1935502, emote = 0, textid5 = 0 WHERE id = 69062 AND point = 12;
 -- Shadowmoon Peon#8 c.19355
-UPDATE creature_movement SET script_id = 1935502, emote = 0 WHERE id = 69063 AND point = 6;
-UPDATE creature_movement SET script_id = 1935502, emote = 0 WHERE id = 69063 AND point = 12;
+UPDATE creature_movement SET script_id = 1935502, emote = 0, textid5 = 0 WHERE id = 69063 AND point = 6;
+UPDATE creature_movement SET script_id = 1935502, emote = 0, textid5 = 0 WHERE id = 69063 AND point = 12;
 -- Shadowmoon Peon#9 c.19355
-UPDATE creature_movement SET script_id = 1935502, emote = 0 WHERE id = 69069 AND point = 5;
-UPDATE creature_movement SET script_id = 1935502, emote = 0 WHERE id = 69069 AND point = 10;
+UPDATE creature_movement SET script_id = 1935502, emote = 0, textid5 = 0 WHERE id = 69069 AND point = 5;
+UPDATE creature_movement SET script_id = 1935502, emote = 0, textid5 = 0 WHERE id = 69069 AND point = 10;
 -- Dragonmaw Pitfighters #1-#7 c.23150
 DELETE FROM creature_movement WHERE id IN (52232,52236,52237,52259,52261,52263,52264);
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
@@ -10408,6 +10376,74 @@ INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalo
 (2315002,1,1,54,0,0,0,0,0,0,0,0,0,0,0,0,''),
 (2315003,1,1,71,0,0,0,0,0,0,0,0,0,0,0,0,''),
 (2315004,1,1,275,0,0,0,0,0,0,0,0,0,0,0,0,'');
+
+-- Coilskar Sorceress - update + should talk to 19765 on hers wp
+UPDATE creature_template SET EquipmentTemplateId = 127 WHERE entry = 19767;
+DELETE FROM dbscripts_on_creature_movement WHERE id = 1976701; 
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(1976701,0,31,19765,10,0,0,0,-5000,0,0,0,0,0,0,0,''), -- let him check if creature is alive
+(1976701,2,1,3,0,0,0,0,0,0,0,0,0,0,0,0,''),
+(1976701,4,1,1,0,19765,10,0x04,0,0,0,0,0,0,0,0,'force 19765 to: emote');
+
+-- Earthmender Wilda Trigger - updates + script (all npcs added in new_guids)
+UPDATE creature_template SET UnitFlags = 33555200, InhabitType = 4 WHERE entry = 21041;
+DELETE FROM dbscripts_on_creature_movement WHERE id = 2104101; 
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(2104101,0,31,21027,40,0,0,0,0,0,0,0,0,0,0,0,''), -- let check if creature is alive
+(2104101,1,3,0,0,21027,40,0x08,0,0,0,0,-2616.361084,1372.072021,46.028641,3.857178,''),
+(2104101,2,15,35928,0,21027,40,1,0,0,0,0,0,0,0,0,'watery prison - channel');
+
+-- Earthmender Wilda
+UPDATE creature SET position_x = -2616.361084, position_y = 1372.072021, position_z = 46.028641, orientation = 3.857178, spawntimesecs = 300 WHERE guid = 86832;
+UPDATE creature_template SET UnitFlags = 32768, NpcFlags = 2, InhabitType = 3 WHERE entry = 21027; -- q.flag is set by event 
+DELETE FROM creature_template_addon WHERE entry = 21027;
+INSERT INTO creature_template_addon (entry, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
+(21027,0,0,1,0,0,0,35921);
+
+-- cleanup
 UPDATE creature SET equipment_id=5481 WHERE equipment_id=29;
 UPDATE creature SET equipment_id=5335 WHERE equipment_id=2432;
 UPDATE creature SET equipment_id=5313 WHERE equipment_id=47;
+UPDATE creature SET equipment_id=5287 WHERE equipment_id=20;
+UPDATE creature SET equipment_id=5486 WHERE equipment_id=281;
+UPDATE creature SET equipment_id=5265 WHERE equipment_id=33;
+UPDATE creature SET equipment_id=5191 WHERE equipment_id=558;
+UPDATE creature SET equipment_id=5476 WHERE equipment_id=53;
+UPDATE creature SET equipment_id=5186 WHERE equipment_id=2334;
+UPDATE creature SET equipment_id=5501 WHERE equipment_id=157;
+UPDATE creature SET equipment_id=5309 WHERE equipment_id=259;
+UPDATE creature SET equipment_id=5280 WHERE equipment_id=38;
+UPDATE creature SET equipment_id=5562 WHERE equipment_id=1330;
+UPDATE creature SET equipment_id=0 WHERE id=19767;
+UPDATE creature SET equipment_id=0 WHERE id=21803;
+UPDATE creature SET equipment_id=0 WHERE id=22084;
+UPDATE creature SET equipment_id=0 WHERE id=19424;
+UPDATE creature SET equipment_id=0 WHERE id=21656;
+UPDATE creature SET equipment_id=0 WHERE id=21736;
+UPDATE creature SET equipment_id=0 WHERE id=21244;
+UPDATE creature SET equipment_id=0 WHERE id=21455;
+DELETE FROM creature_equip_template WHERE entry IN(2422,272,343,293,246,2386,974,415,500,572,2367,2432,605,2401,646,127,256,237,273,244);
+INSERT INTO creature_equip_template VALUES
+(2422, 31551, 0, 0),
+(272, 28965, 0, 0),
+(343, 2028, 0, 0),
+(293, 13504, 0, 0),
+(246, 13625, 0, 0),
+(2386, 29417, 0, 0),
+(974, 24321, 0, 0),
+(415, 12182, 0, 0),
+(500, 17462, 0, 0),
+(572, 13698, 0, 0),
+(2367, 28400, 0, 0),
+(605, 30625, 0, 0),
+(2401, 31605, 0, 0),
+(244, 17383, 0, 0),
+(646, 30182, 0, 0),
+(127, 11343, 0, 0),
+(256, 14533, 0, 0),
+(273, 18122, 0, 0),
+(237, 14707, 0, 0),
+(2432, 31206, 31466, 0);
+DELETE FROM creature_addon WHERE guid IN(58628,75816,75817,75825,76060);
+DELETE FROM gameobject_template WHERE entry=1684;
+INSERT INTO gameobject_template(entry,type,displayId,name,size,data0,data1) VALUES(1684,8,273,'Blacksmith''s Anvil',1,1,10);
