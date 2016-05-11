@@ -10481,9 +10481,9 @@ INSERT INTO creature_equip_template VALUES
 (147, 31600, 31466, 0), -- 2396
 (148, 31603, 0, 0); -- 2394
 UPDATE creature SET equipment_id=147 WHERE equipment_id=2396;
-UPDATE creature_template SET equipment_id=147 WHERE equipment_id=2396;
+UPDATE creature_template SET EquipmentTemplateId=147 WHERE EquipmentTemplateId=2396;
 UPDATE creature SET equipment_id=148 WHERE equipment_id=2394;
-UPDATE creature_template SET equipment_id=148 WHERE equipment_id=2394;
+UPDATE creature_template SET EquipmentTemplateId=148 WHERE EquipmentTemplateId=2394;
 
 -- new equipment in Netherwing Ledge
 DELETE FROM creature_equip_template WHERE entry = 149;
@@ -10497,11 +10497,11 @@ DELETE FROM creature_equip_template WHERE entry = 151;
 INSERT INTO creature_equip_template (entry, equipentry1, equipentry2, equipentry3) VALUES    
 (151, 5956, 24322, 0); -- 2511
 UPDATE creature SET equipment_id=149 WHERE equipment_id=2509;
-UPDATE creature_template SET equipment_id=149 WHERE equipment_id=2509;
+UPDATE creature_template SET EquipmentTemplateId=149 WHERE EquipmentTemplateId=2509;
 UPDATE creature SET equipment_id=150 WHERE equipment_id=2510;
-UPDATE creature_template SET equipment_id=150 WHERE equipment_id=2510;
+UPDATE creature_template SET EquipmentTemplateId=150 WHERE EquipmentTemplateId=2510;
 UPDATE creature SET equipment_id=151 WHERE equipment_id=2511;
-UPDATE creature_template SET equipment_id=151 WHERE equipment_id=2511;
+UPDATE creature_template SET EquipmentTemplateId=151 WHERE EquipmentTemplateId=2511;
 
 DELETE FROM creature_addon WHERE guid IN(58628,75816,75817,75825,76060);
 DELETE FROM gameobject_template WHERE entry=1684;
