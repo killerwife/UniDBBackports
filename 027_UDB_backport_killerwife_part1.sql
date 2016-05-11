@@ -3079,7 +3079,7 @@ DELETE FROM creature_template_addon WHERE entry = 23348;
 INSERT INTO creature_template_addon (entry, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
 (23348,21425,0,0,0,0,0,'');
 -- Horus <Innkeeper> (added in 2.2.0)
-DELETE FROM creature WHERE guid IN(110323,117310,117371,117372,117421);
+DELETE FROM creature WHERE guid IN(110323,117310,117371,117372,117421,117422,117423,117614,117633,117634,117646,117648,117649,127272,127273,127274,127275,127276,127277,127278,127279,127280,127281,127282,127283,127284,127285);
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (110323,23143,530,1,0,0,-5142.569,581.3281,84.13567,0.5061455,25,0,0,6542,0,0,0);
 -- Goblin Merc (added in 2.2.0)
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (117310,23142,530,1,0,0,-5116.791,602.1363,85.08778,4.869469,180,0,0,6761,0,0,0);
@@ -3111,6 +3111,7 @@ INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127283,23169,530,1,0,0,-4905.12,422.929,-4.76311,5.55064,180,5,0,6986,0,0,1);
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127284,23169,530,1,0,0,-5118.94,97.7861,-12.4182,4.2076,180,5,0,7181,0,0,1);
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127285,23169,530,1,0,0,-5070.46,183.286,-8.79853,2.11843,180,5,0,7181,0,0,1);
+DELETE FROM creature WHERE guid BETWEEN 127286 AND 127337;
 -- Overmine Flayer
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127286,23264,530,1,0,0,-5048.03,199.958,113.572,5.80298,180,0,0,7181,0,0,0);
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127287,23264,530,1,0,0,-5114.06,232.723,143.029,2.27106,180,0,0,7181,0,0,0);
@@ -3208,6 +3209,7 @@ INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_
 DELETE FROM creature_addon WHERE guid = 127337;
 INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
 (127337,0,0,1,0,0,0,'31261');
+DELETE FROM creature WHERE guid BETWEEN 127340 AND 127375;
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (127340,23287,530,1,0,0,-5040.079,627.7264,19.75634,2.373648,180,0,0,6986,0,0,0);
 DELETE FROM creature_addon WHERE guid = 127340;
 INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
@@ -3352,6 +3354,7 @@ INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_
 DELETE FROM creature_addon WHERE guid = 127375;
 INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
 (127375,0,0,1,0,233,0,''); -- this one does emote
+DELETE FROM creature WHERE guid BETWEEN 128590 AND 128600;
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (128590,23287,530,1,0,53,-5160.553,678.9923,41.02322,2.792527,180,0,0,6986,0,0,0);
 DELETE FROM creature_addon WHERE guid = 128590;
 INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
@@ -3397,6 +3400,7 @@ INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_
 DELETE FROM creature_addon WHERE guid = 128600;
 INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
 (128600,0,0,1,0,0,0,'40732');
+DELETE FROM creature WHERE guid IN(131748,131751,131752,131778);
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (131748,23311,530,1,0,04,-5147.53,34.5626,78.2859,5.09096,180,0,0,6761,0,0,0);
 DELETE FROM creature_addon WHERE guid = 131748;
 INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
@@ -3415,11 +3419,13 @@ INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_flags, emote,
 (131778,0,0,1,0,0,0,'40714');
 -- Warden's Cage - SHADOWMOON VALLEY
 -- Ashtongue Deathsworn - missing
+DELETE FROM creature WHERE guid BETWEEN 132115 AND 132118;
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (132115,21701,530,1,0,237,-3694.19,1073.53,56.7576,3.263766,180,0,0,22680,3155,0,0);
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (132116,21701,530,1,0,237,-3694.14,1069.22,56.7586,3.141593,180,0,0,22680,3155,0,0);
 
 -- Ruins of Karabor - SHADOWMOON VALLEY
 -- Sunfury Eradicator
+DELETE FROM creature WHERE guid BETWEEN 132945 AND 132969;
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (132117,21742,530,1,0,2094,-3766.44,551.222,64.6248,1.623156,180,0,0,5233,2991,0,0);
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (132118,21742,530,1,0,2094,-3782.88,516.191,84.4329,3.159046,180,0,0,5233,2991,0,0);
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (132945,21742,530,1,0,2094,-3681.99,574.679,33.1101,4.660029,180,0,0,5060,2933,0,0);
@@ -3484,6 +3490,7 @@ INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (132968,22966,530,1,0,2367,-3522.77,743.976,-25.1917,3.12458,180,0,0,1073,3155,0,0);
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (132969,22966,530,1,0,2367,-3518.95,736.246,-26.1553,3.12458,180,0,0,1073,3155,0,0);
 -- Formation Marker -- all missing
+DELETE FROM creature WHERE guid IN(132972,133034,133818,133860,133863,133867,133868,133902,133915,133916,150189,150190,150191,137582) OR guid BETWEEN 133934 AND 133938 OR guid BETWEEN 133941 AND 133944 OR guid BETWEEN 139973 AND 139979;
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (132972,19179,530,1,0,0,-3541.39,503.698,21.9048,4.62194,25,0,0,42,0,0,0);
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (133034,19179,530,1,0,0,-3553.53,504.232,20.174,4.80481,25,0,0,42,0,0,0);
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (133818,19179,530,1,0,0,-3593.3,512.656,20.8712,4.80481,25,0,0,42,0,0,0);
@@ -4673,10 +4680,6 @@ UPDATE creature SET position_x = -5088.555, position_y = 640.8356, position_z = 
 UPDATE creature SET position_x = -5113.87, position_y = 124.579, position_z = 129.767, orientation = 1.132, spawndist = 0, MovementType = 0 WHERE guid = 40619;
 
 -- Dragonmaw Enforcer - some of them should use diff equipment + spawn updates
-DELETE FROM creature_equip_template WHERE entry=2509;
-INSERT INTO creature_equip_template VALUES
-(2396, 31600, 31466, 0),
-(2394, 31603, 0, 0);
 UPDATE creature SET equipment_id = 2509 WHERE guid IN (52108, 52110); -- axe
 DELETE FROM creature_addon WHERE guid IN (52108, 52110); 
 INSERT INTO creature_addon (guid, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
@@ -5018,17 +5021,6 @@ UPDATE creature_template SET MovementType = 0 WHERE entry = 21877;
 UPDATE creature_template_addon SET emote = 333 WHERE entry = 21877;
 -- Chain of Shadows - updates
 UPDATE creature_template SET MovementType = 0, InhabitType = 4 WHERE entry = 21876;
--- new equipment in Netherwing Ledge
-DELETE FROM creature_equip_template WHERE entry = 2509;
-INSERT INTO creature_equip_template (entry, equipentry1, equipentry2, equipentry3) VALUES    
-(2509, 31601, 0, 0);
-DELETE FROM creature_equip_template WHERE entry = 2510;
-INSERT INTO creature_equip_template (entry, equipentry1, equipentry2, equipentry3) VALUES    
-(2510, 31603, 31466, 0);
--- new equipment in Ruins of Karabor
-DELETE FROM creature_equip_template WHERE entry = 2511;
-INSERT INTO creature_equip_template (entry, equipentry1, equipentry2, equipentry3) VALUES    
-(2511, 5956, 24322, 0);
 -- Treebole - correct spawn point
 UPDATE creature SET position_x = 3605.68, position_y = 6836.18, position_z = 137.95, orientation = 4.6 WHERE guid = 77879;
 -- Raven's Wood Leafbeard - correct spawn point
@@ -10422,28 +10414,95 @@ UPDATE creature SET equipment_id=0 WHERE id=21656;
 UPDATE creature SET equipment_id=0 WHERE id=21736;
 UPDATE creature SET equipment_id=0 WHERE id=21244;
 UPDATE creature SET equipment_id=0 WHERE id=21455;
-DELETE FROM creature_equip_template WHERE entry IN(2422,272,343,293,246,2386,974,415,500,572,2367,2432,605,2401,646,127,256,237,273,244);
+
+DELETE FROM creature_equip_template WHERE entry BETWEEN 127 AND 146;
 INSERT INTO creature_equip_template VALUES
-(2422, 31551, 0, 0),
-(272, 28965, 0, 0),
-(343, 2028, 0, 0),
-(293, 13504, 0, 0),
-(246, 13625, 0, 0),
-(2386, 29417, 0, 0),
-(974, 24321, 0, 0),
-(415, 12182, 0, 0),
-(500, 17462, 0, 0),
-(572, 13698, 0, 0),
-(2367, 28400, 0, 0),
-(605, 30625, 0, 0),
-(2401, 31605, 0, 0),
-(244, 17383, 0, 0),
-(646, 30182, 0, 0),
 (127, 11343, 0, 0),
-(256, 14533, 0, 0),
-(273, 18122, 0, 0),
-(237, 14707, 0, 0),
-(2432, 31206, 31466, 0);
+(128, 31551, 0, 0), -- 2422
+(129, 28965, 0, 0), -- 272
+(130, 2028, 0, 0), -- 343
+(131, 13504, 0, 0), -- 293
+(132, 13625, 0, 0), -- 246
+(133, 29417, 0, 0), -- 2386
+(134, 24321, 0, 0), -- 974
+(135, 12182, 0, 0), -- 415
+(136, 17462, 0, 0), -- 500
+(137, 13698, 0, 0), -- 572
+(138, 28400, 0, 0), -- 2367
+(139, 30625, 0, 0), -- 605
+(140, 31605, 0, 0), -- 2401
+(141, 17383, 0, 0), -- 244
+(142, 30182, 0, 0), -- 646
+(143, 14533, 0, 0), -- 256
+(144, 18122, 0, 0), -- 273
+(145, 14707, 0, 0), -- 237
+(146, 31206, 31466, 0); -- 2432
+UPDATE creature SET equipment_id=128 WHERE equipment_id=2422;
+UPDATE creature_template SET EquipmentTemplateId=128 WHERE EquipmentTemplateId=2422;
+UPDATE creature SET equipment_id=129 WHERE equipment_id=272;
+UPDATE creature_template SET EquipmentTemplateId=129 WHERE EquipmentTemplateId=272;
+UPDATE creature SET equipment_id=130 WHERE equipment_id=343;
+UPDATE creature_template SET EquipmentTemplateId=130 WHERE EquipmentTemplateId=343;
+UPDATE creature SET equipment_id=131 WHERE equipment_id=293;
+UPDATE creature_template SET EquipmentTemplateId=131 WHERE EquipmentTemplateId=293;
+UPDATE creature SET equipment_id=132 WHERE equipment_id=246;
+UPDATE creature_template SET EquipmentTemplateId=132 WHERE EquipmentTemplateId=246;
+UPDATE creature SET equipment_id=133 WHERE equipment_id=2386;
+UPDATE creature_template SET EquipmentTemplateId=133 WHERE EquipmentTemplateId=2386;
+UPDATE creature SET equipment_id=134 WHERE equipment_id=974;
+UPDATE creature_template SET EquipmentTemplateId=134 WHERE EquipmentTemplateId=974;
+UPDATE creature SET equipment_id=135 WHERE equipment_id=415;
+UPDATE creature_template SET EquipmentTemplateId=135 WHERE EquipmentTemplateId=415;
+UPDATE creature SET equipment_id=136 WHERE equipment_id=500;
+UPDATE creature_template SET EquipmentTemplateId=136 WHERE EquipmentTemplateId=500;
+UPDATE creature SET equipment_id=137 WHERE equipment_id=572;
+UPDATE creature_template SET EquipmentTemplateId=137 WHERE EquipmentTemplateId=572;
+UPDATE creature SET equipment_id=138 WHERE equipment_id=2367;
+UPDATE creature_template SET EquipmentTemplateId=138 WHERE EquipmentTemplateId=2367;
+UPDATE creature SET equipment_id=139 WHERE equipment_id=605;
+UPDATE creature_template SET EquipmentTemplateId=139 WHERE EquipmentTemplateId=605;
+UPDATE creature SET equipment_id=140 WHERE equipment_id=2401;
+UPDATE creature_template SET EquipmentTemplateId=140 WHERE EquipmentTemplateId=2401;
+UPDATE creature SET equipment_id=141 WHERE equipment_id=244;
+UPDATE creature_template SET EquipmentTemplateId=141 WHERE EquipmentTemplateId=244;
+UPDATE creature SET equipment_id=142 WHERE equipment_id=646;
+UPDATE creature_template SET EquipmentTemplateId=142 WHERE EquipmentTemplateId=646;
+UPDATE creature SET equipment_id=143 WHERE equipment_id=256;
+UPDATE creature_template SET EquipmentTemplateId=143 WHERE EquipmentTemplateId=256;
+UPDATE creature SET equipment_id=144 WHERE equipment_id=273;
+UPDATE creature_template SET EquipmentTemplateId=144 WHERE EquipmentTemplateId=273;
+UPDATE creature SET equipment_id=145 WHERE equipment_id=237;
+UPDATE creature_template SET EquipmentTemplateId=145 WHERE EquipmentTemplateId=237;
+UPDATE creature SET equipment_id=146 WHERE equipment_id=2432;
+UPDATE creature_template SET EquipmentTemplateId=146 WHERE EquipmentTemplateId=2432;
+
+DELETE FROM creature_equip_template WHERE entry in(147,148);
+INSERT INTO creature_equip_template VALUES
+(147, 31600, 31466, 0), -- 2396
+(148, 31603, 0, 0); -- 2394
+UPDATE creature SET equipment_id=147 WHERE equipment_id=2396;
+UPDATE creature_template SET equipment_id=147 WHERE equipment_id=2396;
+UPDATE creature SET equipment_id=148 WHERE equipment_id=2394;
+UPDATE creature_template SET equipment_id=148 WHERE equipment_id=2394;
+
+-- new equipment in Netherwing Ledge
+DELETE FROM creature_equip_template WHERE entry = 149;
+INSERT INTO creature_equip_template (entry, equipentry1, equipentry2, equipentry3) VALUES    
+(149, 31601, 0, 0); -- 2509
+DELETE FROM creature_equip_template WHERE entry = 150;
+INSERT INTO creature_equip_template (entry, equipentry1, equipentry2, equipentry3) VALUES    
+(150, 31603, 31466, 0); -- 2510
+-- new equipment in Ruins of Karabor
+DELETE FROM creature_equip_template WHERE entry = 151;
+INSERT INTO creature_equip_template (entry, equipentry1, equipentry2, equipentry3) VALUES    
+(151, 5956, 24322, 0); -- 2511
+UPDATE creature SET equipment_id=149 WHERE equipment_id=2509;
+UPDATE creature_template SET equipment_id=149 WHERE equipment_id=2509;
+UPDATE creature SET equipment_id=150 WHERE equipment_id=2510;
+UPDATE creature_template SET equipment_id=150 WHERE equipment_id=2510;
+UPDATE creature SET equipment_id=151 WHERE equipment_id=2511;
+UPDATE creature_template SET equipment_id=151 WHERE equipment_id=2511;
+
 DELETE FROM creature_addon WHERE guid IN(58628,75816,75817,75825,76060);
 DELETE FROM gameobject_template WHERE entry=1684;
 INSERT INTO gameobject_template(entry,type,displayId,name,size,data0,data1) VALUES(1684,8,273,'Blacksmith''s Anvil',1,1,10);
