@@ -1223,3 +1223,7 @@ DELETE FROM conditions WHERE condition_entry IN (717, 718);
 INSERT INTO conditions (condition_entry, TYPE, value1, value2) VALUES
 (717, 31, 715, 0),
 (718, 31, 716, 0);
+
+-- Kor'kron Overseer - missing in undercity - ADDED WOTLK
+INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES 
+(140585,36213,0,1,1,0,2009,1446.82,415.778,-84.9914,4.05085,180,0,0,15952,0,0,0);
