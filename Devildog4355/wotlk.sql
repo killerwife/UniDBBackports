@@ -1227,3 +1227,344 @@ INSERT INTO conditions (condition_entry, TYPE, value1, value2) VALUES
 -- Kor'kron Overseer - missing in undercity - ADDED WOTLK
 INSERT INTO creature (guid, id, map, spawnMask, phaseMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES 
 (140585,36213,0,1,1,0,2009,1446.82,415.778,-84.9914,4.05085,180,0,0,15952,0,0,0);
+-- Kor'kron Overseer - missing in undercity - ADDED WOTLK
+INSERT INTO creature (guid,id,map,spawnMask,phaseMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
+(140768,36213,0,1,1,0,2009,1418.86,388.783,-84.9909,0.942079,180,0,0,15952,0,0,0);
+-- Baelog's Chest should be targetable/lootable. (sniff) (WOTLK)
+UPDATE gameobject_template SET flags = 0 WHERE entry = 123329;
+-- ---------------
+-- Various
+-- ---------------
+-- Fix DK quest spell click
+DELETE FROM npc_spellclick_spells where npc_entry IN (29708,28782);
+INSERT INTO npc_spellclick_spells (npc_entry, spell_id, quest_start, quest_start_active, quest_end, cast_flags,condition_id) VALUES 
+(28782, 52349, 12687, 1, 12687, 1, 0),
+(29708, 55028, 12856, 1, 12856, 1, 0);
+-- Vehicle data fix
+UPDATE creature_template SET MinLevel = 80, MaxLevel = 80, MinLevelHealth = 12600, MaxLevelHealth = 12600, MinLevelMana = 11982, MaxLevelMana = 11982, Armor = 9633 WHERE entry = 28999;
+-- Icefang
+UPDATE creature_template SET MinLevel = 80, MaxLevel = 80, MinLevelHealth = 63000, MaxLevelHealth = 63000, Armor = 9730, MovementType = 2 WHERE entry = 29602;
+DELETE FROM creature_movement_template WHERE entry IN (29602);
+INSERT INTO creature_movement_template (entry, point, position_x, position_y, position_z, script_id, waittime) VALUES
+(29602,1, 7085.600, -1941.878, 773.144, 2960201, 1000),
+(29602,2, 7073.979, -1964.498, 768.656, 0, 0),
+(29602,3, 7082.235, -1993.693, 767.976, 0, 0),
+(29602,4, 7089.624, -2024.012, 766.308, 0, 0),
+(29602,5, 7102.195, -2072.441, 763.672, 0, 0),
+(29602,6, 7116.834, -2127.098, 759.205, 0, 0),
+(29602,7, 7140.550, -2161.849, 761.036, 0, 0),
+(29602,8, 7170.924, -2192.156, 761.323, 0, 0),
+(29602,9, 7219.515, -2226.946, 759.077, 0, 0),
+(29602,10,7280.996, -2271.891, 756.243, 0, 0),
+(29602,11,7335.085, -2294.143, 755.844, 0, 0),
+(29602,12,7385.635, -2314.972, 757.249, 0, 0),
+(29602,13,7401.934, -2346.189, 755.022, 0, 0),
+(29602,14,7407.586, -2379.071, 753.156, 0, 0),
+(29602,15,7385.282, -2407.132, 748.946, 0, 0),
+(29602,16,7344.961, -2407.402, 750.123, 0, 0),
+(29602,17,7317.786, -2377.497, 749.030, 0, 0),
+(29602,18,7297.351, -2348.611, 749.586, 0, 0),
+(29602,19,7271.876, -2316.258, 752.514, 0, 0),
+(29602,20,7243.617, -2296.425, 753.760, 0, 0),
+(29602,21,7202.361, -2270.390, 755.781, 0, 0),
+(29602,22,7170.279, -2249.533, 758.963, 0, 0),
+(29602,23,7136.257, -2227.768, 758.618, 0, 0),
+(29602,24,7117.583, -2202.440, 758.786, 0, 0),
+(29602,25,7096.870, -2167.813, 758.943, 0, 0),
+(29602,26,7083.056, -2130.481, 758.719, 0, 0),
+(29602,27,7078.193, -2078.994, 759.237, 0, 0),
+(29602,28,7105.447, -2028.474, 768.562, 0, 0),
+(29602,29,7105.573, -1999.694, 771.150, 2960228, 0);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (2960201, 2960228);
+INSERT INTO dbscripts_on_creature_movement (id, command, datalong, comments) VALUES
+(2960201, 25, 1, 'set run on'),
+(2960228, 14, 54908, 'remove aura Riding Icefang');
+DELETE FROM spell_script_target WHERE entry = 54798;
+INSERT INTO spell_script_target (entry, type, targetEntry, inverseEffectMask) VALUES
+(54798,1,29358,0),
+(54798,1,29351,0);
+DELETE FROM dbscripts_on_spell WHERE id IN (54799,54804);
+INSERT INTO dbscripts_on_spell (id, command, datalong, data_flags, comments) VALUES
+(54804, 8, 29595, 0, 'kill credit for quest 12851'),
+(54799, 8, 29597, 0, 'kill credit for quest 12851');
+DELETE FROM vehicle_accessory WHERE vehicle_entry IN (30174,29500);
+INSERT INTO vehicle_accessory (vehicle_entry, seat, accessory_entry, comment) VALUES
+(29500, 0, 29498, 'Brunnhildar Warmaiden'),
+(30174, 0, 30175, 'Hyldsmeet Bear Rider');
+-- quest 12981
+DELETE FROM creature_template_addon WHERE entry = 30169;
+INSERT INTO creature_template_addon (entry, auras) VALUES (30169, 56118);
+DELETE FROM spell_script_target WHERE entry = 56099;
+INSERT INTO spell_script_target (entry, type, targetEntry, inverseEffectMask) VALUES
+(56099,1,30169,0);
+-- quest 11590
+DELETE FROM spell_script_target WHERE entry IN (45630,45651,45735);
+INSERT INTO spell_script_target (entry, type, targetEntry, inverseEffectMask) VALUES
+(45651,1,25474,0),
+(45630,1,25474,0),
+(45735,1,25474,0);
+-- cast at quest completion - maybe there are some missing cinematics here.
+DELETE FROM dbscripts_on_spell WHERE id IN (45651);
+INSERT INTO dbscripts_on_spell (id, command, datalong, data_flags, comments) VALUES
+(45651, 18, 0, 0, 'despawn captured beryl sorcerer');
+-- quests 11919, 11940
+-- quest ending
+DELETE FROM db_script_string WHERE entry IN (2000005623,2000005624,2000005625,2000005626);
+INSERT INTO db_script_string (entry,content_default,sound,type,language,emote,comment) VALUES
+(2000005623,'Easy now, drakeling.',0,0,0,0,'Raelorasz - say_drake_1'),
+(2000005624,'A wonderful specimen.',0,0,0,0,'Raelorasz - say_drake_2'),
+(2000005625,'Sleep now, young one....',0,0,0,0,'Raelorasz - say_drake_3'),
+(2000005626,'Yes, this one should advance my studies nicely....',0,0,0,0,'say_drake_4');
+DELETE FROM dbscripts_on_spell WHERE id IN (46702,46693);
+INSERT INTO dbscripts_on_spell (id, delay, command, datalong, data_flags, dataint, dataint2, dataint3, comments) VALUES
+(46702, 1, 15, 46704, 6, 0, 0, 0, 'cast Raelorasz Fireball'),
+(46702, 1, 0, 0, 2, 2000005623, 2000005624, 2000005625, 'say text'),
+(46702, 5, 0, 0, 2, 2000005626, 0, 0, 'say text'),
+(46693, 0, 14, 46691, 2, 0, 0, 0, 'remove Drake Hatchling Subdued aura');
+-- quest 11154
+DELETE FROM spell_script_target WHERE entry IN (43307);
+INSERT INTO spell_script_target (entry, type, targetEntry, inverseEffectMask) VALUES
+(43307,1,24230,0);
+-- guesswork - to be checked!
+UPDATE creature_template SET UnitFlags = UnitFlags|33554432 WHERE entry = 24230;
+-- quest 11889
+DELETE FROM spell_script_target WHERE entry IN (45863);
+INSERT INTO spell_script_target (entry, type, targetEntry, inverseEffectMask) VALUES
+(45863,1,24771,0);
+-- quest 11645 and 11468
+DELETE FROM item_required_target WHERE entry IN (34111,34121);
+INSERT INTO item_required_target (entry, type, targetEntry) VALUES
+(34111, 1, 24746),
+(34121, 1, 24747);
+-- quest 11470
+UPDATE creature_template SET InhabitType = InhabitType|4 WHERE entry = 24783;
+DELETE FROM creature_template_spells WHERE entry IN (24783);
+INSERT INTO creature_template_spells (entry, spell1, spell2, spell3,  spell4, spell5, spell6, spell7, spell8) VALUES
+(24783, 44422, 44423, 44424, 0, 0, 0, 0, 0);
+-- quest 13284, 13301
+DELETE FROM creature_linking_template WHERE entry IN (31832, 31701);
+INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES
+(31832, 571, 31833, 131, 12),
+(31701, 571, 31737, 131, 12);
+-- quest 13309
+UPDATE creature SET MovementType = 0 WHERE id = 31881;
+DELETE FROM npc_spellclick_spells where npc_entry IN (32227, 31884);
+-- INSERT INTO npc_spellclick_spells (npc_entry, spell_id, quest_start, quest_start_active, quest_end, cast_flags,condition_id) VALUES
+-- todo: add spell click and creature template spells for these
+DELETE FROM creature_template_spells WHERE entry IN (32227, 31884);
+INSERT INTO creature_template_spells (entry, spell1, spell2, spell3,  spell4, spell5, spell6, spell7, spell8) VALUES
+(32227,59880, 0, 0, 0, 0, 0, 0, 0),
+(31884,59880, 0, 0, 0, 0, 0, 0, 0);
+-- quest 12082
+UPDATE gameobject SET state = 0 WHERE id IN (188480);
+UPDATE creature_template_addon SET auras = NULL WHERE entry = 26867;
+UPDATE creature_template SET FactionAlliance = 14, FactionHorde = 14 WHERE entry IN (26871,26865);
+-- quest 12255 and 12259
+DELETE FROM conditions WHERE condition_entry IN (946, 947);
+INSERT INTO conditions (condition_entry, type, value1, value2) VALUES
+(946, 9, 12255, 0),
+(947, 9, 12259, 0);
+DELETE FROM gossip_menu_option WHERE menu_id = 9512;
+INSERT INTO gossip_menu_option (menu_id, id, option_icon, option_text, option_id,  npc_option_npcflag, action_menu_id, action_poi_id, 
+action_script_id, box_coded, box_money, box_text, condition_id) VALUES 
+(9512, 0, 0, 'Unchain and control Flamebringer.', 1, 1, -1, 0, 951201, 0, 0, NULL, 946),
+(9512, 1, 0, 'Unchain and control Flamebringer.', 1, 1, -1, 0, 951201, 0, 0, NULL, 947);
+DELETE FROM dbscripts_on_gossip WHERE id = 951201;
+INSERT INTO dbscripts_on_gossip (id, delay, command, datalong, datalong2, buddy_entry,  search_radius, data_flags, dataint, dataint2, 
+dataint3, dataint4, x, y, z, o, comments) VALUES 
+(951201, 0, 15, 48595, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 'cast Summon Flamebringer'),
+(951201, 1, 15, 48600, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 'cast Ride Flamebringer'),
+(951201, 1, 15, 48602, 0, 27292, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'cast Flight');
+UPDATE creature_template SET InhabitType = InhabitType|4 WHERE entry = 27292;
+-- quest 12644
+UPDATE gameobject SET spawntimesecs = -180 WHERE id = 190643;
+-- quest 11476
+DELETE FROM conditions WHERE condition_entry IN (948, 949, 950);
+INSERT INTO conditions (condition_entry, type, value1, value2) VALUES
+(948, 9, 11476, 1),
+(949, 2, 35813, 1),
+(950, -1, 948, 949);
+DELETE FROM npc_spellclick_spells WHERE npc_entry = 26503;
+INSERT INTO npc_spellclick_spells (npc_entry, spell_id, quest_start, quest_start_active, quest_end, cast_flags,condition_id) VALUES
+(26503, 0, 0, 0, 0, 0, 950);
+-- quest 12075
+DELETE FROM conditions WHERE condition_entry IN (951, 952, 953);
+INSERT INTO conditions (condition_entry, type, value1, value2) VALUES
+(951, 9, 12075, 1),
+(952, 32, 31261, 0),
+(953, -1, 951, 952);
+DELETE FROM npc_spellclick_spells WHERE npc_entry = 26809;
+INSERT INTO npc_spellclick_spells (npc_entry, spell_id, quest_start, quest_start_active, quest_end, cast_flags,condition_id) VALUES
+(26809, 0, 0, 0, 0, 0, 953);
+-- non power regen creatures
+UPDATE creature_template SET RegenerateStats =  RegenerateStats&~2 where entry IN (37813,38582,38583,30790,15340,15262,33167,33109,36838,37672);
+-- error fix
+UPDATE creature SET spawndist = 0 WHERE id = 31881;
+DELETE FROM creature_addon WHERE guid IN (120880,120881,120882,120883,120884,120903,120904,120905,120906,120907);
+-- Missing vehicle data (YTDB)
+DELETE FROM vehicle_accessory WHERE vehicle_entry IN (40081);
+INSERT INTO vehicle_accessory (vehicle_entry, seat, accessory_entry, comment) VALUES
+(40081, 0, 40083, 'Orb Carrier'),
+(40081, 1, 40100, 'Orb Carrier');
+-- missing vehicle spells (YTDB)
+DELETE FROM creature_template_spells WHERE entry IN (25334,25596,25743,26472,26523,26813,27061,27213,27258,27270,27292,27354,27496,27587,27629,27692,27714,27755,27756,27894,27992,27993,27996,28115,28222,28366,28605,28606,28607
+,28670,28781,28782,28833,28985,28999,29005,29414,29602,29677,29709,29884,29918,30124,30161,30228);
+INSERT INTO creature_template_spells (entry, spell1, spell2, spell3,  spell4, spell5, spell6, spell7, spell8) VALUES
+(25334, 50672, 45750, 50677, 47849, 47962, 0, 0, 0),
+(25596, 45877, 0, 0, 0, 0, 0, 0, 0),
+(25743, 46317, 46315, 46316, 0, 0, 0, 0, 0),
+(26472, 49285, 29577, 0, 0, 0, 0, 0, 0),
+(26523, 48211, 0, 0, 0, 0, 0, 0, 0),
+(26813, 63507, 47434, 47454, 0, 0, 0, 0, 0),
+(27061, 47966, 47921, 47938, 47939, 0, 0, 0, 0),
+(27213, 48297, 0, 0, 0, 0, 0, 0, 0),
+(27258, 48363, 48397, 54170, 0, 0, 0, 0, 0),
+(27270, 49238, 0, 0, 0, 0, 0, 0, 0),
+(27292, 48619, 48620, 52812, 0, 0, 0, 0, 0),
+(27354, 48558, 48604, 48548, 48610, 0, 0, 0, 0),
+(27496, 48984, 49063, 74608, 49025, 0, 0, 0, 0),
+(27587, 49315, 49333, 49109, 49081, 0, 0, 0, 0),
+(27629, 49161, 49243, 49263, 49264, 49367, 0, 0, 0),
+(27692, 50328, 50341, 50344, 0, 0, 53389, 0, 0),
+(27714, 49190, 49550, 0, 0, 0, 0, 0, 0),
+(27755, 49840, 49838, 49592, 0, 0, 53389, 0, 0),
+(27756, 50232, 50240, 50253, 0, 0, 53389, 0, 0),
+(27894, 49872, 0, 0, 0, 0, 0, 0, 0),
+(27992, 43997, 43986, 0, 0, 0, 0, 0, 0),
+(27993, 43997, 43986, 0, 0, 0, 0, 0, 0),
+(27996, 55987, 50430, 50348, 0, 0, 0, 0, 0),
+(28115, 52331, 52358, 53032, 0, 0, 52321, 0, 0),
+(28222, 50978, 50980, 50985, 50983, 54166, 0, 0, 0),
+(28366, 51421, 0, 0, 0, 0, 0, 0, 0),
+(28605, 52264, 52268, 0, 0, 0, 0, 0, 0),
+(28606, 52264, 52268, 0, 0, 0, 0, 0, 0),
+(28607, 52264, 52268, 0, 0, 0, 0, 0, 0),
+(28670, 53114, 0, 53110, 0, 0, 0, 0, 0),
+(28781, 52338, 60206, 0, 0, 0, 0, 0, 0),
+(28782, 52362, 0, 0, 0, 0, 0, 0, 0),
+(28833, 52435, 52576, 0, 0, 52588, 0, 0, 0),
+(28985, 61374, 52870, 52864, 0, 0, 0, 0, 0),
+(28999, 61375, 61376, 52862, 52864, 0, 0, 0, 0),
+(29005, 61380, 47911, 0, 0, 0, 0, 0, 0),
+(29414, 48766, 54469, 54467, 55214, 54422, 0, 0, 0),
+(29602, 54897, 54907, 0, 0, 0, 0, 0, 0),
+(29677, 54997, 54996, 0, 0, 0, 0, 0, 0),
+(29709, 55046, 0, 0, 0, 0, 0, 0, 0),
+(29884, 55426, 55429, 55516, 55421, 0, 0, 0, 0),
+(29918, 0, 0, 0, 54459, 54458, 54460, 0, 0),
+(30124, 56750, 56753, 0, 0, 0, 0, 0, 0),
+(30161, 56091, 56092, 57090, 57143, 57108, 57092, 0, 0),
+(30228, 56683, 56684, 56712, 0, 0, 0, 0, 0);
+DELETE FROM creature_template_spells WHERE entry IN (30337,30645,30895,31110,31157,31784,31830,32535,33217,33316,33317,33318,33319,33320,33321,33322,33323,33324,33531,33782,33844,33845,34045,34775,34776,34777,34778,34793,34802
+,34929,34935,34944,35069,35273,35644,36355,36356,36557,36558,36559,36838,37672,27881,28312,32627,28319,32629,28094);
+INSERT INTO creature_template_spells (entry, spell1, spell2, spell3,  spell4, spell5, spell6, spell7, spell8) VALUES
+(30337, 56585, 0, 56570, 0, 0, 0, 0, 0),
+(30645, 57643, 57652, 57665, 57668, 0, 0, 0, 0),
+(30895, 57882, 58203, 58282, 58283, 0, 0, 0, 0),
+(31110, 58541, 58544, 58543, 58562, 58563, 58658, 0, 0),
+(31157, 59234, 0, 0, 0, 0, 0, 0, 0),
+(31784, 4338, 4342, 4336, 0, 0, 0, 0, 0),
+(31830, 59733, 8204, 59737, 0, 0, 0, 0, 0),
+(32535, 56091, 56092, 57090, 57143, 57108, 57403, 0, 0),
+(33217, 62544, 62575, 62960, 62552, 64077, 62863, 63034, 0),
+(33316, 62544, 62575, 62960, 62552, 64077, 62863, 63034, 0),
+(33317, 62544, 62575, 62960, 62552, 64077, 62863, 63034, 0),
+(33318, 62544, 62575, 62960, 62552, 64077, 62863, 63034, 0),
+(33319, 62544, 62575, 62960, 62552, 64077, 62863, 63034, 0),
+(33320, 62544, 62575, 62960, 62552, 64077, 62863, 63034, 0),
+(33321, 62544, 62575, 62960, 62552, 64077, 62863, 63034, 0),
+(33322, 62544, 62575, 62960, 62552, 64077, 62863, 63034, 0),
+(33323, 62544, 62575, 62960, 62552, 64077, 62863, 63034, 0),
+(33324, 62544, 62575, 62960, 62552, 64077, 62863, 63034, 0),
+(33531, 64588, 64595, 62563, 62552, 64077, 0, 0, 0),
+(33782, 62544, 62575, 62960, 62552, 64077, 62863, 63034, 0),
+(33844, 62544, 62575, 62960, 62552, 64077, 62863, 63034, 0),
+(33845, 62544, 62575, 62960, 62552, 64077, 62863, 63034, 0),
+(34045, 62974, 62286, 62299, 64660, 0, 0, 0, 0),
+(34775, 67440, 67441, 0, 0, 0, 0, 0, 0),
+(34776, 67796, 67797, 0, 0, 0, 0, 0, 0),
+(34777, 67462, 69505, 0, 0, 0, 0, 0, 0),
+(34778, 68832, 0, 0, 0, 0, 0, 0, 0),
+(34793, 66218, 66296, 0, 0, 0, 0, 0, 68362),
+(34802, 66456, 67195, 0, 0, 0, 0, 0, 0),
+(34929, 66518, 0, 0, 0, 0, 0, 0, 0),
+(34935, 66529, 0, 0, 0, 0, 0, 0, 0),
+(34944, 68170, 66541, 0, 0, 0, 0, 0, 0),
+(35069, 67796, 67797, 0, 0, 0, 0, 0, 0),
+(35273, 67034, 67195, 0, 0, 0, 0, 0, 0),
+(35644, 68505, 62575, 68282, 66482, 0, 0, 0, 0),
+(36355, 67462, 69505, 0, 0, 0, 0, 0, 0),
+(36356, 68832, 0, 0, 0, 0, 0, 0, 0),
+(36557, 68505, 62575, 68282, 66482, 0, 0, 0, 0),
+(36558, 68505, 62575, 68282, 66482, 0, 0, 0, 0),
+(36559, 68505, 62575, 68282, 66482, 0, 0, 0, 0),
+(36838, 69399, 70175, 0, 0, 0, 0, 0, 0),
+(37672, 70360, 70539, 70542, 0, 0, 71516, 0, 0),
+-- wintergrasp vehicles
+(27881, 57606, 50989, 0, 0, 0, 0, 0, 0),
+(28094, 57618, 54107, 0, 0, 0, 0, 0, 0),
+(28312, 54109, 0, 0, 0, 0, 0, 0, 0),
+(32627, 51678, 0, 0, 0, 0, 0, 0, 0),
+(28319, 57609, 0, 0, 0, 0, 0, 0, 0),
+(32629, 57609, 0, 0, 0, 0, 0, 0, 0);
+-- ---------------
+-- Neatelves
+-- ---------------
+-- quests 12213, 12220
+DELETE FROM dbscripts_on_spell WHERE id = 48218;
+INSERT INTO dbscripts_on_spell (id, command, comments) VALUES
+(48218, 8, 'create from quest_template');
+-- Tailor (by Neatelves)
+-- Conditions (start condition entry from 921) - updated for UDB
+DELETE FROM conditions WHERE condition_entry IN (921,922,923,924,925,926,927,928,929,930,931,932,933,934,935,936,937,938,939,940);
+INSERT INTO conditions (condition_entry, type, value1, value2) VALUES
+(921, 29, 197, 1), -- has no tailor skill
+(922, 17, 26797, 0), -- has spellfire tailor
+(923, 17, 26798, 0), -- has mooncloth tailor
+(924, 17, 26801, 0), -- has shadoweave tailor
+(925, 8, 10832, 0), -- awarded quest Spellfire Tailor
+(926, 8, 10831, 0), -- awarded quest Mooncloth Tailor
+(927, 8, 10833, 0), -- awarded quest Shadoweave Tailor
+(928, 7, 197, 350), -- has tailor of min 350
+(929, 15, 60, 1), -- has at least lvl 60
+(930, -2, 925, 926), -- Spellfire tailor OR Mooncloth tailor quests awarded
+(931, -2, 927, 930), -- Spellfire tailor OR Mooncloth tailor OR Shadoweave quests awarded
+(932, -1, 928, 929), -- has tailor of 350 AND lvl 60
+(933, -1, 931, 932), -- (tailor of 350 AND lvl 60) AND (any tailor quests awarded)
+(934, -2, 922, 923), -- has spellfire tailor spell OR mooncloth tailor spell
+(935, -2, 924, 934), -- has spellfire tailor spell OR mooncloth tailor spell OR shadoweave tailor spell
+(936, -3, 935, 0), -- has NOT (spellfire tailor spell OR mooncloth tailor spell OR shadoweave tailor spell)
+(937, -1, 933, 936), -- has (level AND skill AND quests) AND (has NOT tailor spells)
+(938, -1, 922, 933), -- has (level AND skill AND quests) AND has spellfire tailor
+(939, -1, 923, 933), -- has (level AND skill AND quests) AND has mooncloth tailor
+(940, -1, 924, 933); -- has (level AND skill AND quests) AND has shadoweave tailor
+-- gossip menus
+DELETE FROM gossip_menu WHERE entry IN (8530,8531,8532);
+INSERT INTO gossip_menu (entry, text_id, script_id, condition_id) VALUES
+(8530, 10669, 0, 0),
+(8530, 10670, 0, 921),
+(8531, 10671, 0, 0),
+(8531, 10672, 0, 921),
+(8532, 10673, 0, 0),
+(8532, 10674, 0, 921);
+-- gossip menu options
+DELETE FROM gossip_menu_option WHERE menu_id IN (8530,8531,8532);
+REPLACE INTO gossip_menu_option (menu_id,id,option_icon,option_text,option_id,npc_option_npcflag,action_menu_id,action_poi_id,action_script_id,box_coded,box_money,box_text,condition_id) VALUES
+(8530, 0, 1, 'Show me what you have for sale.', 3, 128, 0, 0, 0, 0, 0, NULL, 0),
+(8530, 1, 0, 'Please teach me how to become a Mooncloth tailoring.', 1, 1, -1, 0, 853001, 0, 0, NULL, 937),
+(8530, 2, 0, 'I wish to unlearn Mooncloth Tailoring.', 1, 1, -1, 0, 853002, 0, 1500000, 'Do you really want to unlearn your tailoring specialty and lose all associated recipes?', 939),
+(8531, 0, 1, 'Show me what you have for sale.', 3, 128, 0, 0, 0, 0, 0, NULL, 0),
+(8531, 1, 0, 'Please teach me how to become a Spellfire tailoring.', 1, 1, -1, 0, 853101, 0, 0, NULL, 937),
+(8531, 2, 0, 'I wish to unlearn Spellfire Tailoring.', 1, 1, -1, 0, 853102, 0, 1500000, 'Do you really want to unlearn your tailoring specialty and lose all associated recipes?', 938),
+(8532, 0, 1, 'Show me what you have for sale.', 3, 128, 0, 0, 0, 0, 0, NULL, 0),
+(8532, 1, 0, 'Please teach me how to become a Shadoweave tailoring.', 1, 1, -1, 0, 853201, 0, 0, NULL, 937),
+(8532, 2, 0, 'I wish to unlearn Shadoweave Tailoring.', 1, 1, -1, 0, 853202, 0, 1500000, 'Do you really want to unlearn your tailoring specialty and lose all associated recipes?', 940);
+-- gossip scripts
+DELETE FROM dbscripts_on_gossip WHERE id IN (853101,853102,853001,853002,853201,853202);
+INSERT INTO dbscripts_on_gossip (id,delay,command,datalong,comments) VALUES
+(853101, 0, 15, 26796, 'cast Spellfire Tailoring'),
+(853001, 0, 15, 26799, 'cast Mooncloth Tailoring'),
+(853201, 0, 15, 26800, 'cast Shadoweave Tailoring'),
+(853102, 0, 15, 41299, 'cast Unlearn Spellfire Tailoring'),
+(853002, 0, 15, 41558, 'cast Unlearn Mooncloth Tailoring'),
+(853202, 0, 15, 41559, 'cast Unlearn Shadoweave Tailoring');
