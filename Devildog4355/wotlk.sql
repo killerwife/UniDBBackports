@@ -1568,3 +1568,8 @@ INSERT INTO dbscripts_on_gossip (id,delay,command,datalong,comments) VALUES
 (853102, 0, 15, 41299, 'cast Unlearn Spellfire Tailoring'),
 (853002, 0, 15, 41558, 'cast Unlearn Mooncloth Tailoring'),
 (853202, 0, 15, 41559, 'cast Unlearn Shadoweave Tailoring');
+-- npc_spellclick_spells for one condition of cmangos [12641] -- Author. NeatElves
+REPLACE INTO conditions (condition_entry, type, value1, value2) VALUES
+(964, 1, 63146, 0);
+REPLACE INTO npc_spellclick_spells (npc_entry, spell_id, quest_start, quest_start_active, quest_end, cast_flags, condition_id) VALUES
+(33498, 63125, 0, 0, 0, 1, 964);
