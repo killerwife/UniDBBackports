@@ -1573,3 +1573,21 @@ REPLACE INTO conditions (condition_entry, type, value1, value2) VALUES
 (964, 1, 63146, 0);
 REPLACE INTO npc_spellclick_spells (npc_entry, spell_id, quest_start, quest_start_active, quest_end, cast_flags, condition_id) VALUES
 (33498, 63125, 0, 0, 0, 1, 964);
+-- DeathGuard Bartrand
+UPDATE creature SET spawndist = 1, MovementType = 1 WHERE guid = 28498;
+-- Mindless Zombie
+UPDATE creature SET position_x = 1900.229, position_y = 1551.08, position_z = 88.96, orientation = 5.97 WHERE guid = 44961;
+UPDATE creature SET MovementType = 2, spawndist = 0 WHERE guid = 44961;
+DELETE FROM creature_movement WHERE id = 44961;
+INSERT INTO creature_movement VALUES
+(44961,1,1900.229248,1551.080688,88.962784,40000,0,0,0,0,0,0,0,0,0,5.972022,0,0),
+(44961,2,1906.845459,1549.275757,88.963142,0,0,0,0,0,0,0,0,0,0,0.059717,0,0),
+(44961,3,1918.237671,1550.205078,86.896423,0,0,0,0,0,0,0,0,0,0,1.092514,0,0),
+(44961,4,1921.960083,1559.946167,86.194336,0,0,0,0,0,0,0,0,0,0,0.815268,0,0),
+(44961,5,1934.780640,1577.855835,82.626656,40000,0,0,0,0,0,0,0,0,0,0.907945,0,0),
+(44961,6,1915.648682,1587.774658,84.535027,0,0,0,0,0,0,0,0,0,0,3.187170,0,0),
+(44961,7,1889.429932,1586.552246,88.860100,4000,150101,0,0,0,0,0,0,0,0,2.765410,0,0);
+DELETE FROM dbscripts_on_creature_movement WHERE id = 150101;
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES 
+(150101,0,26,0,0,1736,20,0x01,0,0,0,0,0,0,0,0,''),
+(150101,1,22,21,0x01,0,0,0,0,0,0,0,0,0,0,0,'');
