@@ -1,3 +1,18 @@
+-- Missing DB_Script_string
+DELETE FROM db_script_string WHERE entry IN (2000005242,2000005243,2000005244,2000005167,2000005168,2000005206,2000005207,2000005208,2000005209,2000005205);
+INSERT INTO `DB_Script_string` (entry, content_default, content_loc1, content_loc2, content_loc3, content_loc4, content_loc5, content_loc6, content_loc7, content_loc8) VALUES
+('2000005167','Is it true that the paladins train here?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+('2000005168','Why do we have to learn this stuff anyway?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+('2000005205','It\'s coming along, Wafflefry. Haven\'t you got a product demonstration to do or something?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+('2000005206','Be the first on your block to own the incredible Electrostatic Maculation Blaster!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+('2000005207','Derived from cutting edge Shattered Hand Offensive military technology, it blasts away stubborn stains with ease!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+('2000005208','Wine stains, grass stains, even pet stains are no match for the Electrostatic Maculation Blaster!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+('2000005209','Don\'t wait! Order now and receive my Ultra-Kinetic Waffle Iron at no additional charge!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+('2000005242','Hmm... I wonder...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+('2000005243','Now, where is it?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+('2000005244','Stupid mages... always using the last of a reagent and never replacing it.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+
+
 -- Missing NPC at "The Stair of Destiny"
 -- Darkspear Axe Thrower - (Hellfire Peninsula)
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES 
