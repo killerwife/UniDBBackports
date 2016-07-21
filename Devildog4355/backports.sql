@@ -4632,10 +4632,10 @@ INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalo
 (1484902,1,0,0,0,0,0,0,2000005133,2000005223,0,0,0,0,0,0,''); 
 -- Vectus c.10432
 DELETE FROM creature_movement WHERE id = 48805;
-INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, wpguid, orientation, model1, model2) VALUES
-(48805,1,143.481,99.0964,104.659,300000,0,0,0,0,0,0,0,0,0,3.26377,0,0),
-(48805,2,143.481,99.0964,104.659,21000,1043201,0,0,0,0,0,0,0,0,3.26377,0,0),
-(48805,3,143.481,99.0964,104.659,30000,0,0,0,0,0,0,0,0,0,3.26377,0,0);
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
+(48805,1,143.481,99.0964,104.659,300000,0,0,0,0,0,0,0,0,3.26377,0,0),
+(48805,2,143.481,99.0964,104.659,21000,1043201,0,0,0,0,0,0,0,3.26377,0,0),
+(48805,3,143.481,99.0964,104.659,30000,0,0,0,0,0,0,0,0,3.26377,0,0);
 DELETE FROM dbscripts_on_creature_movement WHERE id = 1043201; 
 INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
 (1043201,1,0,0,0,0,0,0,2000005027,0,0,0,0,0,0,0,''),
@@ -4894,3 +4894,374 @@ DELETE FROM db_script_string WHERE entry BETWEEN 2000000342 AND 2000000343;
 INSERT INTO db_script_string (entry, content_default, content_loc1, content_loc2, content_loc3, content_loc4, content_loc5, content_loc6, content_loc7, content_loc8, sound, type, language, emote, comment) VALUES
 (2000000342,'%s falls into drunken sleep.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,NULL),
 (2000000343,'%s wakes up and slowly rises to his feet.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,NULL);
+-- Tormented Soul <Kirin Tor> c.20512
+UPDATE creature_movement SET script_id = 2051201, emote = 0 WHERE id = 72634 AND point = 8;
+UPDATE creature_movement SET script_id = 2051201, emote = 0 WHERE id = 72634 AND point = 13;
+UPDATE creature_movement SET script_id = 2051202, emote = 0 WHERE id = 72634 AND point = 4;
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (2051201,2051202); 
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(2051201,3,1,69,0,0,0,0,0,0,0,0,0,0,0,0,''),
+(2051201,17,1,0,0,0,0,0,0,0,0,0,0,0,0,0,''),
+(2051202,3,28,8,0,0,0,0,0,0,0,0,0,0,0,0,'STATE_KNEEL'),
+(2051202,55,28,0,0,0,0,0,0,0,0,0,0,0,0,0,'STATE_STAND');
+-- Gardok Ripjaw c.19002
+DELETE FROM creature_movement WHERE id = 68307;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
+(68307,1,-2675.03,4419.42,36.8669,16000,1900201,0,0,0,0,0,0,0,1.64135,0,0),
+(68307,2,-2675.47,4425.67,37.1236,16000,1900201,0,0,0,0,0,0,0,1.64135,0,0),
+(68307,3,-2682.4,4426.03,37.1226,16000,1900201,0,0,0,0,0,0,0,1.99867,0,0),
+(68307,4,-2691.72,4425.58,37.1219,16000,1900201,0,0,0,0,0,0,0,1.37899,0,0),
+(68307,5,-2691.72,4425.58,37.1219,16000,1900201,0,0,0,0,0,0,0,1.64288,0,0),
+(68307,6,-2694.04,4420.25,37.1019,16000,1900201,0,0,0,0,0,0,0,4.74521,0,0),
+(68307,7,-2691.36,4419.17,37.0531,16000,1900201,0,0,0,0,0,0,0,1.28946,0,0),
+(68307,8,-2687.2,4419.84,37.0773,16000,1900201,0,0,0,0,0,0,0,0.874766,0,0),
+(68307,9,-2687.26,4425.15,37.1222,16000,1900201,0,0,0,0,0,0,0,1.05305,0,0),
+(68307,10,-2675.51,4425.16,37.123,16000,1900201,0,0,0,0,0,0,0,0.000617,0,0),
+(68307,11,-2675.51,4425.16,37.123,16000,1900201,0,0,0,0,0,0,0,1.72849,0,0),
+(68307,12,-2675.22,4418.99,36.8082,16000,1900201,0,0,0,0,0,0,0,1.84395,0,0);
+DELETE FROM dbscripts_on_creature_movement WHERE id = 1900201; 
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(1900201,3,1,5,0,0,0,0,0,0,0,0,0,0,0,0,'');
+-- Stonebreaker Grunt c.18973
+UPDATE creature_movement SET script_id = 1897301, emote = 0 WHERE id IN (68134,68135,68136,68137,68138,68140) AND point = 1;
+DELETE FROM dbscripts_on_creature_movement WHERE id = 1897301; 
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(1897301,1,1,36,0,0,0,0,0,0,0,0,0,0,0,0,'');
+-- Donna Brascoe c.23858
+DELETE FROM creature_movement WHERE id = 2070;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
+(2070,1,6764.76,-7610.55,128.535,10000,0,0,0,0,0,0,0,0,0.935795,0,0),
+(2070,2,6757.96,-7613.65,128.073,120000,2385801,0,0,0,0,0,0,0,0.935795,0,0),
+(2070,3,6764.76,-7610.55,128.535,900000,0,0,0,0,0,0,0,0,0.935795,0,0),
+(2070,4,6770.57,-7607.24,128.457,120000,2385801,0,0,0,0,0,0,0,2.92678,0,0);
+DELETE FROM dbscripts_on_creature_movement WHERE id = 2385801; 
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(2385801,3,1,173,0,0,0,0,0,0,0,0,0,0,0,0,''),
+(2385801,115,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'');
+-- Flik c.14860
+UPDATE creature_movement SET script_id = 1486001, textid1 = 0, textid2 = 0 WHERE id = 56625 AND point = 6;
+UPDATE creature_movement SET script_id = 1486001, textid1 = 0, textid2 = 0 WHERE id = 43673 AND point = 7;
+DELETE FROM dbscripts_on_creature_movement WHERE id = 1486001; 
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(1486001,1,0,0,0,0,0,0,2000005035,2000005218,0,0,0,0,0,0,'');
+DELETE FROM db_script_string WHERE entry IN (2000005211,2000005024); -- duplicate with (2000005218,2000005035)
+-- Curator Thorius c.8256
+UPDATE creature_movement SET script_id = 825601, emote = 0 WHERE id = 1887 AND point = 15;
+UPDATE creature_movement SET script_id = 825602, textid1 = 0 WHERE id = 1887 AND point = 16;
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (825601,825602); 
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(825601,3,1,11,0,0,0,0,0,0,0,0,0,0,0,0,''),
+(825602,1,0,0,0,0,0,0,2000005000,0,0,0,0,0,0,0,'');
+-- Apprentice Morlann <Tabetha's Apprentice> c.23600
+DELETE FROM creature_movement WHERE id = 18604;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
+(18604,1,-4044.27,-3393.28,38.1284,0,0,0,0,0,0,0,0,0,2.01224,0,0),
+(18604,2,-4044.27,-3393.28,38.1284,4000,2360001,0,0,0,0,0,0,0,2.01224,0,0),
+(18604,3,-4045.51,-3394.92,38.1749,2000,0,0,0,0,0,0,0,0,4.18308,0,0),
+(18604,4,-4042.77,-3396.91,38.1887,0,0,0,0,0,0,0,0,0,6.00834,0,0),
+(18604,5,-4040.72,-3397.23,38.1476,2000,0,0,0,0,0,0,0,0,0.379286,0,0),
+(18604,6,-4040.72,-3397.23,38.1476,4000,2360002,0,0,0,0,0,0,0,0.379286,0,0),
+(18604,7,-4040.72,-3397.23,38.1476,3000,2360003,0,0,0,0,0,0,0,0.379286,0,0),
+(18604,10,-4043.43,-3395.4,38.2663,240000,0,0,0,0,0,0,0,0,3.87463,0,0);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (2360001,2360002,2360003); 
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(2360001,1,0,0,0,0,0,0,2000005242,0,0,0,0,0,0,0,''),
+(2360002,1,0,0,0,0,0,0,2000005243,0,0,0,0,0,0,0,''),
+(2360003,1,0,0,0,0,0,0,2000005244,0,0,0,0,0,0,0,'');
+UPDATE db_script_string SET emote = 6 WHERE entry = 2000005242;
+UPDATE db_script_string SET emote = 1 WHERE entry = 2000005243;
+UPDATE db_script_string SET emote = 16 WHERE entry = 2000005244;
+-- Miss Danna <School Mistress> c.3513
+UPDATE creature_movement SET script_id = 351301, textid1 = 0, emote = 0 WHERE id = 84028 AND point = 20;
+UPDATE creature_movement SET emote = 0 WHERE id = 84028 AND point = 21;
+UPDATE creature_movement SET textid1 = 0, emote = 0 WHERE id = 84028 AND point = 23;
+UPDATE creature_movement SET textid1 = 0, emote = 0 WHERE id = 84028 AND point = 24;
+UPDATE creature_movement SET textid1 = 0, emote = 0 WHERE id = 84028 AND point = 24;
+UPDATE creature_movement SET script_id = 351302, textid1 = 0 WHERE id = 84028 AND point = 38;
+UPDATE creature_movement SET script_id = 351303, textid1 = 0 WHERE id = 84028 AND point = 39;
+UPDATE creature_movement SET emote = 0 WHERE id = 84028 AND point = 40;
+UPDATE creature_movement SET script_id = 351304, textid1 = 0, emote = 0 WHERE id = 84028 AND point = 41;
+UPDATE creature_movement SET emote = 0 WHERE id = 84028 AND point = 43;
+UPDATE creature_movement SET script_id = 351305, textid1 = 0 WHERE id = 84028 AND point = 57;
+UPDATE creature_movement SET script_id = 351306, textid1 = 0 WHERE id = 84028 AND point = 58;
+UPDATE creature_movement SET script_id = 351307, textid1 = 0, emote = 0 WHERE id = 84028 AND point = 59;
+UPDATE creature_movement SET emote = 0 WHERE id = 84028 AND point = 60;
+UPDATE creature_movement SET emote = 0 WHERE id = 84028 AND point = 61;
+DELETE FROM dbscripts_on_creature_movement WHERE id BETWEEN 351301 AND 351307; 
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(351301,2,0,0,0,0,0,0,2000005134,0,0,0,0,0,0,0,''),
+(351301,11,1,1,0,0,0,0,0,0,0,0,0,0,0,0,''),
+(351301,30,0,0,0,0,0,0,2000005135,0,0,0,0,0,0,0,''),
+(351301,40,0,0,0,0,0,0,2000005136,0,0,0,0,0,0,0,''),
+(351302,0,0,0,0,0,0,0,2000005137,0,0,0,0,0,0,0,''),
+(351303,0,0,0,0,0,0,0,2000005138,0,0,0,0,0,0,0,''),
+(351304,1,0,0,0,0,0,0,2000005139,0,0,0,0,0,0,0,''),
+(351304,15,1,1,0,0,0,0,0,0,0,0,0,0,0,0,''),
+(351305,1,0,0,0,0,0,0,2000005140,0,0,0,0,0,0,0,''),
+(351306,1,0,0,0,0,0,0,2000005141,0,0,0,0,0,0,0,''),
+(351307,1,0,0,0,0,0,0,2000005142,0,0,0,0,0,0,0,''),
+(351307,9,1,1,0,0,0,0,0,0,0,0,0,0,0,0,''),
+(351307,17,1,1,0,0,0,0,0,0,0,0,0,0,0,0,'');
+-- Jimmy c.3512
+UPDATE creature_movement SET script_id = 351201, textid1 = 0, emote = 0 WHERE id = 87082 AND point = 24;
+DELETE FROM dbscripts_on_creature_movement WHERE id = 351201; 
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(351201,1,0,0,0,0,0,0,2000005167,0,0,0,0,0,0,0,'');
+UPDATE db_script_string SET emote = 1 WHERE entry = 2000005167;
+-- Steven c.3511
+UPDATE creature_movement SET script_id = 351101, textid1 = 0 WHERE id = 87089 AND point = 42;
+UPDATE creature_movement SET emote = 0 WHERE id = 87089 AND point = 43;
+DELETE FROM dbscripts_on_creature_movement WHERE id = 351101; 
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(351101,9,0,0,0,0,0,0,2000005168,0,0,0,0,0,0,0,'');
+UPDATE db_script_string SET emote = 1 WHERE entry IN (2000005134,2000005135,2000005136,2000005139,2000005142,2000005167,2000005168);
+-- Neophyte Narama c.25644
+DELETE FROM creature_movement WHERE id = 48381;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
+(48381,1,1758.71,924.822,15.5845,0,0,0,0,0,0,0,0,0,6.18404,0,0),
+(48381,2,1769.22,924.316,15.5845,0,0,0,0,0,0,0,0,0,6.12513,0,0),
+(48381,3,1771.61,922.168,15.5893,10000,2564401,0,0,0,0,0,0,0,5.57929,0,0),
+(48381,4,1769.97,924.453,15.5861,0,0,0,0,0,0,0,0,0,2.85395,0,0),
+(48381,5,1758.45,924.509,15.5847,0,0,0,0,0,0,0,0,0,3.17989,0,0),
+(48381,6,1757.05,925.586,15.5831,10000,2564401,0,0,0,0,0,0,0,2.48482,0,0);
+DELETE FROM dbscripts_on_creature_movement WHERE id = 2564401; 
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(2564401,3,28,8,0,0,0,0,0,0,0,0,0,0,0,0,'STATE_KNEEL'),
+(2564401,8,28,0,0,0,0,0,0,0,0,0,0,0,0,0,'STATE_STAND');
+UPDATE creature_template_addon SET bytes1 = 0 WHERE entry = 25644;
+-- Anchorite Elbadon c.25639
+DELETE FROM creature_movement WHERE id = 48391;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
+(48391,1,1761.42,930.421,15.5735,25000,2563901,0,0,0,0,0,0,0,4.74014,0,0),
+(48391,2,1777.23,930.708,15.5721,0,0,0,0,0,0,0,0,0,6.23632,0,0),
+(48391,3,1777.12,925.108,15.5831,0,0,0,0,0,0,0,0,0,4.64981,0,0),
+(48391,4,1772.16,919.292,15.5941,25000,2563901,0,0,0,0,0,0,0,1.61009,0,0),
+(48391,5,1754.3,918.357,15.597,0,0,0,0,0,0,0,0,0,4.71238,0,0),
+(48391,6,1752.33,918.417,15.597,0,0,0,0,0,0,0,0,0,1.63388,0,0),
+(48391,7,1752.1,929.531,15.5757,0,0,0,0,0,0,0,0,0,1.59069,0,0),
+(48391,8,1755.95,930.602,15.5723,25000,2563901,0,0,0,0,0,0,0,3.14159,0,0);
+DELETE FROM dbscripts_on_creature_movement WHERE id = 2563901; 
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(2563901,3,28,8,0,0,0,0,0,0,0,0,0,0,0,0,'STATE_KNEEL'),
+(2563901,11,15,45859,0,25661,10,0x01,0,0,0,0,0,0,0,0,'cast 45859 on buddy'),
+(2563901,15,0,0,0,0,0,0,2000005676,2000005677,2000005678,0,0,0,0,0,''),
+(2563901,23,28,0,0,0,0,0,0,0,0,0,0,0,0,0,'STATE_STAND');
+DELETE FROM db_script_string WHERE entry IN (2000005676,2000005677,2000005678); -- missing text added
+INSERT INTO db_script_string (entry, content_default, content_loc1, content_loc2, content_loc3, content_loc4, content_loc5, content_loc6, content_loc7, content_loc8, sound, type, language, emote, comment) VALUES
+(2000005676,'My the light bless you.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
+(2000005677,'Your wounds are severe, but you will live.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
+(2000005678,'Rest now, you have fought well today.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL);
+-- Sunspring Post Orphan c.18296
+UPDATE creature_movement SET script_id = 1829601, textid1 = 0 WHERE id = 84718 AND point = 5;
+DELETE FROM dbscripts_on_creature_movement WHERE id = 1829601; 
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(1829601,1,0,0,0,0,0,0,2000005147,0,0,0,0,0,0,0,'');
+-- Underwater Construction Worker c.28573
+UPDATE creature_movement SET script_id = 2857301, emote = 0 WHERE id = 85178 AND point = 1;
+UPDATE creature_movement SET script_id = 2857301, emote = 0 WHERE id = 85178 AND point = 6;
+DELETE FROM dbscripts_on_creature_movement WHERE id = 2857301; 
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(2857301,2,1,233,0,0,0,0,0,0,0,0,0,0,0,0,''),
+(2857301,28,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'');
+-- Shatterspear Troll c.10919
+UPDATE creature_movement SET script_id = 1091901, emote = 0 WHERE id = 85375 AND point = 1;
+UPDATE creature_movement SET script_id = 1091901, emote = 0 WHERE id = 85375 AND point = 2;
+UPDATE creature_movement SET script_id = 1091901, emote = 0 WHERE id = 85378 AND point = 1;
+UPDATE creature_movement SET script_id = 1091901, emote = 0 WHERE id = 85378 AND point = 2;
+UPDATE creature_movement SET script_id = 1091901, emote = 0 WHERE id = 85379 AND point = 1;
+UPDATE creature_movement SET script_id = 1091901, emote = 0 WHERE id = 85379 AND point = 2;
+UPDATE creature_movement SET script_id = 1091901, emote = 0 WHERE id = 85380 AND point = 1;
+UPDATE creature_movement SET script_id = 1091901, emote = 0 WHERE id = 85380 AND point = 2;
+UPDATE creature_movement SET script_id = 1091901, emote = 0 WHERE id = 85529 AND point = 1;
+UPDATE creature_movement SET script_id = 1091901, emote = 0 WHERE id = 85529 AND point = 2;
+UPDATE creature_movement SET script_id = 1091901, emote = 0 WHERE id = 85530 AND point = 1;
+UPDATE creature_movement SET script_id = 1091901, emote = 0 WHERE id = 85530 AND point = 2;
+UPDATE creature_movement SET script_id = 1091901, emote = 0 WHERE id = 85545 AND point = 1;
+UPDATE creature_movement SET script_id = 1091901, emote = 0 WHERE id = 85545 AND point = 2;
+UPDATE creature_movement SET script_id = 1091901, emote = 0 WHERE id = 85546 AND point = 1;
+UPDATE creature_movement SET script_id = 1091901, emote = 0 WHERE id = 85546 AND point = 2;
+UPDATE creature_movement SET script_id = 1091901, emote = 0 WHERE id = 85547 AND point = 1;
+UPDATE creature_movement SET script_id = 1091901, emote = 0 WHERE id = 85547 AND point = 2;
+UPDATE creature_movement SET script_id = 1091901, emote = 0 WHERE id = 85548 AND point = 1;
+UPDATE creature_movement SET script_id = 1091901, emote = 0 WHERE id = 85548 AND point = 2;
+UPDATE creature_movement SET script_id = 1091901, emote = 0 WHERE id = 85549 AND point = 1;
+UPDATE creature_movement SET script_id = 1091901, emote = 0 WHERE id = 85549 AND point = 2;
+UPDATE creature_movement SET script_id = 1091901, emote = 0 WHERE id = 85550 AND point = 1;
+UPDATE creature_movement SET script_id = 1091901, emote = 0 WHERE id = 85550 AND point = 2;
+UPDATE creature_movement SET script_id = 1091901, emote = 0 WHERE id = 85551 AND point = 1;
+UPDATE creature_movement SET script_id = 1091901, emote = 0 WHERE id = 85551 AND point = 2;
+UPDATE creature_movement SET script_id = 1091901, emote = 0 WHERE id = 85552 AND point = 1;
+UPDATE creature_movement SET script_id = 1091901, emote = 0 WHERE id = 85552 AND point = 2;
+UPDATE creature_movement SET script_id = 1091901, emote = 0 WHERE id = 85553 AND point = 1;
+UPDATE creature_movement SET script_id = 1091901, emote = 0 WHERE id = 85553 AND point = 2;
+UPDATE creature_movement SET script_id = 1091901, emote = 0 WHERE id = 85554 AND point = 1;
+UPDATE creature_movement SET script_id = 1091901, emote = 0 WHERE id = 85554 AND point = 2;
+UPDATE creature_movement SET script_id = 1091901, emote = 0 WHERE id = 85555 AND point = 1;
+UPDATE creature_movement SET script_id = 1091901, emote = 0 WHERE id = 85555 AND point = 2;
+UPDATE creature_movement SET script_id = 1091901, emote = 0 WHERE id = 85561 AND point = 1;
+UPDATE creature_movement SET script_id = 1091901, emote = 0 WHERE id = 85561 AND point = 2;
+UPDATE creature_movement SET script_id = 1091901, emote = 0 WHERE id = 85562 AND point = 1;
+UPDATE creature_movement SET script_id = 1091901, emote = 0 WHERE id = 85562 AND point = 2;
+DELETE FROM dbscripts_on_creature_movement WHERE id = 1091901; 
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(1091901,0,1,10,0,0,0,0,0,0,0,0,0,0,0,0,'');
+-- Shatterspear Drummer c.11196
+UPDATE creature_movement SET script_id = 1119601, emote = 0 WHERE id = 85558 AND point = 1;
+UPDATE creature_movement SET script_id = 1119601, emote = 0 WHERE id = 85558 AND point = 3;
+UPDATE creature_movement SET script_id = 1119601, emote = 0 WHERE id = 85559 AND point = 1;
+UPDATE creature_movement SET waittime = 3500 WHERE id = 85559 AND point = 2;
+UPDATE creature_movement SET script_id = 1119601, emote = 0 WHERE id = 85559 AND point = 3;
+UPDATE creature_movement SET script_id = 1119601, emote = 0 WHERE id = 85560 AND point = 1;
+UPDATE creature_movement SET script_id = 1119601, emote = 0 WHERE id = 85560 AND point = 3;
+DELETE FROM dbscripts_on_creature_movement WHERE id = 1119601; 
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(1119601,0,1,36,0,0,0,0,0,0,0,0,0,0,0,0,'');
+-- Matron Drakia c.18302
+UPDATE creature_movement SET script_id = 1830201, textid1 = 0, emote = 0 WHERE id = 65638 AND point = 1;
+UPDATE creature_movement SET script_id = 1830202, emote = 0 WHERE id = 65638 AND point = 3;
+UPDATE creature_movement SET script_id = 1830202, emote = 0 WHERE id = 65638 AND point = 6;
+UPDATE creature_movement SET script_id = 1830202, emote = 0 WHERE id = 65638 AND point = 7;
+UPDATE creature_movement SET script_id = 1830202, emote = 0 WHERE id = 65638 AND point = 8;
+UPDATE creature_movement SET script_id = 1830202, emote = 0 WHERE id = 65638 AND point = 9;
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1830201,1830202); 
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(1830201,3,28,8,0,0,0,0,0,0,0,0,0,0,0,0,'STATE_KNEEL'),
+(1830201,10,0,0,0,0,0,0,2000005041,0,0,0,0,0,0,0,''),
+(1830201,28,28,0,0,0,0,0,0,0,0,0,0,0,0,0,'STATE_STAND'),
+(1830202,3,28,8,0,0,0,0,0,0,0,0,0,0,0,0,'STATE_KNEEL'),
+(1830202,12,28,0,0,0,0,0,0,0,0,0,0,0,0,0,'STATE_STAND');
+-- Borgrim Stouthammer <Explorers' League> c.21151
+DELETE FROM creature_movement WHERE id = 74215;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
+(74215,1,2069.85,6816.89,175.598,12500,0,0,0,0,0,0,0,0,3.87498,0,0),
+(74215,2,2069.85,6816.89,175.598,3000,2115101,0,0,0,0,0,0,0,3.87498,0,0),
+(74215,3,2069.85,6816.89,175.598,15000,0,0,0,0,0,0,0,0,3.87498,0,0);
+DELETE FROM dbscripts_on_creature_movement WHERE id = 2115101; 
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(2115101,1,1,7,0,0,0,0,0,0,0,0,0,0,0,0,'');
+-- Bronwyn Stouthammer <Explorers' League> c.21197
+DELETE FROM creature_movement WHERE id = 74332;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
+(74332,1,2055.93,6816.51,175.598,40000,0,0,0,0,0,0,0,0,1.96886,0,0),
+(74332,2,2055.93,6816.51,175.598,24000,2119701,0,0,0,0,0,0,0,1.96886,0,0),
+(74332,3,2055.93,6816.51,175.598,180000,0,0,0,0,0,0,0,0,1.96886,0,0);
+DELETE FROM dbscripts_on_creature_movement WHERE id = 2119701; 
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(2119701,0,31,21151,50,0,0,0,0,0,0,0,0,0,0,0,''), -- let check if creature is alive
+(2119701,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,''),
+(2119701,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,''),
+(2119701,1,3,0,0,0,0,0,0,0,0,0,0,0,0,0.0192242,''),
+(2119701,5,0,0,0,0,0,0,2000005679,0,0,0,0,0,0,0,''),
+(2119701,10,0,0,0,21151,50,7,2000005680,2000005056,0,0,0,0,0,0,'force buddy to: say text'), -- 'old text id here' only 1st one is new.
+(2119701,15,0,0,0,0,0,0,2000005681,0,0,0,0,0,0,0,''),
+(2119701,18,0,0,0,21151,50,7,2000005682,0,0,0,0,0,0,0,'force buddy to: say text'),
+(2119701,20,3,0,0,0,0,0,0,0,0,0,0,0,0,1.96886,''),
+(2119701,22,1,69,0,0,0,0,0,0,0,0,0,0,0,0,'');
+UPDATE creature_template_addon SET emote = 69 WHERE entry = 21197;
+UPDATE db_script_string SET emote = 6 WHERE entry = 2000005056;
+DELETE FROM db_script_string WHERE entry IN (2000005679,2000005680,2000005681,2000005682); -- missing text added
+INSERT INTO db_script_string (entry, content_default, content_loc1, content_loc2, content_loc3, content_loc4, content_loc5, content_loc6, content_loc7, content_loc8, sound, type, language, emote, comment) VALUES
+(2000005679,'Borgrim, this is no time for drinking. We just got here. We need to get settled in.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,6,NULL),
+(2000005680,'I thought this was going to be our chance to get away from it all? Our vacation?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,6,NULL),
+(2000005681,'Men!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL),
+(2000005682,'Women!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,0,NULL);
+-- Innkeeper Coryth Stoktron <Innkeeper> c.18907
+UPDATE creature_movement SET script_id = 1890701, emote = 0 WHERE id = 67880 AND point = 2;
+UPDATE creature_movement SET script_id = 1890702, emote = 0 WHERE id = 67880 AND point = 4;
+UPDATE creature_movement SET script_id = 1890701, emote = 0 WHERE id = 67880 AND point = 6;
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1890701,1890702); 
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(1890701,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,''),
+(1890702,0,1,6,0,0,0,0,0,0,0,0,0,0,0,0,'');
+-- Naka <Cooking Trainer & Supplies> c.18993
+UPDATE creature_movement SET script_id = 1899301, emote = 0 WHERE id = 68273 AND point = 1;
+UPDATE creature_movement SET script_id = 1899301, emote = 0 WHERE id = 68273 AND point = 3;
+UPDATE creature_movement SET script_id = 1899302, emote = 0 WHERE id = 68273 AND point = 5;
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1899301,1899302); 
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(1899301,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,''),
+(1899302,0,1,6,0,0,0,0,0,0,0,0,0,0,0,0,'');
+-- Warden Moi'bff Jill c.18408
+UPDATE creature_movement SET script_id = 1840801, textid1 = 0, textid2 = 0, emote = 0  WHERE id = 65800 AND point = 6;
+DELETE FROM dbscripts_on_creature_movement WHERE id = 1840801; 
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(1840801,0,1,173,0,0,0,0,0,0,0,0,0,0,0,0,''),
+(1840801,10,0,0,0,0,0,0,2000005042,2000005219,0,0,0,0,0,0,''),
+(1840801,27,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'');
+-- Allerian Defender c.18999
+DELETE FROM creature_movement WHERE id IN (68291,68293);
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
+(68293,1,-2969.74,3975.3,1.29151,60000,0,0,0,0,0,0,0,0,1.46608,0,0),
+(68293,2,-2969.74,3975.3,1.29151,20000,1899901,0,0,0,0,0,0,0,1.46608,0,0),
+(68293,3,-2969.74,3975.3,1.29151,180000,0,0,0,0,0,0,0,0,1.46608,0,0);
+UPDATE creature SET MovementType = 0, spawndist = 0 WHERE guid = 68291;
+DELETE FROM dbscripts_on_creature_movement WHERE id = 1899901; 
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(1899901,5,0,0,0,0,0,0,2000005683,2000005046,2000005684,2000005685,0,0,0,0,''), -- 2000005046 allready in DB (do not change it)
+(1899901,10,0,0,0,18999,20,7,2000005686,2000005047,2000005687,2000005688,0,0,0,0,'force buddy to: say text'); -- 2000005047 allready in DB (do not change it)
+DELETE FROM db_script_string WHERE entry BETWEEN 2000005683 AND 2000005688; -- missing text added
+INSERT INTO db_script_string (entry, content_default, content_loc1, content_loc2, content_loc3, content_loc4, content_loc5, content_loc6, content_loc7, content_loc8, sound, type, language, emote, comment) VALUES
+(2000005683,'Hey, did you read the bounty on this wanted poster?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,6,NULL),
+(2000005684,'This wanted poster says that they\'re offering gold to these so-called adventurers to go kill things. Isn\'t that what we do? I don\'t think I\'m being paid enough!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,NULL),
+(2000005685,'This poster has a bounty on bonelashers. You think I should do that?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,6,NULL),
+(2000005686,'Is that wanted poster all that you\'re going to talk about today?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,6,NULL),
+(2000005687,'I could use the extra money.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,NULL),
+(2000005688,'The bonelashers of the wastes are no laughing matter. I hear they carry diseases!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,NULL);
+UPDATE db_script_string SET emote = 1 WHERE entry IN (2000005046,2000005047);
+-- Allerian Peasant c.19147
+UPDATE creature_movement SET waittime = 4000, script_id = 1914701, emote = 0 WHERE id = 68468 AND point = 3;
+UPDATE creature_movement SET waittime = 4000, script_id = 1914701, emote = 0 WHERE id = 68468 AND point = 9;
+UPDATE creature_movement SET script_id = 1914702, emote = 0 WHERE id = 68469 AND point = 2;
+UPDATE creature_movement SET waittime = 4000, script_id = 1914701, emote = 0 WHERE id = 68469 AND point = 6;
+UPDATE creature_movement SET waittime = 4000, script_id = 1914701, emote = 0 WHERE id = 68470 AND point = 1;
+UPDATE creature_movement SET waittime = 4000, script_id = 1914701, emote = 0 WHERE id = 68470 AND point = 6;
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1914701,1914702); 
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(1914701,1,1,381,0,0,0,0,0,0,0,0,0,0,0,0,''),
+(1914701,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,''),
+(1914702,0,1,69,0,0,0,0,0,0,0,0,0,0,0,0,'');
+-- Dockmaster c.6846
+UPDATE creature_movement SET script_id = 684601, textid1 = 0 WHERE id = 80737 AND point = 6;
+DELETE FROM dbscripts_on_creature_movement WHERE id = 684601; 
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(684601,1,0,0,0,0,0,0,2000005132,0,0,0,0,0,0,0,'');
+UPDATE db_script_string SET emote = 5 WHERE entry = 2000005132;
+-- Dawnblade Blood Knight c.24976
+UPDATE creature_movement SET waittime = 5000, script_id = 2497601, textid1 = 0 WHERE id = 94309 AND point = 1;
+UPDATE creature_movement SET script_id = 2497602, spell = 0 WHERE id = 94309 AND point = 2;
+UPDATE creature_movement SET waittime = 5000, script_id = 2497601, textid1 = 0 WHERE id = 94325 AND point = 1;
+UPDATE creature_movement SET script_id = 2497602, spell = 0 WHERE id = 94325 AND point = 2;
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (2497601,2497602); 
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(2497601,0,25,1,0,0,0,0,0,0,0,0,0,0,0,0,'RUN ON'),
+(2497601,2,1,25,0,0,0,0,0,0,0,0,0,0,0,0,''),
+(2497601,5,0,0,0,0,0,0,2000005200,0,0,0,0,0,0,0,''),
+(2497602,1,15,45105,0,0,0,0,0,0,0,0,0,0,0,0,'cast 45105'),
+(2497602,2,25,0,0,0,0,0,0,0,0,0,0,0,0,0,'RUN OFF');
+-- Whirligig Wafflefry <Gnomish Inventor> c.25885 and Harbinger Haronem c.19475
+DELETE FROM creature_movement WHERE id IN (96594,96592);
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
+(96594,1,-1918.05,5334.41,-12.428,120000,0,0,0,0,0,0,0,0,3.35103,0,0),
+(96594,2,-1918.05,5334.41,-12.428,20000,2588501,0,0,0,0,0,0,0,3.35103,0,0),
+(96594,3,-1918.05,5334.41,-12.428,120000,0,0,0,0,0,0,0,0,3.35103,0,0),
+(96594,4,-1918.05,5334.41,-12.428,60000,2588502,0,0,0,0,0,0,0,3.35103,0,0),
+(96594,5,-1918.05,5334.41,-12.428,60000,2588503,0,0,0,0,0,0,0,3.35103,0,0),
+(96594,6,-1918.05,5334.41,-12.428,60000,2588504,0,0,0,0,0,0,0,3.35103,0,0),
+(96594,7,-1918.05,5334.41,-12.428,60000,2588505,0,0,0,0,0,0,0,3.35103,0,0),
+(96594,8,-1918.05,5334.41,-12.428,300000,0,0,0,0,0,0,0,0,3.35103,0,0);
+UPDATE creature SET MovementType = 0, spawndist = 0 WHERE guid = 96592;
+DELETE FROM dbscripts_on_creature_movement WHERE id BETWEEN 2588501 AND 2588505; 
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(2588501,5,0,0,0,0,0,0,2000005201,0,0,0,0,0,0,0,''),
+(2588501,7,3,0,0,19475,50,7,0,0,0,0,0,0,0,0.452172,'force buddy to move'),
+(2588501,10,0,0,0,19475,50,7,2000005205,0,0,0,0,0,0,0,'force buddy to: say text'),
+(2588501,15,3,0,0,19475,50,7,0,0,0,0,0,0,0,3.4383,'force buddy to move'),
+(2588502,5,0,0,0,0,0,0,2000005206,0,0,0,0,0,0,0,''),
+(2588503,5,0,0,0,0,0,0,2000005207,0,0,0,0,0,0,0,''),
+(2588504,5,0,0,0,0,0,0,2000005208,0,0,0,0,0,0,0,''),
+(2588505,5,0,0,0,0,0,0,2000005209,0,0,0,0,0,0,0,'');
+DELETE FROM db_script_string WHERE entry = 2000005201; -- this was duplicate with 2000005200 so i'll reuse it.
+INSERT INTO db_script_string (entry, content_default, content_loc1, content_loc2, content_loc3, content_loc4, content_loc5, content_loc6, content_loc7, content_loc8, sound, type, language, emote, comment) VALUES
+(2000005201,'Hey, harbringer, how\'s that research coming along? There might be an Ultra-Kinetic Waffle Iron in it for you if you\'re prompt with the results!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,NULL);
+UPDATE db_script_string SET emote = 6 WHERE entry = 2000005205;
+UPDATE db_script_string SET emote = 1 WHERE entry IN (2000005206,2000005207,2000005208,2000005209);
