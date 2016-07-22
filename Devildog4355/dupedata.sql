@@ -15,3 +15,8 @@ INSERT INTO creature_movement_template (entry, point, position_x, position_y, po
 DELETE FROM dbscripts_on_creature_movement WHERE id = 2150001; 
 INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
 (2150001,6,1,15,0,0,0,0,0,0,0,0,0,0,0,0,'');
+-- cala, remove bad script, handled with SD2
+UPDATE quest_template SET StartScript = 0 WHERE entry = 945;
+DELETE FROM dbscripts_on_quest_start WHERE id = 945;
+-- Hellfire Fire - wrong object used (sniffed one added in 407)
+DELETE FROM gameobject WHERE guid IN (24681,24682);
