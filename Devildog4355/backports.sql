@@ -1150,13 +1150,23 @@ INSERT INTO dbscripts_on_creature_death (id, delay, command, datalong, datalong2
 (21075,1,15,33240,0,19215,68744,0x01 | 0x10,0,0,0,0,0,0,0,0,'cast 33240 on buddy'),
 (21075,5,10,18946,0,19215,68744,7 | 0x10,0,0,0,0,0,0,0,0,'summon infernals');
 -- ATTACKERS
-DELETE FROM creature WHERE guid IN (67982,67985,67986,67988,68311,68313);
-insert into `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) values('67982','18944','530','1','0','0','-255.686','1175.28','41.75','4.22167','300','5','0','90818','0','0','1');
-insert into `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) values('67985','18944','530','1','0','0','-232.309','1186.1','42.094','4.6831','300','5','0','90818','0','0','1');
-insert into `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) values('67986','18944','530','1','0','0','-242.304','1186.4','42.3041','4.6831','300','5','0','90818','0','0','1');
-insert into `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) values('67988','18944','530','1','0','0','-262.298','1186.93','42','4.68338','300','5','0','90818','0','0','1');
-insert into `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) values('68311','19005','530','1','0','0','-249.237','1243.63','29.6184','4.67896','300','5','0','143620','0','0','1');
-insert into `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) values('68313','19005','530','1','0','0','-246.862','1270.4','24.7612','4.85129','300','5','0','143620','0','0','1');
+DELETE FROM creature WHERE guid IN (67982,67985,67986,67988,68311,68313,67973,67978,67979,67974,67976,67989,67990);
+insert into `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) values
+('67982','18944','530','1','0','0','-255.686','1175.28','41.75','4.22167','300','5','0','90818','0','0','1'),
+('67985','18944','530','1','0','0','-232.309','1186.1','42.094','4.6831','300','5','0','90818','0','0','1'),
+('67986','18944','530','1','0','0','-242.304','1186.4','42.3041','4.6831','300','5','0','90818','0','0','1'),
+('67988','18944','530','1','0','0','-262.298','1186.93','42','4.68338','300','5','0','90818','0','0','1'),
+('68311','19005','530','1','0','0','-249.237','1243.63','29.6184','4.67896','300','5','0','143620','0','0','1'),
+('68313','19005','530','1','0','0','-246.862','1270.4','24.7612','4.85129','300','5','0','143620','0','0','1'),
+('67973','18944','530','1','0','0','-241.267','1242.61','29.5946','4.67917','300','5','0','90818','0','0','1'),
+('67978','18944','530','1','0','0','-225.789','1229.56','32.6079','4.64066','300','5','0','90818','0','0','1'),
+('67979','18944','530','1','0','0','-233.855','1228.78','31.8833','4.619','300','5','0','90818','0','0','1'),
+('67974','18944','530','1','0','0','-241.202','1244.57','29.3197','4.67917','300','0','0','90818','0','0','0'),
+('67976','18944','530','1','0','0','-239.13','1284.32','22.3405','4.86935','300','5','0','90818','0','0','1'),
+('67989','18944','530','1','0','0','-238.826','1264','26.0006','4.85152','300','5','0','90818','0','0','1'),
+('67990','18944','530','1','0','0','-232.851','1272.31','24.8109','4.85138','300','5','0','90818','0','0','1');
+
+
 -- 1st wave
 UPDATE creature SET spawndist = 0, MovementType = 2, position_x = -237.226822, position_y = 1136.661133, position_z = 41.666767, orientation = 4.391514955 WHERE guid = 67981;
 DELETE FROM creature_movement WHERE id = 67981;
