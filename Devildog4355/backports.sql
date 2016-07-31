@@ -2983,7 +2983,19 @@ DELETE FROM dbscripts_on_creature_movement WHERE id = 2104902;
 INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
 (2104902,1,0,0,0,0,0,0,2000005453,2000005454,2000005457,2000005458,0,0,0,0,'');
 -- Sayge c.14822
-UPDATE creature_movement SET script_id = 1482201, textid1 = 0, textid2 = 0, textid3 = 0, textid4 = 0 WHERE id = 45476 AND point = 5;
+DELETE FROM creature_movement WHERE id = 142315;
+UPDATE creature SET MovementType = 2 WHERE guid = 142315;
+INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`,  `orientation`, `model1`, `model2`) VALUES
+('142315','1','-2259.21','5197.81','-9.90456','10000','0','0','0','0','0','0','0','0','1.20428','0','0'),
+('142315','2','-2259.21','5197.81','-9.90456','10000','0','0','0','0','0','0','0','0','1.20428','0','0'),
+('142315','3','-2259.21','5197.81','-9.90456','15000','0','0','0','0','0','0','0','0','1.20428','0','0'),
+('142315','4','-2259.21','5197.81','-9.90456','10000','0','0','0','0','0','0','0','0','1.20428','0','0'),
+('142315','5','-2259.21','5197.81','-9.90456','10000','1482201','0','0','0','0','0','0','0','1.20428','0','0'),
+('142315','6','-2259.21','5197.81','-9.90456','15000','0','0','0','0','0','0','0','0','1.20428','0','0'),
+('142315','7','-2259.21','5197.81','-9.90456','10000','0','0','0','0','0','0','0','0','1.20428','0','0'),
+('142315','8','-2259.21','5197.81','-9.90456','10000','0','0','0','0','0','0','0','0','1.20428','0','0'),
+('142315','9','-2259.21','5197.81','-9.90456','15000','0','0','0','0','0','0','0','0','1.20428','0','0'),
+('142315','10','-2259.21','5197.81','-9.90456','10000','0','0','0','0','0','0','0','0','1.20428','0','0');
 DELETE FROM dbscripts_on_creature_movement WHERE id = 1482201; 
 INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
 (1482201,1,0,0,0,0,0,0,2000005026,2000005213,2000005227,2000005232,0,0,0,0,'');
@@ -3983,7 +3995,7 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z, wa
 (90439,25,-9008.41,945.283,116.895,0,0,0,0,0,0,0,0,0,5.53821,0,0),
 (90439,26,-9000.86,940.914,117.094,0,0,0,0,0,0,0,0,0,5.82645,0,0),
 (90439,27,-8998.38,939.901,117.094,2000,0,0,0,0,0,0,0,0,5.91284,0,0),
-(90439,28,-8996.34,945.169,117.097,22000,233000,0,0,0,0,0,0,0,1.17061,0,0),
+(90439,28,-8996.34,945.169,117.097,22000,233001,0,0,0,0,0,0,0,1.17061,0,0),
 (90439,29,-8999.05,940.572,117.096,0,0,0,0,0,0,0,0,0,4.25251,0,0),
 (90439,30,-9002.62,941.706,117.095,0,0,0,0,0,0,0,0,0,2.66993,0,0),
 (90439,31,-9012.38,947.61,116.227,2000,0,0,0,0,0,0,0,0,2.48301,0,0),
@@ -4055,13 +4067,6 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z, wa
 (90439,97,-8851.55,661.112,97.1319,0,0,0,0,0,0,0,0,0,0.659181,0,0),
 (90439,98,-8824.74,678.622,97.5366,10000,0,0,0,0,0,0,0,0,1.97629,0,0),
 (90439,99,-8847.34,726.835,97.6974,10000,0,0,0,0,0,0,0,0,2.05091,0,0);
-DELETE FROM dbscripts_on_creature_movement WHERE id = 233001; 
-INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
-(233001,2,0,0,0,0,0,0,2000005180,0,0,0,0,0,0,0,''),
-(233001,7,0,0,0,2331,30,7,2000005183,0,0,0,0,0,0,0,'force buddy to: say text'),
-(233001,12,0,0,0,0,0,0,2000005181,0,0,0,0,0,0,0,''),
-(233001,15,0,0,0,3504,30,7,2000005184,0,0,0,0,0,0,0,'force buddy to: say text'),
-(233001,19,0,0,0,0,0,0,2000005182,0,0,0,0,0,0,0,'');
 DELETE FROM dbscripts_on_creature_movement WHERE id = 233001; 
 INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
 (233001,2,0,0,0,0,0,0,2000005180,0,0,0,0,0,0,0,''),
