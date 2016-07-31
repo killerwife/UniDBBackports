@@ -20,7 +20,7 @@ INSERT INTO spell_script_target (entry, type, targetEntry, inverseEffectMask) VA
 (45666, 1, 25315, 0),
 (44845, 1, 24892, 0),
 (44845, 1, 24891, 0),
-(44845, 1, 24850, 0);
+(44845, 1, 24850, 0); 
 -- doors
 DELETE FROM spell_script_target WHERE entry IN (46609,46610,46637,46650,46652,46638);
 INSERT INTO spell_script_target (entry, type, targetEntry, inverseEffectMask) VALUES 
