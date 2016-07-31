@@ -1,5 +1,5 @@
 -- Missing DB_Script_string
-DELETE FROM db_script_string WHERE entry IN (2000005242,2000005243,2000005244,2000005167,2000005168,2000005206,2000005207,2000005208,2000005209,2000005205);
+DELETE FROM db_script_string WHERE entry IN (2000005242,2000005243,2000005244,2000005167,2000005168,2000005206,2000005207,2000005208,2000005209,2000005205,2000005000,2000005258,2000005259,2000005260);
 INSERT INTO `DB_Script_string` (entry, content_default, content_loc1, content_loc2, content_loc3, content_loc4, content_loc5, content_loc6, content_loc7, content_loc8) VALUES
 ('2000005167','Is it true that the paladins train here?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 ('2000005168','Why do we have to learn this stuff anyway?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
@@ -10,7 +10,15 @@ INSERT INTO `DB_Script_string` (entry, content_default, content_loc1, content_lo
 ('2000005209','Don\'t wait! Order now and receive my Ultra-Kinetic Waffle Iron at no additional charge!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 ('2000005242','Hmm... I wonder...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 ('2000005243','Now, where is it?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-('2000005244','Stupid mages... always using the last of a reagent and never replacing it.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+('2000005244','Stupid mages... always using the last of a reagent and never replacing it.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+('2000005000','Poor Dorius. If I ever get my hands on those Dark Irons, so help me...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+('2000005258','Im picking up trace amounts of chroniton particles. Hmm, if we use a reverse phase inducer, while inverting our own chronosphere, we might be able to eliminate the particles. Of course, that means we need to build a chronosphere...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+('2000005259','Hmm... It seems that the syncotron unit weve been using has had no noticeable effect on the gravimetric or gravitronic distortions in this sector.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+('2000005260','Hmm... the readings on the gravimeteric distortions seem to have stabalized. We did it!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+
+-- WOTLK DATA FROM PAST BACKPORT
+DELETE FROM db_script_string WHERE entry IN (2000005049,2000005729);
+
 -- Missing NPC at "The Stair of Destiny"
 -- Darkspear Axe Thrower - (Hellfire Peninsula)
 DELETE FROM creature WHERE guid IN (140485,140486,140487);
@@ -682,58 +690,6 @@ UPDATE creature SET spawntimesecs = 180 WHERE guid = 42685;
 UPDATE creature_template SET InhabitType = 1 WHERE entry = 22181;
 -- Crildor - update
 UPDATE creature_template SET NpcFlags = 0 WHERE entry = 5782;
--- Overseer Kragosh - event
-UPDATE creature SET MovementType = 2 WHERE guid = 104535;
-UPDATE creature_template SET MovementType = 2 WHERE entry = 36217;
-DELETE FROM creature_movement_template WHERE entry = 36217;
-INSERT INTO creature_movement_template (entry, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
-(36217,1,1438.03,403.83,-85.2626,45000,0,0,0,0,0,0,0,0,3.12414,0,0),
-(36217,2,1438.03,403.83,-85.2626,6000,3621701,0,0,0,0,0,0,0,3.12414,0,0),
-(36217,3,1438.01,400.654,-85.2645,0,0,0,0,0,0,0,0,0,4.67316,0,0),
-(36217,4,1436.25,397.342,-85.2657,0,0,0,0,0,0,0,0,0,3.97572,0,0),
-(36217,5,1432.92,395.72,-85.2653,0,0,0,0,0,0,0,0,0,3.23666,0,0),
-(36217,6,1430.37,397.151,-85.2619,0,0,0,0,0,0,0,0,0,2.48347,0,0),
-(36217,7,1428.68,401,-85.2571,55000,3621702,0,0,0,0,0,0,0,1.86693,0,0),
-(36217,8,1430.37,397.151,-85.2619,0,0,0,0,0,0,0,0,0,5.86461,0,0),
-(36217,9,1432.92,395.72,-85.2653,0,0,0,0,0,0,0,0,0,0.314982,0,0),
-(36217,10,1436.25,397.342,-85.2657,0,0,0,0,0,0,0,0,0,1.24254,0,0),
-(36217,11,1438.01,400.654,-85.2645,0,0,0,0,0,0,0,0,0,1.58026,0,0),
-(36217,12,1438.03,403.83,-85.2626,2000,0,0,0,0,0,0,0,0,1.72556,0,0),
-(36217,13,1438.03,403.83,-85.2626,420000,0,0,0,0,0,0,0,0,3.12414,0,0);
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (3621701,3621702);
-INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
-(3621701,2,0,0,0,0,0,0,2000005722,0,0,0,0,0,0,0,''),
-(3621702,0,1,25,0,0,0,0,0,0,0,0,0,0,0,0,''),
-(3621702,4,0,0,0,0,0,0,2000005723,0,0,0,0,0,0,0,''),
-(3621702,10,3,0,0,0,0,0,0,0,0,0,0,0,0,0.640137,''),
-(3621702,11,0,0,0,0,0,0,2000005724,0,0,0,0,0,0,0,''),
-(3621702,20,31,2055,20,0,0,0,0,0,0,0,0,0,0,0,''), -- let check if creature is alive
-(3621702,21,3,0,0,2055,20,7,0,0,0,0,0,0,0,4.00321,''),
-(3621702,22,0,0,0,2055,20,4,2000005725,0,0,0,0,0,0,0,'force 2055 to: say text'),
-(3621702,32,0,0,0,2055,20,4,2000005726,0,0,0,0,0,0,0,'force 2055 to: say text'),
-(3621702,38,0,0,0,0,0,0,2000005727,0,0,0,0,0,0,0,''),
-(3621702,44,3,0,0,0,0,0,0,0,0,0,0,0,0,3.99929,''),
-(3621702,46,0,0,0,0,0,0,2000005728,0,0,0,0,0,0,0,''),
-(3621702,48,1,66,0,36213,140768,7 | 0x10,0,0,0,0,0,0,0,0,''),
-(3621702,50,3,0,0,2055,20,7,0,0,0,0,0,0,0,2.26893,''),
-(3621702,50,3,0,0,36213,140768,7 | 0x10,0,0,0,0,1420.97,389.227,-84.9886,0.0620715,''),
-(3621702,51,3,0,0,36213,140768,7 | 0x10,0,0,0,0,1422.92,387.966,-84.9914,5.27633,''),
-(3621702,52,3,0,0,36213,140768,7 | 0x10,0,0,0,0,1422.9,384.706,-84.9962,4.3323,''),
-(3621702,53,3,0,0,36213,140768,7 | 0x10,0,0,0,0,1420.35,382.272,-84.9962,3.85478,''),
-(3621702,56,0,0,0,36213,140768,7 | 0x10,2000005729,0,0,0,0,0,0,0,'force 36213 to: say text'),
-(3621702,63,3,0,0,36213,140768,7 | 0x10,0,0,0,0,1418.86,388.783,-84.9909,0.942079,''),
-(3621702,72,3,0,0,36213,140768,7 | 0x10,0,0,0,0,0,0,0,0.942079,'');
-DELETE FROM db_script_string WHERE entry BETWEEN 2000005722 AND 2000005729;
-INSERT INTO db_script_string (entry, content_default, content_loc1, content_loc2, content_loc3, content_loc4, content_loc5, content_loc6, content_loc7, content_loc8, sound, type, language, emote, comment) VALUES
-(2000005722,'I\'ve got my eye on you, Faranell.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,NULL),
-(2000005723,'No abominations protecting you. No secrecy. No plotting in the dark.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,NULL),
-(2000005724,'If you so much as spit without my permission, this place shuts down. Forcefully.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,NULL),
-(2000005725,'I assure you, overseer, the Royal Apothecary Society dearly wishes to make up for the tragic misguidance which ended so many lives.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,NULL),
-(2000005726,'We will cause you no trouble. We seek only to continue our research in peace.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,NULL),
-(2000005727,'We\'ll see about that.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,NULL),
-(2000005728,'Get that rotten nut to shut his trap!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,5,NULL),
-(2000005729,'Shut your face, you gibbering idiot! ',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,5,NULL);
-
 -- Crag Boar
 UPDATE creature SET position_x = -6070.349121, position_y = -285.940399, position_z = 428.220367, orientation = 1.496177 WHERE guid = 263;
 UPDATE creature SET position_x = -6104.470703, position_y = -163.987122, position_z = 433.257080, orientation = 1.833880 WHERE guid = 1716;
@@ -1176,7 +1132,7 @@ UPDATE creature_template SET MovementType = 2 WHERE entry = 18945; -- now move h
 DELETE FROM creature_movement_template WHERE entry = 18945;
 INSERT INTO creature_movement_template (entry, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
 (18945,1,-246.692,1175.22,41.75,10000,0,0,0,0,0,0,0,0,4.71011,0,0), 
-(18945,2,-246.692,1175.22,41.75,5000,0,0,0,0,0,0,33393,0,4.71011,0,0),
+(18945,2,-246.692,1175.22,41.75,5000,0,0,0,0,0,0,0,33393,4.71011,0,0),
 (18945,3,-246.692,1175.22,41.75,35000,0,0,0,0,0,0,0,0,4.71011,0,0);
 -- event 12353
 DELETE FROM dbscripts_on_event WHERE id = 12353;
@@ -3335,7 +3291,6 @@ UPDATE creature_movement SET script_id = 1486001, textid1 = 0, textid2 = 0 WHERE
 DELETE FROM dbscripts_on_creature_movement WHERE id = 1486001; 
 INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
 (1486001,1,0,0,0,0,0,0,2000005035,2000005218,0,0,0,0,0,0,'');
-DELETE FROM db_script_string WHERE entry IN (2000005211,2000005024); -- duplicate with (2000005218,2000005035)
 -- Curator Thorius c.8256
 UPDATE creature_movement SET script_id = 825601, emote = 0 WHERE id = 1887 AND point = 15;
 UPDATE creature_movement SET script_id = 825602, textid1 = 0 WHERE id = 1887 AND point = 16;
@@ -3937,7 +3892,6 @@ INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalo
 -- Honor Hold Gryphon Rider c.20237
 DELETE FROM creature_movement WHERE id = 96989;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
-(96989,1,267.502,1449.24,-14.3756,10000,2023701,0,0,0,0,0,0,0,4.23579,0,0),
 (96989,2,267.502,1449.24,-14.3756,60000,2023702,0,0,0,0,0,0,0,4.23579,0,0),
 (96989,3,288.012,1484.46,-13.3656,60000,2023702,0,0,0,0,0,0,0,1.08004,0,0);
 DELETE FROM dbscripts_on_creature_movement WHERE id = 2023702; 

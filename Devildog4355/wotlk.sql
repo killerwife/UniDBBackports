@@ -3729,3 +3729,55 @@ UPDATE creature_template SET UnitClass = 1 WHERE entry = 42078; -- Mini Thor
 UPDATE creature_template SET UnitClass = 1 WHERE entry = 43280; -- Orb Rotation Focus (1)
 UPDATE creature_template SET UnitClass = 1 WHERE entry = 43281; -- Orb Rotation Focus (2)
 UPDATE creature_template SET UnitClass = 1 WHERE entry = 43282; -- Orb Rotation Focus (3)
+
+-- Overseer Kragosh - event
+UPDATE creature SET MovementType = 2 WHERE guid = 104535;
+UPDATE creature_template SET MovementType = 2 WHERE entry = 36217;
+DELETE FROM creature_movement_template WHERE entry = 36217;
+INSERT INTO creature_movement_template (entry, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
+(36217,1,1438.03,403.83,-85.2626,45000,0,0,0,0,0,0,0,0,3.12414,0,0),
+(36217,2,1438.03,403.83,-85.2626,6000,3621701,0,0,0,0,0,0,0,3.12414,0,0),
+(36217,3,1438.01,400.654,-85.2645,0,0,0,0,0,0,0,0,0,4.67316,0,0),
+(36217,4,1436.25,397.342,-85.2657,0,0,0,0,0,0,0,0,0,3.97572,0,0),
+(36217,5,1432.92,395.72,-85.2653,0,0,0,0,0,0,0,0,0,3.23666,0,0),
+(36217,6,1430.37,397.151,-85.2619,0,0,0,0,0,0,0,0,0,2.48347,0,0),
+(36217,7,1428.68,401,-85.2571,55000,3621702,0,0,0,0,0,0,0,1.86693,0,0),
+(36217,8,1430.37,397.151,-85.2619,0,0,0,0,0,0,0,0,0,5.86461,0,0),
+(36217,9,1432.92,395.72,-85.2653,0,0,0,0,0,0,0,0,0,0.314982,0,0),
+(36217,10,1436.25,397.342,-85.2657,0,0,0,0,0,0,0,0,0,1.24254,0,0),
+(36217,11,1438.01,400.654,-85.2645,0,0,0,0,0,0,0,0,0,1.58026,0,0),
+(36217,12,1438.03,403.83,-85.2626,2000,0,0,0,0,0,0,0,0,1.72556,0,0),
+(36217,13,1438.03,403.83,-85.2626,420000,0,0,0,0,0,0,0,0,3.12414,0,0);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (3621701,3621702);
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(3621701,2,0,0,0,0,0,0,2000005722,0,0,0,0,0,0,0,''),
+(3621702,0,1,25,0,0,0,0,0,0,0,0,0,0,0,0,''),
+(3621702,4,0,0,0,0,0,0,2000005723,0,0,0,0,0,0,0,''),
+(3621702,10,3,0,0,0,0,0,0,0,0,0,0,0,0,0.640137,''),
+(3621702,11,0,0,0,0,0,0,2000005724,0,0,0,0,0,0,0,''),
+(3621702,20,31,2055,20,0,0,0,0,0,0,0,0,0,0,0,''), -- let check if creature is alive
+(3621702,21,3,0,0,2055,20,7,0,0,0,0,0,0,0,4.00321,''),
+(3621702,22,0,0,0,2055,20,4,2000005725,0,0,0,0,0,0,0,'force 2055 to: say text'),
+(3621702,32,0,0,0,2055,20,4,2000005726,0,0,0,0,0,0,0,'force 2055 to: say text'),
+(3621702,38,0,0,0,0,0,0,2000005727,0,0,0,0,0,0,0,''),
+(3621702,44,3,0,0,0,0,0,0,0,0,0,0,0,0,3.99929,''),
+(3621702,46,0,0,0,0,0,0,2000005728,0,0,0,0,0,0,0,''),
+(3621702,48,1,66,0,36213,140768,7 | 0x10,0,0,0,0,0,0,0,0,''),
+(3621702,50,3,0,0,2055,20,7,0,0,0,0,0,0,0,2.26893,''),
+(3621702,50,3,0,0,36213,140768,7 | 0x10,0,0,0,0,1420.97,389.227,-84.9886,0.0620715,''),
+(3621702,51,3,0,0,36213,140768,7 | 0x10,0,0,0,0,1422.92,387.966,-84.9914,5.27633,''),
+(3621702,52,3,0,0,36213,140768,7 | 0x10,0,0,0,0,1422.9,384.706,-84.9962,4.3323,''),
+(3621702,53,3,0,0,36213,140768,7 | 0x10,0,0,0,0,1420.35,382.272,-84.9962,3.85478,''),
+(3621702,56,0,0,0,36213,140768,7 | 0x10,2000005729,0,0,0,0,0,0,0,'force 36213 to: say text'),
+(3621702,63,3,0,0,36213,140768,7 | 0x10,0,0,0,0,1418.86,388.783,-84.9909,0.942079,''),
+(3621702,72,3,0,0,36213,140768,7 | 0x10,0,0,0,0,0,0,0,0.942079,'');
+DELETE FROM db_script_string WHERE entry BETWEEN 2000005722 AND 2000005729;
+INSERT INTO db_script_string (entry, content_default, content_loc1, content_loc2, content_loc3, content_loc4, content_loc5, content_loc6, content_loc7, content_loc8, sound, type, language, emote, comment) VALUES
+(2000005722,'I\'ve got my eye on you, Faranell.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,NULL),
+(2000005723,'No abominations protecting you. No secrecy. No plotting in the dark.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,NULL),
+(2000005724,'If you so much as spit without my permission, this place shuts down. Forcefully.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,NULL),
+(2000005725,'I assure you, overseer, the Royal Apothecary Society dearly wishes to make up for the tragic misguidance which ended so many lives.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,NULL),
+(2000005726,'We will cause you no trouble. We seek only to continue our research in peace.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,NULL),
+(2000005727,'We\'ll see about that.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,1,NULL),
+(2000005728,'Get that rotten nut to shut his trap!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,5,NULL),
+(2000005729,'Shut your face, you gibbering idiot! ',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,0,5,NULL);
