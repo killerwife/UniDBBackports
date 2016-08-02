@@ -5,6 +5,14 @@ INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`) VALUES
 ('882','2','32569','1'),
 ('961','5','1015','7');
 
+-- MISSING EQUIP_TEMPLATE
+DELETE FROM creature_equip_template WHERE entry IN (9,62,32,300);
+insert into `creature_equip_template` (`entry`, `equipentry1`, `equipentry2`, `equipentry3`) values
+('9','1908','0','0'),
+('62','2827','0','0'),
+('32','5278','0','0'),
+('300','0','0','28023');
+
 
 -- Missing DB_Script_string
 DELETE FROM db_script_string WHERE entry IN (2000005242,2000005243,2000005244,2000005167,2000005168,2000005206,2000005207,2000005208,2000005209,2000005205,2000005258,2000005259,2000005260,2000005261,2000005262);
@@ -24,10 +32,8 @@ INSERT INTO `DB_Script_string` (entry, content_default, content_loc1, content_lo
 ('2000005260','Hmm... the readings on the gravimeteric distortions seem to have stabalized. We did it!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 ('2000005261','I\'ll be the judge of that.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 ('2000005262','According to these readings, we have nothing to fear. At least nothing in the near future. We\'ll need more data to be sure.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-
 -- WOTLK DATA FROM PAST BACKPORT
 DELETE FROM db_script_string WHERE entry IN (2000005729);
-
 -- Missing NPC at "The Stair of Destiny"
 -- Darkspear Axe Thrower - (Hellfire Peninsula)
 DELETE FROM creature WHERE guid IN (140485,140486,140487);
@@ -130,7 +136,6 @@ INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalo
 (255302,10,3,0,0,2552,140695,7 | 0x10,0,0,0,0,-1032.97,-3550.54,55.9796,6.22908,''),
 (255302,10,3,0,0,2552,140696,7 | 0x10,0,0,0,0,-1032.97,-3550.54,55.9796,6.22908,'');
 -- Blackwind Sabercat #1 - Terrokar Forest  -- missing spawn
-
 DELETE FROM creature WHERE guid = 140769;
 INSERT INTO creature (guid,id,map,spawnMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
 (140769,21723,530,1,0,0,-3522.41,3254.19,300.692,0.0237059,300,0,0,9082,0,0,2);
@@ -1105,14 +1110,12 @@ INSERT INTO creature_template_addon (entry, mount, bytes1, b2_0_sheath, b2_1_Fla
 (21306,0,0,1,0,0,0,31309);
 -- Magic Sucker Device Buttress - movement update
 UPDATE creature_template SET MovementType = 0 WHERE entry = 22267;
--- Thrallmar Marskmen -- has diff equip only in this place!
-UPDATE creature SET equipment_id = 234 WHERE guid IN (57542,57543);
 -- Darkspear Axe Thrower - (Hellfire Peninsula) -- spell we had is casted by totem from another creature
 UPDATE creature_template_addon SET auras = NULL WHERE entry = 18970;
 -- Justinius the Harbinger - (Hellfire Peninsula) -- one of his spells should be used by ACID, not in auras
 UPDATE creature_template_addon SET auras = NULL WHERE entry = 18966;
 -- Orgrimmar Grunt - (Hellfire Peninsula) -- spell we had is casted by totem from another creature
-UPDATE creature_addon SET auras = NULL WHERE guid IN (68018,68019,68024);
+UPDATE creature_addon SET auras = NULL WHERE guid IN (68024);
 -- Infernal Target (Hyjal) - update
 UPDATE creature_template SET InhabitType = 5 WHERE entry = 21075;
 -- Infernal relay (hellfire)#1
@@ -1132,7 +1135,8 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z, wa
 (68745,3,-247.234,1097.84,41.668,0,0,0,0,0,0,0,0,0,0.171238,0,0),
 (68745,4,-232.666,1097.36,41.668,0,0,0,0,0,0,0,0,0,6.23451,0,0);
 -- pit commander
-UPDATE creature SET MovementType = 2, spawndist = 0 WHERE guid = 68001;
+-- Current script has pit commander moving, No proof of him ever moving with event.
+UPDATE creature SET MovementType = 2, spawndist = 0, position_x = -246.692, position_y = 1175.22, position_z = 41.75, orientation = 4.71011 WHERE guid = 68001;
 DELETE FROM creature_movement WHERE id = 68001;
 UPDATE creature_template SET MovementType = 2 WHERE entry = 18945; -- now move him to template (unique npc)
 DELETE FROM creature_movement_template WHERE entry = 18945;
@@ -1140,6 +1144,7 @@ INSERT INTO creature_movement_template (entry, point, position_x, position_y, po
 (18945,1,-246.692,1175.22,41.75,10000,0,0,0,0,0,0,0,0,4.71011,0,0), 
 (18945,2,-246.692,1175.22,41.75,5000,0,0,0,0,0,0,0,33393,4.71011,0,0),
 (18945,3,-246.692,1175.22,41.75,35000,0,0,0,0,0,0,0,0,4.71011,0,0);
+DELETE FROM dbscripts_on_creature_movement WHERE id = 1894511;
 -- event 12353
 DELETE FROM dbscripts_on_event WHERE id = 12353;
 INSERT INTO dbscripts_on_event (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES 
@@ -1484,7 +1489,6 @@ INSERT INTO creature_movement_template (entry, point, position_x, position_y, po
 
 -- Urtrak
 UPDATE creature_template SET equipmentTemplateid = 1335 WHERE entry = 19862;
---  Vengeful Unyielding Footman
 
 -- spells updates 
 DELETE FROM spell_target_position WHERE id IN (16572,16767,16768,16772,16775,16776,16777,16778,16779,16780,16786,18634);
@@ -2713,6 +2717,10 @@ INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalo
 (1487308,9,0,0,0,0,0,0,2000005326,0,0,0,0,0,0,0,''),
 (1487309,9,0,0,0,0,0,0,2000005327,0,0,0,0,0,0,0,'');
 -- Battle-Mage Dathric <Kirin Tor>
+DELETE FROM creature_movement WHERE id = 69956;
+insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values
+('69956','1','2185.22','2115.88','72.4063','1000','1954302','0','0','0','0','0','0','0','5.53269','0','0'),
+('69956','2','2185.22','2115.88','72.4063','300000','0','0','0','0','0','0','0','0','5.53269','0','0');
 DELETE FROM creature_movement_template WHERE entry = 19543;
 INSERT INTO creature_movement_template (entry, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
 (19543,1,2236.11,2320.3,92.4652,0,1954301,0,0,0,0,0,0,0,3.97722,0,0),
@@ -2757,6 +2765,21 @@ INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalo
 (1954403,13,0,0,0,0,0,0,2000005382,0,0,0,0,0,0,0,''),
 (1954403,13,23,19008,0,0,0,0x08,0,0,0,0,0,0,0,0,'');
 -- Cohlien Frostweaver <Kirin Tor>
+DELETE FROM creature_movement WHERE id = 69958;
+insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values
+('69958','1','2221.02','2152.6','74.8408','1000','1954502','0','0','0','0','0','0','0','5.50607','0','0'),
+('69958','2','2227.73','2145.34','74.4228','0','0','0','0','0','0','0','0','0','0.392289','0','0'),
+('69958','3','2246.68','2164.27','80.752','0','0','0','0','0','0','0','0','0','0.810017','0','0'),
+('69958','4','2272.3','2197.9','92.0272','0','0','0','0','0','0','0','0','0','1.13596','0','0'),
+('69958','5','2255.04','2173.23','84.0229','0','0','0','0','0','0','0','0','0','3.8283','0','0'),
+('69958','6','2228.2','2145.41','74.4934','0','0','0','0','0','0','0','0','0','2.71461','0','0'),
+('69958','7','2217.94','2154.56','74.7639','0','0','0','0','0','0','0','0','0','3.47566','0','0'),
+('69958','8','2206.41','2147.59','72.4465','0','0','0','0','0','0','0','0','0','2.44365','0','0'),
+('69958','9','2195.97','2158.52','71.6383','0','0','0','0','0','0','0','0','0','0.313645','0','0'),
+('69958','10','2202.38','2165.31','74.1721','0','0','0','0','0','0','0','0','0','0.790382','0','0'),
+('69958','11','2195.33','2158.29','71.5085','0','0','0','0','0','0','0','0','0','4.98205','0','0'),
+('69958','12','2205.78','2146.11','72.1888','0','0','0','0','0','0','0','0','0','6.15151','0','0'),
+('69958','13','2218.95','2154.62','74.9526','0','0','0','0','0','0','0','0','0','5.42973','0','0');
 DELETE FROM creature_movement_template WHERE entry = 19545;
 INSERT INTO creature_movement_template (entry, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
 (19545,1,2212.27,2399.45,108.288,0,1954501,0,0,0,0,0,0,0,2.13592,0,0),
@@ -2774,6 +2797,19 @@ INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalo
 (1954503,9,23,19005,0,0,0,0x08,0,0,0,0,0,0,0,0,''),
 (1954504,3,1,10,0,0,0,0,0,0,0,0,0,0,0,0,'');
 -- Abjurist Belmara <Kirin Tor>
+DELETE FROM creature_movement WHERE id = 69959;
+insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values
+('69959','1','2161.25','2246.41','75.0865','1000','1954602','0','0','0','0','0','0','0','3.86508','0','0'),
+('69959','2','2159.64','2245.04','74.9887','0','0','0','0','0','0','0','0','0','5.35807','0','0'),
+('69959','3','2173.53','2224.8','75.4765','0','0','0','0','0','0','0','0','0','4.68264','0','0'),
+('69959','4','2172.49','2190.35','71.3903','0','0','0','0','0','0','0','0','0','0.613626','0','0'),
+('69959','5','2178.66','2193.56','73.1546','0','0','0','0','0','0','0','0','0','0.609699','0','0'),
+('69959','6','2174.51','2190.22','71.7051','0','0','0','0','0','0','0','0','0','2.72556','0','0'),
+('69959','7','2171.88','2201.96','72.7954','0','0','0','0','0','0','0','0','0','1.68177','0','0'),
+('69959','8','2172.75','2227.6','75.4232','0','0','0','0','0','0','0','0','0','2.32108','0','0'),
+('69959','9','2160.36','2243.19','74.9836','0','0','0','0','0','0','0','0','0','0.806049','0','0'),
+('69959','10','2182.62','2264.59','76.4681','0','0','0','0','0','0','0','0','0','0.739291','0','0'),
+('69959','11','2161.92','2246.4','74.9703','0','0','0','0','0','0','0','0','0','3.90837','0','0');
 DELETE FROM creature_movement_template WHERE entry = 19546;
 INSERT INTO creature_movement_template (entry, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
 (19546,1,2236.71,2392.84,112.165,1000,1954601,0,0,0,0,0,0,0,0.576619,0,0),
