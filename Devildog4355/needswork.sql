@@ -1,15 +1,12 @@
 -- cant find movement data
 -- Curator Thorius c.8256
-UPDATE creature_movement SET script_id = 825601, emote = 0 WHERE id = 1887 AND point = 15;
-UPDATE creature_movement SET script_id = 825602, textid1 = 0 WHERE id = 1887 AND point = 16;
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (825601,825602); 
-INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
-(825601,3,1,11,0,0,0,0,0,0,0,0,0,0,0,0,''),
-(825602,1,0,0,0,0,0,0,2000005000,0,0,0,0,0,0,0,'');
-INSERT INTO `DB_Script_string` (entry, content_default, content_loc1, content_loc2, content_loc3, content_loc4, content_loc5, content_loc6, content_loc7, content_loc8) VALUES
-('2000005000','Poor Dorius. If I ever get my hands on those Dark Irons, so help me...',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 
-
+select * from udbmangos.creature where id=8256;
+select * from creature where id=8256;
+select * from udbmangos.creature_movement where id=1887;
+select * from creature_movement_template where entry=8256;
+select * from dbscripts_on_creature_movement where id in(188701,188702,188703);
+select * from db_script_string where entry in(2000005348,2000005347,2000005349);
 
 -- Escalate to XS
 -- Sayge c.14822
@@ -91,7 +88,7 @@ insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 ('43673','8','-2234.35','5188.92','-11.015','0','0','0','0','0','0','0','0','0','1.98033','0','0'),
 ('43673','9','-2247.94','5224.83','-9.9771','0','0','0','0','0','0','0','0','0','2.88354','0','0'),
 ('43673','10','-2267.9','5229.48','-9.97566','0','0','0','0','0','0','0','0','0','2.89925','0','0');
-DELETE FROM creature_movement WHERE id IN (56625,43673)
+DELETE FROM creature_movement WHERE id IN (56625,43673);
 insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values
 ('56625','1','-9514.32','85.2523','59.6394','0','0','0','0','0','0','0','0','0','5.9906','0','0'),
 ('56625','2','-9500.13','75.988','56.9262','0','0','0','0','0','0','0','0','0','5.64031','0','0'),
