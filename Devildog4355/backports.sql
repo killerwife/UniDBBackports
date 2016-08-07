@@ -1134,17 +1134,6 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z, wa
 (68745,2,-246.08,1094.57,41.668,0,0,0,0,0,0,0,0,0,2.00829,0,0),
 (68745,3,-247.234,1097.84,41.668,0,0,0,0,0,0,0,0,0,0.171238,0,0),
 (68745,4,-232.666,1097.36,41.668,0,0,0,0,0,0,0,0,0,6.23451,0,0);
--- pit commander
--- Current script has pit commander moving, No proof of him ever moving with event.
-UPDATE creature SET MovementType = 2, spawndist = 0, position_x = -246.692, position_y = 1175.22, position_z = 41.75, orientation = 4.71011 WHERE guid = 68001;
-DELETE FROM creature_movement WHERE id = 68001;
-UPDATE creature_template SET MovementType = 2 WHERE entry = 18945; -- now move him to template (unique npc)
-DELETE FROM creature_movement_template WHERE entry = 18945;
-INSERT INTO creature_movement_template (entry, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
-(18945,1,-246.692,1175.22,41.75,10000,0,0,0,0,0,0,0,0,4.71011,0,0), 
-(18945,2,-246.692,1175.22,41.75,5000,0,0,0,0,0,0,0,33393,4.71011,0,0),
-(18945,3,-246.692,1175.22,41.75,35000,0,0,0,0,0,0,0,0,4.71011,0,0);
-DELETE FROM dbscripts_on_creature_movement WHERE id = 1894511;
 -- event 12353
 DELETE FROM dbscripts_on_event WHERE id = 12353;
 INSERT INTO dbscripts_on_event (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES 
@@ -4183,12 +4172,14 @@ INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalo
 -- Honor Hold Gryphon Rider c.20237
 DELETE FROM creature_movement WHERE id = 96989;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
+(96989,1,267.502,1449.24,-14.3756,10000,2023701,0,0,0,0,0,0,0,4.23579,0,0),
 (96989,2,267.502,1449.24,-14.3756,60000,2023702,0,0,0,0,0,0,0,4.23579,0,0),
 (96989,3,288.012,1484.46,-13.3656,60000,2023702,0,0,0,0,0,0,0,1.08004,0,0);
-DELETE FROM dbscripts_on_creature_movement WHERE id = 2023702; 
+DELETE FROM dbscripts_on_creature_movement WHERE id in (2023702,2023701); 
 INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
 (2023702,2,1,69,0,0,0,0,0,0,0,0,0,0,0,0,''),
-(2023702,57,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'');
+(2023702,57,1,0,0,0,0,0,0,0,0,0,0,0,0,0,''),
+('2023701','0','25','20237','1','0','0','0','0','0','0','0','0','0','0','0','RUN ON');
 -- Thrallmar Grunt c.16580
 Delete from creature_movement WHERE id = 57539;
 insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values
