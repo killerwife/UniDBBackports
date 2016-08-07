@@ -1,10 +1,3 @@
--- KILLERWIFE `CONDITIONS` needs to be fixed for these to work.
-
-DELETE FROM conditions WHERE condition_entry IN (882,961);
-INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`) VALUES
-('882','2','32569','1'),
-('961','5','1015','7');
-
 -- MISSING EQUIP_TEMPLATE
 DELETE FROM creature_equip_template WHERE entry IN (9,62,32,300);
 insert into `creature_equip_template` (`entry`, `equipentry1`, `equipentry2`, `equipentry3`) values
@@ -333,7 +326,7 @@ INSERT INTO spell_script_target (entry, type, targetEntry, inverseEffectMask) VA
 (24790, 0, 180539, 0),
 (24790, 0, 180559, 0);
 -- conditions
-DELETE FROM conditions WHERE condition_entry BETWEEN 887 AND 918;
+DELETE FROM conditions WHERE (condition_entry BETWEEN 887 AND 900) OR(condition_entry BETWEEN 911 AND 918) OR condition_entry BETWEEN 1085 AND 1094;
 INSERT INTO conditions (condition_entry, type, value1, value2) VALUES
 (887, 11, 24746, 0),    -- no cultist disguse
 (888, 1, 24746, 0),     -- basic disguise
@@ -349,16 +342,16 @@ INSERT INTO conditions (condition_entry, type, value1, value2) VALUES
 (898, 2, 20420, 1),     -- Crest of Beckoning: Water
 (899, -1, 888, 895),    -- disguise and fire
 (900, -1, 888, 896),    -- disguise and earth
-(901, -1, 888, 897),    -- disguise and air
-(902, -1, 888, 898),    -- disguise and water
-(903, 2, 20432, 1),     -- Signet of Beckoning: Fire
-(904, 2, 20435, 1),     -- Signet of Beckoning: Stone
-(905, 2, 20433, 1),     -- Signet of Beckoning: Thunder
-(906, 2, 20436, 1),     -- Signet of Beckoning: Water
-(907, -1, 892, 903),    -- disguise & medalion and fire
-(908, -1, 892, 904),    -- disguise & medalion and earth
-(909, -1, 892, 905),    -- disguise & medalion and air
-(910, -1, 892, 906),    -- disguise & medalion and water
+(1085, -1, 888, 897),    -- disguise and air
+(1086, -1, 888, 898),    -- disguise and water
+(1087, 2, 20432, 1),     -- Signet of Beckoning: Fire
+(1088, 2, 20435, 1),     -- Signet of Beckoning: Stone
+(1089, 2, 20433, 1),     -- Signet of Beckoning: Thunder
+(1090, 2, 20436, 1),     -- Signet of Beckoning: Water
+(1091, -1, 892, 1087),    -- disguise & medalion and fire
+(1092, -1, 892, 1088),    -- disguise & medalion and earth
+(1093, -1, 892, 1089),    -- disguise & medalion and air
+(1094, -1, 892, 1090),    -- disguise & medalion and water
 (911, 2, 20447, 1),     -- Scepter of Beckoning: Fire
 (912, 2, 20449, 1),     -- Scepter of Beckoning: Stone
 (913, 2, 20448, 1),     -- Scepter of Beckoning: Thunder
@@ -387,13 +380,13 @@ INSERT INTO gossip_menu_option (menu_id,id,option_icon,option_text,option_id,npc
 (6540, 0, 0, 'I am no cultist, you monster! Come to me and face your destruction!', 1, 1, -1, 0, 654001, 0, 0, NULL, 888),
 (6540, 1, 0, 'Crimson Templar! I hold your signet! Heed my call!', 1, 1, -1, 0, 654002, 0, 0, NULL, 899),
 (6540, 2, 0, 'Earthen Templar! I hold your signet! Heed my call!', 1, 1, -1, 0, 654003, 0, 0, NULL, 900),
-(6540, 3, 0, 'Hoary Templar! I hold your signet! Heed my call!', 1, 1, -1, 0, 654004, 0, 0, NULL, 901),
-(6540, 4, 0, 'Azure Templar! I hold your signet! Heed my call!', 1, 1, -1, 0, 654005, 0, 0, NULL, 902),
+(6540, 3, 0, 'Hoary Templar! I hold your signet! Heed my call!', 1, 1, -1, 0, 654004, 0, 0, NULL, 1085),
+(6540, 4, 0, 'Azure Templar! I hold your signet! Heed my call!', 1, 1, -1, 0, 654005, 0, 0, NULL, 1086),
 (6542, 0, 0, 'You will listen to this, vile duke! I am not your Twilight\'s Hammer lapdog! I am here to challenge you! Come! Come, and meet your death...', 1, 1, -1, 0, 654201, 0, 0, NULL, 892),
-(6542, 1, 0, 'Duke of Cynders! I hold your signet! Heed my call', 1, 1, -1, 0, 654202, 0, 0, NULL, 907),
-(6542, 2, 0, 'The Duke of Shards! I hold your signet! Heed my call!', 1, 1, -1, 0, 654203, 0, 0, NULL, 908),
-(6542, 3, 0, 'The Duke of Zephyrs! I hold your signet! Heed my call!', 1, 1, -1, 0, 654204, 0, 0, NULL, 909),
-(6542, 4, 0, 'The Duke of Fathoms! I hold your signet! Heed my call!', 1, 1, -1, 0, 654205, 0, 0, NULL, 910),
+(6542, 1, 0, 'Duke of Cynders! I hold your signet! Heed my call', 1, 1, -1, 0, 654202, 0, 0, NULL, 1091),
+(6542, 2, 0, 'The Duke of Shards! I hold your signet! Heed my call!', 1, 1, -1, 0, 654203, 0, 0, NULL, 1092),
+(6542, 3, 0, 'The Duke of Zephyrs! I hold your signet! Heed my call!', 1, 1, -1, 0, 654204, 0, 0, NULL, 1093),
+(6542, 4, 0, 'The Duke of Fathoms! I hold your signet! Heed my call!', 1, 1, -1, 0, 654205, 0, 0, NULL, 1094),
 (6543, 0, 0, 'The day of the judgement has come, fiend! I challenge you to battle!', 1, 1, -1, 0, 654301, 0, 0, NULL, 894),
 (6543, 1, 0, 'Prince Skaldrenox! I hold your signet! Heed my call!', 1, 1, -1, 0, 654302, 0, 0, NULL, 915),
 (6543, 2, 0, 'Baron Kazum! I hold your signet! Heed my call!', 1, 1, -1, 0, 654303, 0, 0, NULL, 916),
@@ -584,13 +577,13 @@ DELETE FROM gossip_menu WHERE entry = 8666;
 INSERT INTO gossip_menu (entry, text_id, script_id, condition_id) VALUES
 (8666, 10901, 0, 0), -- main
 (8666, 10950, 0, 441), -- 1st change
-(8666, 11032, 0, 961); -- req. max rep.
+(8666, 11032, 0, 421); -- req. max rep.
 -- Taskmaster Varkule Dragonbreath - update
 DELETE FROM gossip_menu WHERE entry = 8652; 
 INSERT INTO gossip_menu (entry, text_id, script_id, condition_id) VALUES
 (8652, 10862, 0, 0), -- main 
 (8652, 10863, 0, 47), -- after first q.
-(8652, 10864, 0, 882); -- req. maxed rep.
+(8652, 10864, 0, 466); -- req. maxed rep.
 -- Yazill the Merc - gossip
 DELETE FROM gossip_menu WHERE entry = 8662; 
 INSERT INTO gossip_menu (entry, text_id, script_id, condition_id) VALUES
@@ -4528,7 +4521,7 @@ INSERT INTO skinning_loot_template (entry, item, ChanceOrQuestChance, groupid, m
 -- --------------------------------------------------
 -- Grz3s
 -- Vilewing Chimaera - duplicates
-/*DELETE FROM creature WHERE guid IN (84613,84609,84610,84488,84629,84632);
+DELETE FROM creature WHERE guid IN (84613,84609,84610,84488,84629,84632);
 -- Coilskar Assassin - spawned only during Escort quest =10451
 DELETE FROM creature WHERE guid IN (86811,86809,86810,86812,86814,86815,86816,86813,86817,86818,86824,86825,86823,86822,86821,86819,86820);
 -- Captured water Spirit - duplicates
@@ -4614,5 +4607,5 @@ UPDATE creature_template SET UnitFlags = UnitFlags&~2048 WHERE UnitFlags&2048 = 
 UPDATE creature_template SET UnitFlags = UnitFlags&~524288 WHERE UnitFlags&524288 = 524288;
 UPDATE creature_template SET UnitFlags = UnitFlags&~67108864 WHERE UnitFlags&67108864 = 67108864;
 UPDATE creature_template SET UnitFlags = UnitFlags&~8388608 WHERE UnitFlags&8388608 = 8388608;
-*/
+
 
