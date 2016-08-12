@@ -51,14 +51,14 @@ INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_
 (140587,4075,0,1,0,0,1428.02,406.496,-85.2519,3.37997,180,20,0,8,0,0,1),
 (140588,4075,0,1,0,0,1452.04,401.733,-84.9925,0.222665,180,5,0,8,0,0,1),
 (140589,4075,0,1,0,0,1407.63,370.503,-84.953,3.96901,180,5,0,8,0,0,1);
--- Crag Boar -- Dun Morogh
 
+-- Crag Boar -- Dun Morogh
 DELETE FROM creature WHERE guid IN (140590);
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES 
 (140590,1125,0,1,0,0,-6119.69,-200.734,434.551,0.361272,180,5,0,102,0,0,1);
+
 -- Horizont Missing team
 -- Roland Geardabbler
-
 DELETE FROM creature WHERE guid IN (140775);
 INSERT INTO creature (guid,id,map,spawnMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
 (140775,8394,1,1,0,0,1746.45,-5861.29,-91.4165,3.20841,300,0,0,2762,3575,0,0);
@@ -68,17 +68,14 @@ DELETE FROM creature WHERE guid = 140776;
 INSERT INTO creature (guid,id,map,spawnMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
 (140776,8388,1,1,0,0,1747.62,-5862.27,-90.9249,3.17332,300,0,0,2666,0,0,0);
 -- Horizon Scout First Mate 
-
 DELETE FROM creature WHERE guid = 140777;
 INSERT INTO creature (guid,id,map,spawnMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
 (140777,8387,1,1,0,0,1747.24,-5859.6,-90.3817,3.98543,300,0,0,2766,0,0,0);
 -- Horizon Scout Engineer
-
 DELETE FROM creature WHERE guid = 140778;
 INSERT INTO creature (guid,id,map,spawnMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
 (140778,8389,1,1,0,0,1748.87,-5863.46,-90.2665,2.83088,300,0,0,2666,0,0,0);
 -- Second Mate Shandril
-
 DELETE FROM creature WHERE guid = 140779;
 INSERT INTO creature (guid,id,map,spawnMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
 (140779,8478,1,1,0,0,1916.44,-5733.37,10.1936,4.10397,300,0,0,2766,0,0,0);
@@ -146,7 +143,6 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z, wa
 (140769,10,-3543.36,3236.64,303.118,0,0,0,0,0,0,0,0,0,0.771562,0,0),
 (140769,11,-3523.98,3253.32,300.861,0,0,0,0,0,0,0,0,0,0.200578,0,0);
 -- Blackwind Sabercat #2 - Terrokar Forest  -- missing spawn
-
 DELETE FROM creature WHERE guid = 140770;
 INSERT INTO creature (guid,id,map,spawnMask,modelid,equipment_id,position_x,position_y,position_z,orientation,spawntimesecs,spawndist,currentwaypoint,curhealth,curmana,DeathState,MovementType) VALUES
 (140770,21723,530,1,0,0,-3491.7,3240.65,299.471,5.0402,300,0,0,9335,0,0,2);
@@ -161,7 +157,6 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z, wa
 (140770,7,-3498.72,3268.99,301.056,0,0,0,0,0,0,0,0,0,5.13994,0,0),
 (140770,8,-3498.38,3254.15,299.717,0,0,0,0,0,0,0,0,0,4.93181,0,0),
 (140770,9,-3491.69,3241.45,299.476,0,0,0,0,0,0,0,0,0,5.19491,0,0);
-
 UPDATE item_template SET ContainerSlots = 8 WHERE entry = 11845; -- Handmade Leather Bag - from Faxe_the_Slayer
 -- Gossip text & Options for Tracy Proudwell -- from Malcrom
 DELETE FROM gossip_menu WHERE entry IN (20020, 8544);
@@ -4574,7 +4569,7 @@ DELETE FROM creature_movement WHERE id IN (
 -- Grz3s
 -- Reusing  all removed and empty guids; 
 DELETE FROM creature WHERE guid IN 
-(871, 10504, 29498, 30141, 30143, 30145, 30169, 30175, 31884, 32885, 32908, 32933, 32934, 32938, 32941, 32946, 32948,
+(871, 10504, 29498, 30141, 30143, 30145, 30169, 30175, 32885, 32908, 32934, 32938, 32941, 32946, 32948,
 32950, 33067, 33167, 33218, 34144, 34145, 36558, 43690, 52015, 52016, 52017, 52018, 52020, 52021, 52030, 52031, 52032,
 68002, 68003, 68004, 68006, 68007, 68008, 68020, 68023, 74219, 74221, 75894, 75896, 75898, 84488, 84609, 84610, 84613,
 84629, 84632, 86066, 86067, 86068, 86069, 86086, 86087, 86088, 86089, 86093, 86094, 86095, 86096, 86097, 86098, 86099,
@@ -4583,7 +4578,7 @@ DELETE FROM creature WHERE guid IN
 91117, 91118, 91750, 91751);
 
 DELETE FROM creature_addon WHERE guid IN 
-(871, 10504, 29498, 30141, 30143, 30145, 30169, 30175, 31884, 32885, 32908, 32933, 32934, 32938, 32941, 32946, 32948,
+(871, 10504, 29498, 30141, 30143, 30145, 30169, 30175, 32885, 32908, 32934, 32938, 32941, 32946, 32948,
 32950, 33067, 33167, 33218, 34144, 34145, 36558, 43690, 52015, 52016, 52017, 52018, 52020, 52021, 52030, 52031, 52032,
 68002, 68003, 68004, 68006, 68007, 68008, 68020, 68023, 74219, 74221, 75894, 75896, 75898, 84488, 84609, 84610, 84613,
 84629, 84632, 86066, 86067, 86068, 86069, 86086, 86087, 86088, 86089, 86093, 86094, 86095, 86096, 86097, 86098, 86099,
@@ -4591,7 +4586,7 @@ DELETE FROM creature_addon WHERE guid IN
 86822, 86823, 86824, 86825, 87534, 87535, 87536, 87537, 87538, 87539, 87540, 87541, 87542, 87543, 90871, 90923, 90924, 90925, 90926, 90927,
 91117, 91118, 91750, 91751);
 DELETE FROM creature_movement WHERE id IN 
-(871, 10504, 29498, 30141, 30143, 30145, 30169, 30175, 31884, 32885, 32908, 32933, 32934, 32938, 32941, 32946, 32948,
+(871, 10504, 29498, 30141, 30143, 30145, 30169, 30175, 32885, 32908, 32934, 32938, 32941, 32946, 32948,
 32950, 33067, 33167, 33218, 34144, 34145, 36558, 43690, 52015, 52016, 52017, 52018, 52020, 52021, 52030, 52031, 52032,
 68002, 68003, 68004, 68006, 68007, 68008, 68020, 68023, 74219, 74221, 75894, 75896, 75898, 84488, 84609, 84610, 84613,
 84629, 84632, 86066, 86067, 86068, 86069, 86086, 86087, 86088, 86089, 86093, 86094, 86095, 86096, 86097, 86098, 86099,
