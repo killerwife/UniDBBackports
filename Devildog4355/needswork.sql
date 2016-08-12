@@ -163,3 +163,190 @@ insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 DELETE FROM dbscripts_on_creature_movement WHERE id = 1486001; 
 INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
 (1486001,1,0,0,0,0,0,0,2000005035,2000005218,0,0,0,0,0,0,'');
+
+-- path of destiny
+
+-- 1st wave
+UPDATE creature SET spawndist = 0, MovementType = 2, position_x = -237.226822, position_y = 1136.661133, position_z = 41.666767, orientation = 4.391514955 WHERE guid = 67981;
+DELETE FROM creature_movement WHERE id = 67981;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
+(67981,1,-237.227,1136.66,41.6668,20000,1894401,0,0,0,0,0,0,0,4.39946,0,0),
+(67981,2,-250.716,1093.1,41.9,0,0,0,0,0,0,0,0,0,4.78095,0,0),
+(67981,3,-252.174,1074.34,54.3073,0,0,0,0,0,0,0,0,0,4.70084,0,0),
+(67981,4,-249.985,1046.8,54.3168,1000,1894401,0,0,0,0,0,0,0,4.57914,0,0),
+(67981,5,-248.905,1014.4,54.3266,0,0,0,0,0,0,0,0,0,4.64917,0,0),
+(67981,6,-248.336,993.958,68.2144,0,0,0,0,0,0,0,0,0,4.73163,0,0),
+(67981,7,-247.975,969.204,84.3296,0,0,0,0,0,0,0,0,0,4.74341,0,0),
+(67981,8,-248.319,920.639,84.379,0,0,0,0,0,0,0,0,0,4.72601,0,0),
+(67981,9,-248.109,895.636,84.379,1000,1894402,0,0,0,0,0,0,0,4.72601,0,0);
+UPDATE creature SET spawndist = 0, MovementType = 2, position_x = -215.774307, position_y = 1135.690796, position_z = 41.604073, orientation = 4.084515 WHERE guid = 67985;
+DELETE FROM creature_movement WHERE id = 67985;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
+(67985,1,-215.774,1135.69,41.6041,20000,1894401,0,0,0,0,0,0,0,4.08452,0,0),
+(67985,2,-248.279,1093.57,41.6667,0,0,0,0,0,0,0,0,0,4.41342,0,0),
+(67985,3,-250.127,1071.97,54.3075,0,0,0,0,0,0,0,0,0,4.7024,0,0),
+(67985,4,-249.985,1046.8,54.3168,1000,1894401,0,0,0,0,0,0,0,4.57914,0,0),
+(67985,5,-248.905,1014.4,54.3266,0,0,0,0,0,0,0,0,0,4.64917,0,0),
+(67985,6,-248.336,993.958,68.2144,0,0,0,0,0,0,0,0,0,4.73163,0,0),
+(67985,7,-247.975,969.204,84.3296,0,0,0,0,0,0,0,0,0,4.74341,0,0),
+(67985,8,-248.319,920.639,84.379,0,0,0,0,0,0,0,0,0,4.72601,0,0),
+(67985,9,-248.109,895.636,84.379,1000,1894402,0,0,0,0,0,0,0,4.72601,0,0);
+UPDATE creature SET spawndist = 0, MovementType = 2, position_x = -260.605164, position_y = 1137.083008, position_z = 41.670635, orientation = 4.621477 WHERE guid = 67984;
+DELETE FROM creature_movement WHERE id = 67984;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
+(67984,1,-260.605,1137.08,41.6706,20000,1894401,0,0,0,0,0,0,0,4.62148,0,0),
+(67984,2,-253.949,1093.1,41.866,0,0,0,0,0,0,0,0,0,4.66707,0,0),
+(67984,3,-253.155,1074.04,54.3067,0,0,0,0,0,0,0,0,0,4.76916,0,0),
+(67984,4,-249.985,1046.8,54.3168,1000,1894401,0,0,0,0,0,0,0,4.57914,0,0),
+(67984,5,-248.905,1014.4,54.3266,0,0,0,0,0,0,0,0,0,4.64917,0,0),
+(67984,6,-248.336,993.958,68.2144,0,0,0,0,0,0,0,0,0,4.73163,0,0),
+(67984,7,-247.975,969.204,84.3296,0,0,0,0,0,0,0,0,0,4.74341,0,0),
+(67984,8,-248.319,920.639,84.379,0,0,0,0,0,0,0,0,0,4.72601,0,0),
+(67984,9,-248.109,895.636,84.379,1000,1894402,0,0,0,0,0,0,0,4.72601,0,0);
+UPDATE creature SET spawndist = 0, MovementType = 2, position_x = -204.430954, position_y = 1128.684326, position_z = 41.589573, orientation = 3.842693 WHERE guid = 67986;
+DELETE FROM creature_movement WHERE id = 67986;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
+(67986,1,-204.431,1128.68,41.5896,20000,1894401,0,0,0,0,0,0,0,3.84269,0,0),
+(67986,2,-242.527,1094.53,41.6649,0,0,0,0,0,0,0,0,0,4.19364,0,0),
+(67986,3,-245.397,1074.1,54.3068,0,0,0,0,0,0,0,0,0,4.60597,0,0),
+(67986,4,-249.985,1046.8,54.3168,1000,1894401,0,0,0,0,0,0,0,4.57914,0,0),
+(67986,5,-248.905,1014.4,54.3266,0,0,0,0,0,0,0,0,0,4.64917,0,0),
+(67986,6,-248.336,993.958,68.2144,0,0,0,0,0,0,0,0,0,4.73163,0,0),
+(67986,7,-247.975,969.204,84.3296,0,0,0,0,0,0,0,0,0,4.74341,0,0),
+(67986,8,-248.319,920.639,84.379,0,0,0,0,0,0,0,0,0,4.72601,0,0),
+(67986,9,-248.109,895.636,84.379,1000,1894402,0,0,0,0,0,0,0,4.72601,0,0);
+DELETE FROM creature_linking WHERE guid IN (67986,67984,67985); -- make sure they will spawn together .. so we can synhronize attack
+INSERT INTO creature_linking (guid, master_guid, flag) VALUES
+(67986, 67981, 128),
+(67984, 67981, 128),
+(67985, 67981, 128);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1894401,1894402); 
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(1894401,0,25,1,0,0,0,0,0,0,0,0,0,0,0,0,'RUN ON'),
+(1894402,0,15,5,0,0,0,0,0,0,0,0,0,0,0,0,''); 
+-- 2nd wave
+UPDATE creature SET spawndist = 0, MovementType = 2, position_x = -260.877899, position_y = 1167.174805, position_z = 41.605026, orientation = 4.368320 WHERE guid = 67982; -- master
+DELETE FROM creature_movement WHERE id = 67982;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
+(67982,1,-260.877899,1167.174805,41.605026,50000,0,0,0,0,0,0,0,0,4.368320,0,0),
+(67982,2,-261.333,1146.7,41.6652,20000,1894401,0,0,0,0,0,0,0,4.47017,0,0),
+(67982,3,-250.667,1093.94,41.6678,0,0,0,0,0,0,0,0,0,4.935,0,0),
+(67982,4,-248.356,1073.42,54.3071,0,0,0,0,0,0,0,0,0,4.86432,0,0),
+(67982,5,-249.985,1046.8,54.3168,1000,1894401,0,0,0,0,0,0,0,4.57914,0,0),
+(67982,6,-248.905,1014.4,54.3266,0,0,0,0,0,0,0,0,0,4.64917,0,0),
+(67982,7,-248.336,993.958,68.2144,0,0,0,0,0,0,0,0,0,4.73163,0,0),
+(67982,8,-247.975,969.204,84.3296,0,0,0,0,0,0,0,0,0,4.74341,0,0),
+(67982,9,-248.319,920.639,84.379,0,0,0,0,0,0,0,0,0,4.72601,0,0),
+(67982,10,-248.109,895.636,84.379,1000,1894402,0,0,0,0,0,0,0,4.72601,0,0);
+UPDATE creature SET spawndist = 0, MovementType = 2, position_x = -279.496429, position_y = 1154.829712, position_z = 41.594738, orientation = 4.702899 WHERE guid = 67988;
+DELETE FROM creature_movement WHERE id = 67988;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
+(67988,1,-279.496429,1154.829712,41.594738,50000,0,0,0,0,0,0,0,0,4.702899,0,0),
+(67988,2,-274.189,1141.21,42.09,20000,1894401,0,0,0,0,0,0,0,4.59021,0,0),
+(67988,3,-258.111,1093.64,41.6667,0,0,0,0,0,0,0,0,0,5.02533,0,0),
+(67988,4,-254.94,1073.8,54.3068,0,0,0,0,0,0,0,0,0,4.85254,0,0),
+(67988,5,-249.985,1046.8,54.3168,1000,1894401,0,0,0,0,0,0,0,4.57914,0,0),
+(67988,6,-248.905,1014.4,54.3266,0,0,0,0,0,0,0,0,0,4.64917,0,0),
+(67988,7,-248.336,993.958,68.2144,0,0,0,0,0,0,0,0,0,4.73163,0,0),
+(67988,8,-247.975,969.204,84.3296,0,0,0,0,0,0,0,0,0,4.74341,0,0),
+(67988,9,-248.319,920.639,84.379,0,0,0,0,0,0,0,0,0,4.72601,0,0),
+(67988,10,-248.109,895.636,84.379,1000,1894402,0,0,0,0,0,0,0,4.72601,0,0);
+UPDATE creature SET spawndist = 0, MovementType = 2, position_x = -231.076, position_y = 1168.27, position_z = 41.6, orientation = 4.22019 WHERE guid = 67983;
+DELETE FROM creature_movement WHERE id = 67983;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
+(67983,1,-231.076,1168.27,41.6,50000,0,0,0,0,0,0,0,0,4.22019,0,0),
+(67983,2,-232.82,1146.14,41.6493,20000,1894401,0,0,0,0,0,0,0,4.57451,0,0),
+(67983,3,-242.018,1094.68,41.6667,0,0,0,0,0,0,0,0,0,4.55095,0,0),
+(67983,4,-243.06,1074.05,54.3068,0,0,0,0,0,0,0,0,0,4.67661,0,0),
+(67983,5,-249.985,1046.8,54.3168,1000,1894401,0,0,0,0,0,0,0,4.57914,0,0),
+(67983,6,-248.905,1014.4,54.3266,0,0,0,0,0,0,0,0,0,4.64917,0,0),
+(67983,7,-248.336,993.958,68.2144,0,0,0,0,0,0,0,0,0,4.73163,0,0),
+(67983,8,-247.975,969.204,84.3296,0,0,0,0,0,0,0,0,0,4.74341,0,0),
+(67983,9,-248.319,920.639,84.379,0,0,0,0,0,0,0,0,0,4.72601,0,0),
+(67983,10,-248.109,895.636,84.379,1000,1894402,0,0,0,0,0,0,0,4.72601,0,0);
+UPDATE creature SET spawndist = 0, MovementType = 2, position_x = -206.522, position_y = 1159.26, position_z = 42.4914, orientation = 4.77705 WHERE guid = 67980;
+DELETE FROM creature_movement WHERE id = 67980;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
+(67980,1,-206.522,1159.26,42.4914,50000,0,0,0,0,0,0,0,0,4.77705,0,0),
+(67980,2,-218.043,1141.49,41.6022,20000,1894401,0,0,0,0,0,0,0,3.87865,0,0),
+(67980,3,-238.381,1095.06,41.6667,0,0,0,0,0,0,0,0,0,4.41351,0,0),
+(67980,4,-241.495,1073.91,54.307,0,0,0,0,0,0,0,0,0,4.55488,0,0),
+(67980,5,-249.985,1046.8,54.3168,1000,1894401,0,0,0,0,0,0,0,4.57914,0,0),
+(67980,6,-248.905,1014.4,54.3266,0,0,0,0,0,0,0,0,0,4.64917,0,0),
+(67980,7,-248.336,993.958,68.2144,0,0,0,0,0,0,0,0,0,4.73163,0,0),
+(67980,8,-247.975,969.204,84.3296,0,0,0,0,0,0,0,0,0,4.74341,0,0),
+(67980,9,-248.319,920.639,84.379,0,0,0,0,0,0,0,0,0,4.72601,0,0),
+(67980,10,-248.109,895.636,84.379,1000,1894402,0,0,0,0,0,0,0,4.72601,0,0);
+DELETE FROM creature_linking WHERE guid IN (67980,67983,67988); -- make sure they will spawn together .. so we can synhronize attack
+INSERT INTO creature_linking (guid, master_guid, flag) VALUES
+(67980, 67982, 128),
+(67983, 67982, 128),
+(67988, 67982, 128);
+-- wave 3
+UPDATE creature SET position_x = -239.507065, position_y = 1228.832764, position_z = 31.986649, orientation = 4.258552, spawndist = 0, MovementType = 2 WHERE guid = 68311;
+DELETE FROM creature_movement WHERE id = 68311;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
+(68311,1,-242.901,1192.48,42.691,30000,0,0,0,0,0,0,0,0,4.55578,0,0),
+(68311,2,-246.947,1159.32,41.6052,30000,0,0,0,0,0,0,0,0,4.52515,0,0),
+(68311,3,-247.378,1148.42,41.6191,30000,1894401,0,0,0,0,0,0,0,4.62175,0,0),
+(68311,4,-247.742,1093.66,41.6669,0,0,0,0,0,0,0,0,0,4.75527,0,0),
+(68311,5,-246.89,1073.81,54.3068,0,0,0,0,0,0,0,0,0,4.75527,0,0),
+(68311,6,-249.985,1046.8,54.3168,1000,1894401,0,0,0,0,0,0,0,4.57914,0,0),
+(68311,7,-248.905,1014.4,54.3266,0,0,0,0,0,0,0,0,0,4.64917,0,0),
+(68311,8,-248.336,993.958,68.2144,0,0,0,0,0,0,0,0,0,4.73163,0,0),
+(68311,9,-247.975,969.204,84.3296,0,0,0,0,0,0,0,0,0,4.74341,0,0),
+(68311,10,-248.319,920.639,84.379,0,0,0,0,0,0,0,0,0,4.72601,0,0),
+(68311,11,-248.109,895.636,84.379,1000,1894402,0,0,0,0,0,0,0,4.72601,0,0);
+UPDATE creature SET position_x = -244.683823, position_y = 1231.813232, position_z = 31.481995, orientation = 4.503588 WHERE guid = 67973;
+UPDATE creature SET position_x = -252.279816, position_y = 1233.656616, position_z = 31.444748, orientation = 4.725847 WHERE guid = 67987;
+DELETE FROM creature_linking WHERE guid IN (67978,67979,67973,67987); -- make sure they will spawn & walk together .. so we can synhronize attack
+INSERT INTO creature_linking (guid, master_guid, flag) VALUES
+(67978, 68311, 640),
+(67979, 68311, 640),
+(67973, 68311, 640),
+(67987, 68311, 640);
+-- wave 4
+UPDATE creature SET position_x = -248.047028, position_y = 1381.634888, position_z = 10.987271, orientation = 4.641428, spawndist = 0, MovementType = 2 WHERE guid = 68313;
+DELETE FROM creature_movement WHERE id = 68313;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
+(68313,1,-246.997,1324.84,15.4259,0,0,0,0,0,0,0,0,0,4.63094,0,0),
+(68313,2,-238.72,1271.37,24.6796,0,0,0,0,0,0,0,0,0,4.72832,0,0),
+(68313,3,-240.235,1220.46,33.8146,0,0,0,0,0,0,0,0,0,4.649,0,0),
+(68313,4,-241.634,1194.53,42.3178,30000,0,0,0,0,0,0,0,0,4.66863,0,0),
+(68313,5,-243.332,1155.89,41.626,30000,1894401,0,0,0,0,0,0,0,4.65685,0,0),
+(68313,6,-251.312,1094.19,41.6676,0,0,0,0,0,0,0,0,0,4.55082,0,0),
+(68313,7,-251.859,1073.77,54.3068,0,0,0,0,0,0,0,0,0,4.70397,0,0),
+(68313,8,-249.985,1046.8,54.3168,1000,1894401,0,0,0,0,0,0,0,4.57914,0,0),
+(68313,9,-248.905,1014.4,54.3266,0,0,0,0,0,0,0,0,0,4.64917,0,0),
+(68313,10,-248.336,993.958,68.2144,0,0,0,0,0,0,0,0,0,4.73163,0,0),
+(68313,11,-247.975,969.204,84.3296,0,0,0,0,0,0,0,0,0,4.74341,0,0),
+(68313,12,-248.319,920.639,84.379,0,0,0,0,0,0,0,0,0,4.72601,0,0),
+(68313,13,-248.109,895.636,84.379,1000,1894402,0,0,0,0,0,0,0,4.72601,0,0);
+UPDATE creature SET position_x = -238.174774, position_y = 1385.511841, position_z = 11.133602, orientation = 4.637506 WHERE guid = 67976;
+UPDATE creature SET position_x = -242.903671, position_y = 1383.753174, position_z = 11.040374, orientation = 4.606873 WHERE guid = 67974;
+UPDATE creature SET position_x = -253.775238, position_y = 1382.668823, position_z = 10.934957, orientation = 4.513405 WHERE guid = 67989;
+UPDATE creature SET position_x = -260.425690, position_y = 1384.189209, position_z = 10.743897, orientation = 4.606080 WHERE guid = 67990;
+-- make sure they will spawn & walk together .. so we can synhronize attack
+DELETE FROM creature_linking WHERE guid IN (67976,67974,67989,67990);
+INSERT INTO creature_linking (guid, master_guid, flag) VALUES
+(67976, 68313, 640),
+(67974, 68313, 640),
+(67989, 68313, 640),
+(67990, 68313, 640);
+-- wave 5 (temp) -- req. more scripting
+UPDATE creature SET spawndist = 0, MovementType = 0 WHERE guid = 67992;
+UPDATE creature SET position_x = -231.491989, position_y = 1273.215698, position_z = 24.683395, orientation = 4.544492, spawndist = 0, MovementType = 0 WHERE guid = 67975;
+UPDATE creature SET position_x = -236.811157, position_y = 1269.786987, position_z = 25.028357, orientation = 4.723560, spawndist = 0, MovementType = 0 WHERE guid = 68312;
+UPDATE creature SET position_x = -242.411209, position_y = 1273.053833, position_z = 24.268648, orientation = 4.672508, spawndist = 0, MovementType = 0 WHERE guid = 67991;
+UPDATE creature SET position_x = -248.130219, position_y = 1276.795654, position_z = 23.578890, orientation = 4.802102, spawndist = 0, MovementType = 0 WHERE guid = 67977;
+-- wave 6 (temp) -- req. more scripting
+UPDATE creature SET spawndist = 0, MovementType = 0 WHERE guid = 67998;
+UPDATE creature SET position_x = -223.170578, position_y = 1517.588989, position_z = 22.488991, orientation = 4.400681, spawndist = 0, MovementType = 0 WHERE guid = 68000;
+UPDATE creature SET position_x = -214.878464, position_y = 1514.611084, position_z = 22.022751, orientation = 4.118724, spawndist = 0, MovementType = 0 WHERE guid = 67997;
+UPDATE creature SET position_x = -237.631012, position_y = 1521.642944, position_z = 23.232979, orientation = 4.742323, spawndist = 0, MovementType = 0 WHERE guid = 67999;
+-- last wave (temp) -- req. more scripting
+UPDATE creature SET spawndist = 0, MovementType = 0 WHERE guid = 67996;
+UPDATE creature SET spawndist = 0, MovementType = 0 WHERE guid = 67995;
+UPDATE creature SET position_x = -200.986694, position_y = 1623.556152, position_z = 37.109047, orientation = 4.560667, spawndist = 0, MovementType = 0 WHERE guid = 68314;
+UPDATE creature SET position_x = -206.727142, position_y = 1633.104736, position_z = 38.807365, orientation = 4.451498, spawndist = 0, MovementType = 0 WHERE guid = 67994;
+UPDATE creature SET position_x = -211.360229, position_y = 1640.620850, position_z = 40.365330, orientation = 4.516684, spawndist = 0, MovementType = 0 WHERE guid = 67993;
