@@ -5,3 +5,8 @@ UPDATE quest_template SET OfferRewardText ='Hmph. That one.$B$BHow is Rokaro? As
 -- redundant wrong script
 DELETE FROM dbscripts_on_quest_start WHERE id = 114;
 UPDATE quest_template SET StartScript = 0 WHERE Entry = 114;
+
+-- UDB_255
+-- r3153
+UPDATE creature_template SET ScriptName='guard_orgrimmar' WHERE entry=14304;
+UPDATE creature_template SET ScriptName='guard_stormwind' WHERE entry IN (1756);
