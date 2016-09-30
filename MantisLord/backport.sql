@@ -1137,6 +1137,7 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z, wa
 -- #83406
 UPDATE creature SET MovementType = 0, spawndist = 0 WHERE guid = 83406;
 DELETE FROM creature_movement WHERE id = 83406;
+DELETE FROM creature_linking WHERE guid = 83406;
 INSERT INTO creature_linking (guid, master_guid, flag) VALUES
 (83406, 83386, 515); -- must be linked
 -- #83391
